@@ -2,6 +2,11 @@ import pandas
 from matplotlib import pyplot
 from math import exp
 
+import multibeggar
+
+import sys
+sys.stdout = open('test2_log.txt', 'w')
+
 
 def portfolio_complexity(proportions):
     proportions.sort()
@@ -12,14 +17,28 @@ def portfolio_complexity(proportions):
     
     return total
     
-def update_proportion_in_portfolio(portfolio):
-    amount_sum = portfolio['Amount'].sum()
-    print("amount_sum: " + str(amount_sum))
-    portfolio['Proportion'] = portfolio['Amount'] / amount_sum
+    
+def compute_value_and_update_proportion(portfolio):
+    portfolio.drop(portfolio[portfolio['Shares'] == 0].index, inplace=True)
 
-transactions_list = pandas.read_excel('test1.xlsx')
-print("input transactions list:\n" + str(transactions_list))
+    closing_price = multibeggar.get_closing_price(portfolio['Symbol'].values[0], portfolio['Date'].values[0])
+    portfolio['Value'] = portfolio['Shares'] * closing_price
+    value_sum = portfolio['Value'].sum()
+    print("value_sum: " + str(value_sum))
+    portfolio['Proportion'] = portfolio['Value'] / value_sum
 
+
+transactions_list = pandas.read_excel('transactions_20210802.xlsx')
+# transactions_list = pandas.read_excel('test2.xlsx')
+
+multibeggar.fixup_company_names(transactions_list)
+# print("input transactions list:\n" + str(transactions_list))
+
+# transactions_list['Symbol'] = transactions_list['Name'].apply(multibeggar.get_stock_symbol)
+transactions_list['Symbol'] = transactions_list.apply(lambda x: multibeggar.get_stock_symbol(x['Name'], with_suffix=True), axis=1)
+# print("transactions_list after updating symbols:\n" + str(transactions_list))
+
+# exit(1)
 sorted_by_date_list = transactions_list.sort_values(by='Date')
 print("transactions list sorted ascending by date:\n" + str(sorted_by_date_list))
 
@@ -37,7 +56,7 @@ for index, row in sorted_by_date_list.iterrows():
         print("previous date: " + str(ongoing_date) + " daily portfolio:\n" + str(daily_portfolio))
         
         try: # ugly coding by exception, to be removed later
-            update_proportion_in_portfolio(daily_portfolio)
+            compute_value_and_update_proportion(daily_portfolio)
             print("previous date: " + str(ongoing_date) +  " daily portfolio after updating proportion:\n" + str(daily_portfolio))
             
             complexity = portfolio_complexity(daily_portfolio['Proportion'].tolist())
@@ -66,9 +85,9 @@ for index, row in sorted_by_date_list.iterrows():
             daily_portfolio = daily_portfolio.append(row)
         else:
             print("mask is not empty, updating existing row")
-            amount = row['Amount']
-            daily_portfolio.loc[mask, 'Amount'] += amount
-            print("for date: " + str(ongoing_date) + " stock name: " + str(name) + " amount: " + str(amount) + " updated amount: " + str(daily_portfolio.loc[mask, 'Amount'].values[0]))
+            shares = row['Shares']
+            daily_portfolio.loc[mask, 'Shares'] += shares
+            print("for date: " + str(ongoing_date) + " stock name: " + str(name) + " shares: " + str(shares) + " updated shares: " + str(daily_portfolio.loc[mask, 'Shares'].values[0]))
 
     except KeyError: # ugly code, coding by exception should be removed
         print("mask is empty, appending new row")
@@ -76,7 +95,7 @@ for index, row in sorted_by_date_list.iterrows():
 
 
 print("previous date: " + str(ongoing_date) + " daily portfolio:\n" + str(daily_portfolio))
-update_proportion_in_portfolio(daily_portfolio)
+compute_value_and_update_proportion(daily_portfolio)
 
 complexity = portfolio_complexity(daily_portfolio['Proportion'].tolist())
 print("previous date: " + str(ongoing_date) + " complexity: " + str(complexity))
@@ -89,3 +108,9 @@ print("after portfolio update for date: " + str(ongoing_date) + " full portfolio
 
 plot_data.plot.line(x='Date', y='Complexity')
 pyplot.show()
+
+sorted_by_date_list.to_excel('test2_sorted_by_date.xlsx')
+full_portfolio.to_excel('test2_full_portfolio.xlsx')
+plot_data.to_excel('test2_plot_data.xlsx')
+
+sys.stdout.close()
