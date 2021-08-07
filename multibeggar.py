@@ -102,6 +102,24 @@ def get_closing_price(stock_symbol, date):
             print('closing price from 2 week average: ' + str(closing_price))
             return closing_price
         
+    if not hasattr(get_closing_price, 'renamed_symbols_list'): # ugly code, will be rewritten later
+        get_closing_price.renamed_symbols_list = pandas.read_csv('renamed_symbols.csv')
+        print('renamed_symbols_list:\n' + str(get_closing_price.renamed_symbols_list))
+        
+    for symbol in stock_symbol:
+        if symbol is None:
+            continue
+            
+        mask = get_closing_price.renamed_symbols_list['Present Symbol'] == symbol
+        masked_rows = get_closing_price.renamed_symbols_list[mask]
+            
+        if masked_rows.empty == False:
+            old_symbol = masked_rows['Old Symbol']
+            print('old symbol: ' + str(old_symbol))
+            closing_price = get_closing_price(old_symbol, date)
+            print('closing price from old symbol: ' + str(closing_price))
+            return closing_price
+
     return None
             
         
