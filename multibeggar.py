@@ -66,8 +66,8 @@ def get_stock_symbol(company_name, with_suffix=False):
     return stock_symbol
 
 
-def get_closing_price(stock_symbol, date):
-    print('stock_symbol: ' + str(stock_symbol))
+def get_adjusted_closing_price(stock_symbol, date):
+    print('stock_symbol: ' + str(stock_symbol) + ' date: ' + str(date))
     start_date = pandas.to_datetime(date)
     end_date = start_date + pandas.Timedelta(days=1)
     
@@ -99,85 +99,72 @@ def get_closing_price(stock_symbol, date):
         
         if stock_data_two_weeks.empty == False:
             closing_price = stock_data_two_weeks['Close'].mean()
+            print('2 week closing price data:\n' + str(stock_data_two_weeks['Close']))
             print('closing price from 2 week average: ' + str(closing_price))
             return closing_price
         
-    if not hasattr(get_closing_price, 'renamed_symbols_list'): # ugly code, will be rewritten later
-        get_closing_price.renamed_symbols_list = pandas.read_csv('renamed_symbols.csv')
-        print('renamed_symbols_list:\n' + str(get_closing_price.renamed_symbols_list))
+    if not hasattr(get_adjusted_closing_price, 'renamed_symbols_list'): # ugly code, will be rewritten later
+        get_adjusted_closing_price.renamed_symbols_list = pandas.read_csv('renamed_symbols.csv')
+        print('renamed_symbols_list:\n' + str(get_adjusted_closing_price.renamed_symbols_list))
         
     for symbol in stock_symbol:
         if symbol is None:
             continue
             
-        mask = get_closing_price.renamed_symbols_list['Present Symbol'] == symbol
-        masked_rows = get_closing_price.renamed_symbols_list[mask]
+        mask = get_adjusted_closing_price.renamed_symbols_list['Present Symbol'] == symbol
+        masked_rows = get_adjusted_closing_price.renamed_symbols_list[mask]
             
+        print('masked rows: \n' + str(masked_rows))
+        print('masked rows type: ' + str(type(masked_rows)))
+        
         if masked_rows.empty == False:
-            old_symbol = masked_rows['Old Symbol']
+            old_symbol = masked_rows['Old Symbol'].values[0]
             print('old symbol: ' + str(old_symbol))
-            closing_price = get_closing_price(old_symbol, date)
+            closing_price = get_adjusted_closing_price([old_symbol], date)
             print('closing price from old symbol: ' + str(closing_price))
             return closing_price
 
     return None
+
+
+def deadjust_price(adjusted_price, stock_symbol, date):
+    print('deadjust_price: ' + 'adjusted_price: ' + str(adjusted_price) + ' stock_symbol: ' + str(stock_symbol) + ' date: ' + str(date))
+    
+    if not hasattr(deadjust_price, 'price_adjustment_list'): # ugly code, will be rewritten
+        deadjust_price.price_adjustment_list = pandas.read_csv('split_bonus.csv', parse_dates=['Date'])
+        print('price_adjustment_list:\n' + str(deadjust_price.price_adjustment_list))
+
+    for symbol in stock_symbol:
+        if symbol is None:
+            continue
+
+        mask = deadjust_price.price_adjustment_list['Symbol'] == symbol
+        masked_rows = deadjust_price.price_adjustment_list[mask]
+        
+        print('masked rows: \n' + str(masked_rows))
+        print('masked rows type: ' + str(type(masked_rows)))
+    
+        if masked_rows.empty == False:
+            adjust_date = masked_rows['Date'].values[0]
+            numerator = masked_rows['Numerator'].values[0]
+            denominator = masked_rows['Denominator'].values[0]
             
-        
-    # start_date = pandas.to_datetime(date)
-    # end_date = start_date + pandas.Timedelta(days=1)
-    # print('stock_symbol: ' + stock_symbol + ' start_date: ' + str(start_date) + ' end_date: ' + str(end_date))
-    # print('date type: ' + str(type(date)))
-    # # exit(1)
-    
-    # ticker = yf.Ticker(stock_symbol)
-    # stock_data = ticker.history(start=start_date, end=end_date)
-    # print(str(stock_data))
-    # try:
-        # closing_price = stock_data['Close'].values[0]
-    # except IndexError:
-        # start_date_one_week_before = start_date - pandas.Timedelta(days=7)
-        # end_date_one_week_after = start_date + pandas.Timedelta(days=7)
-        
-        # stock_data_two_weeks = ticker.history(start=start_date_one_week_before, end=end_date_one_week_after)
-        # # print('close data type: ' + str(type(stock_data_two_weeks['Close'])))
-        # # print('close data:\n' + str(stock_data_two_weeks['Close']))
-        
-        # closing_price = stock_data_two_weeks['Close'].mean()
-    
-    # # print('closing_price: ' + str(closing_price))
-    # return closing_price
-    # # return yf.Ticker(stock_symbol).history(start=start_date, end=end_date)['Close'].values[0]
-    
-    
-# print('close = ' + str(yf.Ticker("BAJFINANCE.NS").history(start="2021-07-01", end="2021-07-02")['Close'].values[0]))
+            # print('adjust date: ' + str(adjust_date) + ' date: ' + str(date))
+            # print('date is before split: ' + str(date <= adjust_date))
+            
+            # print('adjust_date type: ' + str(type(adjust_date)) + ' numerator type: ' + str(type(numerator)) + ' denominator type: ' + str(type(denominator)))
+            # print('adjust_date:\n' + str(adjust_date) + '\nnumerator:\n' + str(numerator) + '\ndenominator:\n' + str(denominator))
+            
+            if date < adjust_date:
+                deadjusted_price = adjusted_price * numerator / denominator
+                print('symbol: ' + str(symbol) + ' date: ' + str(date) + ' deadjusted_price: ' + str(deadjusted_price))
+                return deadjusted_price
+            
+    return adjusted_price
 
-# transactions_list = pandas.read_excel('test3.xlsx')
-# fixup_company_names(transactions_list)
 
-# transactions_list.to_excel('test3_after_fixup.xlsx')
-
-# exit(1)
-
-# df.replace({'A': 'b'}, 'e')
-
-# import sys
-# sys.stdout = open('test3_log.txt', 'w')
-
-# matched = 0
-# not_matched = 0
-    
-# for index, row in transactions_list.iterrows():
-    # name = row['Name']
-    
-    # symbol = get_stock_symbol(name, with_suffix=True)
-    
-    # if symbol is not None:
-        # print('name: ' + name + ' symbol: ' + symbol)
-        # matched += 1
-    # else:
-        # print('name: ' + name + ' symbol: *** NOT FOUND ***')
-        # not_matched += 1
-
-# print('matched: ' + str(matched) + ' not matched: ' + str(not_matched) + ' match ratio: ' + str(matched/(matched + not_matched)))
-        
-# sys.stdout.close()
+def get_closing_price(stock_symbol, date):
+    print('date type: ' + str(type(date)))
+    adjusted_closing_price = get_adjusted_closing_price(stock_symbol, date)
+    closing_price = deadjust_price(adjusted_closing_price, stock_symbol, date)
+    return closing_price

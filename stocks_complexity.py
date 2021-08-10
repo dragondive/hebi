@@ -31,7 +31,7 @@ def compute_value_and_update_proportion(portfolio):
     portfolio['Proportion'] = portfolio['Value'] / value_sum
 
 
-transactions_list = pandas.read_excel('transactions_20210802_reduced_again.xlsx')
+transactions_list = pandas.read_excel('transactions_20210802_reduced.xlsx')
 
 multibeggar.fixup_company_names(transactions_list)
 # print('input transactions list after fixup of company names:\n' + str(transactions_list))
@@ -107,10 +107,10 @@ full_portfolio = full_portfolio.append(daily_portfolio)
 print('after portfolio update for date: ' + str(ongoing_date) + ' full portfolio:\n' + str(full_portfolio))
 
 
-sorted_by_date_list.to_excel('test2_sorted_by_date.xlsx')
-full_portfolio.to_excel('test2_full_portfolio.xlsx')
+sorted_by_date_list.to_excel('adjusted_transactions_test_sorted_by_date.xlsx')
+full_portfolio.to_excel('adjusted_transactions_test_full_portfolio.xlsx')
 log_file.close()
 
-plot_data.to_excel('test2_plot_data.xlsx')
+plot_data.to_excel('adjusted_transactions_test_plot_data.xlsx')
 plot_data.plot.line(x='Date', y='Complexity')
 pyplot.show()
