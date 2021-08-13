@@ -31,7 +31,7 @@ def compute_value_and_update_proportion(portfolio):
     portfolio['Proportion'] = portfolio['Value'] / value_sum
 
 
-transactions_list = pandas.read_excel('transactions_20210802_reduced.xlsx')
+transactions_list = pandas.read_excel('transactions_20210802.xlsx')
 
 multibeggar.fixup_company_names(transactions_list)
 # print('input transactions list after fixup of company names:\n' + str(transactions_list))
