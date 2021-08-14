@@ -2,11 +2,11 @@ import pytest
 from multibeggar import Multibeggar
 
 import pandas
-
+import math
 
 
 @pytest.mark.parametrize(
-'input_company_name,output_symbol', [
+'input_company_name, output_symbol', [
 ('Bajaj Finance', 'BAJFINANCE.NS'),
 ('Berger Paints India', 'BERGEPAINT.NS'),
 ('JFrog', None),
@@ -17,7 +17,7 @@ def test_get_nse_symbol(input_company_name, output_symbol):
 
 
 @pytest.mark.parametrize(
-'input_company_name,output_symbol', [
+'input_company_name, output_symbol', [
 ('Pidilite Industries', 'PIDILITIND.BO'),
 ('SBI Cards & Payments Services', 'SBICARD.BO'),
 ('Microsoft', None),
@@ -28,7 +28,7 @@ def test_get_bse_symbol(input_company_name, output_symbol):
 
 
 @pytest.mark.parametrize(
-'input_company_name,output_symbol', [
+'input_company_name, output_symbol', [
 ('Relaxo Footwears', ['RELAXO.NS', 'RELAXO.BO']),
 ('Central Depository Services', ['CDSL.NS', None]),
 ('Black Rose Industries', [None, 'BLACKROSE.BO']),
@@ -40,9 +40,10 @@ def test_get_stock_symbols(input_company_name, output_symbol):
 
 
 @pytest.fixture
-def mock_ticker():
-    def _mock_ticker(symbol):
+def get_mock_ticker():
+    def mock_ticker_closure(symbol):
         return MockTicker(symbol)
+
 
     class MockTicker:
         all_data = pandas.DataFrame([
@@ -59,34 +60,38 @@ def mock_ticker():
             ['TITAN.NS', '2020/03/26', 680.10],            
             ['TITAN.NS', '2020/03/27', 682.35],            
             ['TITAN.NS', '2020/03/30', 685.65],            
-            ['TITAN.NS', '2020/03/31', 683.85],            
+            ['TITAN.NS', '2020/03/31', 683.85],
+            ['ASIANPAINT.BO', '2020/03/25', 2480],
         ], columns =['Symbol', 'Date', 'Close'])
 
+
         def __init__(self, symbol):
-            print('symbol: ' + str(symbol))
             self.symbol_data = MockTicker.all_data[MockTicker.all_data['Symbol'] == symbol]
 
 
         def history(self, start, end):
-            print('mock_ticker history')
-            print('start_date: ' + str(start))
-            print('end_date: ' + str(end))
             date = pandas.to_datetime(self.symbol_data['Date'])
             selected_data = self.symbol_data[(start <= date) & (date < end)]
-            print('selected_data: \n' + str(selected_data))
             return selected_data
-            
-            
-    yield _mock_ticker
+    
+    
+    yield mock_ticker_closure
+
     
     
 @pytest.mark.parametrize(
 'input_stock_symbol, input_date, output_closing_price', [
-('TITAN.NS', '2020/03/25', 1500),
+('TITAN.NS', '2020/03/25', 668.60),
+('TITAN.NS', '2020/03/21', None),
+('TITAN.NS', '1900/01/01', None),
+('TITAN.NS', '2200/12/31', None),
+('SHUEISHA', '2021/01/03', None),
+('SBIN.BO', '2020/03/19', None),
+('ASIANPAINT.BO', '2020/03/25', 2480),
 ])
-def test_get_adjusted_closing_price(mocker, mock_ticker, input_stock_symbol, input_date, output_closing_price):
-    my_mock_ticker = mock_ticker(input_stock_symbol)
-    mocker.patch('multibeggar.yfinance.Ticker', return_value=my_mock_ticker)
+def test_get_adjusted_closing_price(mocker, get_mock_ticker, input_stock_symbol, input_date, output_closing_price):
+    mock_ticker = get_mock_ticker(input_stock_symbol)
+    mocker.patch('multibeggar.yfinance.Ticker', return_value=mock_ticker)
     mb = Multibeggar()
     assert mb.get_adjusted_closing_price(input_stock_symbol, input_date) == output_closing_price
     
@@ -96,19 +101,6 @@ def test_get_adjusted_closing_price(mocker, mock_ticker, input_stock_symbol, inp
     # mb.get_adjusted_closing_price('TITAN.NS', '2020/03/25')
 
 
-# @pytest.fixture
-# def tester():
-    # # Create a closure on the Tester object
-    # def _tester(first_param, second_param):
-        # # use the above params to mock and instantiate things
-        # return MyTester(first_param, second_param)
-    
-    # # Pass this closure to the test
-    # yield _tester 
 
 
-# @pytest.mark.parametrize(['param_one', 'param_two'], [(1,2), (1000,2000)])
-# def test_tc1(tester, param_one, param_two):
-    # # run the closure now with the desired params
-    # my_tester = tester(param_one, param_two)
-    # # assert code here
+

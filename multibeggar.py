@@ -87,7 +87,7 @@ class Multibeggar:
             symbol = best_matching_row[self.bse_symbol_heading]
             return symbol
 
-            
+ 
         symbol = get_bse_symbol_by_startswith_company_name_match()
         
         if symbol is None:
@@ -99,14 +99,12 @@ class Multibeggar:
         return symbol
 
 
-
     def get_stock_symbols(self, company_name, with_suffix=True):
         symbols = [self.get_nse_symbol(company_name, with_suffix), self.get_bse_symbol(company_name, with_suffix)]
         return symbols
 
 
     def get_adjusted_closing_price(self, stock_symbol, date):
-        print('stock_symbol: ' + str(stock_symbol))
         if stock_symbol is None:
             return None
             
@@ -115,12 +113,11 @@ class Multibeggar:
 
         ticker = yfinance.Ticker(stock_symbol)
         stock_data = ticker.history(start=start_date, end=end_date)
-        print('stock_data:\n' + str(stock_data))
         
         if stock_data.empty:
             return None
             
-        closing_price = stock_data['Close'].values[0] # todo self: can remove values[0] here?
+        closing_price = stock_data['Close'].values[0]
         return closing_price
 
     
