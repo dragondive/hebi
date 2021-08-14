@@ -1,5 +1,5 @@
 import pytest
-from multibeggar import Multibeggar
+from multibeggar.multibeggar import Multibeggar
 
 import pandas
 import math
@@ -77,8 +77,7 @@ def get_mock_ticker():
     
     yield mock_ticker_closure
 
-    
-    
+
 @pytest.mark.parametrize(
 'input_stock_symbol, input_date, output_closing_price', [
 ('TITAN.NS', '2020/03/25', 668.60),
@@ -88,10 +87,11 @@ def get_mock_ticker():
 ('SHUEISHA', '2021/01/03', None),
 ('SBIN.BO', '2020/03/19', None),
 ('ASIANPAINT.BO', '2020/03/25', 2480),
+(None, '2021/08/15', None),
 ])
 def test_get_adjusted_closing_price(mocker, get_mock_ticker, input_stock_symbol, input_date, output_closing_price):
     mock_ticker = get_mock_ticker(input_stock_symbol)
-    mocker.patch('multibeggar.yfinance.Ticker', return_value=mock_ticker)
+    mocker.patch('multibeggar.multibeggar.yfinance.Ticker', return_value=mock_ticker)
     mb = Multibeggar()
     assert mb.get_adjusted_closing_price(input_stock_symbol, input_date) == output_closing_price
     

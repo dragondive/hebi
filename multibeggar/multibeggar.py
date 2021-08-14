@@ -1,24 +1,26 @@
+import os
 import pandas
 import yfinance
 from fuzzywuzzy import fuzz
 
 class Multibeggar:
     def __init__(self):
+        script_dir = os.path.dirname(__file__)
+
         self.nse_symbol_heading = 'SYMBOL'
         self.nse_company_name_heading = 'NAME OF COMPANY'
-        self.nse_symbol_name_map = pandas.read_csv('equity_nse.csv', usecols=[self.nse_symbol_heading, self.nse_company_name_heading])
+        self.nse_symbol_name_map = pandas.read_csv(os.path.join(script_dir, 'data', 'equity_nse.csv'), usecols=[self.nse_symbol_heading, self.nse_company_name_heading])
         self.nse_suffix = '.NS'
         
         self.bse_symbol_heading = 'Security Id'
         self.bse_company_name_heading = 'Security Name'
-        self.bse_symbol_name_map = pandas.read_csv('equity_bse.csv', usecols=[self.bse_symbol_heading, self.bse_company_name_heading]) # todo self: can interchange these columns? 
+        self.bse_symbol_name_map = pandas.read_csv(os.path.join(script_dir, 'data', 'equity_bse.csv'), usecols=[self.bse_symbol_heading, self.bse_company_name_heading]) # todo self: can interchange these columns? 
         self.bse_suffix = '.BO'
         
         # todo refactor: use multiple sheets in the same file instead of loading each one separately
-        self.fixup_company_names_map = pandas.read_csv('fixup_company_names2.csv')
-        self.renamed_symbols_map = pandas.read_csv('renamed_symbols.csv')
-        self.price_adjustment_list = pandas.read_csv('split_bonus.csv', parse_dates=['Date'])
-
+        self.fixup_company_names_map = pandas.read_csv(os.path.join(script_dir, 'data', 'fixup_company_names2.csv'))
+        self.renamed_symbols_map = pandas.read_csv(os.path.join(script_dir, 'data', 'renamed_symbols.csv'))
+        self.price_adjustment_list = pandas.read_csv(os.path.join(script_dir, 'data', 'split_bonus.csv'), parse_dates=['Date'])
 
 
     def get_nse_symbol(self, company_name, with_suffix=True):
