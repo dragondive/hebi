@@ -4,6 +4,10 @@ from multibeggar.multibeggar import Multibeggar
 import pandas
 import math
 
+@pytest.fixture(scope='module')
+def get_multibeggar():
+    yield Multibeggar()
+
 
 @pytest.mark.parametrize(
 'input_company_name, output_symbol', [
@@ -11,8 +15,8 @@ import math
 ('Berger Paints India', 'BERGEPAINT.NS'),
 ('JFrog', None),
 ])
-def test_get_nse_symbol(input_company_name, output_symbol):
-    mb = Multibeggar()
+def test_get_nse_symbol(get_multibeggar, input_company_name, output_symbol):
+    mb = get_multibeggar
     assert mb.get_nse_symbol(input_company_name) == output_symbol
 
 
@@ -22,8 +26,8 @@ def test_get_nse_symbol(input_company_name, output_symbol):
 ('SBI Cards & Payments Services', 'SBICARD.BO'),
 ('Microsoft', None),
 ])
-def test_get_bse_symbol(input_company_name, output_symbol):
-    mb = Multibeggar()
+def test_get_bse_symbol(get_multibeggar, input_company_name, output_symbol):
+    mb = get_multibeggar
     assert mb.get_bse_symbol(input_company_name) == output_symbol
 
 
@@ -34,8 +38,8 @@ def test_get_bse_symbol(input_company_name, output_symbol):
 ('Black Rose Industries', [None, 'BLACKROSE.BO']),
 ('Google', [None, None]),
 ])
-def test_get_stock_symbols(input_company_name, output_symbol):
-    mb = Multibeggar()
+def test_get_stock_symbols(get_multibeggar, input_company_name, output_symbol):
+    mb = get_multibeggar
     assert mb.get_stock_symbols(input_company_name) == output_symbol
 
 
@@ -89,10 +93,10 @@ def get_mock_ticker():
 ('ASIANPAINT.BO', '2020/03/25', 2480),
 (None, '2021/08/15', None),
 ])
-def test_get_adjusted_closing_price(mocker, get_mock_ticker, input_stock_symbol, input_date, output_closing_price):
+def test_get_adjusted_closing_price(get_multibeggar, mocker, get_mock_ticker, input_stock_symbol, input_date, output_closing_price):
     mock_ticker = get_mock_ticker(input_stock_symbol)
     mocker.patch('multibeggar.multibeggar.yfinance.Ticker', return_value=mock_ticker)
-    mb = Multibeggar()
+    mb = get_multibeggar
     assert mb.get_adjusted_closing_price(input_stock_symbol, input_date) == output_closing_price
     
 
