@@ -98,7 +98,18 @@ def test_get_adjusted_closing_price(get_multibeggar, mocker, get_mock_ticker, in
     mocker.patch('multibeggar.multibeggar.yfinance.Ticker', return_value=mock_ticker)
     mb = get_multibeggar
     assert mb.get_adjusted_closing_price(input_stock_symbol, input_date) == output_closing_price
-    
+
+
+@pytest.mark.parametrize(
+'input_stock_symbol, output_stock_symbol', [
+('MON100.NS', 'N100.NS'),
+('MON100.BO', 'N100.BO'),
+('ASTRAL.NS', None),
+])
+def test_get_renamed_symbol(get_multibeggar, input_stock_symbol, output_stock_symbol):
+    mb = get_multibeggar
+    assert mb.get_renamed_symbol(input_stock_symbol) == output_stock_symbol
+
 
 # def test_normal():
     # mb = Multibeggar()

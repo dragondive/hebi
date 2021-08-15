@@ -120,10 +120,14 @@ class Multibeggar:
         return closing_price
 
     
-    def get_renamed_symbol(stock_symbol):
+    def get_renamed_symbol(self, stock_symbol):
         matching_row = self.renamed_symbols_map[self.renamed_symbols_map['Present Symbol'] == stock_symbol]
-        old_symbol = matching_row['Old Symbol'].values[0] # todo self: is values[0] required here?
-        return old_symbol
+
+        if not matching_row.empty:
+            old_symbol = matching_row['Old Symbol'].values[0] # todo self: is values[0] required here?
+            return old_symbol
+        else:
+            return None
 
     
     def de_adjust_price(adjusted_price, stock_symbol, date):
