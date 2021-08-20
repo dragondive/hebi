@@ -40,12 +40,12 @@ class Multibeggar:
             matching_mask = self.nse_symbol_name_map.apply(lambda x: fuzz.token_sort_ratio(x[self.nse_company_name_heading], company_name), axis=1)
             qualified_rows = matching_mask[lambda x: x > 75]
             
-            if qualified_rows.empty:
+            try:
+                best_matching_row = self.nse_symbol_name_map.loc[qualified_rows.idxmax()]
+                symbol = best_matching_row[self.nse_symbol_heading]
+                return symbol
+            except ValueError:
                 return None
-
-            best_matching_row = self.nse_symbol_name_map.loc[qualified_rows.idxmax()]
-            symbol = best_matching_row[self.nse_symbol_heading]
-            return symbol
 
 
         symbol = get_nse_symbol_by_startswith_company_name_match()
@@ -78,13 +78,13 @@ class Multibeggar:
         def get_bse_symbol_by_fuzzy_company_name_match():
             matching_mask = self.bse_symbol_name_map.apply(lambda x: fuzz.token_sort_ratio(x[self.bse_company_name_heading], company_name), axis=1)
             qualified_rows = matching_mask[lambda x: x > 75]
-            
-            if qualified_rows.empty:
+
+            try:
+                best_matching_row = self.bse_symbol_name_map.loc[qualified_rows.idxmax()]
+                symbol = best_matching_row[self.bse_symbol_heading]
+                return symbol
+            except ValueError:
                 return None
-                
-            best_matching_row = self.bse_symbol_name_map.loc[qualified_rows.idxmax()]
-            symbol = best_matching_row[self.bse_symbol_heading]
-            return symbol
 
  
         symbol = get_bse_symbol_by_startswith_company_name_match()
@@ -113,20 +113,20 @@ class Multibeggar:
         ticker = yfinance.Ticker(stock_symbol)
         stock_data = ticker.history(start=start_date, end=end_date)
         
-        if stock_data.empty:
+        try:        
+            closing_price = stock_data['Close'].values[0]
+            return closing_price
+        except IndexError:
             return None
-            
-        closing_price = stock_data['Close'].values[0]
-        return closing_price
 
     
     def get_renamed_symbol(self, stock_symbol):
         matching_row = self.renamed_symbols_map[self.renamed_symbols_map['Present Symbol'] == stock_symbol]
 
-        if not matching_row.empty:
-            old_symbol = matching_row['Old Symbol'].values[0] # todo self: is values[0] required here?
+        try:
+            old_symbol = matching_row['Old Symbol'].values[0]
             return old_symbol
-        else:
+        except IndexError:
             return None
 
     
