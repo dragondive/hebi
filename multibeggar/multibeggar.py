@@ -130,23 +130,23 @@ class Multibeggar:
             return None
 
     
-    def de_adjust_price(adjusted_price, stock_symbol, date):
+    def de_adjust_price(self, adjusted_price, stock_symbol, date):
         if stock_symbol is None:
             return adjusted_price
             
-        matching_row == self.price_adjustment_list[self.price_adjustment_list['Symbol'] == symbol]
-        if matching_row.empty:
-            return adjusted_price
+        matching_row = self.price_adjustment_list[self.price_adjustment_list['Symbol'] == stock_symbol]
+        try:
+            adjustment_date = matching_row['Date'].values[0]
+            if pandas.to_datetime(date) >= adjustment_date:
+                return adjusted_price
             
-        adjustment_date = matching_row['Date'].values[0] # todo self: can values[0] be removed here?
-        if date >= adjustment_date: # todo: look for fencepost error here, should it be > or >=?
-            return adjusted_price
-            
-        numerator = matching_row['Numerator'].values[0]
-        denominator = matching_row['Denominator'].values[0]
+            numerator = matching_row['Numerator'].values[0]
+            denominator = matching_row['Denominator'].values[0]
         
-        de_adjusted_price = adjusted_price * numerator / denominator
-        return de_adjusted_price
+            de_adjusted_price = adjusted_price * numerator / denominator
+            return de_adjusted_price
+        except IndexError:
+            return adjusted_price
 
 
     def get_closing_price_by_symbol_list(symbol_list, date, fallback_to_average_price=True, fallback_offset=7, fallback_to_renamed_symbol=True):

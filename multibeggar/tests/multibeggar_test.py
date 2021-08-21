@@ -111,9 +111,22 @@ def test_get_renamed_symbol(get_multibeggar, input_stock_symbol, output_stock_sy
     assert mb.get_renamed_symbol(input_stock_symbol) == output_stock_symbol
 
 
-# def test_normal():
-    # mb = Multibeggar()
-    # mb.get_adjusted_closing_price('TITAN.NS', '2020/03/25')
+@pytest.mark.parametrize(
+'input_adjusted_price, input_stock_symbol, input_date, output_de_adjusted_price', [
+(124, None, '2021/08/15', 124),
+(1250, 'HDFCBANK.NS', '2019/09/18', 2500),
+(1250, 'HDFCBANK.NS', '2019/09/19', 1250),
+(1250, 'HDFCBANK.NS', '2019/09/20', 1250),
+(84000, 'MRF.NS', '2021/08/15', 84000),
+# ('invalid_price', 'MRF.NS', '2021/08/15', None),
+# (488, 'KOTAKBANK.NS', 'invalid_date', None),
+])
+def test_de_adjust_price(get_multibeggar, input_adjusted_price, input_stock_symbol, input_date, output_de_adjusted_price):
+    mb = get_multibeggar
+    assert mb.de_adjust_price(input_adjusted_price, input_stock_symbol, input_date) == output_de_adjusted_price
+
+
+
 
 
 
