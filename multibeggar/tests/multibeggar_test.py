@@ -45,8 +45,8 @@ def test_get_stock_symbols(get_multibeggar, input_company_name, output_symbol):
 
 @pytest.fixture
 def get_mock_ticker():
-    def mock_ticker_closure(symbol):
-        return MockTicker(symbol)
+    def mock_ticker_closure(symbol_list):
+        return MockTicker(symbol_list)
 
 
     class MockTicker:
@@ -69,8 +69,12 @@ def get_mock_ticker():
         ], columns =['Symbol', 'Date', 'Close'])
 
 
-        def __init__(self, symbol):
-            self.symbol_data = MockTicker.all_data[MockTicker.all_data['Symbol'] == symbol]
+        def __init__(self, symbol_list):
+            if not isinstance(symbol_list, list):
+                symbol_list = [symbol_list]
+
+            self.symbol_data_list = [ MockTicker.all_data[MockTicker.all_data['Symbol'] == symbol] for symbol in symbol_list ]
+            self.symbol_data = self.symbol_data_list[0]
 
 
         def history(self, start, end):
