@@ -104,20 +104,8 @@ class Multibeggar:
 
 
     def get_adjusted_closing_price(self, stock_symbol, date):
-        if stock_symbol is None:
-            return None
-            
-        start_date = pandas.to_datetime(date)
-        end_date = start_date + pandas.Timedelta(days=1)
+        return self.__get_adjusted_average_price(stock_symbol, date, offset_days=0)
 
-        ticker = yfinance.Ticker(stock_symbol)
-        stock_data = ticker.history(start=start_date, end=end_date)
-        
-        if stock_data.empty:
-            return None
-        
-        closing_price = stock_data['Close'].mean()
-        return closing_price
     
     def get_renamed_symbol(self, stock_symbol):
         matching_row = self.renamed_symbols_map[self.renamed_symbols_map['Present Symbol'] == stock_symbol]
@@ -183,7 +171,7 @@ class Multibeggar:
             return None
 
         start_date = pandas.to_datetime(date) - pandas.Timedelta(days=offset_days)
-        end_date = pandas.to_datetime(date) + pandas.Timedelta(days=offset_days)
+        end_date = pandas.to_datetime(date) + pandas.Timedelta(days=1+offset_days)
                 
         ticker = yfinance.Ticker(stock_symbol)
         stock_data = ticker.history(start=start_date, end=end_date)
