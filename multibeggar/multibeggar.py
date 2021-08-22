@@ -113,12 +113,11 @@ class Multibeggar:
         ticker = yfinance.Ticker(stock_symbol)
         stock_data = ticker.history(start=start_date, end=end_date)
         
-        try:        
-            closing_price = stock_data['Close'].values[0]
-            return closing_price
-        except IndexError:
+        if stock_data.empty:
             return None
-
+        
+        closing_price = stock_data['Close'].mean()
+        return closing_price
     
     def get_renamed_symbol(self, stock_symbol):
         matching_row = self.renamed_symbols_map[self.renamed_symbols_map['Present Symbol'] == stock_symbol]
@@ -150,7 +149,6 @@ class Multibeggar:
 
 
     def get_closing_price_by_symbol_list(self, symbol_list, date, fallback_to_average_price=True, fallback_offset=7, fallback_to_renamed_symbol=True):
-        # todo self: can we avoid this for else, it is indented too deep and looks ugly.
         for symbol in symbol_list:            
             adjusted_closing_price = self.get_adjusted_closing_price(symbol, date)
             if adjusted_closing_price is not None:
