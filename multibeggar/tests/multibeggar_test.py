@@ -45,8 +45,8 @@ def test_get_stock_symbols(get_multibeggar, input_company_name, output_symbol):
 
 @pytest.fixture
 def get_mock_ticker():
-    def mock_ticker_closure(symbol_list):
-        return MockTicker(symbol_list)
+    def mock_ticker_closure(symbol):
+        return next(MockTicker(symbol))
 
 
     class MockTicker:
@@ -66,22 +66,32 @@ def get_mock_ticker():
             ['TITAN.NS', '2020/03/30', 685.65],            
             ['TITAN.NS', '2020/03/31', 683.85],
             ['ASIANPAINT.BO', '2020/03/25', 2480],
+            ['ASIANPAINT.NS', '2020/03/25', 2480.5],
+            ['ASIANPAINT.BO', '2020/03/26', 2485],
         ], columns =['Symbol', 'Date', 'Close'])
 
 
-        def __init__(self, symbol_list):
-            if not isinstance(symbol_list, list):
-                symbol_list = [symbol_list]
+        def __init__(self, symbol):
+            self.symbol = symbol
+            self.symbol_data = MockTicker.all_data[MockTicker.all_data['Symbol'] == symbol]
 
-            self.symbol_data_list = [ MockTicker.all_data[MockTicker.all_data['Symbol'] == symbol] for symbol in symbol_list ]
-            self.symbol_data = self.symbol_data_list[0]
+
+        def __iter__(self):
+            return self
+            
+            
+        def __next__(self):
+            return self # ugly hack because mocker.patch's side_effect expects Iterator-type object
+                        # when the test input is a list of symbols, we want to return a different
+                        # MockTicker for each call. get_mock_ticker() is called separately
+                        # and generates a MockTicker for each symbol. But there is presently no 
+                        # interface in mocker.patch to return a different object on each call.
 
 
         def history(self, start, end):
             date = pandas.to_datetime(self.symbol_data['Date'])
             selected_data = self.symbol_data[(start <= date) & (date < end)]
             return selected_data
-    
     
     yield mock_ticker_closure
 
@@ -130,7 +140,24 @@ def test_de_adjust_price(get_multibeggar, input_adjusted_price, input_stock_symb
     assert mb.de_adjust_price(input_adjusted_price, input_stock_symbol, input_date) == output_de_adjusted_price
 
 
+@pytest.mark.parametrize(
+'input_symbol_list, input_date, output_closing_price', [
+(['MRF.NS', 'MRF.BO', 'TITAN.BO', 'TITAN.NS'], '2020/03/23', 649.40),
+(['TITAN.NS'], '2020/03/21', 658.84),
+([None, 'ASIANPAINT.BO'], '2020/03/25', 2480),
+(['ASIANPAINT.NS', 'ASIANPAINT.BO'], '2020/03/25', 2480.5),
+(['ASIANPAINT.BO', 'ASIANPAINT.NS'], '2020/03/25', 2480.0),
+(['ASIANPAINT.NS', 'ASIANPAINT.BO'], '2020/03/26', 2485.0),
+])
+def test_get_closing_price_by_symbol_list(get_multibeggar, mocker, get_mock_ticker, input_symbol_list, input_date, output_closing_price):
+    mocker.patch('multibeggar.multibeggar.yfinance.Ticker', side_effect=get_mock_ticker)
+    mb = get_multibeggar
+    assert mb.get_closing_price_by_symbol_list(input_symbol_list, input_date) == output_closing_price
 
+
+# def test_normal():
+    # mb = Multibeggar()
+    # mb.get_closing_price_by_symbol_list('TITAN.NS', '2020/03/25')
 
 
 

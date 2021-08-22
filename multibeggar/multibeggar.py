@@ -149,7 +149,7 @@ class Multibeggar:
             return adjusted_price
 
 
-    def get_closing_price_by_symbol_list(symbol_list, date, fallback_to_average_price=True, fallback_offset=7, fallback_to_renamed_symbol=True):
+    def get_closing_price_by_symbol_list(self, symbol_list, date, fallback_to_average_price=True, fallback_offset=7, fallback_to_renamed_symbol=True):
         # todo self: can we avoid this for else, it is indented too deep and looks ugly.
         for symbol in symbol_list:            
             adjusted_closing_price = self.get_adjusted_closing_price(symbol, date)
@@ -173,14 +173,14 @@ class Multibeggar:
             return None
         
         for symbol in symbol_list:
-            de_adjusted_closing_price = self.de_adjust_price(adjusted_closing_price, [symbol], date)
+            de_adjusted_closing_price = self.de_adjust_price(adjusted_closing_price, symbol, date)
             if de_adjusted_closing_price is not None:
                 return de_adjusted_closing_price
         
         return adjusted_closing_price
 
 
-    def __get_adjusted_average_price(stock_symbol, date, offset_days=7):
+    def __get_adjusted_average_price(self, stock_symbol, date, offset_days=7):
         if stock_symbol is None:
             return None
 
@@ -197,7 +197,7 @@ class Multibeggar:
         return closing_price
 
 
-    def __fixup_company_names(transactions_list):
+    def __fixup_company_names(self, transactions_list):
         for __unused, row in self.fixup_company_names_map.iterrows():
             transactions_list.replace({'Name': row['Actual Name']}, row['Fixed Name'], inplace=True)
 
