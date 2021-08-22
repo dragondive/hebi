@@ -149,11 +149,9 @@ class Multibeggar:
                     break
                     
         if fallback_to_renamed_symbol and adjusted_closing_price is None:
-            for symbol in symbol_list:
-                renamed_symbol = self.get_renamed_symbol(symbol)
-                adjusted_closing_price = self.get_closing_price_by_symbol_list([renamed_symbol], date)
-                if adjusted_closing_price is not None:
-                    break
+            renamed_symbol_list = [renamed_symbol for symbol in symbol_list if (renamed_symbol := self.get_renamed_symbol(symbol)) is not None]
+            if renamed_symbol_list:
+                adjusted_closing_price = self.get_closing_price_by_symbol_list(renamed_symbol_list, date)
         
         if adjusted_closing_price is None:
             return None
@@ -163,8 +161,6 @@ class Multibeggar:
             if de_adjusted_closing_price is not None:
                 return de_adjusted_closing_price
         
-        return adjusted_closing_price
-
 
     def __get_adjusted_average_price(self, stock_symbol, date, offset_days=7):
         if stock_symbol is None:

@@ -9,6 +9,7 @@ def get_multibeggar():
     yield Multibeggar()
 
 
+# @pytest.mark.skip()
 @pytest.mark.parametrize(
 'input_company_name, output_symbol', [
 ('Bajaj Finance', 'BAJFINANCE.NS'),
@@ -20,6 +21,7 @@ def test_get_nse_symbol(get_multibeggar, input_company_name, output_symbol):
     assert mb.get_nse_symbol(input_company_name) == output_symbol
 
 
+# @pytest.mark.skip()
 @pytest.mark.parametrize(
 'input_company_name, output_symbol', [
 ('Pidilite Industries', 'PIDILITIND.BO'),
@@ -31,6 +33,7 @@ def test_get_bse_symbol(get_multibeggar, input_company_name, output_symbol):
     assert mb.get_bse_symbol(input_company_name) == output_symbol
 
 
+# @pytest.mark.skip()
 @pytest.mark.parametrize(
 'input_company_name, output_symbol', [
 ('Relaxo Footwears', ['RELAXO.NS', 'RELAXO.BO']),
@@ -68,12 +71,15 @@ def get_mock_ticker():
             ['ASIANPAINT.BO', '2020/03/25', 2480],
             ['ASIANPAINT.NS', '2020/03/25', 2480.5],
             ['ASIANPAINT.BO', '2020/03/26', 2485],
+            ['N100.NS', '2021/07/26', 520],
+            ['N100.BO', '2021/07/27', 523],
         ], columns =['Symbol', 'Date', 'Close'])
 
 
         def __init__(self, symbol):
             self.symbol = symbol
             self.symbol_data = MockTicker.all_data[MockTicker.all_data['Symbol'] == symbol]
+            # print('__init__ symbol: ' + self.symbol + ' symbol_data: \n' + str(self.symbol_data)) 
 
 
         def __iter__(self):
@@ -96,6 +102,7 @@ def get_mock_ticker():
     yield mock_ticker_closure
 
 
+# @pytest.mark.skip()
 @pytest.mark.parametrize(
 'input_stock_symbol, input_date, output_closing_price', [
 ('TITAN.NS', '2020/03/25', 668.60),
@@ -114,6 +121,7 @@ def test_get_adjusted_closing_price(get_multibeggar, mocker, get_mock_ticker, in
     assert mb.get_adjusted_closing_price(input_stock_symbol, input_date) == output_closing_price
 
 
+# @pytest.mark.skip()
 @pytest.mark.parametrize(
 'input_stock_symbol, output_stock_symbol', [
 ('MON100.NS', 'N100.NS'),
@@ -125,6 +133,7 @@ def test_get_renamed_symbol(get_multibeggar, input_stock_symbol, output_stock_sy
     assert mb.get_renamed_symbol(input_stock_symbol) == output_stock_symbol
 
 
+# @pytest.mark.skip()
 @pytest.mark.parametrize(
 'input_adjusted_price, input_stock_symbol, input_date, output_de_adjusted_price', [
 (124, None, '2021/08/15', 124),
@@ -140,6 +149,7 @@ def test_de_adjust_price(get_multibeggar, input_adjusted_price, input_stock_symb
     assert mb.de_adjust_price(input_adjusted_price, input_stock_symbol, input_date) == output_de_adjusted_price
 
 
+# @pytest.mark.skip()
 @pytest.mark.parametrize(
 'input_symbol_list, input_date, output_closing_price', [
 (['MRF.NS', 'MRF.BO', 'TITAN.BO', 'TITAN.NS'], '2020/03/23', 649.40),
@@ -148,6 +158,9 @@ def test_de_adjust_price(get_multibeggar, input_adjusted_price, input_stock_symb
 (['ASIANPAINT.NS', 'ASIANPAINT.BO'], '2020/03/25', 2480.5),
 (['ASIANPAINT.BO', 'ASIANPAINT.NS'], '2020/03/25', 2480.0),
 (['ASIANPAINT.NS', 'ASIANPAINT.BO'], '2020/03/26', 2485.0),
+(['MON100.NS'], '2021/07/26', 520),
+(['MON100.NS', 'MON100.BO'], '2021/07/27', 523),
+(['CASIO'], '2021/08/01', None),
 ])
 def test_get_closing_price_by_symbol_list(get_multibeggar, mocker, get_mock_ticker, input_symbol_list, input_date, output_closing_price):
     mocker.patch('multibeggar.multibeggar.yfinance.Ticker', side_effect=get_mock_ticker)
