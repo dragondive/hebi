@@ -167,14 +167,4 @@ def test_get_closing_price_by_symbol_list(get_multibeggar, mocker, get_mock_tick
     mocker.patch('multibeggar.multibeggar.yfinance.Ticker', side_effect=get_mock_ticker)
     mb = get_multibeggar
     assert mb.get_closing_price_by_symbol_list(input_symbol_list, input_date) == output_closing_price
-    
-    
-def test_normal():
-    mb = Multibeggar()
-    mb.load_transactions_from_excel_file(os.path.join(os.getcwd(), 'input', 'transactions_test.xlsx'))
-    mb.plot_portfolio_complexity()
-
-
-
-
 

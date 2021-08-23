@@ -27,6 +27,8 @@ class Multibeggar:
     def plot_portfolio_complexity(self):
         self.__prepare_for_portfolio_complexity_calculation()
         self.__create_daywise_portfolio()
+        self.__update_closing_prices()
+        self.__compute_and_update_values()
         self.daywise_full_portfolio.to_excel(os.path.join(os.getcwd(), 'output', 'daywise_full_portfolio.xlsx'))
     
     def get_nse_symbol(self, company_name, with_suffix=True):
@@ -169,7 +171,7 @@ class Multibeggar:
             de_adjusted_closing_price = self.de_adjust_price(adjusted_closing_price, symbol, date)
             if de_adjusted_closing_price is not None:
                 return de_adjusted_closing_price
-        
+
 
     def __get_adjusted_average_price(self, stock_symbol, date, offset_days=7):
         if stock_symbol is None:
@@ -238,6 +240,15 @@ class Multibeggar:
                 shares = row['Shares']
                 daily_portfolio.loc[mask, 'Shares'] += shares
 
+
+    def __update_closing_prices(self):
+        self.daywise_full_portfolio['Closing Price'] = self.daywise_full_portfolio.apply(lambda row: self.get_closing_price_by_symbol_list(row['Symbol'], row['Date']), axis=1)
+
+
+    def __compute_and_update_values(self):
+        self.daywise_full_portfolio['Value'] = self.daywise_full_portfolio['Shares'] * self.daywise_full_portfolio['Closing Price']
+    
+    
 # def get_stock_symbol_from_nse(company_name, with_suffix=False):
     # if not hasattr(get_stock_symbol_from_nse, 'stock_symbol_name_map'): # ugly code, will be rewritten more cleanly
         # get_stock_symbol_from_nse.stock_symbol_name_map = pandas.read_csv('equity_nse.csv', usecols=['SYMBOL', 'NAME OF COMPANY'])
