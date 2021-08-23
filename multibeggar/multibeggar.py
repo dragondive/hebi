@@ -222,6 +222,7 @@ class Multibeggar:
             date = row['Date']
             
             if date != ongoing_date: # This is a new date, so update current daily_portfolio to daywise_full_portfolio
+                daily_portfolio.drop(daily_portfolio[daily_portfolio['Shares'] == 0].index, inplace=True)
                 self.daywise_full_portfolio = self.daywise_full_portfolio.append(daily_portfolio)
         
                 daily_portfolio.replace({ongoing_date: date}, inplace=True)
