@@ -24,19 +24,22 @@ class Multibeggar:
 
 
     def load_transactions_from_excel_file(self, excel_file_name):
+        self.input_file_name = excel_file_name
         self.transactions_list = pandas.read_excel(excel_file_name)
 
     
     def plot_portfolio_complexity(self):
         self.__prepare_for_portfolio_complexity_calculation()
         self.__compute_daywise_portfolio()
-        self.daywise_full_portfolio.to_excel(os.path.join(os.getcwd(), 'output', 'daywise_full_portfolio.xlsx'))
+        
+        input_file_name_without_extension = os.path.splitext(os.path.basename(self.input_file_name))[0]
+        self.daywise_full_portfolio.to_excel(os.path.join(os.getcwd(), 'output', input_file_name_without_extension + '_daywise_full_portfolio.xlsx'))
         
         self.portfolio_complexity_data = self.daywise_full_portfolio.groupby('Date').apply(lambda group: self.compute_portfolio_complexity(group['Proportion'])).reset_index(name='Complexity')
-        self.portfolio_complexity_data.to_excel(os.path.join(os.getcwd(), 'output', 'portfolio_complexity_data.xlsx'))
+        self.portfolio_complexity_data.to_excel(os.path.join(os.getcwd(), 'output', input_file_name_without_extension + '_portfolio_complexity_data.xlsx'))
         
         self.portfolio_complexity_data.plot.line(x='Date', y='Complexity')
-        pyplot.savefig(os.path.join(os.getcwd(), 'output', 'portfolio_complexity_line_graph.svg'))
+        pyplot.savefig(os.path.join(os.getcwd(), 'output', input_file_name_without_extension + '_portfolio_complexity_line_graph.svg'))
 
     
     def compute_portfolio_complexity(self, proportions):
