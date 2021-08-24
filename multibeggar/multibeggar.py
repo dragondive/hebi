@@ -26,9 +26,8 @@ class Multibeggar:
     
     def plot_portfolio_complexity(self):
         self.__prepare_for_portfolio_complexity_calculation()
-        self.__create_daywise_portfolio()
-        self.__update_closing_prices()
-        self.__compute_and_update_values()
+        self.__compute_daywise_portfolio()
+
         self.daywise_full_portfolio.to_excel(os.path.join(os.getcwd(), 'output', 'daywise_full_portfolio.xlsx'))
     
     def get_nse_symbol(self, company_name, with_suffix=True):
@@ -215,16 +214,25 @@ class Multibeggar:
         append_sentinel_row()
 
 
-    def __create_daywise_portfolio(self):
+    def __compute_daywise_portfolio(self):
         ongoing_date = None
         daily_portfolio = self.transactions_list.iloc[0:0,:].copy() # create empty DataFrame with same columns as transactions_list
         self.daywise_full_portfolio = pandas.DataFrame()
         
+        def compute_and_update_closing_prices_values_and_daily_proportions():
+            daily_portfolio['Closing Price'] = daily_portfolio.apply(lambda row: self.get_closing_price_by_symbol_list(row['Symbol'], row['Date']), axis=1, result_type='reduce')
+            daily_portfolio['Value'] = daily_portfolio['Shares'] * daily_portfolio['Closing Price']
+            
+            value_sum = daily_portfolio['Value'].sum()
+            daily_portfolio['Proportion'] = daily_portfolio['Value'] / value_sum
+
+
         for __unused, row in self.transactions_list.iterrows():
             date = row['Date']
             
             if date != ongoing_date: # This is a new date, so update current daily_portfolio to daywise_full_portfolio
                 daily_portfolio.drop(daily_portfolio[daily_portfolio['Shares'] == 0].index, inplace=True)
+                compute_and_update_closing_prices_values_and_daily_proportions()
                 self.daywise_full_portfolio = self.daywise_full_portfolio.append(daily_portfolio)
         
                 daily_portfolio.replace({ongoing_date: date}, inplace=True)
@@ -239,14 +247,6 @@ class Multibeggar:
             else: # this is already known stock, so update shares count in daily_portfolio
                 shares = row['Shares']
                 daily_portfolio.loc[mask, 'Shares'] += shares
-
-
-    def __update_closing_prices(self):
-        self.daywise_full_portfolio['Closing Price'] = self.daywise_full_portfolio.apply(lambda row: self.get_closing_price_by_symbol_list(row['Symbol'], row['Date']), axis=1)
-
-
-    def __compute_and_update_values(self):
-        self.daywise_full_portfolio['Value'] = self.daywise_full_portfolio['Shares'] * self.daywise_full_portfolio['Closing Price']
     
     
 # def get_stock_symbol_from_nse(company_name, with_suffix=False):
