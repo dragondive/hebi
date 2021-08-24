@@ -240,6 +240,7 @@ class Multibeggar:
         
         def compute_and_append_daily_closing_prices_and_values():
             daily_portfolio['Closing Price'] = daily_portfolio.apply(lambda row: self.get_closing_price_by_symbol_list(row['Symbol'], row['Date']), axis=1, result_type='reduce')
+            daily_portfolio.dropna(subset=['Closing Price'], inplace=True)
             daily_portfolio['Value'] = daily_portfolio['Shares'] * daily_portfolio['Closing Price']
     
     
