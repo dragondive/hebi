@@ -47,7 +47,7 @@ class Multibeggar:
         exponent_tuning_factor = 0.01
         
         portfolio_complexity = 0
-        [portfolio_complexity := portfolio_complexity + value * exp(exponent_tuning_factor * index) for index, value in enumerate(proportions)]
+        [portfolio_complexity := portfolio_complexity + value * exp(exponent_tuning_factor * index) for index, value in enumerate(sorted_proportions)]
         
         return portfolio_complexity
     
