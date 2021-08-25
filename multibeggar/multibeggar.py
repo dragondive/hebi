@@ -8,38 +8,38 @@ from matplotlib import pyplot
 
 class Multibeggar:
     def __init__(self):
-        self.script_dir = os.path.dirname(__file__)
+        script_dir = os.path.dirname(__file__)
 
-        self.fixup_company_names_map = pandas.read_csv(os.path.join(self.script_dir, 'data', 'fixup_company_names.csv'))
-        self.renamed_symbols_map = pandas.read_csv(os.path.join(self.script_dir, 'data', 'renamed_symbols.csv'))
-        self.price_adjustment_list = pandas.read_csv(os.path.join(self.script_dir, 'data', 'price_adjustments.csv'), parse_dates=['Date'])
+        self.fixup_company_names_map = pandas.read_csv(os.path.join(script_dir, 'data', 'fixup_company_names.csv'))
+        self.renamed_symbols_map = pandas.read_csv(os.path.join(script_dir, 'data', 'renamed_symbols.csv'))
+        self.price_adjustment_list = pandas.read_csv(os.path.join(script_dir, 'data', 'price_adjustments.csv'), parse_dates=['Date'])
 
         self.nse_symbol_heading, self.nse_company_name_heading = 'SYMBOL', 'NAME OF COMPANY'
-        self.nse_symbol_name_map = pandas.read_csv(os.path.join(self.script_dir, 'data', 'equity_nse.csv'), usecols=[self.nse_symbol_heading, self.nse_company_name_heading])
+        self.nse_symbol_name_map = pandas.read_csv(os.path.join(script_dir, 'data', 'equity_nse.csv'), usecols=[self.nse_symbol_heading, self.nse_company_name_heading])
         self.nse_suffix = '.NS'
         
         self.bse_symbol_heading, self.bse_company_name_heading = 'Security Id', 'Security Name'
-        self.bse_symbol_name_map = pandas.read_csv(os.path.join(self.script_dir, 'data', 'equity_bse.csv'), usecols=[self.bse_symbol_heading, self.bse_company_name_heading])
+        self.bse_symbol_name_map = pandas.read_csv(os.path.join(script_dir, 'data', 'equity_bse.csv'), usecols=[self.bse_symbol_heading, self.bse_company_name_heading])
         self.bse_suffix = '.BO'
 
 
-    def load_transactions_from_excel_file(self, excel_file_name):
-        self.input_file_name = excel_file_name
-        self.transactions_list = pandas.read_excel(excel_file_name)
+    def load_transactions_from_excel_file(self, excel_file_path):
+        self.input_file_path = excel_file_path
+        self.transactions_list = pandas.read_excel(excel_file_path)
 
     
     def plot_portfolio_complexity(self):
         self.__prepare_for_portfolio_complexity_calculation()
         self.__compute_daywise_portfolio()
         
-        input_file_name_without_extension = os.path.splitext(os.path.basename(self.input_file_name))[0]
-        self.daywise_full_portfolio.to_excel(os.path.join(os.getcwd(), 'output', input_file_name_without_extension + '_daywise_full_portfolio.xlsx'))
+        input_file_name = os.path.splitext(os.path.basename(self.input_file_path))[0]
+        self.daywise_full_portfolio.to_excel(os.path.join(os.getcwd(), 'output', input_file_name + '_daywise_full_portfolio.xlsx'))
         
         self.portfolio_complexity_data = self.daywise_full_portfolio.groupby('Date').apply(lambda group: self.compute_portfolio_complexity(group['Proportion'])).reset_index(name='Complexity')
-        self.portfolio_complexity_data.to_excel(os.path.join(os.getcwd(), 'output', input_file_name_without_extension + '_portfolio_complexity_data.xlsx'))
+        self.portfolio_complexity_data.to_excel(os.path.join(os.getcwd(), 'output', input_file_name + '_portfolio_complexity_data.xlsx'))
         
         self.portfolio_complexity_data.plot.line(x='Date', y='Complexity')
-        pyplot.savefig(os.path.join(os.getcwd(), 'output', input_file_name_without_extension + '_portfolio_complexity_line_graph.svg'))
+        pyplot.savefig(os.path.join(os.getcwd(), 'output', input_file_name + '_portfolio_complexity_line_graph.svg'))
 
     
     def compute_portfolio_complexity(self, proportions):
