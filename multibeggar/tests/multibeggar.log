@@ -1,0 +1,1568 @@
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbols: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbols: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbols: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbols: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+      SYMBOL                   NAME OF COMPANY  match_ratio
+1682  MON100  Motilal Oswal MOSt NASDAQ100 ETF           81 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+     Security Id                             Security Name  match_ratio
+2820      MON100  Motilal Oswal Most Shares Nasdaq-100 Etf          100
+4075       MOM50         Motilal Oswal Most Shares M50 Etf           79 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbols: ['MON100.NS', 'MON100.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbols: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Safari Industries (India) -> symbol: SAFARI [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Safari Industries (India) -> symbol: SAFARI.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Safari Industries (India) -> symbol: SAFARIND [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Safari Industries (India) -> symbol: SAFARIND.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Safari Industries (India) -> symbols: ['SAFARI.NS', 'SAFARIND.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbols: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+      SYMBOL                   NAME OF COMPANY  match_ratio
+1682  MON100  Motilal Oswal MOSt NASDAQ100 ETF           81 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+     Security Id                             Security Name  match_ratio
+2820      MON100  Motilal Oswal Most Shares Nasdaq-100 Etf          100
+4075       MOM50         Motilal Oswal Most Shares M50 Etf           79 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbols: ['MON100.NS', 'MON100.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+      SYMBOL                   NAME OF COMPANY  match_ratio
+1682  MON100  Motilal Oswal MOSt NASDAQ100 ETF           81 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+     Security Id                             Security Name  match_ratio
+2820      MON100  Motilal Oswal Most Shares Nasdaq-100 Etf          100
+4075       MOM50         Motilal Oswal Most Shares M50 Etf           79 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbols: ['MON100.NS', 'MON100.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbols: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+      SYMBOL                   NAME OF COMPANY  match_ratio
+1682  MON100  Motilal Oswal MOSt NASDAQ100 ETF           81 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+     Security Id                             Security Name  match_ratio
+2820      MON100  Motilal Oswal Most Shares Nasdaq-100 Etf          100
+4075       MOM50         Motilal Oswal Most Shares M50 Etf           79 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbols: ['MON100.NS', 'MON100.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.NS [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbol: ABCAPITAL.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Aditya Birla Capital -> symbols: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:08 AM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:08 AM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:08 AM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:09 AM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:09 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+      SYMBOL                   NAME OF COMPANY  match_ratio
+1682  MON100  Motilal Oswal MOSt NASDAQ100 ETF           81 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.NS [get_nse_symbol():106 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 11:49:09 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+     Security Id                             Security Name  match_ratio
+2820      MON100  Motilal Oswal Most Shares Nasdaq-100 Etf          100
+4075       MOM50         Motilal Oswal Most Shares M50 Etf           79 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.BO [get_bse_symbol():153 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbols: ['MON100.NS', 'MON100.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:09 AM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:09 AM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:09 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+      SYMBOL                   NAME OF COMPANY  match_ratio
+1682  MON100  Motilal Oswal MOSt NASDAQ100 ETF           81 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.NS [get_nse_symbol():106 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 11:49:09 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+     Security Id                             Security Name  match_ratio
+2820      MON100  Motilal Oswal Most Shares Nasdaq-100 Etf          100
+4075       MOM50         Motilal Oswal Most Shares M50 Etf           79 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.BO [get_bse_symbol():153 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbols: ['MON100.NS', 'MON100.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 11:49:09 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+      SYMBOL                   NAME OF COMPANY  match_ratio
+1682  MON100  Motilal Oswal MOSt NASDAQ100 ETF           81 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.NS [get_nse_symbol():106 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 11:49:09 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> qualified_rows...
+     Security Id                             Security Name  match_ratio
+2820      MON100  Motilal Oswal Most Shares Nasdaq-100 Etf          100
+4075       MOM50         Motilal Oswal Most Shares M50 Etf           79 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100 [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbol: MON100.BO [get_bse_symbol():153 - 2021/08/26 11:49:09 AM]
+INFO: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF -> symbols: ['MON100.NS', 'MON100.BO'] [get_stock_symbols():160 - 2021/08/26 11:49:09 AM]
+DEBUG: date: 2019-10-10 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:09 AM]
+DEBUG: ongoing_date: None value_sum: 0.0 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:09 AM]
+DEBUG: ongoing_date changing from: None to: 2019-10-10 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:09 AM]
+DEBUG: company_name: Aditya Birla Capital [__compute_daywise_portfolio():322 - 2021/08/26 11:49:09 AM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():326 - 2021/08/26 11:49:09 AM]
+DEBUG: added to daily_portfolio company_name: Aditya Birla Capital for ongoing_date: 2019-10-10 00:00:00 [__compute_daywise_portfolio():330 - 2021/08/26 11:49:09 AM]
+DEBUG: date: 2019-10-10 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:09 AM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():322 - 2021/08/26 11:49:09 AM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():326 - 2021/08/26 11:49:09 AM]
+DEBUG: added to daily_portfolio company_name: Black Rose Industries for ongoing_date: 2019-10-10 00:00:00 [__compute_daywise_portfolio():330 - 2021/08/26 11:49:09 AM]
+DEBUG: date: 2019-10-27 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:09 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-10-10 00:00:00 start_date: 2019-10-10 00:00:00 end_date: 2019-10-11 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:09 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-10-10 00:00:00 stock_data...
+                 Open       High   Low      Close  Volume  Dividends  Stock Splits
+Date                                                                              
+2019-10-10  79.550003  81.199997  79.0  79.199997  670965          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:09 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-10-10 00:00:00 -> closing_price: 79.19999694824219 [__get_adjusted_average_price():257 - 2021/08/26 11:49:09 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-10-10 00:00:00 -> adjusted_closing_price: 79.19999694824219 [get_adjusted_closing_price():167 - 2021/08/26 11:49:09 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2019-10-10 00:00:00 -> adjusted_closing_price: 79.19999694824219 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:09 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2019-10-10 00:00:00 -> unchanged adjusted_price: 79.19999694824219 [de_adjust_price():203 - 2021/08/26 11:49:09 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2019-10-10 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 79.19999694824219 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:09 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:09 AM]
+INFO: stock_symbol: None date: 2019-10-10 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:09 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-10-10 00:00:00 start_date: 2019-10-10 00:00:00 end_date: 2019-10-11 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:09 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-10-10 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2019-10-10  81.088913  81.537742  75.054618  77.996956   37362          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:09 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-10-10 00:00:00 -> closing_price: 77.99695587158203 [__get_adjusted_average_price():257 - 2021/08/26 11:49:09 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-10-10 00:00:00 -> adjusted_closing_price: 77.99695587158203 [get_adjusted_closing_price():167 - 2021/08/26 11:49:09 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2019-10-10 00:00:00 -> adjusted_closing_price: 77.99695587158203 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:09 AM]
+WARNING: stock_symbol is None! date: 2019-10-10 00:00:00 -> unchanged adjusted_price: 77.99695587158203 [de_adjust_price():185 - 2021/08/26 11:49:09 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2019-10-10 00:00:00 symbol: None -> closing_price: 77.99695587158203 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:09 AM]
+DEBUG: ongoing_date: 2019-10-10 00:00:00 value_sum: 1955.9391021728516 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:09 AM]
+DEBUG: ongoing_date changing from: 2019-10-10 00:00:00 to: 2019-10-27 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:09 AM]
+DEBUG: company_name: Aditya Birla Capital [__compute_daywise_portfolio():322 - 2021/08/26 11:49:09 AM]
+DEBUG: masked_rows...
+        Date                  Name  Shares                        Symbol  Closing Price       Value  Proportion
+0 2019-10-27  Aditya Birla Capital     5.0  [ABCAPITAL.NS, ABCAPITAL.BO]      79.199997  395.999985     0.20246 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:09 AM]
+DEBUG: transacted_shares: 1.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:09 AM]
+DEBUG: company_name: Aditya Birla Capital updated shares count: 6.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:09 AM]
+DEBUG: date: 2019-10-29 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:09 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-10-27 00:00:00 start_date: 2019-10-27 00:00:00 end_date: 2019-10-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:09 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-10-27 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:10 AM]
+WARNING: stock_symbol: ABCAPITAL.NS date: 2019-10-27 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:10 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-10-27 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:10 AM]
+DEBUG: stock_symbol: ABCAPITAL.BO date: 2019-10-27 00:00:00 start_date: 2019-10-27 00:00:00 end_date: 2019-10-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:10 AM]
+DEBUG: stock_symbol: ABCAPITAL.BO date: 2019-10-27 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:10 AM]
+WARNING: stock_symbol: ABCAPITAL.BO date: 2019-10-27 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:10 AM]
+INFO: stock_symbol: ABCAPITAL.BO date: 2019-10-27 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:10 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-10-27 00:00:00 start_date: 2019-10-20 00:00:00 end_date: 2019-11-04 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:10 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-10-27 00:00:00 stock_data...
+                 Open       High        Low      Close   Volume  Dividends  Stock Splits
+Date                                                                                    
+2019-10-22  79.050003  83.699997  79.050003  82.949997  3462436          0             0
+2019-10-23  83.199997  85.900002  81.849998  82.650002  2346870          0             0
+2019-10-24  83.000000  84.000000  79.650002  80.900002  1433977          0             0
+2019-10-25  81.500000  81.699997  78.750000  79.050003  1365709          0             0
+2019-10-29  80.000000  80.699997  79.099998  79.550003  1867006          0             0
+2019-10-30  80.000000  81.599998  79.500000  79.900002  2696635          0             0
+2019-10-31  80.199997  82.699997  79.699997  81.849998  5155816          0             0
+2019-11-01  82.199997  84.699997  82.199997  83.000000  3673750          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:10 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-10-27 00:00:00 -> closing_price: 81.23125076293945 [__get_adjusted_average_price():257 - 2021/08/26 11:49:10 AM]
+WARNING: fallback to average price! symbol: ABCAPITAL.NS date: 2019-10-27 00:00:00 -> adjusted_closing_price: 81.23125076293945 [get_closing_price_by_symbol_list():218 - 2021/08/26 11:49:10 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2019-10-27 00:00:00 -> unchanged adjusted_price: 81.23125076293945 [de_adjust_price():203 - 2021/08/26 11:49:10 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2019-10-27 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 81.23125076293945 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:10 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:10 AM]
+INFO: stock_symbol: None date: 2019-10-27 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:10 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-10-27 00:00:00 start_date: 2019-10-27 00:00:00 end_date: 2019-10-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:10 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-10-27 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:10 AM]
+WARNING: stock_symbol: BLACKROSE.BO date: 2019-10-27 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:10 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-10-27 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:10 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:10 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-10-27 00:00:00 start_date: 2019-10-20 00:00:00 end_date: 2019-11-04 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:10 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-10-27 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2019-10-22  85.676967  86.175669  79.892024  80.839561   52647          0             0
+2019-10-23  81.787094  81.986572  77.199039  78.545532   32230          0             0
+2019-10-24  78.046830  81.288392  77.298778  78.445793   19402          0             0
+2019-10-25  79.692546  79.692546  77.298776  77.747604   16634          0             0
+2019-10-29  82.734625  84.679566  77.897219  81.836967   19146          0             0
+2019-10-30  83.432806  84.280597  81.836962  82.585014   26085          0             0
+2019-10-31  82.834372  84.180865  80.789691  82.036446   21554          0             0
+2019-11-01  83.732024  83.781897  80.340858  83.083717   28008          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:11 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-10-27 00:00:00 -> closing_price: 80.64007949829102 [__get_adjusted_average_price():257 - 2021/08/26 11:49:11 AM]
+WARNING: fallback to average price! symbol: BLACKROSE.BO date: 2019-10-27 00:00:00 -> adjusted_closing_price: 80.64007949829102 [get_closing_price_by_symbol_list():218 - 2021/08/26 11:49:11 AM]
+WARNING: stock_symbol is None! date: 2019-10-27 00:00:00 -> unchanged adjusted_price: 80.64007949829102 [de_adjust_price():185 - 2021/08/26 11:49:11 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2019-10-27 00:00:00 symbol: None -> closing_price: 80.64007949829102 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:11 AM]
+DEBUG: ongoing_date: 2019-10-27 00:00:00 value_sum: 2100.189094543457 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:11 AM]
+DEBUG: ongoing_date changing from: 2019-10-27 00:00:00 to: 2019-10-29 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:11 AM]
+DEBUG: company_name: Aditya Birla Capital [__compute_daywise_portfolio():322 - 2021/08/26 11:49:11 AM]
+DEBUG: masked_rows...
+        Date                  Name  Shares                        Symbol  Closing Price       Value  Proportion
+0 2019-10-29  Aditya Birla Capital     6.0  [ABCAPITAL.NS, ABCAPITAL.BO]      81.231251  487.387505    0.232068 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:11 AM]
+DEBUG: transacted_shares: 4.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:11 AM]
+DEBUG: company_name: Aditya Birla Capital updated shares count: 10.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:11 AM]
+DEBUG: date: 2019-11-01 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:11 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-10-29 00:00:00 start_date: 2019-10-29 00:00:00 end_date: 2019-10-30 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:11 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-10-29 00:00:00 stock_data...
+            Open       High        Low      Close   Volume  Dividends  Stock Splits
+Date                                                                               
+2019-10-29  80.0  80.699997  79.099998  79.550003  1867006          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:11 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-10-29 00:00:00 -> closing_price: 79.55000305175781 [__get_adjusted_average_price():257 - 2021/08/26 11:49:11 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-10-29 00:00:00 -> adjusted_closing_price: 79.55000305175781 [get_adjusted_closing_price():167 - 2021/08/26 11:49:11 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2019-10-29 00:00:00 -> adjusted_closing_price: 79.55000305175781 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:11 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2019-10-29 00:00:00 -> unchanged adjusted_price: 79.55000305175781 [de_adjust_price():203 - 2021/08/26 11:49:11 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2019-10-29 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 79.55000305175781 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:11 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:11 AM]
+INFO: stock_symbol: None date: 2019-10-29 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:11 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-10-29 00:00:00 start_date: 2019-10-29 00:00:00 end_date: 2019-10-30 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:11 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-10-29 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2019-10-29  82.734625  84.679566  77.897219  81.836967   19146          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:11 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-10-29 00:00:00 -> closing_price: 81.83696746826172 [__get_adjusted_average_price():257 - 2021/08/26 11:49:11 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-10-29 00:00:00 -> adjusted_closing_price: 81.83696746826172 [get_adjusted_closing_price():167 - 2021/08/26 11:49:11 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2019-10-29 00:00:00 -> adjusted_closing_price: 81.83696746826172 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:11 AM]
+WARNING: stock_symbol is None! date: 2019-10-29 00:00:00 -> unchanged adjusted_price: 81.83696746826172 [de_adjust_price():185 - 2021/08/26 11:49:11 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2019-10-29 00:00:00 symbol: None -> closing_price: 81.83696746826172 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:11 AM]
+DEBUG: ongoing_date: 2019-10-29 00:00:00 value_sum: 2432.2393798828125 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:11 AM]
+DEBUG: ongoing_date changing from: 2019-10-29 00:00:00 to: 2019-11-01 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:11 AM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():322 - 2021/08/26 11:49:11 AM]
+DEBUG: masked_rows...
+        Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+1 2019-11-01  Black Rose Industries    20.0  [None, BLACKROSE.BO]      81.836967  1636.739349    0.672935 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:11 AM]
+DEBUG: transacted_shares: 20.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:11 AM]
+DEBUG: company_name: Black Rose Industries updated shares count: 40.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:11 AM]
+DEBUG: date: 2019-11-05 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:11 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-11-01 00:00:00 start_date: 2019-11-01 00:00:00 end_date: 2019-11-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:11 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-11-01 00:00:00 stock_data...
+                 Open       High        Low  Close   Volume  Dividends  Stock Splits
+Date                                                                                
+2019-11-01  82.199997  84.699997  82.199997   83.0  3673750          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:11 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-11-01 00:00:00 -> closing_price: 83.0 [__get_adjusted_average_price():257 - 2021/08/26 11:49:11 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-11-01 00:00:00 -> adjusted_closing_price: 83.0 [get_adjusted_closing_price():167 - 2021/08/26 11:49:11 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2019-11-01 00:00:00 -> adjusted_closing_price: 83.0 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:11 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2019-11-01 00:00:00 -> unchanged adjusted_price: 83.0 [de_adjust_price():203 - 2021/08/26 11:49:11 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2019-11-01 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 83.0 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:11 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:11 AM]
+INFO: stock_symbol: None date: 2019-11-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:11 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-11-01 00:00:00 start_date: 2019-11-01 00:00:00 end_date: 2019-11-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:11 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-11-01 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2019-11-01  83.732024  83.781897  80.340858  83.083717   28008          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:12 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-11-01 00:00:00 -> closing_price: 83.0837173461914 [__get_adjusted_average_price():257 - 2021/08/26 11:49:12 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-11-01 00:00:00 -> adjusted_closing_price: 83.0837173461914 [get_adjusted_closing_price():167 - 2021/08/26 11:49:12 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2019-11-01 00:00:00 -> adjusted_closing_price: 83.0837173461914 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:12 AM]
+WARNING: stock_symbol is None! date: 2019-11-01 00:00:00 -> unchanged adjusted_price: 83.0837173461914 [de_adjust_price():185 - 2021/08/26 11:49:12 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2019-11-01 00:00:00 symbol: None -> closing_price: 83.0837173461914 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:12 AM]
+DEBUG: ongoing_date: 2019-11-01 00:00:00 value_sum: 4153.348693847656 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:12 AM]
+DEBUG: ongoing_date changing from: 2019-11-01 00:00:00 to: 2019-11-05 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:12 AM]
+DEBUG: company_name: Aditya Birla Capital [__compute_daywise_portfolio():322 - 2021/08/26 11:49:12 AM]
+DEBUG: masked_rows...
+        Date                  Name  Shares                        Symbol  Closing Price  Value  Proportion
+0 2019-11-05  Aditya Birla Capital    10.0  [ABCAPITAL.NS, ABCAPITAL.BO]           83.0  830.0    0.199839 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:12 AM]
+DEBUG: transacted_shares: 10.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:12 AM]
+DEBUG: company_name: Aditya Birla Capital updated shares count: 20.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:12 AM]
+DEBUG: date: 2019-11-05 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:12 AM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():322 - 2021/08/26 11:49:12 AM]
+DEBUG: masked_rows...
+        Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+1 2019-11-05  Black Rose Industries    40.0  [None, BLACKROSE.BO]      83.083717  3323.348694    0.800161 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:12 AM]
+DEBUG: transacted_shares: 10.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:12 AM]
+DEBUG: company_name: Black Rose Industries updated shares count: 50.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:12 AM]
+DEBUG: date: 2019-11-11 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:12 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-11-05 00:00:00 start_date: 2019-11-05 00:00:00 end_date: 2019-11-06 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:12 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-11-05 00:00:00 stock_data...
+                 Open       High   Low      Close   Volume  Dividends  Stock Splits
+Date                                                                               
+2019-11-05  83.650002  85.949997  83.0  85.449997  3470582          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:12 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-11-05 00:00:00 -> closing_price: 85.44999694824219 [__get_adjusted_average_price():257 - 2021/08/26 11:49:12 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-11-05 00:00:00 -> adjusted_closing_price: 85.44999694824219 [get_adjusted_closing_price():167 - 2021/08/26 11:49:12 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2019-11-05 00:00:00 -> adjusted_closing_price: 85.44999694824219 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:12 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2019-11-05 00:00:00 -> unchanged adjusted_price: 85.44999694824219 [de_adjust_price():203 - 2021/08/26 11:49:12 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2019-11-05 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 85.44999694824219 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:12 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:12 AM]
+INFO: stock_symbol: None date: 2019-11-05 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:12 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-11-05 00:00:00 start_date: 2019-11-05 00:00:00 end_date: 2019-11-06 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:12 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-11-05 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2019-11-05  83.632289  83.732028  79.443197  81.886833   17178          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:12 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-11-05 00:00:00 -> closing_price: 81.88683319091797 [__get_adjusted_average_price():257 - 2021/08/26 11:49:12 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-11-05 00:00:00 -> adjusted_closing_price: 81.88683319091797 [get_adjusted_closing_price():167 - 2021/08/26 11:49:12 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2019-11-05 00:00:00 -> adjusted_closing_price: 81.88683319091797 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:12 AM]
+WARNING: stock_symbol is None! date: 2019-11-05 00:00:00 -> unchanged adjusted_price: 81.88683319091797 [de_adjust_price():185 - 2021/08/26 11:49:12 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2019-11-05 00:00:00 symbol: None -> closing_price: 81.88683319091797 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:12 AM]
+DEBUG: ongoing_date: 2019-11-05 00:00:00 value_sum: 5803.341598510742 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:12 AM]
+DEBUG: ongoing_date changing from: 2019-11-05 00:00:00 to: 2019-11-11 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:12 AM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():322 - 2021/08/26 11:49:12 AM]
+DEBUG: masked_rows...
+        Date                   Name  Shares                Symbol  Closing Price       Value  Proportion
+1 2019-11-11  Black Rose Industries    50.0  [None, BLACKROSE.BO]      81.886833  4094.34166    0.705515 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:12 AM]
+DEBUG: transacted_shares: -50.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:12 AM]
+DEBUG: company_name: Black Rose Industries updated shares count: 0.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:12 AM]
+DEBUG: date: 2019-12-23 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:12 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-11-11 00:00:00 start_date: 2019-11-11 00:00:00 end_date: 2019-11-12 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:12 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-11-11 00:00:00 stock_data...
+                 Open       High        Low      Close   Volume  Dividends  Stock Splits
+Date                                                                                    
+2019-11-11  87.349998  88.400002  85.150002  86.900002  2390106          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:12 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-11-11 00:00:00 -> closing_price: 86.9000015258789 [__get_adjusted_average_price():257 - 2021/08/26 11:49:12 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-11-11 00:00:00 -> adjusted_closing_price: 86.9000015258789 [get_adjusted_closing_price():167 - 2021/08/26 11:49:12 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2019-11-11 00:00:00 -> adjusted_closing_price: 86.9000015258789 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:12 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2019-11-11 00:00:00 -> unchanged adjusted_price: 86.9000015258789 [de_adjust_price():203 - 2021/08/26 11:49:12 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2019-11-11 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 86.9000015258789 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:12 AM]
+DEBUG: ongoing_date: 2019-11-11 00:00:00 value_sum: 1738.0000305175781 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:12 AM]
+DEBUG: ongoing_date changing from: 2019-11-11 00:00:00 to: 2019-12-23 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:12 AM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():322 - 2021/08/26 11:49:12 AM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():326 - 2021/08/26 11:49:12 AM]
+DEBUG: added to daily_portfolio company_name: Black Rose Industries for ongoing_date: 2019-12-23 00:00:00 [__compute_daywise_portfolio():330 - 2021/08/26 11:49:12 AM]
+DEBUG: date: 2019-12-27 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:12 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-12-23 00:00:00 start_date: 2019-12-23 00:00:00 end_date: 2019-12-24 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:12 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-12-23 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2019-12-23  97.300003  98.150002  95.800003  96.150002  918158          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:13 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-12-23 00:00:00 -> closing_price: 96.1500015258789 [__get_adjusted_average_price():257 - 2021/08/26 11:49:13 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-12-23 00:00:00 -> adjusted_closing_price: 96.1500015258789 [get_adjusted_closing_price():167 - 2021/08/26 11:49:13 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2019-12-23 00:00:00 -> adjusted_closing_price: 96.1500015258789 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:13 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2019-12-23 00:00:00 -> unchanged adjusted_price: 96.1500015258789 [de_adjust_price():203 - 2021/08/26 11:49:13 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2019-12-23 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 96.1500015258789 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:13 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:13 AM]
+INFO: stock_symbol: None date: 2019-12-23 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:13 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-12-23 00:00:00 start_date: 2019-12-23 00:00:00 end_date: 2019-12-24 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:13 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-12-23 00:00:00 stock_data...
+                  Open        High        Low     Close  Volume  Dividends  Stock Splits
+Date                                                                                    
+2019-12-23  101.735162  103.630231  95.750741  96.19957   35073          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:13 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-12-23 00:00:00 -> closing_price: 96.19956970214844 [__get_adjusted_average_price():257 - 2021/08/26 11:49:13 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-12-23 00:00:00 -> adjusted_closing_price: 96.19956970214844 [get_adjusted_closing_price():167 - 2021/08/26 11:49:13 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2019-12-23 00:00:00 -> adjusted_closing_price: 96.19956970214844 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:13 AM]
+WARNING: stock_symbol is None! date: 2019-12-23 00:00:00 -> unchanged adjusted_price: 96.19956970214844 [de_adjust_price():185 - 2021/08/26 11:49:13 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2019-12-23 00:00:00 symbol: None -> closing_price: 96.19956970214844 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:13 AM]
+DEBUG: ongoing_date: 2019-12-23 00:00:00 value_sum: 6732.978515625 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:13 AM]
+DEBUG: ongoing_date changing from: 2019-12-23 00:00:00 to: 2019-12-27 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:13 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF [__compute_daywise_portfolio():322 - 2021/08/26 11:49:13 AM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():326 - 2021/08/26 11:49:13 AM]
+DEBUG: added to daily_portfolio company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF for ongoing_date: 2019-12-27 00:00:00 [__compute_daywise_portfolio():330 - 2021/08/26 11:49:13 AM]
+DEBUG: date: 2020-01-06 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:13 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-12-27 00:00:00 start_date: 2019-12-27 00:00:00 end_date: 2019-12-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:13 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2019-12-27 00:00:00 stock_data...
+                 Open        High    Low  Close   Volume  Dividends  Stock Splits
+Date                                                                             
+2019-12-27  98.800003  101.150002  98.25   99.5  1690208          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:13 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-12-27 00:00:00 -> closing_price: 99.5 [__get_adjusted_average_price():257 - 2021/08/26 11:49:13 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2019-12-27 00:00:00 -> adjusted_closing_price: 99.5 [get_adjusted_closing_price():167 - 2021/08/26 11:49:13 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2019-12-27 00:00:00 -> adjusted_closing_price: 99.5 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:13 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2019-12-27 00:00:00 -> unchanged adjusted_price: 99.5 [de_adjust_price():203 - 2021/08/26 11:49:13 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2019-12-27 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 99.5 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:13 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:13 AM]
+INFO: stock_symbol: None date: 2019-12-27 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:13 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-12-27 00:00:00 start_date: 2019-12-27 00:00:00 end_date: 2019-12-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:13 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-12-27 00:00:00 stock_data...
+                  Open        High        Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                      
+2019-12-27  103.131528  112.407376  101.23646  108.168411  140006          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:13 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-12-27 00:00:00 -> closing_price: 108.16841125488281 [__get_adjusted_average_price():257 - 2021/08/26 11:49:13 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-12-27 00:00:00 -> adjusted_closing_price: 108.16841125488281 [get_adjusted_closing_price():167 - 2021/08/26 11:49:13 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2019-12-27 00:00:00 -> adjusted_closing_price: 108.16841125488281 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:13 AM]
+WARNING: stock_symbol is None! date: 2019-12-27 00:00:00 -> unchanged adjusted_price: 108.16841125488281 [de_adjust_price():185 - 2021/08/26 11:49:13 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2019-12-27 00:00:00 symbol: None -> closing_price: 108.16841125488281 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:13 AM]
+DEBUG: stock_symbol: MON100.NS date: 2019-12-27 00:00:00 start_date: 2019-12-27 00:00:00 end_date: 2019-12-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:13 AM]
+DEBUG: stock_symbol: MON100.NS date: 2019-12-27 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:14 AM]
+WARNING: stock_symbol: MON100.NS date: 2019-12-27 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:14 AM]
+INFO: stock_symbol: MON100.NS date: 2019-12-27 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:14 AM]
+DEBUG: stock_symbol: MON100.BO date: 2019-12-27 00:00:00 start_date: 2019-12-27 00:00:00 end_date: 2019-12-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:14 AM]
+DEBUG: stock_symbol: MON100.BO date: 2019-12-27 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:14 AM]
+WARNING: stock_symbol: MON100.BO date: 2019-12-27 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:14 AM]
+INFO: stock_symbol: MON100.BO date: 2019-12-27 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:14 AM]
+DEBUG: stock_symbol: MON100.NS date: 2019-12-27 00:00:00 start_date: 2019-12-20 00:00:00 end_date: 2020-01-04 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:14 AM]
+DEBUG: stock_symbol: MON100.NS date: 2019-12-27 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:14 AM]
+WARNING: stock_symbol: MON100.NS date: 2019-12-27 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:14 AM]
+DEBUG: stock_symbol: MON100.BO date: 2019-12-27 00:00:00 start_date: 2019-12-20 00:00:00 end_date: 2020-01-04 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:14 AM]
+DEBUG: stock_symbol: MON100.BO date: 2019-12-27 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:14 AM]
+WARNING: stock_symbol: MON100.BO date: 2019-12-27 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:14 AM]
+INFO: stock_symbol: MON100.NS -> old_symbol: N100.NS [get_renamed_symbol():176 - 2021/08/26 11:49:14 AM]
+INFO: stock_symbol: MON100.BO -> old_symbol: N100.BO [get_renamed_symbol():176 - 2021/08/26 11:49:14 AM]
+DEBUG: symbol_list: ['MON100.NS', 'MON100.BO'] -> renamed_symbol_list: ['N100.NS', 'N100.BO'] [get_closing_price_by_symbol_list():223 - 2021/08/26 11:49:14 AM]
+DEBUG: stock_symbol: N100.NS date: 2019-12-27 00:00:00 start_date: 2019-12-27 00:00:00 end_date: 2019-12-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:14 AM]
+DEBUG: stock_symbol: N100.NS date: 2019-12-27 00:00:00 stock_data...
+                 Open   High     Low      Close  Volume  Dividends  Stock Splits
+Date                                                                            
+2019-12-27  61.394001  61.75  61.202  61.533001   72800          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:15 AM]
+INFO: stock_symbol: N100.NS date: 2019-12-27 00:00:00 -> closing_price: 61.53300094604492 [__get_adjusted_average_price():257 - 2021/08/26 11:49:15 AM]
+INFO: stock_symbol: N100.NS date: 2019-12-27 00:00:00 -> adjusted_closing_price: 61.53300094604492 [get_adjusted_closing_price():167 - 2021/08/26 11:49:15 AM]
+DEBUG: symbol: N100.NS date: 2019-12-27 00:00:00 -> adjusted_closing_price: 61.53300094604492 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:15 AM]
+INFO: no price adjustment. stock_symbol: N100.NS date: 2019-12-27 00:00:00 -> unchanged adjusted_price: 61.53300094604492 [de_adjust_price():203 - 2021/08/26 11:49:15 AM]
+INFO: symbol_list: ['N100.NS', 'N100.BO'] date: 2019-12-27 00:00:00 symbol: N100.NS -> closing_price: 61.53300094604492 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:15 AM]
+DEBUG: symbol: MON100.BO date: 2019-12-27 00:00:00 -> adjusted_closing_price: 61.53300094604492 [get_closing_price_by_symbol_list():226 - 2021/08/26 11:49:15 AM]
+DEBUG: numerator: 10 denominator: 1 [de_adjust_price():199 - 2021/08/26 11:49:15 AM]
+INFO: adjusted_price: 61.53300094604492 stock_symbol: MON100.NS date: 2019-12-27 00:00:00 -> de_adjusted_price: 615.3300094604492 [de_adjust_price():200 - 2021/08/26 11:49:15 AM]
+INFO: symbol_list: ['MON100.NS', 'MON100.BO'] date: 2019-12-27 00:00:00 symbol: MON100.NS -> closing_price: 615.3300094604492 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:15 AM]
+DEBUG: ongoing_date: 2019-12-27 00:00:00 value_sum: 10475.070610046387 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:15 AM]
+DEBUG: ongoing_date changing from: 2019-12-27 00:00:00 to: 2020-01-06 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:15 AM]
+DEBUG: company_name: Aditya Birla Capital [__compute_daywise_portfolio():322 - 2021/08/26 11:49:15 AM]
+DEBUG: masked_rows...
+        Date                  Name  Shares                        Symbol  Closing Price   Value  Proportion
+0 2020-01-06  Aditya Birla Capital    20.0  [ABCAPITAL.NS, ABCAPITAL.BO]           99.5  1990.0    0.189975 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:15 AM]
+DEBUG: transacted_shares: 5.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:15 AM]
+DEBUG: company_name: Aditya Birla Capital updated shares count: 25.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:15 AM]
+DEBUG: date: 2020-01-06 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:15 AM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():322 - 2021/08/26 11:49:15 AM]
+DEBUG: masked_rows...
+        Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+8 2020-01-06  Black Rose Industries    50.0  [None, BLACKROSE.BO]     108.168411  5408.420563    0.516314 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:15 AM]
+DEBUG: transacted_shares: 10.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:15 AM]
+DEBUG: company_name: Black Rose Industries updated shares count: 60.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:15 AM]
+DEBUG: date: 2020-01-06 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:15 AM]
+DEBUG: company_name: Safari Industries (India) [__compute_daywise_portfolio():322 - 2021/08/26 11:49:15 AM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():326 - 2021/08/26 11:49:15 AM]
+DEBUG: added to daily_portfolio company_name: Safari Industries (India) for ongoing_date: 2020-01-06 00:00:00 [__compute_daywise_portfolio():330 - 2021/08/26 11:49:15 AM]
+DEBUG: date: 2020-01-14 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:15 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-01-06 00:00:00 start_date: 2020-01-06 00:00:00 end_date: 2020-01-07 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:15 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-01-06 00:00:00 stock_data...
+                  Open        High         Low       Close   Volume  Dividends  Stock Splits
+Date                                                                                        
+2020-01-06  105.599998  105.800003  100.599998  101.199997  2434020          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:15 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-01-06 00:00:00 -> closing_price: 101.19999694824219 [__get_adjusted_average_price():257 - 2021/08/26 11:49:15 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-01-06 00:00:00 -> adjusted_closing_price: 101.19999694824219 [get_adjusted_closing_price():167 - 2021/08/26 11:49:15 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2020-01-06 00:00:00 -> adjusted_closing_price: 101.19999694824219 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:15 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2020-01-06 00:00:00 -> unchanged adjusted_price: 101.19999694824219 [de_adjust_price():203 - 2021/08/26 11:49:15 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2020-01-06 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 101.19999694824219 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:15 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:15 AM]
+INFO: stock_symbol: None date: 2020-01-06 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:15 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-01-06 00:00:00 start_date: 2020-01-06 00:00:00 end_date: 2020-01-07 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:15 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-01-06 00:00:00 stock_data...
+                  Open        High        Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                      
+2020-01-06  100.737763  103.231272  95.750745  100.937241   48877          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:15 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-01-06 00:00:00 -> closing_price: 100.93724060058594 [__get_adjusted_average_price():257 - 2021/08/26 11:49:15 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-01-06 00:00:00 -> adjusted_closing_price: 100.93724060058594 [get_adjusted_closing_price():167 - 2021/08/26 11:49:15 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-01-06 00:00:00 -> adjusted_closing_price: 100.93724060058594 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:15 AM]
+WARNING: stock_symbol is None! date: 2020-01-06 00:00:00 -> unchanged adjusted_price: 100.93724060058594 [de_adjust_price():185 - 2021/08/26 11:49:15 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-01-06 00:00:00 symbol: None -> closing_price: 100.93724060058594 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:15 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-06 00:00:00 start_date: 2020-01-06 00:00:00 end_date: 2020-01-07 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:15 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-06 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:15 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-01-06 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:15 AM]
+INFO: stock_symbol: MON100.NS date: 2020-01-06 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:15 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-06 00:00:00 start_date: 2020-01-06 00:00:00 end_date: 2020-01-07 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:15 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-06 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:16 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-01-06 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:16 AM]
+INFO: stock_symbol: MON100.BO date: 2020-01-06 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:16 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-06 00:00:00 start_date: 2019-12-30 00:00:00 end_date: 2020-01-14 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:16 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-06 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:16 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-01-06 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:16 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-06 00:00:00 start_date: 2019-12-30 00:00:00 end_date: 2020-01-14 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:16 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-06 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:16 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-01-06 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:16 AM]
+INFO: stock_symbol: MON100.NS -> old_symbol: N100.NS [get_renamed_symbol():176 - 2021/08/26 11:49:16 AM]
+INFO: stock_symbol: MON100.BO -> old_symbol: N100.BO [get_renamed_symbol():176 - 2021/08/26 11:49:16 AM]
+DEBUG: symbol_list: ['MON100.NS', 'MON100.BO'] -> renamed_symbol_list: ['N100.NS', 'N100.BO'] [get_closing_price_by_symbol_list():223 - 2021/08/26 11:49:16 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-01-06 00:00:00 start_date: 2020-01-06 00:00:00 end_date: 2020-01-07 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:16 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-01-06 00:00:00 stock_data...
+             Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                               
+2020-01-06  62.48  62.799999  61.299999  61.653999   96450          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:16 AM]
+INFO: stock_symbol: N100.NS date: 2020-01-06 00:00:00 -> closing_price: 61.65399932861328 [__get_adjusted_average_price():257 - 2021/08/26 11:49:16 AM]
+INFO: stock_symbol: N100.NS date: 2020-01-06 00:00:00 -> adjusted_closing_price: 61.65399932861328 [get_adjusted_closing_price():167 - 2021/08/26 11:49:16 AM]
+DEBUG: symbol: N100.NS date: 2020-01-06 00:00:00 -> adjusted_closing_price: 61.65399932861328 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:16 AM]
+INFO: no price adjustment. stock_symbol: N100.NS date: 2020-01-06 00:00:00 -> unchanged adjusted_price: 61.65399932861328 [de_adjust_price():203 - 2021/08/26 11:49:16 AM]
+INFO: symbol_list: ['N100.NS', 'N100.BO'] date: 2020-01-06 00:00:00 symbol: N100.NS -> closing_price: 61.65399932861328 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:16 AM]
+DEBUG: symbol: MON100.BO date: 2020-01-06 00:00:00 -> adjusted_closing_price: 61.65399932861328 [get_closing_price_by_symbol_list():226 - 2021/08/26 11:49:16 AM]
+DEBUG: numerator: 10 denominator: 1 [de_adjust_price():199 - 2021/08/26 11:49:16 AM]
+INFO: adjusted_price: 61.65399932861328 stock_symbol: MON100.NS date: 2020-01-06 00:00:00 -> de_adjusted_price: 616.5399932861328 [de_adjust_price():200 - 2021/08/26 11:49:16 AM]
+INFO: symbol_list: ['MON100.NS', 'MON100.BO'] date: 2020-01-06 00:00:00 symbol: MON100.NS -> closing_price: 616.5399932861328 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:16 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-01-06 00:00:00 start_date: 2020-01-06 00:00:00 end_date: 2020-01-07 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:16 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-01-06 00:00:00 stock_data...
+                  Open        High    Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                  
+2020-01-06  634.599976  634.599976  600.0  600.900024    6691          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:17 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-01-06 00:00:00 -> closing_price: 600.9000244140625 [__get_adjusted_average_price():257 - 2021/08/26 11:49:17 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-01-06 00:00:00 -> adjusted_closing_price: 600.9000244140625 [get_adjusted_closing_price():167 - 2021/08/26 11:49:17 AM]
+DEBUG: symbol: SAFARI.NS date: 2020-01-06 00:00:00 -> adjusted_closing_price: 600.9000244140625 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:17 AM]
+INFO: no price adjustment. stock_symbol: SAFARI.NS date: 2020-01-06 00:00:00 -> unchanged adjusted_price: 600.9000244140625 [de_adjust_price():203 - 2021/08/26 11:49:17 AM]
+INFO: symbol_list: ['SAFARI.NS', 'SAFARIND.BO'] date: 2020-01-06 00:00:00 symbol: SAFARI.NS -> closing_price: 600.9000244140625 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:17 AM]
+DEBUG: ongoing_date: 2020-01-06 00:00:00 value_sum: 12870.734375 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:17 AM]
+DEBUG: ongoing_date changing from: 2020-01-06 00:00:00 to: 2020-01-14 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:17 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF [__compute_daywise_portfolio():322 - 2021/08/26 11:49:17 AM]
+DEBUG: masked_rows...
+        Date                                      Name  Shares                  Symbol  Closing Price        Value  Proportion
+9 2020-01-14  Motilal Oswal MOSt Shares NASDAQ-100 ETF     5.0  [MON100.NS, MON100.BO]     616.539993  3082.699966    0.239512 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:17 AM]
+DEBUG: transacted_shares: 1.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:17 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF updated shares count: 6.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:17 AM]
+DEBUG: date: 2020-01-14 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:17 AM]
+DEBUG: company_name: Aditya Birla Capital [__compute_daywise_portfolio():322 - 2021/08/26 11:49:17 AM]
+DEBUG: masked_rows...
+        Date                  Name  Shares                        Symbol  Closing Price        Value  Proportion
+0 2020-01-14  Aditya Birla Capital    25.0  [ABCAPITAL.NS, ABCAPITAL.BO]     101.199997  2529.999924     0.19657 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:17 AM]
+DEBUG: transacted_shares: 5.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:17 AM]
+DEBUG: company_name: Aditya Birla Capital updated shares count: 30.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:17 AM]
+DEBUG: date: 2020-01-21 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:17 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-01-14 00:00:00 start_date: 2020-01-14 00:00:00 end_date: 2020-01-15 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:17 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-01-14 00:00:00 stock_data...
+                  Open        High         Low       Close   Volume  Dividends  Stock Splits
+Date                                                                                        
+2020-01-14  112.849998  113.650002  110.300003  110.849998  1919376          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:17 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-01-14 00:00:00 -> closing_price: 110.8499984741211 [__get_adjusted_average_price():257 - 2021/08/26 11:49:17 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-01-14 00:00:00 -> adjusted_closing_price: 110.8499984741211 [get_adjusted_closing_price():167 - 2021/08/26 11:49:17 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2020-01-14 00:00:00 -> adjusted_closing_price: 110.8499984741211 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:17 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2020-01-14 00:00:00 -> unchanged adjusted_price: 110.8499984741211 [de_adjust_price():203 - 2021/08/26 11:49:17 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2020-01-14 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 110.8499984741211 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:17 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:17 AM]
+INFO: stock_symbol: None date: 2020-01-14 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:17 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-01-14 00:00:00 start_date: 2020-01-14 00:00:00 end_date: 2020-01-15 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:17 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-01-14 00:00:00 stock_data...
+                  Open        High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                     
+2020-01-14  100.737762  100.737762  96.748147  97.296722   27442          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:17 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-01-14 00:00:00 -> closing_price: 97.29672241210938 [__get_adjusted_average_price():257 - 2021/08/26 11:49:17 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-01-14 00:00:00 -> adjusted_closing_price: 97.29672241210938 [get_adjusted_closing_price():167 - 2021/08/26 11:49:17 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-01-14 00:00:00 -> adjusted_closing_price: 97.29672241210938 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:17 AM]
+WARNING: stock_symbol is None! date: 2020-01-14 00:00:00 -> unchanged adjusted_price: 97.29672241210938 [de_adjust_price():185 - 2021/08/26 11:49:17 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-01-14 00:00:00 symbol: None -> closing_price: 97.29672241210938 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:17 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-14 00:00:00 start_date: 2020-01-14 00:00:00 end_date: 2020-01-15 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:17 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-14 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:17 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-01-14 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:17 AM]
+INFO: stock_symbol: MON100.NS date: 2020-01-14 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:17 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-14 00:00:00 start_date: 2020-01-14 00:00:00 end_date: 2020-01-15 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:17 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-14 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:17 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-01-14 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:17 AM]
+INFO: stock_symbol: MON100.BO date: 2020-01-14 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:17 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-14 00:00:00 start_date: 2020-01-07 00:00:00 end_date: 2020-01-22 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:17 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-14 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:18 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-01-14 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:18 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-14 00:00:00 start_date: 2020-01-07 00:00:00 end_date: 2020-01-22 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:18 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-14 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:18 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-01-14 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:18 AM]
+INFO: stock_symbol: MON100.NS -> old_symbol: N100.NS [get_renamed_symbol():176 - 2021/08/26 11:49:18 AM]
+INFO: stock_symbol: MON100.BO -> old_symbol: N100.BO [get_renamed_symbol():176 - 2021/08/26 11:49:18 AM]
+DEBUG: symbol_list: ['MON100.NS', 'MON100.BO'] -> renamed_symbol_list: ['N100.NS', 'N100.BO'] [get_closing_price_by_symbol_list():223 - 2021/08/26 11:49:18 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-01-14 00:00:00 start_date: 2020-01-14 00:00:00 end_date: 2020-01-15 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:18 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-01-14 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2020-01-14  63.599998  63.599998  62.299999  62.817001  132700          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:18 AM]
+INFO: stock_symbol: N100.NS date: 2020-01-14 00:00:00 -> closing_price: 62.81700134277344 [__get_adjusted_average_price():257 - 2021/08/26 11:49:18 AM]
+INFO: stock_symbol: N100.NS date: 2020-01-14 00:00:00 -> adjusted_closing_price: 62.81700134277344 [get_adjusted_closing_price():167 - 2021/08/26 11:49:18 AM]
+DEBUG: symbol: N100.NS date: 2020-01-14 00:00:00 -> adjusted_closing_price: 62.81700134277344 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:18 AM]
+INFO: no price adjustment. stock_symbol: N100.NS date: 2020-01-14 00:00:00 -> unchanged adjusted_price: 62.81700134277344 [de_adjust_price():203 - 2021/08/26 11:49:18 AM]
+INFO: symbol_list: ['N100.NS', 'N100.BO'] date: 2020-01-14 00:00:00 symbol: N100.NS -> closing_price: 62.81700134277344 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:18 AM]
+DEBUG: symbol: MON100.BO date: 2020-01-14 00:00:00 -> adjusted_closing_price: 62.81700134277344 [get_closing_price_by_symbol_list():226 - 2021/08/26 11:49:18 AM]
+DEBUG: numerator: 10 denominator: 1 [de_adjust_price():199 - 2021/08/26 11:49:18 AM]
+INFO: adjusted_price: 62.81700134277344 stock_symbol: MON100.NS date: 2020-01-14 00:00:00 -> de_adjusted_price: 628.1700134277344 [de_adjust_price():200 - 2021/08/26 11:49:18 AM]
+INFO: symbol_list: ['MON100.NS', 'MON100.BO'] date: 2020-01-14 00:00:00 symbol: MON100.NS -> closing_price: 628.1700134277344 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:18 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-01-14 00:00:00 start_date: 2020-01-14 00:00:00 end_date: 2020-01-15 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:18 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-01-14 00:00:00 stock_data...
+             Open   High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                             
+2020-01-14  624.0  628.0  617.099976  623.549988    4792          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:18 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-01-14 00:00:00 -> closing_price: 623.5499877929688 [__get_adjusted_average_price():257 - 2021/08/26 11:49:18 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-01-14 00:00:00 -> adjusted_closing_price: 623.5499877929688 [get_adjusted_closing_price():167 - 2021/08/26 11:49:18 AM]
+DEBUG: symbol: SAFARI.NS date: 2020-01-14 00:00:00 -> adjusted_closing_price: 623.5499877929688 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:18 AM]
+INFO: no price adjustment. stock_symbol: SAFARI.NS date: 2020-01-14 00:00:00 -> unchanged adjusted_price: 623.5499877929688 [de_adjust_price():203 - 2021/08/26 11:49:18 AM]
+INFO: symbol_list: ['SAFARI.NS', 'SAFARIND.BO'] date: 2020-01-14 00:00:00 symbol: SAFARI.NS -> closing_price: 623.5499877929688 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:18 AM]
+DEBUG: ongoing_date: 2020-01-14 00:00:00 value_sum: 14179.423355102539 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:18 AM]
+DEBUG: ongoing_date changing from: 2020-01-14 00:00:00 to: 2020-01-21 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:18 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF [__compute_daywise_portfolio():322 - 2021/08/26 11:49:18 AM]
+DEBUG: masked_rows...
+        Date                                      Name  Shares                  Symbol  Closing Price        Value  Proportion
+9 2020-01-21  Motilal Oswal MOSt Shares NASDAQ-100 ETF     6.0  [MON100.NS, MON100.BO]     628.170013  3769.020081    0.265809 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:18 AM]
+DEBUG: transacted_shares: 1.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:18 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF updated shares count: 7.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:18 AM]
+DEBUG: date: 2020-01-28 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:18 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-01-21 00:00:00 start_date: 2020-01-21 00:00:00 end_date: 2020-01-22 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:18 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-01-21 00:00:00 stock_data...
+              Open        High         Low       Close   Volume  Dividends  Stock Splits
+Date                                                                                    
+2020-01-21  107.25  108.800003  105.800003  106.199997  1372187          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:19 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-01-21 00:00:00 -> closing_price: 106.19999694824219 [__get_adjusted_average_price():257 - 2021/08/26 11:49:19 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-01-21 00:00:00 -> adjusted_closing_price: 106.19999694824219 [get_adjusted_closing_price():167 - 2021/08/26 11:49:19 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2020-01-21 00:00:00 -> adjusted_closing_price: 106.19999694824219 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:19 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2020-01-21 00:00:00 -> unchanged adjusted_price: 106.19999694824219 [de_adjust_price():203 - 2021/08/26 11:49:19 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2020-01-21 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 106.19999694824219 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:19 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:19 AM]
+INFO: stock_symbol: None date: 2020-01-21 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:19 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-01-21 00:00:00 start_date: 2020-01-21 00:00:00 end_date: 2020-01-22 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:19 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-01-21 00:00:00 stock_data...
+              Open       High       Low      Close  Volume  Dividends  Stock Splits
+Date                                                                               
+2020-01-21  95.651  95.750739  90.86346  92.209953   22028          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:19 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-01-21 00:00:00 -> closing_price: 92.20995330810547 [__get_adjusted_average_price():257 - 2021/08/26 11:49:19 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-01-21 00:00:00 -> adjusted_closing_price: 92.20995330810547 [get_adjusted_closing_price():167 - 2021/08/26 11:49:19 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-01-21 00:00:00 -> adjusted_closing_price: 92.20995330810547 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:19 AM]
+WARNING: stock_symbol is None! date: 2020-01-21 00:00:00 -> unchanged adjusted_price: 92.20995330810547 [de_adjust_price():185 - 2021/08/26 11:49:19 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-01-21 00:00:00 symbol: None -> closing_price: 92.20995330810547 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:19 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-21 00:00:00 start_date: 2020-01-21 00:00:00 end_date: 2020-01-22 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:19 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-21 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:19 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-01-21 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:19 AM]
+INFO: stock_symbol: MON100.NS date: 2020-01-21 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:19 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-21 00:00:00 start_date: 2020-01-21 00:00:00 end_date: 2020-01-22 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:19 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-21 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:19 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-01-21 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:19 AM]
+INFO: stock_symbol: MON100.BO date: 2020-01-21 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:19 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-21 00:00:00 start_date: 2020-01-14 00:00:00 end_date: 2020-01-29 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:19 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-21 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:20 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-01-21 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:20 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-21 00:00:00 start_date: 2020-01-14 00:00:00 end_date: 2020-01-29 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:20 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-21 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:20 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-01-21 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:20 AM]
+INFO: stock_symbol: MON100.NS -> old_symbol: N100.NS [get_renamed_symbol():176 - 2021/08/26 11:49:20 AM]
+INFO: stock_symbol: MON100.BO -> old_symbol: N100.BO [get_renamed_symbol():176 - 2021/08/26 11:49:20 AM]
+DEBUG: symbol_list: ['MON100.NS', 'MON100.BO'] -> renamed_symbol_list: ['N100.NS', 'N100.BO'] [get_closing_price_by_symbol_list():223 - 2021/08/26 11:49:20 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-01-21 00:00:00 start_date: 2020-01-21 00:00:00 end_date: 2020-01-22 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:20 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-01-21 00:00:00 stock_data...
+            Open  High   Low      Close  Volume  Dividends  Stock Splits
+Date                                                                    
+2020-01-21  66.0  66.0  64.0  64.148003  216170          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:20 AM]
+INFO: stock_symbol: N100.NS date: 2020-01-21 00:00:00 -> closing_price: 64.14800262451172 [__get_adjusted_average_price():257 - 2021/08/26 11:49:20 AM]
+INFO: stock_symbol: N100.NS date: 2020-01-21 00:00:00 -> adjusted_closing_price: 64.14800262451172 [get_adjusted_closing_price():167 - 2021/08/26 11:49:20 AM]
+DEBUG: symbol: N100.NS date: 2020-01-21 00:00:00 -> adjusted_closing_price: 64.14800262451172 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:20 AM]
+INFO: no price adjustment. stock_symbol: N100.NS date: 2020-01-21 00:00:00 -> unchanged adjusted_price: 64.14800262451172 [de_adjust_price():203 - 2021/08/26 11:49:20 AM]
+INFO: symbol_list: ['N100.NS', 'N100.BO'] date: 2020-01-21 00:00:00 symbol: N100.NS -> closing_price: 64.14800262451172 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:20 AM]
+DEBUG: symbol: MON100.BO date: 2020-01-21 00:00:00 -> adjusted_closing_price: 64.14800262451172 [get_closing_price_by_symbol_list():226 - 2021/08/26 11:49:20 AM]
+DEBUG: numerator: 10 denominator: 1 [de_adjust_price():199 - 2021/08/26 11:49:20 AM]
+INFO: adjusted_price: 64.14800262451172 stock_symbol: MON100.NS date: 2020-01-21 00:00:00 -> de_adjusted_price: 641.4800262451172 [de_adjust_price():200 - 2021/08/26 11:49:20 AM]
+INFO: symbol_list: ['MON100.NS', 'MON100.BO'] date: 2020-01-21 00:00:00 symbol: MON100.NS -> closing_price: 641.4800262451172 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:20 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-01-21 00:00:00 start_date: 2020-01-21 00:00:00 end_date: 2020-01-22 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:20 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-01-21 00:00:00 stock_data...
+             Open        High    Low       Close  Volume  Dividends  Stock Splits
+Date                                                                             
+2020-01-21  629.0  629.950012  621.0  626.799988    5732          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:20 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-01-21 00:00:00 -> closing_price: 626.7999877929688 [__get_adjusted_average_price():257 - 2021/08/26 11:49:20 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-01-21 00:00:00 -> adjusted_closing_price: 626.7999877929688 [get_adjusted_closing_price():167 - 2021/08/26 11:49:20 AM]
+DEBUG: symbol: SAFARI.NS date: 2020-01-21 00:00:00 -> adjusted_closing_price: 626.7999877929688 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:20 AM]
+INFO: no price adjustment. stock_symbol: SAFARI.NS date: 2020-01-21 00:00:00 -> unchanged adjusted_price: 626.7999877929688 [de_adjust_price():203 - 2021/08/26 11:49:20 AM]
+INFO: symbol_list: ['SAFARI.NS', 'SAFARIND.BO'] date: 2020-01-21 00:00:00 symbol: SAFARI.NS -> closing_price: 626.7999877929688 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:20 AM]
+DEBUG: ongoing_date: 2020-01-21 00:00:00 value_sum: 14462.557266235352 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:20 AM]
+DEBUG: ongoing_date changing from: 2020-01-21 00:00:00 to: 2020-01-28 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:20 AM]
+DEBUG: company_name: Aditya Birla Capital [__compute_daywise_portfolio():322 - 2021/08/26 11:49:20 AM]
+DEBUG: masked_rows...
+        Date                  Name  Shares                        Symbol  Closing Price        Value  Proportion
+0 2020-01-28  Aditya Birla Capital    30.0  [ABCAPITAL.NS, ABCAPITAL.BO]     106.199997  3185.999908    0.220293 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:20 AM]
+DEBUG: transacted_shares: 5.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:20 AM]
+DEBUG: company_name: Aditya Birla Capital updated shares count: 35.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:20 AM]
+DEBUG: date: 2020-01-28 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:20 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF [__compute_daywise_portfolio():322 - 2021/08/26 11:49:20 AM]
+DEBUG: masked_rows...
+        Date                                      Name  Shares                  Symbol  Closing Price        Value  Proportion
+9 2020-01-28  Motilal Oswal MOSt Shares NASDAQ-100 ETF     7.0  [MON100.NS, MON100.BO]     641.480026  4490.360184    0.310482 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:20 AM]
+DEBUG: transacted_shares: 3.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:20 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF updated shares count: 10.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:20 AM]
+DEBUG: date: 2020-02-01 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:20 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-01-28 00:00:00 start_date: 2020-01-28 00:00:00 end_date: 2020-01-29 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:20 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-01-28 00:00:00 stock_data...
+                  Open        High     Low   Close   Volume  Dividends  Stock Splits
+Date                                                                                
+2020-01-28  104.199997  104.849998  101.75  102.75  1178385          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:20 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-01-28 00:00:00 -> closing_price: 102.75 [__get_adjusted_average_price():257 - 2021/08/26 11:49:20 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-01-28 00:00:00 -> adjusted_closing_price: 102.75 [get_adjusted_closing_price():167 - 2021/08/26 11:49:20 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2020-01-28 00:00:00 -> adjusted_closing_price: 102.75 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:20 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2020-01-28 00:00:00 -> unchanged adjusted_price: 102.75 [de_adjust_price():203 - 2021/08/26 11:49:20 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2020-01-28 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 102.75 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:20 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:20 AM]
+INFO: stock_symbol: None date: 2020-01-28 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:20 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-01-28 00:00:00 start_date: 2020-01-28 00:00:00 end_date: 2020-01-29 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:20 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-01-28 00:00:00 stock_data...
+                 Open        High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                    
+2020-01-28  98.742955  100.737762  94.753341  97.496201   16063          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:21 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-01-28 00:00:00 -> closing_price: 97.49620056152344 [__get_adjusted_average_price():257 - 2021/08/26 11:49:21 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-01-28 00:00:00 -> adjusted_closing_price: 97.49620056152344 [get_adjusted_closing_price():167 - 2021/08/26 11:49:21 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-01-28 00:00:00 -> adjusted_closing_price: 97.49620056152344 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:21 AM]
+WARNING: stock_symbol is None! date: 2020-01-28 00:00:00 -> unchanged adjusted_price: 97.49620056152344 [de_adjust_price():185 - 2021/08/26 11:49:21 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-01-28 00:00:00 symbol: None -> closing_price: 97.49620056152344 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:21 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-28 00:00:00 start_date: 2020-01-28 00:00:00 end_date: 2020-01-29 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:21 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-28 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:21 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-01-28 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:21 AM]
+INFO: stock_symbol: MON100.NS date: 2020-01-28 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:21 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-28 00:00:00 start_date: 2020-01-28 00:00:00 end_date: 2020-01-29 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:21 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-28 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:21 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-01-28 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:21 AM]
+INFO: stock_symbol: MON100.BO date: 2020-01-28 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:21 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-28 00:00:00 start_date: 2020-01-21 00:00:00 end_date: 2020-02-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:21 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-01-28 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:21 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-01-28 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:21 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-28 00:00:00 start_date: 2020-01-21 00:00:00 end_date: 2020-02-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:21 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-01-28 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:22 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-01-28 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:22 AM]
+INFO: stock_symbol: MON100.NS -> old_symbol: N100.NS [get_renamed_symbol():176 - 2021/08/26 11:49:22 AM]
+INFO: stock_symbol: MON100.BO -> old_symbol: N100.BO [get_renamed_symbol():176 - 2021/08/26 11:49:22 AM]
+DEBUG: symbol_list: ['MON100.NS', 'MON100.BO'] -> renamed_symbol_list: ['N100.NS', 'N100.BO'] [get_closing_price_by_symbol_list():223 - 2021/08/26 11:49:22 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-01-28 00:00:00 start_date: 2020-01-28 00:00:00 end_date: 2020-01-29 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:22 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-01-28 00:00:00 stock_data...
+            Open  High   Low   Close  Volume  Dividends  Stock Splits
+Date                                                                 
+2020-01-28  64.0  64.0  63.0  63.736  203540          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:22 AM]
+INFO: stock_symbol: N100.NS date: 2020-01-28 00:00:00 -> closing_price: 63.736000061035156 [__get_adjusted_average_price():257 - 2021/08/26 11:49:22 AM]
+INFO: stock_symbol: N100.NS date: 2020-01-28 00:00:00 -> adjusted_closing_price: 63.736000061035156 [get_adjusted_closing_price():167 - 2021/08/26 11:49:22 AM]
+DEBUG: symbol: N100.NS date: 2020-01-28 00:00:00 -> adjusted_closing_price: 63.736000061035156 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:22 AM]
+INFO: no price adjustment. stock_symbol: N100.NS date: 2020-01-28 00:00:00 -> unchanged adjusted_price: 63.736000061035156 [de_adjust_price():203 - 2021/08/26 11:49:22 AM]
+INFO: symbol_list: ['N100.NS', 'N100.BO'] date: 2020-01-28 00:00:00 symbol: N100.NS -> closing_price: 63.736000061035156 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:22 AM]
+DEBUG: symbol: MON100.BO date: 2020-01-28 00:00:00 -> adjusted_closing_price: 63.736000061035156 [get_closing_price_by_symbol_list():226 - 2021/08/26 11:49:22 AM]
+DEBUG: numerator: 10 denominator: 1 [de_adjust_price():199 - 2021/08/26 11:49:22 AM]
+INFO: adjusted_price: 63.736000061035156 stock_symbol: MON100.NS date: 2020-01-28 00:00:00 -> de_adjusted_price: 637.3600006103516 [de_adjust_price():200 - 2021/08/26 11:49:22 AM]
+INFO: symbol_list: ['MON100.NS', 'MON100.BO'] date: 2020-01-28 00:00:00 symbol: MON100.NS -> closing_price: 637.3600006103516 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:22 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-01-28 00:00:00 start_date: 2020-01-28 00:00:00 end_date: 2020-01-29 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:22 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-01-28 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2020-01-28  620.099976  633.700012  619.549988  621.049988    7312          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:22 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-01-28 00:00:00 -> closing_price: 621.0499877929688 [__get_adjusted_average_price():257 - 2021/08/26 11:49:22 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-01-28 00:00:00 -> adjusted_closing_price: 621.0499877929688 [get_adjusted_closing_price():167 - 2021/08/26 11:49:22 AM]
+DEBUG: symbol: SAFARI.NS date: 2020-01-28 00:00:00 -> adjusted_closing_price: 621.0499877929688 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:22 AM]
+INFO: no price adjustment. stock_symbol: SAFARI.NS date: 2020-01-28 00:00:00 -> unchanged adjusted_price: 621.0499877929688 [de_adjust_price():203 - 2021/08/26 11:49:22 AM]
+INFO: symbol_list: ['SAFARI.NS', 'SAFARIND.BO'] date: 2020-01-28 00:00:00 symbol: SAFARI.NS -> closing_price: 621.0499877929688 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:22 AM]
+DEBUG: ongoing_date: 2020-01-28 00:00:00 value_sum: 17061.72201538086 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:22 AM]
+DEBUG: ongoing_date changing from: 2020-01-28 00:00:00 to: 2020-02-01 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:22 AM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():322 - 2021/08/26 11:49:22 AM]
+DEBUG: masked_rows...
+        Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+8 2020-02-01  Black Rose Industries    60.0  [None, BLACKROSE.BO]      97.496201  5849.772034    0.342859 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:22 AM]
+DEBUG: transacted_shares: -60.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:22 AM]
+DEBUG: company_name: Black Rose Industries updated shares count: 0.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:22 AM]
+DEBUG: date: 2020-02-07 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:22 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-02-01 00:00:00 start_date: 2020-02-01 00:00:00 end_date: 2020-02-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:22 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-02-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:22 AM]
+WARNING: stock_symbol: ABCAPITAL.NS date: 2020-02-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:22 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-02-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:22 AM]
+DEBUG: stock_symbol: ABCAPITAL.BO date: 2020-02-01 00:00:00 start_date: 2020-02-01 00:00:00 end_date: 2020-02-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:22 AM]
+DEBUG: stock_symbol: ABCAPITAL.BO date: 2020-02-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:22 AM]
+WARNING: stock_symbol: ABCAPITAL.BO date: 2020-02-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:22 AM]
+INFO: stock_symbol: ABCAPITAL.BO date: 2020-02-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:22 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-02-01 00:00:00 start_date: 2020-01-25 00:00:00 end_date: 2020-02-09 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:22 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-02-01 00:00:00 stock_data...
+                  Open        High         Low       Close   Volume  Dividends  Stock Splits
+Date                                                                                        
+2020-01-27  104.900002  105.900002  103.550003  104.050003  1294553          0             0
+2020-01-28  104.199997  104.849998  101.750000  102.750000  1178385          0             0
+2020-01-29  103.750000  104.599998  101.250000  101.650002  1390909          0             0
+2020-01-30  102.000000  103.699997   99.500000  100.050003  2171452          0             0
+2020-01-31  100.599998  103.000000   98.500000   99.199997  2159998          0             0
+2020-02-03   94.599998   95.250000   91.599998   92.099998  2135154          0             0
+2020-02-04   93.000000   96.000000   92.949997   95.000000  2766962          0             0
+2020-02-05   95.599998   97.449997   95.150002   95.800003  2642858          0             0
+2020-02-06   95.800003   98.900002   94.500000   96.650002  3639578          0             0
+2020-02-07   96.699997   97.000000   94.400002   94.800003  1974933          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:23 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-02-01 00:00:00 -> closing_price: 98.20500106811524 [__get_adjusted_average_price():257 - 2021/08/26 11:49:23 AM]
+WARNING: fallback to average price! symbol: ABCAPITAL.NS date: 2020-02-01 00:00:00 -> adjusted_closing_price: 98.20500106811524 [get_closing_price_by_symbol_list():218 - 2021/08/26 11:49:23 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2020-02-01 00:00:00 -> unchanged adjusted_price: 98.20500106811524 [de_adjust_price():203 - 2021/08/26 11:49:23 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2020-02-01 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 98.20500106811524 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:23 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-01 00:00:00 start_date: 2020-02-01 00:00:00 end_date: 2020-02-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:23 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:23 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-02-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:23 AM]
+INFO: stock_symbol: MON100.NS date: 2020-02-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:23 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-01 00:00:00 start_date: 2020-02-01 00:00:00 end_date: 2020-02-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:23 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:23 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-02-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:23 AM]
+INFO: stock_symbol: MON100.BO date: 2020-02-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:23 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-01 00:00:00 start_date: 2020-01-25 00:00:00 end_date: 2020-02-09 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:23 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:23 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-02-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:23 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-01 00:00:00 start_date: 2020-01-25 00:00:00 end_date: 2020-02-09 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:23 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:23 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-02-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:23 AM]
+INFO: stock_symbol: MON100.NS -> old_symbol: N100.NS [get_renamed_symbol():176 - 2021/08/26 11:49:23 AM]
+INFO: stock_symbol: MON100.BO -> old_symbol: N100.BO [get_renamed_symbol():176 - 2021/08/26 11:49:23 AM]
+DEBUG: symbol_list: ['MON100.NS', 'MON100.BO'] -> renamed_symbol_list: ['N100.NS', 'N100.BO'] [get_closing_price_by_symbol_list():223 - 2021/08/26 11:49:23 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-02-01 00:00:00 start_date: 2020-02-01 00:00:00 end_date: 2020-02-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:23 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-02-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:24 AM]
+WARNING: stock_symbol: N100.NS date: 2020-02-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:24 AM]
+INFO: stock_symbol: N100.NS date: 2020-02-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:24 AM]
+DEBUG: stock_symbol: N100.BO date: 2020-02-01 00:00:00 start_date: 2020-02-01 00:00:00 end_date: 2020-02-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:24 AM]
+DEBUG: stock_symbol: N100.BO date: 2020-02-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:24 AM]
+WARNING: stock_symbol: N100.BO date: 2020-02-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:24 AM]
+INFO: stock_symbol: N100.BO date: 2020-02-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:24 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-02-01 00:00:00 start_date: 2020-01-25 00:00:00 end_date: 2020-02-09 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:24 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-02-01 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2020-01-27  64.900002  65.400002  63.701000  64.320000  656070          0             0
+2020-01-28  64.000000  64.000000  63.000000  63.736000  203540          0             0
+2020-01-29  64.449997  64.799004  64.010002  64.467003  140270          0             0
+2020-01-30  64.625000  64.793999  63.603001  64.142998  236970          0             0
+2020-01-31  64.699997  64.989998  64.300003  64.864998  221840          0             0
+2020-02-03  65.089996  65.089996  63.599998  63.974998  109400          0             0
+2020-02-04  64.300003  64.800003  64.300003  64.657997   49890          0             0
+2020-02-05  64.800003  66.495003  64.699997  66.023003  387430          0             0
+2020-02-06  66.989998  66.989998  66.004997  66.426003  127720          0             0
+2020-02-07  66.910004  68.000000  65.651001  66.657997  802110          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:24 AM]
+INFO: stock_symbol: N100.NS date: 2020-02-01 00:00:00 -> closing_price: 64.927099609375 [__get_adjusted_average_price():257 - 2021/08/26 11:49:24 AM]
+WARNING: fallback to average price! symbol: N100.NS date: 2020-02-01 00:00:00 -> adjusted_closing_price: 64.927099609375 [get_closing_price_by_symbol_list():218 - 2021/08/26 11:49:24 AM]
+INFO: no price adjustment. stock_symbol: N100.NS date: 2020-02-01 00:00:00 -> unchanged adjusted_price: 64.927099609375 [de_adjust_price():203 - 2021/08/26 11:49:24 AM]
+INFO: symbol_list: ['N100.NS', 'N100.BO'] date: 2020-02-01 00:00:00 symbol: N100.NS -> closing_price: 64.927099609375 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:24 AM]
+DEBUG: symbol: MON100.BO date: 2020-02-01 00:00:00 -> adjusted_closing_price: 64.927099609375 [get_closing_price_by_symbol_list():226 - 2021/08/26 11:49:24 AM]
+DEBUG: numerator: 10 denominator: 1 [de_adjust_price():199 - 2021/08/26 11:49:24 AM]
+INFO: adjusted_price: 64.927099609375 stock_symbol: MON100.NS date: 2020-02-01 00:00:00 -> de_adjusted_price: 649.27099609375 [de_adjust_price():200 - 2021/08/26 11:49:24 AM]
+INFO: symbol_list: ['MON100.NS', 'MON100.BO'] date: 2020-02-01 00:00:00 symbol: MON100.NS -> closing_price: 649.27099609375 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:24 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-02-01 00:00:00 start_date: 2020-02-01 00:00:00 end_date: 2020-02-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:24 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-02-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:25 AM]
+WARNING: stock_symbol: SAFARI.NS date: 2020-02-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:25 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-02-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:25 AM]
+DEBUG: stock_symbol: SAFARIND.BO date: 2020-02-01 00:00:00 start_date: 2020-02-01 00:00:00 end_date: 2020-02-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:25 AM]
+DEBUG: stock_symbol: SAFARIND.BO date: 2020-02-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:25 AM]
+WARNING: stock_symbol: SAFARIND.BO date: 2020-02-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:25 AM]
+INFO: stock_symbol: SAFARIND.BO date: 2020-02-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:25 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-02-01 00:00:00 start_date: 2020-01-25 00:00:00 end_date: 2020-02-09 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:25 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-02-01 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2020-01-27  625.000000  649.000000  616.000000  618.450012   23630          0             0
+2020-01-28  620.099976  633.700012  619.549988  621.049988    7312          0             0
+2020-01-29  628.900024  630.000000  622.000000  626.750000    3745          0             0
+2020-01-30  633.700012  633.750000  622.000000  624.500000    3436          0             0
+2020-01-31  625.000000  645.000000  623.000000  636.400024    7839          0             0
+2020-02-03  615.549988  637.900024  599.750000  617.700012    7749          0             0
+2020-02-04  621.849976  629.000000  617.349976  625.500000    4498          0             0
+2020-02-05  626.799988  698.000000  620.000000  664.250000  146347          0             0
+2020-02-06  670.000000  688.000000  651.000000  678.049988   10586          0             0
+2020-02-07  673.000000  692.000000  667.900024  682.500000    7025          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:25 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-02-01 00:00:00 -> closing_price: 639.5150024414063 [__get_adjusted_average_price():257 - 2021/08/26 11:49:25 AM]
+WARNING: fallback to average price! symbol: SAFARI.NS date: 2020-02-01 00:00:00 -> adjusted_closing_price: 639.5150024414063 [get_closing_price_by_symbol_list():218 - 2021/08/26 11:49:25 AM]
+INFO: no price adjustment. stock_symbol: SAFARI.NS date: 2020-02-01 00:00:00 -> unchanged adjusted_price: 639.5150024414063 [de_adjust_price():203 - 2021/08/26 11:49:25 AM]
+INFO: symbol_list: ['SAFARI.NS', 'SAFARIND.BO'] date: 2020-02-01 00:00:00 symbol: SAFARI.NS -> closing_price: 639.5150024414063 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:25 AM]
+DEBUG: ongoing_date: 2020-02-01 00:00:00 value_sum: 11208.915003204345 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:25 AM]
+DEBUG: ongoing_date changing from: 2020-02-01 00:00:00 to: 2020-02-07 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:25 AM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():322 - 2021/08/26 11:49:25 AM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():326 - 2021/08/26 11:49:25 AM]
+DEBUG: added to daily_portfolio company_name: Black Rose Industries for ongoing_date: 2020-02-07 00:00:00 [__compute_daywise_portfolio():330 - 2021/08/26 11:49:25 AM]
+DEBUG: date: 2020-02-10 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:25 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-02-07 00:00:00 start_date: 2020-02-07 00:00:00 end_date: 2020-02-08 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:25 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-02-07 00:00:00 stock_data...
+                 Open  High        Low      Close   Volume  Dividends  Stock Splits
+Date                                                                               
+2020-02-07  96.699997  97.0  94.400002  94.800003  1974933          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:25 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-02-07 00:00:00 -> closing_price: 94.80000305175781 [__get_adjusted_average_price():257 - 2021/08/26 11:49:25 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-02-07 00:00:00 -> adjusted_closing_price: 94.80000305175781 [get_adjusted_closing_price():167 - 2021/08/26 11:49:25 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2020-02-07 00:00:00 -> adjusted_closing_price: 94.80000305175781 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:25 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2020-02-07 00:00:00 -> unchanged adjusted_price: 94.80000305175781 [de_adjust_price():203 - 2021/08/26 11:49:25 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2020-02-07 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 94.80000305175781 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:25 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-07 00:00:00 start_date: 2020-02-07 00:00:00 end_date: 2020-02-08 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:25 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-07 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:25 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-02-07 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:25 AM]
+INFO: stock_symbol: MON100.NS date: 2020-02-07 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:25 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-07 00:00:00 start_date: 2020-02-07 00:00:00 end_date: 2020-02-08 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:25 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-07 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:26 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-02-07 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:26 AM]
+INFO: stock_symbol: MON100.BO date: 2020-02-07 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:26 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-07 00:00:00 start_date: 2020-01-31 00:00:00 end_date: 2020-02-15 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:26 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-07 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:26 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-02-07 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:26 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-07 00:00:00 start_date: 2020-01-31 00:00:00 end_date: 2020-02-15 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:26 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-07 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:26 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-02-07 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:26 AM]
+INFO: stock_symbol: MON100.NS -> old_symbol: N100.NS [get_renamed_symbol():176 - 2021/08/26 11:49:26 AM]
+INFO: stock_symbol: MON100.BO -> old_symbol: N100.BO [get_renamed_symbol():176 - 2021/08/26 11:49:26 AM]
+DEBUG: symbol_list: ['MON100.NS', 'MON100.BO'] -> renamed_symbol_list: ['N100.NS', 'N100.BO'] [get_closing_price_by_symbol_list():223 - 2021/08/26 11:49:26 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-02-07 00:00:00 start_date: 2020-02-07 00:00:00 end_date: 2020-02-08 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:26 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-02-07 00:00:00 stock_data...
+                 Open  High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                              
+2020-02-07  66.910004  68.0  65.651001  66.657997  802110          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:26 AM]
+INFO: stock_symbol: N100.NS date: 2020-02-07 00:00:00 -> closing_price: 66.65799713134766 [__get_adjusted_average_price():257 - 2021/08/26 11:49:26 AM]
+INFO: stock_symbol: N100.NS date: 2020-02-07 00:00:00 -> adjusted_closing_price: 66.65799713134766 [get_adjusted_closing_price():167 - 2021/08/26 11:49:26 AM]
+DEBUG: symbol: N100.NS date: 2020-02-07 00:00:00 -> adjusted_closing_price: 66.65799713134766 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:26 AM]
+INFO: no price adjustment. stock_symbol: N100.NS date: 2020-02-07 00:00:00 -> unchanged adjusted_price: 66.65799713134766 [de_adjust_price():203 - 2021/08/26 11:49:26 AM]
+INFO: symbol_list: ['N100.NS', 'N100.BO'] date: 2020-02-07 00:00:00 symbol: N100.NS -> closing_price: 66.65799713134766 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:26 AM]
+DEBUG: symbol: MON100.BO date: 2020-02-07 00:00:00 -> adjusted_closing_price: 66.65799713134766 [get_closing_price_by_symbol_list():226 - 2021/08/26 11:49:26 AM]
+DEBUG: numerator: 10 denominator: 1 [de_adjust_price():199 - 2021/08/26 11:49:26 AM]
+INFO: adjusted_price: 66.65799713134766 stock_symbol: MON100.NS date: 2020-02-07 00:00:00 -> de_adjusted_price: 666.5799713134766 [de_adjust_price():200 - 2021/08/26 11:49:26 AM]
+INFO: symbol_list: ['MON100.NS', 'MON100.BO'] date: 2020-02-07 00:00:00 symbol: MON100.NS -> closing_price: 666.5799713134766 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:26 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-02-07 00:00:00 start_date: 2020-02-07 00:00:00 end_date: 2020-02-08 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:26 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-02-07 00:00:00 stock_data...
+             Open   High         Low  Close  Volume  Dividends  Stock Splits
+Date                                                                        
+2020-02-07  673.0  692.0  667.900024  682.5    7025          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:26 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-02-07 00:00:00 -> closing_price: 682.5 [__get_adjusted_average_price():257 - 2021/08/26 11:49:26 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-02-07 00:00:00 -> adjusted_closing_price: 682.5 [get_adjusted_closing_price():167 - 2021/08/26 11:49:26 AM]
+DEBUG: symbol: SAFARI.NS date: 2020-02-07 00:00:00 -> adjusted_closing_price: 682.5 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:26 AM]
+INFO: no price adjustment. stock_symbol: SAFARI.NS date: 2020-02-07 00:00:00 -> unchanged adjusted_price: 682.5 [de_adjust_price():203 - 2021/08/26 11:49:26 AM]
+INFO: symbol_list: ['SAFARI.NS', 'SAFARIND.BO'] date: 2020-02-07 00:00:00 symbol: SAFARI.NS -> closing_price: 682.5 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:26 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:26 AM]
+INFO: stock_symbol: None date: 2020-02-07 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:26 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-07 00:00:00 start_date: 2020-02-07 00:00:00 end_date: 2020-02-08 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:26 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-07 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2020-02-07  124.176737  139.636491  124.176737  137.192856  169910          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:27 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-07 00:00:00 -> closing_price: 137.19285583496094 [__get_adjusted_average_price():257 - 2021/08/26 11:49:27 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-07 00:00:00 -> adjusted_closing_price: 137.19285583496094 [get_adjusted_closing_price():167 - 2021/08/26 11:49:27 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-02-07 00:00:00 -> adjusted_closing_price: 137.19285583496094 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:27 AM]
+WARNING: stock_symbol is None! date: 2020-02-07 00:00:00 -> unchanged adjusted_price: 137.19285583496094 [de_adjust_price():185 - 2021/08/26 11:49:27 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-02-07 00:00:00 symbol: None -> closing_price: 137.19285583496094 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:27 AM]
+DEBUG: ongoing_date: 2020-02-07 00:00:00 value_sum: 12034.764099121094 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:27 AM]
+DEBUG: ongoing_date changing from: 2020-02-07 00:00:00 to: 2020-02-10 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:27 AM]
+DEBUG: company_name: Aditya Birla Capital [__compute_daywise_portfolio():322 - 2021/08/26 11:49:27 AM]
+DEBUG: masked_rows...
+        Date                  Name  Shares                        Symbol  Closing Price        Value  Proportion
+0 2020-02-10  Aditya Birla Capital    35.0  [ABCAPITAL.NS, ABCAPITAL.BO]      94.800003  3318.000107    0.275701 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:27 AM]
+DEBUG: transacted_shares: 5.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:27 AM]
+DEBUG: company_name: Aditya Birla Capital updated shares count: 40.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:27 AM]
+DEBUG: date: 2020-02-10 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:27 AM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():322 - 2021/08/26 11:49:27 AM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price       Value  Proportion
+19 2020-02-10  Black Rose Industries     5.0  [None, BLACKROSE.BO]     137.192856  685.964279    0.056999 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:27 AM]
+DEBUG: transacted_shares: 10.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:27 AM]
+DEBUG: company_name: Black Rose Industries updated shares count: 15.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:27 AM]
+DEBUG: date: 2020-02-17 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:27 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-02-10 00:00:00 start_date: 2020-02-10 00:00:00 end_date: 2020-02-11 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:27 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-02-10 00:00:00 stock_data...
+                 Open       High        Low      Close   Volume  Dividends  Stock Splits
+Date                                                                                    
+2020-02-10  94.400002  94.800003  92.699997  93.050003  1206619          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:27 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-02-10 00:00:00 -> closing_price: 93.05000305175781 [__get_adjusted_average_price():257 - 2021/08/26 11:49:27 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-02-10 00:00:00 -> adjusted_closing_price: 93.05000305175781 [get_adjusted_closing_price():167 - 2021/08/26 11:49:27 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2020-02-10 00:00:00 -> adjusted_closing_price: 93.05000305175781 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:27 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2020-02-10 00:00:00 -> unchanged adjusted_price: 93.05000305175781 [de_adjust_price():203 - 2021/08/26 11:49:27 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2020-02-10 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 93.05000305175781 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:27 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-10 00:00:00 start_date: 2020-02-10 00:00:00 end_date: 2020-02-11 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:27 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-10 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:27 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-02-10 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:27 AM]
+INFO: stock_symbol: MON100.NS date: 2020-02-10 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:27 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-10 00:00:00 start_date: 2020-02-10 00:00:00 end_date: 2020-02-11 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:27 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-10 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:28 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-02-10 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:28 AM]
+INFO: stock_symbol: MON100.BO date: 2020-02-10 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:28 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-10 00:00:00 start_date: 2020-02-03 00:00:00 end_date: 2020-02-18 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:28 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-10 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:28 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-02-10 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:28 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-10 00:00:00 start_date: 2020-02-03 00:00:00 end_date: 2020-02-18 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:28 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-10 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:28 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-02-10 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:28 AM]
+INFO: stock_symbol: MON100.NS -> old_symbol: N100.NS [get_renamed_symbol():176 - 2021/08/26 11:49:28 AM]
+INFO: stock_symbol: MON100.BO -> old_symbol: N100.BO [get_renamed_symbol():176 - 2021/08/26 11:49:28 AM]
+DEBUG: symbol_list: ['MON100.NS', 'MON100.BO'] -> renamed_symbol_list: ['N100.NS', 'N100.BO'] [get_closing_price_by_symbol_list():223 - 2021/08/26 11:49:28 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-02-10 00:00:00 start_date: 2020-02-10 00:00:00 end_date: 2020-02-11 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:28 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-02-10 00:00:00 stock_data...
+            Open  High   Low      Close  Volume  Dividends  Stock Splits
+Date                                                                    
+2020-02-10  67.0  67.0  66.0  66.268997  110500          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:28 AM]
+INFO: stock_symbol: N100.NS date: 2020-02-10 00:00:00 -> closing_price: 66.26899719238281 [__get_adjusted_average_price():257 - 2021/08/26 11:49:28 AM]
+INFO: stock_symbol: N100.NS date: 2020-02-10 00:00:00 -> adjusted_closing_price: 66.26899719238281 [get_adjusted_closing_price():167 - 2021/08/26 11:49:28 AM]
+DEBUG: symbol: N100.NS date: 2020-02-10 00:00:00 -> adjusted_closing_price: 66.26899719238281 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:28 AM]
+INFO: no price adjustment. stock_symbol: N100.NS date: 2020-02-10 00:00:00 -> unchanged adjusted_price: 66.26899719238281 [de_adjust_price():203 - 2021/08/26 11:49:28 AM]
+INFO: symbol_list: ['N100.NS', 'N100.BO'] date: 2020-02-10 00:00:00 symbol: N100.NS -> closing_price: 66.26899719238281 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:28 AM]
+DEBUG: symbol: MON100.BO date: 2020-02-10 00:00:00 -> adjusted_closing_price: 66.26899719238281 [get_closing_price_by_symbol_list():226 - 2021/08/26 11:49:28 AM]
+DEBUG: numerator: 10 denominator: 1 [de_adjust_price():199 - 2021/08/26 11:49:28 AM]
+INFO: adjusted_price: 66.26899719238281 stock_symbol: MON100.NS date: 2020-02-10 00:00:00 -> de_adjusted_price: 662.6899719238281 [de_adjust_price():200 - 2021/08/26 11:49:28 AM]
+INFO: symbol_list: ['MON100.NS', 'MON100.BO'] date: 2020-02-10 00:00:00 symbol: MON100.NS -> closing_price: 662.6899719238281 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:28 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-02-10 00:00:00 start_date: 2020-02-10 00:00:00 end_date: 2020-02-11 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:28 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-02-10 00:00:00 stock_data...
+             Open   High         Low  Close  Volume  Dividends  Stock Splits
+Date                                                                        
+2020-02-10  697.0  697.0  651.099976  663.5   11463          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:29 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-02-10 00:00:00 -> closing_price: 663.5 [__get_adjusted_average_price():257 - 2021/08/26 11:49:29 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-02-10 00:00:00 -> adjusted_closing_price: 663.5 [get_adjusted_closing_price():167 - 2021/08/26 11:49:29 AM]
+DEBUG: symbol: SAFARI.NS date: 2020-02-10 00:00:00 -> adjusted_closing_price: 663.5 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:29 AM]
+INFO: no price adjustment. stock_symbol: SAFARI.NS date: 2020-02-10 00:00:00 -> unchanged adjusted_price: 663.5 [de_adjust_price():203 - 2021/08/26 11:49:29 AM]
+INFO: symbol_list: ['SAFARI.NS', 'SAFARIND.BO'] date: 2020-02-10 00:00:00 symbol: SAFARI.NS -> closing_price: 663.5 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:29 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:29 AM]
+INFO: stock_symbol: None date: 2020-02-10 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:29 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-10 00:00:00 start_date: 2020-02-10 00:00:00 end_date: 2020-02-11 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:29 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-10 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2020-02-10  137.641689  149.610532  134.848956  148.513382  161649          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:29 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-10 00:00:00 -> closing_price: 148.5133819580078 [__get_adjusted_average_price():257 - 2021/08/26 11:49:29 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-10 00:00:00 -> adjusted_closing_price: 148.5133819580078 [get_adjusted_closing_price():167 - 2021/08/26 11:49:29 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-02-10 00:00:00 -> adjusted_closing_price: 148.5133819580078 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:29 AM]
+WARNING: stock_symbol is None! date: 2020-02-10 00:00:00 -> unchanged adjusted_price: 148.5133819580078 [de_adjust_price():185 - 2021/08/26 11:49:29 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-02-10 00:00:00 symbol: None -> closing_price: 148.5133819580078 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:29 AM]
+DEBUG: ongoing_date: 2020-02-10 00:00:00 value_sum: 13903.600570678711 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:29 AM]
+DEBUG: ongoing_date changing from: 2020-02-10 00:00:00 to: 2020-02-17 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:29 AM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():322 - 2021/08/26 11:49:29 AM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+19 2020-02-17  Black Rose Industries    15.0  [None, BLACKROSE.BO]     148.513382  2227.700729    0.160225 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:29 AM]
+DEBUG: transacted_shares: 5.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:29 AM]
+DEBUG: company_name: Black Rose Industries updated shares count: 20.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:29 AM]
+DEBUG: date: 2020-02-17 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:29 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF [__compute_daywise_portfolio():322 - 2021/08/26 11:49:29 AM]
+DEBUG: masked_rows...
+        Date                                      Name  Shares                  Symbol  Closing Price        Value  Proportion
+9 2020-02-17  Motilal Oswal MOSt Shares NASDAQ-100 ETF    10.0  [MON100.NS, MON100.BO]     662.689972  6626.899719    0.476632 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:29 AM]
+DEBUG: transacted_shares: 5.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:29 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF updated shares count: 15.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:29 AM]
+DEBUG: date: 2020-03-04 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:29 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-02-17 00:00:00 start_date: 2020-02-17 00:00:00 end_date: 2020-02-18 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:29 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-02-17 00:00:00 stock_data...
+                 Open   High        Low      Close   Volume  Dividends  Stock Splits
+Date                                                                                
+2020-02-17  89.900002  90.25  86.300003  86.849998  1527453          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:29 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-02-17 00:00:00 -> closing_price: 86.8499984741211 [__get_adjusted_average_price():257 - 2021/08/26 11:49:29 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-02-17 00:00:00 -> adjusted_closing_price: 86.8499984741211 [get_adjusted_closing_price():167 - 2021/08/26 11:49:29 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2020-02-17 00:00:00 -> adjusted_closing_price: 86.8499984741211 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:29 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2020-02-17 00:00:00 -> unchanged adjusted_price: 86.8499984741211 [de_adjust_price():203 - 2021/08/26 11:49:29 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2020-02-17 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 86.8499984741211 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:29 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-17 00:00:00 start_date: 2020-02-17 00:00:00 end_date: 2020-02-18 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:29 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-17 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:29 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-02-17 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:29 AM]
+INFO: stock_symbol: MON100.NS date: 2020-02-17 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:29 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-17 00:00:00 start_date: 2020-02-17 00:00:00 end_date: 2020-02-18 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:29 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-17 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:30 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-02-17 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:30 AM]
+INFO: stock_symbol: MON100.BO date: 2020-02-17 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:30 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-17 00:00:00 start_date: 2020-02-10 00:00:00 end_date: 2020-02-25 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:30 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-02-17 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:30 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-02-17 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:30 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-17 00:00:00 start_date: 2020-02-10 00:00:00 end_date: 2020-02-25 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:30 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-02-17 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:30 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-02-17 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:30 AM]
+INFO: stock_symbol: MON100.NS -> old_symbol: N100.NS [get_renamed_symbol():176 - 2021/08/26 11:49:30 AM]
+INFO: stock_symbol: MON100.BO -> old_symbol: N100.BO [get_renamed_symbol():176 - 2021/08/26 11:49:30 AM]
+DEBUG: symbol_list: ['MON100.NS', 'MON100.BO'] -> renamed_symbol_list: ['N100.NS', 'N100.BO'] [get_closing_price_by_symbol_list():223 - 2021/08/26 11:49:30 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-02-17 00:00:00 start_date: 2020-02-17 00:00:00 end_date: 2020-02-18 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:30 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-02-17 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2020-02-17  69.160004  70.510002  67.800003  68.294998  167960          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:30 AM]
+INFO: stock_symbol: N100.NS date: 2020-02-17 00:00:00 -> closing_price: 68.29499816894531 [__get_adjusted_average_price():257 - 2021/08/26 11:49:30 AM]
+INFO: stock_symbol: N100.NS date: 2020-02-17 00:00:00 -> adjusted_closing_price: 68.29499816894531 [get_adjusted_closing_price():167 - 2021/08/26 11:49:30 AM]
+DEBUG: symbol: N100.NS date: 2020-02-17 00:00:00 -> adjusted_closing_price: 68.29499816894531 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:30 AM]
+INFO: no price adjustment. stock_symbol: N100.NS date: 2020-02-17 00:00:00 -> unchanged adjusted_price: 68.29499816894531 [de_adjust_price():203 - 2021/08/26 11:49:30 AM]
+INFO: symbol_list: ['N100.NS', 'N100.BO'] date: 2020-02-17 00:00:00 symbol: N100.NS -> closing_price: 68.29499816894531 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:30 AM]
+DEBUG: symbol: MON100.BO date: 2020-02-17 00:00:00 -> adjusted_closing_price: 68.29499816894531 [get_closing_price_by_symbol_list():226 - 2021/08/26 11:49:30 AM]
+DEBUG: numerator: 10 denominator: 1 [de_adjust_price():199 - 2021/08/26 11:49:30 AM]
+INFO: adjusted_price: 68.29499816894531 stock_symbol: MON100.NS date: 2020-02-17 00:00:00 -> de_adjusted_price: 682.9499816894531 [de_adjust_price():200 - 2021/08/26 11:49:30 AM]
+INFO: symbol_list: ['MON100.NS', 'MON100.BO'] date: 2020-02-17 00:00:00 symbol: MON100.NS -> closing_price: 682.9499816894531 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:30 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-02-17 00:00:00 start_date: 2020-02-17 00:00:00 end_date: 2020-02-18 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:30 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-02-17 00:00:00 stock_data...
+                  Open        High    Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                  
+2020-02-17  663.950012  669.950012  635.0  646.700012    7737          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:31 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-02-17 00:00:00 -> closing_price: 646.7000122070312 [__get_adjusted_average_price():257 - 2021/08/26 11:49:31 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-02-17 00:00:00 -> adjusted_closing_price: 646.7000122070312 [get_adjusted_closing_price():167 - 2021/08/26 11:49:31 AM]
+DEBUG: symbol: SAFARI.NS date: 2020-02-17 00:00:00 -> adjusted_closing_price: 646.7000122070312 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:31 AM]
+INFO: no price adjustment. stock_symbol: SAFARI.NS date: 2020-02-17 00:00:00 -> unchanged adjusted_price: 646.7000122070312 [de_adjust_price():203 - 2021/08/26 11:49:31 AM]
+INFO: symbol_list: ['SAFARI.NS', 'SAFARIND.BO'] date: 2020-02-17 00:00:00 symbol: SAFARI.NS -> closing_price: 646.7000122070312 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:31 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:31 AM]
+INFO: stock_symbol: None date: 2020-02-17 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:31 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-17 00:00:00 start_date: 2020-02-17 00:00:00 end_date: 2020-02-18 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:31 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-17 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2020-02-17  124.675451  138.040653  124.675451  136.295197   84793          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:31 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-17 00:00:00 -> closing_price: 136.29519653320312 [__get_adjusted_average_price():257 - 2021/08/26 11:49:31 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-17 00:00:00 -> adjusted_closing_price: 136.29519653320312 [get_adjusted_closing_price():167 - 2021/08/26 11:49:31 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-02-17 00:00:00 -> adjusted_closing_price: 136.29519653320312 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:31 AM]
+WARNING: stock_symbol is None! date: 2020-02-17 00:00:00 -> unchanged adjusted_price: 136.29519653320312 [de_adjust_price():185 - 2021/08/26 11:49:31 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-02-17 00:00:00 symbol: None -> closing_price: 136.29519653320312 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:31 AM]
+DEBUG: ongoing_date: 2020-02-17 00:00:00 value_sum: 17737.553619384766 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:31 AM]
+DEBUG: ongoing_date changing from: 2020-02-17 00:00:00 to: 2020-03-04 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:31 AM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():322 - 2021/08/26 11:49:31 AM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+19 2020-03-04  Black Rose Industries    20.0  [None, BLACKROSE.BO]     136.295197  2725.903931     0.15368 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:31 AM]
+DEBUG: transacted_shares: 10.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:31 AM]
+DEBUG: company_name: Black Rose Industries updated shares count: 30.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:31 AM]
+DEBUG: date: 2020-03-04 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:31 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF [__compute_daywise_portfolio():322 - 2021/08/26 11:49:31 AM]
+DEBUG: masked_rows...
+        Date                                      Name  Shares                  Symbol  Closing Price         Value  Proportion
+9 2020-03-04  Motilal Oswal MOSt Shares NASDAQ-100 ETF    15.0  [MON100.NS, MON100.BO]     682.949982  10244.249725    0.577546 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:31 AM]
+DEBUG: transacted_shares: 2.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:31 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF updated shares count: 17.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:31 AM]
+DEBUG: date: 2020-03-19 00:00:00 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:31 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-03-04 00:00:00 start_date: 2020-03-04 00:00:00 end_date: 2020-03-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:31 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-03-04 00:00:00 stock_data...
+                 Open       High        Low      Close   Volume  Dividends  Stock Splits
+Date                                                                                    
+2020-03-04  78.900002  79.150002  74.099998  75.449997  1415274          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:31 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-03-04 00:00:00 -> closing_price: 75.44999694824219 [__get_adjusted_average_price():257 - 2021/08/26 11:49:31 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-03-04 00:00:00 -> adjusted_closing_price: 75.44999694824219 [get_adjusted_closing_price():167 - 2021/08/26 11:49:31 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2020-03-04 00:00:00 -> adjusted_closing_price: 75.44999694824219 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:31 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2020-03-04 00:00:00 -> unchanged adjusted_price: 75.44999694824219 [de_adjust_price():203 - 2021/08/26 11:49:31 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2020-03-04 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 75.44999694824219 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:31 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-03-04 00:00:00 start_date: 2020-03-04 00:00:00 end_date: 2020-03-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:31 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-03-04 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:31 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-03-04 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:31 AM]
+INFO: stock_symbol: MON100.NS date: 2020-03-04 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:31 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-03-04 00:00:00 start_date: 2020-03-04 00:00:00 end_date: 2020-03-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:31 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-03-04 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:31 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-03-04 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:31 AM]
+INFO: stock_symbol: MON100.BO date: 2020-03-04 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:31 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-03-04 00:00:00 start_date: 2020-02-26 00:00:00 end_date: 2020-03-12 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:31 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-03-04 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:32 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-03-04 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:32 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-03-04 00:00:00 start_date: 2020-02-26 00:00:00 end_date: 2020-03-12 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:32 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-03-04 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:32 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-03-04 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:32 AM]
+INFO: stock_symbol: MON100.NS -> old_symbol: N100.NS [get_renamed_symbol():176 - 2021/08/26 11:49:32 AM]
+INFO: stock_symbol: MON100.BO -> old_symbol: N100.BO [get_renamed_symbol():176 - 2021/08/26 11:49:32 AM]
+DEBUG: symbol_list: ['MON100.NS', 'MON100.BO'] -> renamed_symbol_list: ['N100.NS', 'N100.BO'] [get_closing_price_by_symbol_list():223 - 2021/08/26 11:49:32 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-03-04 00:00:00 start_date: 2020-03-04 00:00:00 end_date: 2020-03-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:32 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-03-04 00:00:00 stock_data...
+                 Open       High    Low      Close  Volume  Dividends  Stock Splits
+Date                                                                               
+2020-03-04  63.990002  63.990002  61.73  63.004002  306710          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:32 AM]
+INFO: stock_symbol: N100.NS date: 2020-03-04 00:00:00 -> closing_price: 63.00400161743164 [__get_adjusted_average_price():257 - 2021/08/26 11:49:32 AM]
+INFO: stock_symbol: N100.NS date: 2020-03-04 00:00:00 -> adjusted_closing_price: 63.00400161743164 [get_adjusted_closing_price():167 - 2021/08/26 11:49:32 AM]
+DEBUG: symbol: N100.NS date: 2020-03-04 00:00:00 -> adjusted_closing_price: 63.00400161743164 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:32 AM]
+INFO: no price adjustment. stock_symbol: N100.NS date: 2020-03-04 00:00:00 -> unchanged adjusted_price: 63.00400161743164 [de_adjust_price():203 - 2021/08/26 11:49:32 AM]
+INFO: symbol_list: ['N100.NS', 'N100.BO'] date: 2020-03-04 00:00:00 symbol: N100.NS -> closing_price: 63.00400161743164 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:32 AM]
+DEBUG: symbol: MON100.BO date: 2020-03-04 00:00:00 -> adjusted_closing_price: 63.00400161743164 [get_closing_price_by_symbol_list():226 - 2021/08/26 11:49:32 AM]
+DEBUG: numerator: 10 denominator: 1 [de_adjust_price():199 - 2021/08/26 11:49:32 AM]
+INFO: adjusted_price: 63.00400161743164 stock_symbol: MON100.NS date: 2020-03-04 00:00:00 -> de_adjusted_price: 630.0400161743164 [de_adjust_price():200 - 2021/08/26 11:49:32 AM]
+INFO: symbol_list: ['MON100.NS', 'MON100.BO'] date: 2020-03-04 00:00:00 symbol: MON100.NS -> closing_price: 630.0400161743164 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:32 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-03-04 00:00:00 start_date: 2020-03-04 00:00:00 end_date: 2020-03-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:32 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-03-04 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2020-03-04  575.049988  582.950012  558.549988  573.650024   35300          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:32 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-03-04 00:00:00 -> closing_price: 573.6500244140625 [__get_adjusted_average_price():257 - 2021/08/26 11:49:32 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-03-04 00:00:00 -> adjusted_closing_price: 573.6500244140625 [get_adjusted_closing_price():167 - 2021/08/26 11:49:32 AM]
+DEBUG: symbol: SAFARI.NS date: 2020-03-04 00:00:00 -> adjusted_closing_price: 573.6500244140625 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:32 AM]
+INFO: no price adjustment. stock_symbol: SAFARI.NS date: 2020-03-04 00:00:00 -> unchanged adjusted_price: 573.6500244140625 [de_adjust_price():203 - 2021/08/26 11:49:32 AM]
+INFO: symbol_list: ['SAFARI.NS', 'SAFARIND.BO'] date: 2020-03-04 00:00:00 symbol: SAFARI.NS -> closing_price: 573.6500244140625 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:32 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:32 AM]
+INFO: stock_symbol: None date: 2020-03-04 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:32 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-03-04 00:00:00 start_date: 2020-03-04 00:00:00 end_date: 2020-03-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:32 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-03-04 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2020-03-04  137.641698  142.628716  128.665066  130.211044   77898          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:33 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-03-04 00:00:00 -> closing_price: 130.21104431152344 [__get_adjusted_average_price():257 - 2021/08/26 11:49:33 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-03-04 00:00:00 -> adjusted_closing_price: 130.21104431152344 [get_adjusted_closing_price():167 - 2021/08/26 11:49:33 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-03-04 00:00:00 -> adjusted_closing_price: 130.21104431152344 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:33 AM]
+WARNING: stock_symbol is None! date: 2020-03-04 00:00:00 -> unchanged adjusted_price: 130.21104431152344 [de_adjust_price():185 - 2021/08/26 11:49:33 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-03-04 00:00:00 symbol: None -> closing_price: 130.21104431152344 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:33 AM]
+DEBUG: ongoing_date: 2020-03-04 00:00:00 value_sum: 18782.311531066895 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:33 AM]
+DEBUG: ongoing_date changing from: 2020-03-04 00:00:00 to: 2020-03-19 00:00:00 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:33 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF [__compute_daywise_portfolio():322 - 2021/08/26 11:49:33 AM]
+DEBUG: masked_rows...
+        Date                                      Name  Shares                  Symbol  Closing Price         Value  Proportion
+9 2020-03-19  Motilal Oswal MOSt Shares NASDAQ-100 ETF    17.0  [MON100.NS, MON100.BO]     630.040016  10710.680275    0.570254 [__compute_daywise_portfolio():326 - 2021/08/26 11:49:33 AM]
+DEBUG: transacted_shares: 3.0 [__compute_daywise_portfolio():333 - 2021/08/26 11:49:33 AM]
+DEBUG: company_name: Motilal Oswal MOSt Shares NASDAQ-100 ETF updated shares count: 20.0 [__compute_daywise_portfolio():335 - 2021/08/26 11:49:33 AM]
+DEBUG: date: 0 [__compute_daywise_portfolio():307 - 2021/08/26 11:49:33 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-03-19 00:00:00 start_date: 2020-03-19 00:00:00 end_date: 2020-03-20 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:33 AM]
+DEBUG: stock_symbol: ABCAPITAL.NS date: 2020-03-19 00:00:00 stock_data...
+            Open       High   Low      Close   Volume  Dividends  Stock Splits
+Date                                                                          
+2020-03-19  47.5  48.799999  45.0  45.799999  2782180          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:33 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-03-19 00:00:00 -> closing_price: 45.79999923706055 [__get_adjusted_average_price():257 - 2021/08/26 11:49:33 AM]
+INFO: stock_symbol: ABCAPITAL.NS date: 2020-03-19 00:00:00 -> adjusted_closing_price: 45.79999923706055 [get_adjusted_closing_price():167 - 2021/08/26 11:49:33 AM]
+DEBUG: symbol: ABCAPITAL.NS date: 2020-03-19 00:00:00 -> adjusted_closing_price: 45.79999923706055 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:33 AM]
+INFO: no price adjustment. stock_symbol: ABCAPITAL.NS date: 2020-03-19 00:00:00 -> unchanged adjusted_price: 45.79999923706055 [de_adjust_price():203 - 2021/08/26 11:49:33 AM]
+INFO: symbol_list: ['ABCAPITAL.NS', 'ABCAPITAL.BO'] date: 2020-03-19 00:00:00 symbol: ABCAPITAL.NS -> closing_price: 45.79999923706055 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:33 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-03-19 00:00:00 start_date: 2020-03-19 00:00:00 end_date: 2020-03-20 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:33 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-03-19 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:33 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-03-19 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:33 AM]
+INFO: stock_symbol: MON100.NS date: 2020-03-19 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:33 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-03-19 00:00:00 start_date: 2020-03-19 00:00:00 end_date: 2020-03-20 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:33 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-03-19 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:34 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-03-19 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:34 AM]
+INFO: stock_symbol: MON100.BO date: 2020-03-19 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:34 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-03-19 00:00:00 start_date: 2020-03-12 00:00:00 end_date: 2020-03-27 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:34 AM]
+DEBUG: stock_symbol: MON100.NS date: 2020-03-19 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:34 AM]
+WARNING: stock_symbol: MON100.NS date: 2020-03-19 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:34 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-03-19 00:00:00 start_date: 2020-03-12 00:00:00 end_date: 2020-03-27 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:34 AM]
+DEBUG: stock_symbol: MON100.BO date: 2020-03-19 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 11:49:34 AM]
+WARNING: stock_symbol: MON100.BO date: 2020-03-19 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 11:49:34 AM]
+INFO: stock_symbol: MON100.NS -> old_symbol: N100.NS [get_renamed_symbol():176 - 2021/08/26 11:49:34 AM]
+INFO: stock_symbol: MON100.BO -> old_symbol: N100.BO [get_renamed_symbol():176 - 2021/08/26 11:49:34 AM]
+DEBUG: symbol_list: ['MON100.NS', 'MON100.BO'] -> renamed_symbol_list: ['N100.NS', 'N100.BO'] [get_closing_price_by_symbol_list():223 - 2021/08/26 11:49:34 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-03-19 00:00:00 start_date: 2020-03-19 00:00:00 end_date: 2020-03-20 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:34 AM]
+DEBUG: stock_symbol: N100.NS date: 2020-03-19 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2020-03-19  53.279999  54.830002  49.919998  52.674999  402880          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:34 AM]
+INFO: stock_symbol: N100.NS date: 2020-03-19 00:00:00 -> closing_price: 52.67499923706055 [__get_adjusted_average_price():257 - 2021/08/26 11:49:34 AM]
+INFO: stock_symbol: N100.NS date: 2020-03-19 00:00:00 -> adjusted_closing_price: 52.67499923706055 [get_adjusted_closing_price():167 - 2021/08/26 11:49:34 AM]
+DEBUG: symbol: N100.NS date: 2020-03-19 00:00:00 -> adjusted_closing_price: 52.67499923706055 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:34 AM]
+INFO: no price adjustment. stock_symbol: N100.NS date: 2020-03-19 00:00:00 -> unchanged adjusted_price: 52.67499923706055 [de_adjust_price():203 - 2021/08/26 11:49:34 AM]
+INFO: symbol_list: ['N100.NS', 'N100.BO'] date: 2020-03-19 00:00:00 symbol: N100.NS -> closing_price: 52.67499923706055 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:34 AM]
+DEBUG: symbol: MON100.BO date: 2020-03-19 00:00:00 -> adjusted_closing_price: 52.67499923706055 [get_closing_price_by_symbol_list():226 - 2021/08/26 11:49:34 AM]
+DEBUG: numerator: 10 denominator: 1 [de_adjust_price():199 - 2021/08/26 11:49:34 AM]
+INFO: adjusted_price: 52.67499923706055 stock_symbol: MON100.NS date: 2020-03-19 00:00:00 -> de_adjusted_price: 526.7499923706055 [de_adjust_price():200 - 2021/08/26 11:49:34 AM]
+INFO: symbol_list: ['MON100.NS', 'MON100.BO'] date: 2020-03-19 00:00:00 symbol: MON100.NS -> closing_price: 526.7499923706055 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:34 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-03-19 00:00:00 start_date: 2020-03-19 00:00:00 end_date: 2020-03-20 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:34 AM]
+DEBUG: stock_symbol: SAFARI.NS date: 2020-03-19 00:00:00 stock_data...
+             Open        High         Low   Close  Volume  Dividends  Stock Splits
+Date                                                                              
+2020-03-19  427.0  479.100006  395.549988  410.75   11963          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:34 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-03-19 00:00:00 -> closing_price: 410.75 [__get_adjusted_average_price():257 - 2021/08/26 11:49:34 AM]
+INFO: stock_symbol: SAFARI.NS date: 2020-03-19 00:00:00 -> adjusted_closing_price: 410.75 [get_adjusted_closing_price():167 - 2021/08/26 11:49:34 AM]
+DEBUG: symbol: SAFARI.NS date: 2020-03-19 00:00:00 -> adjusted_closing_price: 410.75 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:34 AM]
+INFO: no price adjustment. stock_symbol: SAFARI.NS date: 2020-03-19 00:00:00 -> unchanged adjusted_price: 410.75 [de_adjust_price():203 - 2021/08/26 11:49:34 AM]
+INFO: symbol_list: ['SAFARI.NS', 'SAFARIND.BO'] date: 2020-03-19 00:00:00 symbol: SAFARI.NS -> closing_price: 410.75 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:34 AM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 11:49:34 AM]
+INFO: stock_symbol: None date: 2020-03-19 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 11:49:34 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-03-19 00:00:00 start_date: 2020-03-19 00:00:00 end_date: 2020-03-20 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 11:49:34 AM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-03-19 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2020-03-19  76.750198  76.750198  76.750198  76.750198    9184          0             0 [__get_adjusted_average_price():250 - 2021/08/26 11:49:35 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-03-19 00:00:00 -> closing_price: 76.75019836425781 [__get_adjusted_average_price():257 - 2021/08/26 11:49:35 AM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-03-19 00:00:00 -> adjusted_closing_price: 76.75019836425781 [get_adjusted_closing_price():167 - 2021/08/26 11:49:35 AM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-03-19 00:00:00 -> adjusted_closing_price: 76.75019836425781 [get_closing_price_by_symbol_list():211 - 2021/08/26 11:49:35 AM]
+WARNING: stock_symbol is None! date: 2020-03-19 00:00:00 -> unchanged adjusted_price: 76.75019836425781 [de_adjust_price():185 - 2021/08/26 11:49:35 AM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-03-19 00:00:00 symbol: None -> closing_price: 76.75019836425781 [get_closing_price_by_symbol_list():235 - 2021/08/26 11:49:35 AM]
+DEBUG: ongoing_date: 2020-03-19 00:00:00 value_sum: 15491.005767822266 [compute_and_append_daily_proportions():296 - 2021/08/26 11:49:35 AM]
+DEBUG: ongoing_date changing from: 2020-03-19 00:00:00 to: 0 [__compute_daywise_portfolio():318 - 2021/08/26 11:49:35 AM]
+DEBUG: company_name: nan [__compute_daywise_portfolio():322 - 2021/08/26 11:49:35 AM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():326 - 2021/08/26 11:49:35 AM]
+DEBUG: added to daily_portfolio company_name: nan for ongoing_date: 0 [__compute_daywise_portfolio():330 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.20246028329884852, 0.7975397167011515] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.0080154074091066 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.23206839129101653, 0.7679316087089835] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.0077178409767393 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.32706485928038304, 0.672935140719617] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.0067631106010402 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.19983874728107387, 0.8001612527189261] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.0080417542841023 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.29448549770073995, 0.70551450229926] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.007090538628411 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.28560911431024705, 0.714390885689753] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.0071797477645887 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.18997485306604417, 0.2937116284783327, 0.5163135184556231] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.013382075887503 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.09337462912469786, 0.19656997417492386, 0.2395123601042123, 0.470543036596166] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.0211442005958735 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.08795138873804499, 0.23452998552490037, 0.2658091225698614, 0.41170950316719324] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.020265187051211 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.0866789982234071, 0.22029298482954884, 0.3104817565147436, 0.38254626043230044] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.020136396917592 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.07280038758492284, 0.2107788414767302, 0.3428594152699202, 0.37356135566842674] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.0204212191938167 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.11410827939342659, 0.30664654307766914, 0.5792451775289043] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.0147833777838329 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.05699856461871995, 0.1134214172174498, 0.27570129995766507, 0.5538787182061652] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.023577558129962 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.09544290295554872, 0.16022473589093986, 0.267700449473472, 0.47663191168003943] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.021533795909439 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.07291873795947541, 0.15367981341491282, 0.19585564128574237, 0.5775458073398694] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.0230899426073985 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.06108407087862602, 0.16068309126583077, 0.20797926404768835, 0.5702535738078549] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.0231831585720097 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
+DEBUG: sorted_proportions: [0.05303077232766965, 0.11826217076800982, 0.1486350199230106, 0.6800720369813099] [compute_portfolio_complexity():52 - 2021/08/26 11:49:35 AM]
+INFO: portfolio_complexity: 1.024902458094388 [compute_portfolio_complexity():59 - 2021/08/26 11:49:35 AM]
