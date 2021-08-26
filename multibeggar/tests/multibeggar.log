@@ -1,0 +1,1582 @@
+INFO: company_name: Adani Total Gas -> symbol: ATGL [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbol: ATGL.NS [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbol: ATGL [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbol: ATGL.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbols: ['ATGL.NS', 'ATGL.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbol: ATGL [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbol: ATGL.NS [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbol: ATGL [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbol: ATGL.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbols: ['ATGL.NS', 'ATGL.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbol: ATGL [get_nse_symbol_by_startswith_company_name_match():71 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbol: ATGL.NS [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbol: ATGL [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbol: ATGL.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Adani Total Gas -> symbols: ['ATGL.NS', 'ATGL.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:43 PM]
+DEBUG: company_name: Bajaj Steel Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:43 PM]
+WARNING: company_name: Bajaj Steel Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbols: [None, 'BAJAJST.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:43 PM]
+DEBUG: company_name: Bajaj Steel Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:43 PM]
+WARNING: company_name: Bajaj Steel Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbols: [None, 'BAJAJST.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:43 PM]
+DEBUG: company_name: Bajaj Steel Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:43 PM]
+WARNING: company_name: Bajaj Steel Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbols: [None, 'BAJAJST.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:43 PM]
+DEBUG: company_name: Bajaj Steel Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:43 PM]
+WARNING: company_name: Bajaj Steel Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbols: [None, 'BAJAJST.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:43 PM]
+DEBUG: company_name: Bajaj Steel Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:43 PM]
+WARNING: company_name: Bajaj Steel Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbols: [None, 'BAJAJST.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:43 PM]
+DEBUG: company_name: Bajaj Steel Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:43 PM]
+WARNING: company_name: Bajaj Steel Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbol: BAJAJST.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Bajaj Steel Industries -> symbols: [None, 'BAJAJST.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:43 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:43 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:43 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:43 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:43 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:43 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:43 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:43 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Black Rose Industries -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+WARNING: company_name: Black Rose Industries -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE [get_bse_symbol_by_startswith_company_name_match():118 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbol: BLACKROSE.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Black Rose Industries -> symbols: [None, 'BLACKROSE.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+    SYMBOL   NAME OF COMPANY  match_ratio
+553   GRUH  GRUH Finance Ltd           86 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.NS [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+     Security Id      Security Name  match_ratio
+4083        GRUH  GRUH FINANCE LTD.           86 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbols: ['GRUH.NS', 'GRUH.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+    SYMBOL   NAME OF COMPANY  match_ratio
+553   GRUH  GRUH Finance Ltd           86 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.NS [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+     Security Id      Security Name  match_ratio
+4083        GRUH  GRUH FINANCE LTD.           86 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbols: ['GRUH.NS', 'GRUH.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+    SYMBOL   NAME OF COMPANY  match_ratio
+553   GRUH  GRUH Finance Ltd           86 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.NS [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+     Security Id      Security Name  match_ratio
+4083        GRUH  GRUH FINANCE LTD.           86 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.BO [get_bse_symbol():153 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbols: ['GRUH.NS', 'GRUH.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+    SYMBOL   NAME OF COMPANY  match_ratio
+553   GRUH  GRUH Finance Ltd           86 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.NS [get_nse_symbol():106 - 2021/08/26 01:24:44 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:44 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+     Security Id      Security Name  match_ratio
+4083        GRUH  GRUH FINANCE LTD.           86 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.BO [get_bse_symbol():153 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbols: ['GRUH.NS', 'GRUH.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+    SYMBOL   NAME OF COMPANY  match_ratio
+553   GRUH  GRUH Finance Ltd           86 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.NS [get_nse_symbol():106 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+     Security Id      Security Name  match_ratio
+4083        GRUH  GRUH FINANCE LTD.           86 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.BO [get_bse_symbol():153 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbols: ['GRUH.NS', 'GRUH.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+    SYMBOL   NAME OF COMPANY  match_ratio
+553   GRUH  GRUH Finance Ltd           86 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.NS [get_nse_symbol():106 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+     Security Id      Security Name  match_ratio
+4083        GRUH  GRUH FINANCE LTD.           86 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.BO [get_bse_symbol():153 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbols: ['GRUH.NS', 'GRUH.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+    SYMBOL   NAME OF COMPANY  match_ratio
+553   GRUH  GRUH Finance Ltd           86 [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_nse_symbol_by_fuzzy_company_name_match():91 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.NS [get_nse_symbol():106 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: Gruh Finance -> qualified_rows...
+     Security Id      Security Name  match_ratio
+4083        GRUH  GRUH FINANCE LTD.           86 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbol: GRUH.BO [get_bse_symbol():153 - 2021/08/26 01:24:45 PM]
+INFO: company_name: Gruh Finance -> symbols: ['GRUH.NS', 'GRUH.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:45 PM]
+WARNING: company_name: KMC Speciality Hospitals -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+     Security Id                          Security Name  match_ratio
+1518     KMCSHIL  Kmc Speciality Hospitals (India) Ltd.           83 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL.BO [get_bse_symbol():153 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbols: [None, 'KMCSHIL.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:45 PM]
+WARNING: company_name: KMC Speciality Hospitals -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+     Security Id                          Security Name  match_ratio
+1518     KMCSHIL  Kmc Speciality Hospitals (India) Ltd.           83 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL.BO [get_bse_symbol():153 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbols: [None, 'KMCSHIL.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:45 PM]
+WARNING: company_name: KMC Speciality Hospitals -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+     Security Id                          Security Name  match_ratio
+1518     KMCSHIL  Kmc Speciality Hospitals (India) Ltd.           83 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL.BO [get_bse_symbol():153 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbols: [None, 'KMCSHIL.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:45 PM]
+WARNING: company_name: KMC Speciality Hospitals -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+     Security Id                          Security Name  match_ratio
+1518     KMCSHIL  Kmc Speciality Hospitals (India) Ltd.           83 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL.BO [get_bse_symbol():153 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbols: [None, 'KMCSHIL.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:45 PM]
+WARNING: company_name: KMC Speciality Hospitals -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+     Security Id                          Security Name  match_ratio
+1518     KMCSHIL  Kmc Speciality Hospitals (India) Ltd.           83 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL.BO [get_bse_symbol():153 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbols: [None, 'KMCSHIL.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:45 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:45 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:46 PM]
+WARNING: company_name: KMC Speciality Hospitals -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:46 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:46 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:46 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+     Security Id                          Security Name  match_ratio
+1518     KMCSHIL  Kmc Speciality Hospitals (India) Ltd.           83 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:46 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:46 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL.BO [get_bse_symbol():153 - 2021/08/26 01:24:46 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbols: [None, 'KMCSHIL.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:46 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_nse_symbol_by_startswith_company_name_match():78 - 2021/08/26 01:24:46 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+Empty DataFrame
+Columns: [SYMBOL, NAME OF COMPANY, match_ratio]
+Index: [] [get_nse_symbol_by_fuzzy_company_name_match():85 - 2021/08/26 01:24:46 PM]
+WARNING: company_name: KMC Speciality Hospitals -> no symbol matched! [get_nse_symbol_by_fuzzy_company_name_match():94 - 2021/08/26 01:24:46 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: None [get_nse_symbol():106 - 2021/08/26 01:24:46 PM]
+INFO: company_name: KMC Speciality Hospitals -> no symbol matched. [get_bse_symbol_by_startswith_company_name_match():125 - 2021/08/26 01:24:46 PM]
+DEBUG: company_name: KMC Speciality Hospitals -> qualified_rows...
+     Security Id                          Security Name  match_ratio
+1518     KMCSHIL  Kmc Speciality Hospitals (India) Ltd.           83 [get_bse_symbol_by_fuzzy_company_name_match():132 - 2021/08/26 01:24:46 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL [get_bse_symbol_by_fuzzy_company_name_match():138 - 2021/08/26 01:24:46 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbol: KMCSHIL.BO [get_bse_symbol():153 - 2021/08/26 01:24:46 PM]
+INFO: company_name: KMC Speciality Hospitals -> symbols: [None, 'KMCSHIL.BO'] [get_stock_symbols():160 - 2021/08/26 01:24:46 PM]
+DEBUG: date: 2019-02-27 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:46 PM]
+DEBUG: ongoing_date: None value_sum: 0.0 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:46 PM]
+DEBUG: ongoing_date changing from: None to: 2019-02-27 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:46 PM]
+DEBUG: company_name: Gruh Finance [__compute_daywise_portfolio():325 - 2021/08/26 01:24:46 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:24:46 PM]
+DEBUG: added to daily_portfolio company_name: Gruh Finance for ongoing_date: 2019-02-27 00:00:00 [__compute_daywise_portfolio():333 - 2021/08/26 01:24:46 PM]
+DEBUG: date: 2019-03-28 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:46 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-02-27 00:00:00 start_date: 2019-02-27 00:00:00 end_date: 2019-02-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:46 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-02-27 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:46 PM]
+WARNING: stock_symbol: GRUH.NS date: 2019-02-27 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:46 PM]
+INFO: stock_symbol: GRUH.NS date: 2019-02-27 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:46 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-02-27 00:00:00 start_date: 2019-02-27 00:00:00 end_date: 2019-02-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:46 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-02-27 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:46 PM]
+WARNING: stock_symbol: GRUH.BO date: 2019-02-27 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:46 PM]
+INFO: stock_symbol: GRUH.BO date: 2019-02-27 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:46 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-02-27 00:00:00 start_date: 2019-02-20 00:00:00 end_date: 2019-03-07 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:46 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-02-27 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:46 PM]
+WARNING: stock_symbol: GRUH.NS date: 2019-02-27 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:46 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-02-27 00:00:00 start_date: 2019-02-20 00:00:00 end_date: 2019-03-07 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:46 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-02-27 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:47 PM]
+WARNING: stock_symbol: GRUH.BO date: 2019-02-27 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:47 PM]
+WARNING: stock_symbol: GRUH.NS -> no old_symbol found! [get_renamed_symbol():179 - 2021/08/26 01:24:47 PM]
+WARNING: stock_symbol: GRUH.BO -> no old_symbol found! [get_renamed_symbol():179 - 2021/08/26 01:24:47 PM]
+DEBUG: symbol_list: ['GRUH.NS', 'GRUH.BO'] -> renamed_symbol_list: [] [get_closing_price_by_symbol_list():223 - 2021/08/26 01:24:47 PM]
+WARNING: symbol_list: ['GRUH.NS', 'GRUH.BO'] date: 2019-02-27 00:00:00 -> no closing_price found! [get_closing_price_by_symbol_list():229 - 2021/08/26 01:24:47 PM]
+DEBUG: ongoing_date: 2019-02-27 00:00:00 value_sum: 0 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:47 PM]
+WARNING: value_sum is zero, clearing daily_portfolio! ongoing_date: 2019-02-27 00:00:00 [compute_and_append_daily_proportions():300 - 2021/08/26 01:24:47 PM]
+DEBUG: ongoing_date changing from: 2019-02-27 00:00:00 to: 2019-03-28 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:47 PM]
+DEBUG: company_name: Gruh Finance [__compute_daywise_portfolio():325 - 2021/08/26 01:24:47 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:24:47 PM]
+DEBUG: added to daily_portfolio company_name: Gruh Finance for ongoing_date: 2019-03-28 00:00:00 [__compute_daywise_portfolio():333 - 2021/08/26 01:24:47 PM]
+DEBUG: date: 2019-03-29 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:47 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-03-28 00:00:00 start_date: 2019-03-28 00:00:00 end_date: 2019-03-29 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:47 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-03-28 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:47 PM]
+WARNING: stock_symbol: GRUH.NS date: 2019-03-28 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:47 PM]
+INFO: stock_symbol: GRUH.NS date: 2019-03-28 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:47 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-03-28 00:00:00 start_date: 2019-03-28 00:00:00 end_date: 2019-03-29 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:47 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-03-28 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:47 PM]
+WARNING: stock_symbol: GRUH.BO date: 2019-03-28 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:47 PM]
+INFO: stock_symbol: GRUH.BO date: 2019-03-28 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:47 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-03-28 00:00:00 start_date: 2019-03-21 00:00:00 end_date: 2019-04-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:47 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-03-28 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:48 PM]
+WARNING: stock_symbol: GRUH.NS date: 2019-03-28 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:48 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-03-28 00:00:00 start_date: 2019-03-21 00:00:00 end_date: 2019-04-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:48 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-03-28 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:48 PM]
+WARNING: stock_symbol: GRUH.BO date: 2019-03-28 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:48 PM]
+WARNING: stock_symbol: GRUH.NS -> no old_symbol found! [get_renamed_symbol():179 - 2021/08/26 01:24:48 PM]
+WARNING: stock_symbol: GRUH.BO -> no old_symbol found! [get_renamed_symbol():179 - 2021/08/26 01:24:48 PM]
+DEBUG: symbol_list: ['GRUH.NS', 'GRUH.BO'] -> renamed_symbol_list: [] [get_closing_price_by_symbol_list():223 - 2021/08/26 01:24:48 PM]
+WARNING: symbol_list: ['GRUH.NS', 'GRUH.BO'] date: 2019-03-28 00:00:00 -> no closing_price found! [get_closing_price_by_symbol_list():229 - 2021/08/26 01:24:48 PM]
+DEBUG: ongoing_date: 2019-03-28 00:00:00 value_sum: 0 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:48 PM]
+WARNING: value_sum is zero, clearing daily_portfolio! ongoing_date: 2019-03-28 00:00:00 [compute_and_append_daily_proportions():300 - 2021/08/26 01:24:48 PM]
+DEBUG: ongoing_date changing from: 2019-03-28 00:00:00 to: 2019-03-29 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:48 PM]
+DEBUG: company_name: Gruh Finance [__compute_daywise_portfolio():325 - 2021/08/26 01:24:48 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:24:48 PM]
+DEBUG: added to daily_portfolio company_name: Gruh Finance for ongoing_date: 2019-03-29 00:00:00 [__compute_daywise_portfolio():333 - 2021/08/26 01:24:48 PM]
+DEBUG: date: 2019-04-01 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:48 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-03-29 00:00:00 start_date: 2019-03-29 00:00:00 end_date: 2019-03-30 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:48 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-03-29 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:48 PM]
+WARNING: stock_symbol: GRUH.NS date: 2019-03-29 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:48 PM]
+INFO: stock_symbol: GRUH.NS date: 2019-03-29 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:48 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-03-29 00:00:00 start_date: 2019-03-29 00:00:00 end_date: 2019-03-30 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:48 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-03-29 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:48 PM]
+WARNING: stock_symbol: GRUH.BO date: 2019-03-29 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:48 PM]
+INFO: stock_symbol: GRUH.BO date: 2019-03-29 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:48 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-03-29 00:00:00 start_date: 2019-03-22 00:00:00 end_date: 2019-04-06 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:48 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-03-29 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:49 PM]
+WARNING: stock_symbol: GRUH.NS date: 2019-03-29 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:49 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-03-29 00:00:00 start_date: 2019-03-22 00:00:00 end_date: 2019-04-06 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:49 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-03-29 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:49 PM]
+WARNING: stock_symbol: GRUH.BO date: 2019-03-29 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:49 PM]
+WARNING: stock_symbol: GRUH.NS -> no old_symbol found! [get_renamed_symbol():179 - 2021/08/26 01:24:49 PM]
+WARNING: stock_symbol: GRUH.BO -> no old_symbol found! [get_renamed_symbol():179 - 2021/08/26 01:24:49 PM]
+DEBUG: symbol_list: ['GRUH.NS', 'GRUH.BO'] -> renamed_symbol_list: [] [get_closing_price_by_symbol_list():223 - 2021/08/26 01:24:49 PM]
+WARNING: symbol_list: ['GRUH.NS', 'GRUH.BO'] date: 2019-03-29 00:00:00 -> no closing_price found! [get_closing_price_by_symbol_list():229 - 2021/08/26 01:24:49 PM]
+DEBUG: ongoing_date: 2019-03-29 00:00:00 value_sum: 0 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:49 PM]
+WARNING: value_sum is zero, clearing daily_portfolio! ongoing_date: 2019-03-29 00:00:00 [compute_and_append_daily_proportions():300 - 2021/08/26 01:24:49 PM]
+DEBUG: ongoing_date changing from: 2019-03-29 00:00:00 to: 2019-04-01 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:49 PM]
+DEBUG: company_name: Gruh Finance [__compute_daywise_portfolio():325 - 2021/08/26 01:24:49 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:24:49 PM]
+DEBUG: added to daily_portfolio company_name: Gruh Finance for ongoing_date: 2019-04-01 00:00:00 [__compute_daywise_portfolio():333 - 2021/08/26 01:24:49 PM]
+DEBUG: date: 2019-04-01 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:49 PM]
+DEBUG: company_name: Gruh Finance [__compute_daywise_portfolio():325 - 2021/08/26 01:24:49 PM]
+DEBUG: masked_rows...
+        Date          Name  Shares              Symbol Closing Price Value  Proportion
+3 2019-04-01  Gruh Finance    -4.0  [GRUH.NS, GRUH.BO]           NaN   NaN         NaN [__compute_daywise_portfolio():329 - 2021/08/26 01:24:49 PM]
+DEBUG: transacted_shares: -4.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:49 PM]
+DEBUG: company_name: Gruh Finance updated shares count: -8.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:49 PM]
+DEBUG: date: 2019-04-01 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:49 PM]
+DEBUG: company_name: Gruh Finance [__compute_daywise_portfolio():325 - 2021/08/26 01:24:49 PM]
+DEBUG: masked_rows...
+        Date          Name  Shares              Symbol Closing Price Value  Proportion
+3 2019-04-01  Gruh Finance    -8.0  [GRUH.NS, GRUH.BO]           NaN   NaN         NaN [__compute_daywise_portfolio():329 - 2021/08/26 01:24:49 PM]
+DEBUG: transacted_shares: -4.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:49 PM]
+DEBUG: company_name: Gruh Finance updated shares count: -12.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:49 PM]
+DEBUG: date: 2019-04-01 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:49 PM]
+DEBUG: company_name: Gruh Finance [__compute_daywise_portfolio():325 - 2021/08/26 01:24:49 PM]
+DEBUG: masked_rows...
+        Date          Name  Shares              Symbol Closing Price Value  Proportion
+3 2019-04-01  Gruh Finance   -12.0  [GRUH.NS, GRUH.BO]           NaN   NaN         NaN [__compute_daywise_portfolio():329 - 2021/08/26 01:24:49 PM]
+DEBUG: transacted_shares: -2.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:49 PM]
+DEBUG: company_name: Gruh Finance updated shares count: -14.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:49 PM]
+DEBUG: date: 2019-10-10 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:49 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-04-01 00:00:00 start_date: 2019-04-01 00:00:00 end_date: 2019-04-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:49 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-04-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:49 PM]
+WARNING: stock_symbol: GRUH.NS date: 2019-04-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:49 PM]
+INFO: stock_symbol: GRUH.NS date: 2019-04-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:49 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-04-01 00:00:00 start_date: 2019-04-01 00:00:00 end_date: 2019-04-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:49 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-04-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:49 PM]
+WARNING: stock_symbol: GRUH.BO date: 2019-04-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:49 PM]
+INFO: stock_symbol: GRUH.BO date: 2019-04-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:49 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-04-01 00:00:00 start_date: 2019-03-25 00:00:00 end_date: 2019-04-09 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:49 PM]
+DEBUG: stock_symbol: GRUH.NS date: 2019-04-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:50 PM]
+WARNING: stock_symbol: GRUH.NS date: 2019-04-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:50 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-04-01 00:00:00 start_date: 2019-03-25 00:00:00 end_date: 2019-04-09 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:50 PM]
+DEBUG: stock_symbol: GRUH.BO date: 2019-04-01 00:00:00 stock_data...
+Empty DataFrame
+Columns: [Open, High, Low, Close, Adj Close, Volume]
+Index: [] [__get_adjusted_average_price():250 - 2021/08/26 01:24:50 PM]
+WARNING: stock_symbol: GRUH.BO date: 2019-04-01 00:00:00 -> no stock data! [__get_adjusted_average_price():253 - 2021/08/26 01:24:50 PM]
+WARNING: stock_symbol: GRUH.NS -> no old_symbol found! [get_renamed_symbol():179 - 2021/08/26 01:24:50 PM]
+WARNING: stock_symbol: GRUH.BO -> no old_symbol found! [get_renamed_symbol():179 - 2021/08/26 01:24:50 PM]
+DEBUG: symbol_list: ['GRUH.NS', 'GRUH.BO'] -> renamed_symbol_list: [] [get_closing_price_by_symbol_list():223 - 2021/08/26 01:24:50 PM]
+WARNING: symbol_list: ['GRUH.NS', 'GRUH.BO'] date: 2019-04-01 00:00:00 -> no closing_price found! [get_closing_price_by_symbol_list():229 - 2021/08/26 01:24:50 PM]
+DEBUG: ongoing_date: 2019-04-01 00:00:00 value_sum: 0 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:50 PM]
+WARNING: value_sum is zero, clearing daily_portfolio! ongoing_date: 2019-04-01 00:00:00 [compute_and_append_daily_proportions():300 - 2021/08/26 01:24:50 PM]
+DEBUG: ongoing_date changing from: 2019-04-01 00:00:00 to: 2019-10-10 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:50 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:50 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:24:50 PM]
+DEBUG: added to daily_portfolio company_name: Black Rose Industries for ongoing_date: 2019-10-10 00:00:00 [__compute_daywise_portfolio():333 - 2021/08/26 01:24:50 PM]
+DEBUG: date: 2019-11-01 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:50 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:50 PM]
+INFO: stock_symbol: None date: 2019-10-10 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:50 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-10-10 00:00:00 start_date: 2019-10-10 00:00:00 end_date: 2019-10-11 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:50 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-10-10 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2019-10-10  81.088913  81.537742  75.054618  77.996956   37362          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:50 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-10-10 00:00:00 -> closing_price: 77.99695587158203 [__get_adjusted_average_price():257 - 2021/08/26 01:24:50 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-10-10 00:00:00 -> adjusted_closing_price: 77.99695587158203 [get_adjusted_closing_price():167 - 2021/08/26 01:24:50 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2019-10-10 00:00:00 -> adjusted_closing_price: 77.99695587158203 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:50 PM]
+WARNING: stock_symbol is None! date: 2019-10-10 00:00:00 -> unchanged adjusted_price: 77.99695587158203 [de_adjust_price():185 - 2021/08/26 01:24:50 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2019-10-10 00:00:00 symbol: None -> closing_price: 77.99695587158203 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:50 PM]
+DEBUG: ongoing_date: 2019-10-10 00:00:00 value_sum: 1559.9391174316406 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:50 PM]
+DEBUG: ongoing_date changing from: 2019-10-10 00:00:00 to: 2019-11-01 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:50 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:50 PM]
+DEBUG: masked_rows...
+        Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+7 2019-11-01  Black Rose Industries    20.0  [None, BLACKROSE.BO]      77.996956  1559.939117         1.0 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:50 PM]
+DEBUG: transacted_shares: 20.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:50 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 40.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:50 PM]
+DEBUG: date: 2019-11-05 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:50 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:50 PM]
+INFO: stock_symbol: None date: 2019-11-01 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:50 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-11-01 00:00:00 start_date: 2019-11-01 00:00:00 end_date: 2019-11-02 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:50 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-11-01 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2019-11-01  83.732024  83.781897  80.340858  83.083717   28008          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-11-01 00:00:00 -> closing_price: 83.0837173461914 [__get_adjusted_average_price():257 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-11-01 00:00:00 -> adjusted_closing_price: 83.0837173461914 [get_adjusted_closing_price():167 - 2021/08/26 01:24:51 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2019-11-01 00:00:00 -> adjusted_closing_price: 83.0837173461914 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:51 PM]
+WARNING: stock_symbol is None! date: 2019-11-01 00:00:00 -> unchanged adjusted_price: 83.0837173461914 [de_adjust_price():185 - 2021/08/26 01:24:51 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2019-11-01 00:00:00 symbol: None -> closing_price: 83.0837173461914 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date: 2019-11-01 00:00:00 value_sum: 3323.3486938476562 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date changing from: 2019-11-01 00:00:00 to: 2019-11-05 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:51 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:51 PM]
+DEBUG: masked_rows...
+        Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+7 2019-11-05  Black Rose Industries    40.0  [None, BLACKROSE.BO]      83.083717  3323.348694         1.0 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:51 PM]
+DEBUG: transacted_shares: 10.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:51 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 50.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:51 PM]
+DEBUG: date: 2019-11-11 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:51 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: None date: 2019-11-05 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:51 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-11-05 00:00:00 start_date: 2019-11-05 00:00:00 end_date: 2019-11-06 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:51 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-11-05 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2019-11-05  83.632289  83.732028  79.443197  81.886833   17178          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-11-05 00:00:00 -> closing_price: 81.88683319091797 [__get_adjusted_average_price():257 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-11-05 00:00:00 -> adjusted_closing_price: 81.88683319091797 [get_adjusted_closing_price():167 - 2021/08/26 01:24:51 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2019-11-05 00:00:00 -> adjusted_closing_price: 81.88683319091797 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:51 PM]
+WARNING: stock_symbol is None! date: 2019-11-05 00:00:00 -> unchanged adjusted_price: 81.88683319091797 [de_adjust_price():185 - 2021/08/26 01:24:51 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2019-11-05 00:00:00 symbol: None -> closing_price: 81.88683319091797 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date: 2019-11-05 00:00:00 value_sum: 4094.3416595458984 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date changing from: 2019-11-05 00:00:00 to: 2019-11-11 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:51 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:51 PM]
+DEBUG: masked_rows...
+        Date                   Name  Shares                Symbol  Closing Price       Value  Proportion
+7 2019-11-11  Black Rose Industries    50.0  [None, BLACKROSE.BO]      81.886833  4094.34166         1.0 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:51 PM]
+DEBUG: transacted_shares: -50.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:51 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 0.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:51 PM]
+DEBUG: date: 2019-12-23 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date: 2019-11-11 00:00:00 value_sum: 0.0 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date changing from: 2019-11-11 00:00:00 to: 2019-12-23 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:51 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:51 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:24:51 PM]
+DEBUG: added to daily_portfolio company_name: Black Rose Industries for ongoing_date: 2019-12-23 00:00:00 [__compute_daywise_portfolio():333 - 2021/08/26 01:24:51 PM]
+DEBUG: date: 2020-01-06 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:51 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: None date: 2019-12-23 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:51 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-12-23 00:00:00 start_date: 2019-12-23 00:00:00 end_date: 2019-12-24 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:51 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2019-12-23 00:00:00 stock_data...
+                  Open        High        Low     Close  Volume  Dividends  Stock Splits
+Date                                                                                    
+2019-12-23  101.735162  103.630231  95.750741  96.19957   35073          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-12-23 00:00:00 -> closing_price: 96.19956970214844 [__get_adjusted_average_price():257 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2019-12-23 00:00:00 -> adjusted_closing_price: 96.19956970214844 [get_adjusted_closing_price():167 - 2021/08/26 01:24:51 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2019-12-23 00:00:00 -> adjusted_closing_price: 96.19956970214844 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:51 PM]
+WARNING: stock_symbol is None! date: 2019-12-23 00:00:00 -> unchanged adjusted_price: 96.19956970214844 [de_adjust_price():185 - 2021/08/26 01:24:51 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2019-12-23 00:00:00 symbol: None -> closing_price: 96.19956970214844 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date: 2019-12-23 00:00:00 value_sum: 4809.978485107422 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date changing from: 2019-12-23 00:00:00 to: 2020-01-06 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:51 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:51 PM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+11 2020-01-06  Black Rose Industries    50.0  [None, BLACKROSE.BO]       96.19957  4809.978485         1.0 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:51 PM]
+DEBUG: transacted_shares: 10.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:51 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 60.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:51 PM]
+DEBUG: date: 2020-02-01 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:51 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: None date: 2020-01-06 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:51 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-01-06 00:00:00 start_date: 2020-01-06 00:00:00 end_date: 2020-01-07 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:51 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-01-06 00:00:00 stock_data...
+                  Open        High        Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                      
+2020-01-06  100.737763  103.231272  95.750745  100.937241   48877          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-01-06 00:00:00 -> closing_price: 100.93724060058594 [__get_adjusted_average_price():257 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-01-06 00:00:00 -> adjusted_closing_price: 100.93724060058594 [get_adjusted_closing_price():167 - 2021/08/26 01:24:51 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-01-06 00:00:00 -> adjusted_closing_price: 100.93724060058594 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:51 PM]
+WARNING: stock_symbol is None! date: 2020-01-06 00:00:00 -> unchanged adjusted_price: 100.93724060058594 [de_adjust_price():185 - 2021/08/26 01:24:51 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-01-06 00:00:00 symbol: None -> closing_price: 100.93724060058594 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date: 2020-01-06 00:00:00 value_sum: 6056.234436035156 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date changing from: 2020-01-06 00:00:00 to: 2020-02-01 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:51 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:51 PM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+11 2020-02-01  Black Rose Industries    60.0  [None, BLACKROSE.BO]     100.937241  6056.234436         1.0 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:51 PM]
+DEBUG: transacted_shares: -60.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:51 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 0.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:51 PM]
+DEBUG: date: 2020-02-07 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date: 2020-02-01 00:00:00 value_sum: 0.0 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:51 PM]
+DEBUG: ongoing_date changing from: 2020-02-01 00:00:00 to: 2020-02-07 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:51 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:51 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:24:51 PM]
+DEBUG: added to daily_portfolio company_name: Black Rose Industries for ongoing_date: 2020-02-07 00:00:00 [__compute_daywise_portfolio():333 - 2021/08/26 01:24:51 PM]
+DEBUG: date: 2020-02-10 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:51 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:51 PM]
+INFO: stock_symbol: None date: 2020-02-07 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:51 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-07 00:00:00 start_date: 2020-02-07 00:00:00 end_date: 2020-02-08 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:51 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-07 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2020-02-07  124.176737  139.636491  124.176737  137.192856  169910          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-07 00:00:00 -> closing_price: 137.19285583496094 [__get_adjusted_average_price():257 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-07 00:00:00 -> adjusted_closing_price: 137.19285583496094 [get_adjusted_closing_price():167 - 2021/08/26 01:24:52 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-02-07 00:00:00 -> adjusted_closing_price: 137.19285583496094 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:52 PM]
+WARNING: stock_symbol is None! date: 2020-02-07 00:00:00 -> unchanged adjusted_price: 137.19285583496094 [de_adjust_price():185 - 2021/08/26 01:24:52 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-02-07 00:00:00 symbol: None -> closing_price: 137.19285583496094 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:52 PM]
+DEBUG: ongoing_date: 2020-02-07 00:00:00 value_sum: 685.9642791748047 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:52 PM]
+DEBUG: ongoing_date changing from: 2020-02-07 00:00:00 to: 2020-02-10 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:52 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:52 PM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price       Value  Proportion
+14 2020-02-10  Black Rose Industries     5.0  [None, BLACKROSE.BO]     137.192856  685.964279         1.0 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:52 PM]
+DEBUG: transacted_shares: 10.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:52 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 15.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:52 PM]
+DEBUG: date: 2020-02-17 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:52 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: None date: 2020-02-10 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:52 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-10 00:00:00 start_date: 2020-02-10 00:00:00 end_date: 2020-02-11 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:52 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-10 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2020-02-10  137.641689  149.610532  134.848956  148.513382  161649          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-10 00:00:00 -> closing_price: 148.5133819580078 [__get_adjusted_average_price():257 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-10 00:00:00 -> adjusted_closing_price: 148.5133819580078 [get_adjusted_closing_price():167 - 2021/08/26 01:24:52 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-02-10 00:00:00 -> adjusted_closing_price: 148.5133819580078 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:52 PM]
+WARNING: stock_symbol is None! date: 2020-02-10 00:00:00 -> unchanged adjusted_price: 148.5133819580078 [de_adjust_price():185 - 2021/08/26 01:24:52 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-02-10 00:00:00 symbol: None -> closing_price: 148.5133819580078 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:52 PM]
+DEBUG: ongoing_date: 2020-02-10 00:00:00 value_sum: 2227.700729370117 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:52 PM]
+DEBUG: ongoing_date changing from: 2020-02-10 00:00:00 to: 2020-02-17 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:52 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:52 PM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+14 2020-02-17  Black Rose Industries    15.0  [None, BLACKROSE.BO]     148.513382  2227.700729         1.0 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:52 PM]
+DEBUG: transacted_shares: 5.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:52 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 20.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:52 PM]
+DEBUG: date: 2020-03-04 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:52 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: None date: 2020-02-17 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:52 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-17 00:00:00 start_date: 2020-02-17 00:00:00 end_date: 2020-02-18 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:52 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-02-17 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2020-02-17  124.675451  138.040653  124.675451  136.295197   84793          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-17 00:00:00 -> closing_price: 136.29519653320312 [__get_adjusted_average_price():257 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-02-17 00:00:00 -> adjusted_closing_price: 136.29519653320312 [get_adjusted_closing_price():167 - 2021/08/26 01:24:52 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-02-17 00:00:00 -> adjusted_closing_price: 136.29519653320312 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:52 PM]
+WARNING: stock_symbol is None! date: 2020-02-17 00:00:00 -> unchanged adjusted_price: 136.29519653320312 [de_adjust_price():185 - 2021/08/26 01:24:52 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-02-17 00:00:00 symbol: None -> closing_price: 136.29519653320312 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:52 PM]
+DEBUG: ongoing_date: 2020-02-17 00:00:00 value_sum: 2725.9039306640625 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:52 PM]
+DEBUG: ongoing_date changing from: 2020-02-17 00:00:00 to: 2020-03-04 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:52 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:52 PM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+14 2020-03-04  Black Rose Industries    20.0  [None, BLACKROSE.BO]     136.295197  2725.903931         1.0 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:52 PM]
+DEBUG: transacted_shares: 10.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:52 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 30.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:52 PM]
+DEBUG: date: 2020-04-21 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:52 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: None date: 2020-03-04 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:52 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-03-04 00:00:00 start_date: 2020-03-04 00:00:00 end_date: 2020-03-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:52 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-03-04 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2020-03-04  137.641698  142.628716  128.665066  130.211044   77898          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-03-04 00:00:00 -> closing_price: 130.21104431152344 [__get_adjusted_average_price():257 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-03-04 00:00:00 -> adjusted_closing_price: 130.21104431152344 [get_adjusted_closing_price():167 - 2021/08/26 01:24:52 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-03-04 00:00:00 -> adjusted_closing_price: 130.21104431152344 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:52 PM]
+WARNING: stock_symbol is None! date: 2020-03-04 00:00:00 -> unchanged adjusted_price: 130.21104431152344 [de_adjust_price():185 - 2021/08/26 01:24:52 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-03-04 00:00:00 symbol: None -> closing_price: 130.21104431152344 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:52 PM]
+DEBUG: ongoing_date: 2020-03-04 00:00:00 value_sum: 3906.331329345703 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:52 PM]
+DEBUG: ongoing_date changing from: 2020-03-04 00:00:00 to: 2020-04-21 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:52 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:52 PM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+14 2020-04-21  Black Rose Industries    30.0  [None, BLACKROSE.BO]     130.211044  3906.331329         1.0 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:52 PM]
+DEBUG: transacted_shares: 5.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:52 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 35.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:52 PM]
+DEBUG: date: 2020-06-02 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:52 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:52 PM]
+INFO: stock_symbol: None date: 2020-04-21 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:52 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-04-21 00:00:00 start_date: 2020-04-21 00:00:00 end_date: 2020-04-22 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:52 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2020-04-21 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2020-04-21  89.716449  89.716449  84.031251  87.671776   23129          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-04-21 00:00:00 -> closing_price: 87.6717758178711 [__get_adjusted_average_price():257 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2020-04-21 00:00:00 -> adjusted_closing_price: 87.6717758178711 [get_adjusted_closing_price():167 - 2021/08/26 01:24:53 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2020-04-21 00:00:00 -> adjusted_closing_price: 87.6717758178711 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:53 PM]
+WARNING: stock_symbol is None! date: 2020-04-21 00:00:00 -> unchanged adjusted_price: 87.6717758178711 [de_adjust_price():185 - 2021/08/26 01:24:53 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2020-04-21 00:00:00 symbol: None -> closing_price: 87.6717758178711 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:53 PM]
+DEBUG: ongoing_date: 2020-04-21 00:00:00 value_sum: 3068.5121536254883 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:53 PM]
+DEBUG: ongoing_date changing from: 2020-04-21 00:00:00 to: 2020-06-02 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:53 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:53 PM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+14 2020-06-02  Black Rose Industries    35.0  [None, BLACKROSE.BO]      87.671776  3068.512154         1.0 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:53 PM]
+DEBUG: transacted_shares: -35.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:53 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 0.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:53 PM]
+DEBUG: date: 2021-05-10 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:53 PM]
+DEBUG: ongoing_date: 2020-06-02 00:00:00 value_sum: 0.0 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:53 PM]
+DEBUG: ongoing_date changing from: 2020-06-02 00:00:00 to: 2021-05-10 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:53 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:53 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:24:53 PM]
+DEBUG: added to daily_portfolio company_name: Black Rose Industries for ongoing_date: 2021-05-10 00:00:00 [__compute_daywise_portfolio():333 - 2021/08/26 01:24:53 PM]
+DEBUG: date: 2021-05-17 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:53 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: None date: 2021-05-10 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:53 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-10 00:00:00 start_date: 2021-05-10 00:00:00 end_date: 2021-05-11 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:53 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-10 00:00:00 stock_data...
+                  Open        High    Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                  
+2021-05-10  177.949997  177.949997  172.0  175.149994  120744          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-10 00:00:00 -> closing_price: 175.14999389648438 [__get_adjusted_average_price():257 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-10 00:00:00 -> adjusted_closing_price: 175.14999389648438 [get_adjusted_closing_price():167 - 2021/08/26 01:24:53 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-05-10 00:00:00 -> adjusted_closing_price: 175.14999389648438 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:53 PM]
+WARNING: stock_symbol is None! date: 2021-05-10 00:00:00 -> unchanged adjusted_price: 175.14999389648438 [de_adjust_price():185 - 2021/08/26 01:24:53 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-05-10 00:00:00 symbol: None -> closing_price: 175.14999389648438 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:53 PM]
+DEBUG: ongoing_date: 2021-05-10 00:00:00 value_sum: 8757.499694824219 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:53 PM]
+DEBUG: ongoing_date changing from: 2021-05-10 00:00:00 to: 2021-05-17 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:53 PM]
+DEBUG: company_name: KMC Speciality Hospitals [__compute_daywise_portfolio():325 - 2021/08/26 01:24:53 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:24:53 PM]
+DEBUG: added to daily_portfolio company_name: KMC Speciality Hospitals for ongoing_date: 2021-05-17 00:00:00 [__compute_daywise_portfolio():333 - 2021/08/26 01:24:53 PM]
+DEBUG: date: 2021-05-18 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:53 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: None date: 2021-05-17 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:53 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-17 00:00:00 start_date: 2021-05-17 00:00:00 end_date: 2021-05-18 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:53 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-17 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2021-05-17  175.649994  175.699997  172.850006  173.949997   43197          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-17 00:00:00 -> closing_price: 173.9499969482422 [__get_adjusted_average_price():257 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-17 00:00:00 -> adjusted_closing_price: 173.9499969482422 [get_adjusted_closing_price():167 - 2021/08/26 01:24:53 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-05-17 00:00:00 -> adjusted_closing_price: 173.9499969482422 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:53 PM]
+WARNING: stock_symbol is None! date: 2021-05-17 00:00:00 -> unchanged adjusted_price: 173.9499969482422 [de_adjust_price():185 - 2021/08/26 01:24:53 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-05-17 00:00:00 symbol: None -> closing_price: 173.9499969482422 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:53 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: None date: 2021-05-17 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:53 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-17 00:00:00 start_date: 2021-05-17 00:00:00 end_date: 2021-05-18 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:53 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-17 00:00:00 stock_data...
+            Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                              
+2021-05-17  42.5  42.849998  39.049999  42.849998  161929          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-17 00:00:00 -> closing_price: 42.849998474121094 [__get_adjusted_average_price():257 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-17 00:00:00 -> adjusted_closing_price: 42.849998474121094 [get_adjusted_closing_price():167 - 2021/08/26 01:24:53 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-05-17 00:00:00 -> adjusted_closing_price: 42.849998474121094 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:53 PM]
+WARNING: stock_symbol is None! date: 2021-05-17 00:00:00 -> unchanged adjusted_price: 42.849998474121094 [de_adjust_price():185 - 2021/08/26 01:24:53 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-05-17 00:00:00 symbol: None -> closing_price: 42.849998474121094 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:53 PM]
+DEBUG: ongoing_date: 2021-05-17 00:00:00 value_sum: 10839.999771118164 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:53 PM]
+DEBUG: ongoing_date changing from: 2021-05-17 00:00:00 to: 2021-05-18 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:53 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:53 PM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price        Value  Proportion
+20 2021-05-18  Black Rose Industries    50.0  [None, BLACKROSE.BO]     173.949997  8697.499847    0.802352 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:53 PM]
+DEBUG: transacted_shares: 10.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:53 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 60.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:53 PM]
+DEBUG: date: 2021-05-20 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:53 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:53 PM]
+INFO: stock_symbol: None date: 2021-05-18 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:53 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-18 00:00:00 start_date: 2021-05-18 00:00:00 end_date: 2021-05-19 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:53 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-18 00:00:00 stock_data...
+             Open        High         Low  Close  Volume  Dividends  Stock Splits
+Date                                                                             
+2021-05-18  175.0  177.399994  174.199997  175.5   58487          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-18 00:00:00 -> closing_price: 175.5 [__get_adjusted_average_price():257 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-18 00:00:00 -> adjusted_closing_price: 175.5 [get_adjusted_closing_price():167 - 2021/08/26 01:24:54 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-05-18 00:00:00 -> adjusted_closing_price: 175.5 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:54 PM]
+WARNING: stock_symbol is None! date: 2021-05-18 00:00:00 -> unchanged adjusted_price: 175.5 [de_adjust_price():185 - 2021/08/26 01:24:54 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-05-18 00:00:00 symbol: None -> closing_price: 175.5 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:54 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: None date: 2021-05-18 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:54 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-18 00:00:00 start_date: 2021-05-18 00:00:00 end_date: 2021-05-19 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:54 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-18 00:00:00 stock_data...
+            Open   High        Low  Close  Volume  Dividends  Stock Splits
+Date                                                                      
+2021-05-18  43.5  44.25  41.099998   42.0  149792          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-18 00:00:00 -> closing_price: 42.0 [__get_adjusted_average_price():257 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-18 00:00:00 -> adjusted_closing_price: 42.0 [get_adjusted_closing_price():167 - 2021/08/26 01:24:54 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-05-18 00:00:00 -> adjusted_closing_price: 42.0 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:54 PM]
+WARNING: stock_symbol is None! date: 2021-05-18 00:00:00 -> unchanged adjusted_price: 42.0 [de_adjust_price():185 - 2021/08/26 01:24:54 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-05-18 00:00:00 symbol: None -> closing_price: 42.0 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:54 PM]
+DEBUG: ongoing_date: 2021-05-18 00:00:00 value_sum: 12630.0 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:54 PM]
+DEBUG: ongoing_date changing from: 2021-05-18 00:00:00 to: 2021-05-20 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:54 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:54 PM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price    Value  Proportion
+20 2021-05-20  Black Rose Industries    60.0  [None, BLACKROSE.BO]          175.5  10530.0    0.833729 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:54 PM]
+DEBUG: transacted_shares: 18.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:54 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 78.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:54 PM]
+DEBUG: date: 2021-05-20 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:54 PM]
+DEBUG: company_name: KMC Speciality Hospitals [__compute_daywise_portfolio():325 - 2021/08/26 01:24:54 PM]
+DEBUG: masked_rows...
+         Date                      Name  Shares              Symbol  Closing Price   Value  Proportion
+21 2021-05-20  KMC Speciality Hospitals    50.0  [None, KMCSHIL.BO]           42.0  2100.0    0.166271 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:54 PM]
+DEBUG: transacted_shares: 25.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:54 PM]
+DEBUG: company_name: KMC Speciality Hospitals updated shares count: 75.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:54 PM]
+DEBUG: date: 2021-05-24 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:54 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: None date: 2021-05-20 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:54 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-20 00:00:00 start_date: 2021-05-20 00:00:00 end_date: 2021-05-21 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:54 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-20 00:00:00 stock_data...
+             Open   High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                             
+2021-05-20  174.5  175.5  172.050003  174.100006   49444          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-20 00:00:00 -> closing_price: 174.10000610351562 [__get_adjusted_average_price():257 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-20 00:00:00 -> adjusted_closing_price: 174.10000610351562 [get_adjusted_closing_price():167 - 2021/08/26 01:24:54 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-05-20 00:00:00 -> adjusted_closing_price: 174.10000610351562 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:54 PM]
+WARNING: stock_symbol is None! date: 2021-05-20 00:00:00 -> unchanged adjusted_price: 174.10000610351562 [de_adjust_price():185 - 2021/08/26 01:24:54 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-05-20 00:00:00 symbol: None -> closing_price: 174.10000610351562 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:54 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: None date: 2021-05-20 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:54 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-20 00:00:00 start_date: 2021-05-20 00:00:00 end_date: 2021-05-21 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:54 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-20 00:00:00 stock_data...
+                 Open   High   Low      Close  Volume  Dividends  Stock Splits
+Date                                                                          
+2021-05-20  40.900002  42.25  40.5  40.950001   75945          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-20 00:00:00 -> closing_price: 40.95000076293945 [__get_adjusted_average_price():257 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-20 00:00:00 -> adjusted_closing_price: 40.95000076293945 [get_adjusted_closing_price():167 - 2021/08/26 01:24:54 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-05-20 00:00:00 -> adjusted_closing_price: 40.95000076293945 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:54 PM]
+WARNING: stock_symbol is None! date: 2021-05-20 00:00:00 -> unchanged adjusted_price: 40.95000076293945 [de_adjust_price():185 - 2021/08/26 01:24:54 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-05-20 00:00:00 symbol: None -> closing_price: 40.95000076293945 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:54 PM]
+DEBUG: ongoing_date: 2021-05-20 00:00:00 value_sum: 16651.050533294678 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:54 PM]
+DEBUG: ongoing_date changing from: 2021-05-20 00:00:00 to: 2021-05-24 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:54 PM]
+DEBUG: company_name: KMC Speciality Hospitals [__compute_daywise_portfolio():325 - 2021/08/26 01:24:54 PM]
+DEBUG: masked_rows...
+         Date                      Name  Shares              Symbol  Closing Price        Value  Proportion
+21 2021-05-24  KMC Speciality Hospitals    75.0  [None, KMCSHIL.BO]      40.950001  3071.250057    0.184448 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:54 PM]
+DEBUG: transacted_shares: 25.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:54 PM]
+DEBUG: company_name: KMC Speciality Hospitals updated shares count: 100.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:54 PM]
+DEBUG: date: 2021-05-25 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:54 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:54 PM]
+INFO: stock_symbol: None date: 2021-05-24 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:54 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-24 00:00:00 start_date: 2021-05-24 00:00:00 end_date: 2021-05-25 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:54 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-24 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2021-05-24  176.899994  180.899994  174.899994  177.199997  173451          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:55 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-24 00:00:00 -> closing_price: 177.1999969482422 [__get_adjusted_average_price():257 - 2021/08/26 01:24:55 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-24 00:00:00 -> adjusted_closing_price: 177.1999969482422 [get_adjusted_closing_price():167 - 2021/08/26 01:24:55 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-05-24 00:00:00 -> adjusted_closing_price: 177.1999969482422 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:55 PM]
+WARNING: stock_symbol is None! date: 2021-05-24 00:00:00 -> unchanged adjusted_price: 177.1999969482422 [de_adjust_price():185 - 2021/08/26 01:24:55 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-05-24 00:00:00 symbol: None -> closing_price: 177.1999969482422 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:55 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:55 PM]
+INFO: stock_symbol: None date: 2021-05-24 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:55 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-24 00:00:00 start_date: 2021-05-24 00:00:00 end_date: 2021-05-25 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:55 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-24 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2021-05-24  41.799999  41.799999  39.200001  39.900002  190963          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:55 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-24 00:00:00 -> closing_price: 39.900001525878906 [__get_adjusted_average_price():257 - 2021/08/26 01:24:55 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-24 00:00:00 -> adjusted_closing_price: 39.900001525878906 [get_adjusted_closing_price():167 - 2021/08/26 01:24:55 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-05-24 00:00:00 -> adjusted_closing_price: 39.900001525878906 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:55 PM]
+WARNING: stock_symbol is None! date: 2021-05-24 00:00:00 -> unchanged adjusted_price: 39.900001525878906 [de_adjust_price():185 - 2021/08/26 01:24:55 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-05-24 00:00:00 symbol: None -> closing_price: 39.900001525878906 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:55 PM]
+DEBUG: ongoing_date: 2021-05-24 00:00:00 value_sum: 17811.59991455078 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:55 PM]
+DEBUG: ongoing_date changing from: 2021-05-24 00:00:00 to: 2021-05-25 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:55 PM]
+DEBUG: company_name: Adani Total Gas [__compute_daywise_portfolio():325 - 2021/08/26 01:24:55 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:24:55 PM]
+DEBUG: added to daily_portfolio company_name: Adani Total Gas for ongoing_date: 2021-05-25 00:00:00 [__compute_daywise_portfolio():333 - 2021/08/26 01:24:55 PM]
+DEBUG: date: 2021-05-27 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:55 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:55 PM]
+INFO: stock_symbol: None date: 2021-05-25 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:55 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-25 00:00:00 start_date: 2021-05-25 00:00:00 end_date: 2021-05-26 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:55 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-25 00:00:00 stock_data...
+             Open        High    Low       Close  Volume  Dividends  Stock Splits
+Date                                                                             
+2021-05-25  180.0  196.949997  177.0  189.699997  517426          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:55 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-25 00:00:00 -> closing_price: 189.6999969482422 [__get_adjusted_average_price():257 - 2021/08/26 01:24:55 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-25 00:00:00 -> adjusted_closing_price: 189.6999969482422 [get_adjusted_closing_price():167 - 2021/08/26 01:24:55 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-05-25 00:00:00 -> adjusted_closing_price: 189.6999969482422 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:55 PM]
+WARNING: stock_symbol is None! date: 2021-05-25 00:00:00 -> unchanged adjusted_price: 189.6999969482422 [de_adjust_price():185 - 2021/08/26 01:24:55 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-05-25 00:00:00 symbol: None -> closing_price: 189.6999969482422 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:55 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:55 PM]
+INFO: stock_symbol: None date: 2021-05-25 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:55 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-25 00:00:00 start_date: 2021-05-25 00:00:00 end_date: 2021-05-26 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:55 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-25 00:00:00 stock_data...
+                 Open       High   Low      Close  Volume  Dividends  Stock Splits
+Date                                                                              
+2021-05-25  40.650002  40.900002  39.5  39.950001  118465          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:56 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-25 00:00:00 -> closing_price: 39.95000076293945 [__get_adjusted_average_price():257 - 2021/08/26 01:24:56 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-25 00:00:00 -> adjusted_closing_price: 39.95000076293945 [get_adjusted_closing_price():167 - 2021/08/26 01:24:56 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-05-25 00:00:00 -> adjusted_closing_price: 39.95000076293945 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:56 PM]
+WARNING: stock_symbol is None! date: 2021-05-25 00:00:00 -> unchanged adjusted_price: 39.95000076293945 [de_adjust_price():185 - 2021/08/26 01:24:56 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-05-25 00:00:00 symbol: None -> closing_price: 39.95000076293945 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:56 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-05-25 00:00:00 start_date: 2021-05-25 00:00:00 end_date: 2021-05-26 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:56 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-05-25 00:00:00 stock_data...
+                   Open         High          Low        Close   Volume  Dividends  Stock Splits
+Date                                                                                            
+2021-05-25  1339.745869  1339.745869  1227.117208  1294.154541  2703660          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:56 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-05-25 00:00:00 -> closing_price: 1294.154541015625 [__get_adjusted_average_price():257 - 2021/08/26 01:24:56 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-05-25 00:00:00 -> adjusted_closing_price: 1294.154541015625 [get_adjusted_closing_price():167 - 2021/08/26 01:24:56 PM]
+DEBUG: symbol: ATGL.NS date: 2021-05-25 00:00:00 -> adjusted_closing_price: 1294.154541015625 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:56 PM]
+INFO: no price adjustment. stock_symbol: ATGL.NS date: 2021-05-25 00:00:00 -> unchanged adjusted_price: 1294.154541015625 [de_adjust_price():203 - 2021/08/26 01:24:56 PM]
+INFO: symbol_list: ['ATGL.NS', 'ATGL.BO'] date: 2021-05-25 00:00:00 symbol: ATGL.NS -> closing_price: 1294.154541015625 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:56 PM]
+DEBUG: ongoing_date: 2021-05-25 00:00:00 value_sum: 29144.836166381836 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:56 PM]
+DEBUG: ongoing_date changing from: 2021-05-25 00:00:00 to: 2021-05-27 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:56 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:56 PM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price         Value  Proportion
+20 2021-05-27  Black Rose Industries    78.0  [None, BLACKROSE.BO]     189.699997  14796.599762    0.507692 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:56 PM]
+DEBUG: transacted_shares: 22.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:56 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 100.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:56 PM]
+DEBUG: date: 2021-05-27 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:56 PM]
+DEBUG: company_name: Adani Total Gas [__compute_daywise_portfolio():325 - 2021/08/26 01:24:56 PM]
+DEBUG: masked_rows...
+         Date             Name  Shares              Symbol  Closing Price         Value  Proportion
+26 2021-05-27  Adani Total Gas     8.0  [ATGL.NS, ATGL.BO]    1294.154541  10353.236328    0.355234 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:56 PM]
+DEBUG: transacted_shares: 2.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:56 PM]
+DEBUG: company_name: Adani Total Gas updated shares count: 10.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:56 PM]
+DEBUG: date: 2021-05-31 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:56 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:56 PM]
+INFO: stock_symbol: None date: 2021-05-27 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:56 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-27 00:00:00 start_date: 2021-05-27 00:00:00 end_date: 2021-05-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:56 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-27 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2021-05-27  198.399994  198.399994  173.100006  178.699997  595453          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:56 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-27 00:00:00 -> closing_price: 178.6999969482422 [__get_adjusted_average_price():257 - 2021/08/26 01:24:56 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-27 00:00:00 -> adjusted_closing_price: 178.6999969482422 [get_adjusted_closing_price():167 - 2021/08/26 01:24:56 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-05-27 00:00:00 -> adjusted_closing_price: 178.6999969482422 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:56 PM]
+WARNING: stock_symbol is None! date: 2021-05-27 00:00:00 -> unchanged adjusted_price: 178.6999969482422 [de_adjust_price():185 - 2021/08/26 01:24:56 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-05-27 00:00:00 symbol: None -> closing_price: 178.6999969482422 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:56 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:56 PM]
+INFO: stock_symbol: None date: 2021-05-27 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:56 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-27 00:00:00 start_date: 2021-05-27 00:00:00 end_date: 2021-05-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:56 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-27 00:00:00 stock_data...
+                 Open       High   Low  Close  Volume  Dividends  Stock Splits
+Date                                                                          
+2021-05-27  40.849998  40.849998  40.0  40.25   96657          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:56 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-27 00:00:00 -> closing_price: 40.25 [__get_adjusted_average_price():257 - 2021/08/26 01:24:56 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-27 00:00:00 -> adjusted_closing_price: 40.25 [get_adjusted_closing_price():167 - 2021/08/26 01:24:56 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-05-27 00:00:00 -> adjusted_closing_price: 40.25 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:56 PM]
+WARNING: stock_symbol is None! date: 2021-05-27 00:00:00 -> unchanged adjusted_price: 40.25 [de_adjust_price():185 - 2021/08/26 01:24:56 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-05-27 00:00:00 symbol: None -> closing_price: 40.25 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:56 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-05-27 00:00:00 start_date: 2021-05-27 00:00:00 end_date: 2021-05-28 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:56 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-05-27 00:00:00 stock_data...
+                   Open         High         Low        Close    Volume  Dividends  Stock Splits
+Date                                                                                            
+2021-05-27  1339.745857  1394.685387  1305.30244  1353.943115  31734209          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:57 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-05-27 00:00:00 -> closing_price: 1353.943115234375 [__get_adjusted_average_price():257 - 2021/08/26 01:24:57 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-05-27 00:00:00 -> adjusted_closing_price: 1353.943115234375 [get_adjusted_closing_price():167 - 2021/08/26 01:24:57 PM]
+DEBUG: symbol: ATGL.NS date: 2021-05-27 00:00:00 -> adjusted_closing_price: 1353.943115234375 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:57 PM]
+INFO: no price adjustment. stock_symbol: ATGL.NS date: 2021-05-27 00:00:00 -> unchanged adjusted_price: 1353.943115234375 [de_adjust_price():203 - 2021/08/26 01:24:57 PM]
+INFO: symbol_list: ['ATGL.NS', 'ATGL.BO'] date: 2021-05-27 00:00:00 symbol: ATGL.NS -> closing_price: 1353.943115234375 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:57 PM]
+DEBUG: ongoing_date: 2021-05-27 00:00:00 value_sum: 35434.43084716797 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:57 PM]
+DEBUG: ongoing_date changing from: 2021-05-27 00:00:00 to: 2021-05-31 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:57 PM]
+DEBUG: company_name: Bajaj Steel Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:57 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:24:57 PM]
+DEBUG: added to daily_portfolio company_name: Bajaj Steel Industries for ongoing_date: 2021-05-31 00:00:00 [__compute_daywise_portfolio():333 - 2021/08/26 01:24:57 PM]
+DEBUG: date: 2021-06-04 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:57 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:57 PM]
+INFO: stock_symbol: None date: 2021-05-31 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:57 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-31 00:00:00 start_date: 2021-05-31 00:00:00 end_date: 2021-06-01 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:57 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-05-31 00:00:00 stock_data...
+             Open        High         Low   Close  Volume  Dividends  Stock Splits
+Date                                                                              
+2021-05-31  176.0  179.949997  170.399994  171.75  161977          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:57 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-31 00:00:00 -> closing_price: 171.75 [__get_adjusted_average_price():257 - 2021/08/26 01:24:57 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-05-31 00:00:00 -> adjusted_closing_price: 171.75 [get_adjusted_closing_price():167 - 2021/08/26 01:24:57 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-05-31 00:00:00 -> adjusted_closing_price: 171.75 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:57 PM]
+WARNING: stock_symbol is None! date: 2021-05-31 00:00:00 -> unchanged adjusted_price: 171.75 [de_adjust_price():185 - 2021/08/26 01:24:57 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-05-31 00:00:00 symbol: None -> closing_price: 171.75 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:57 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:57 PM]
+INFO: stock_symbol: None date: 2021-05-31 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:57 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-31 00:00:00 start_date: 2021-05-31 00:00:00 end_date: 2021-06-01 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:57 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-05-31 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2021-05-31  39.900002  40.599998  39.099998  39.549999  139217          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:57 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-31 00:00:00 -> closing_price: 39.54999923706055 [__get_adjusted_average_price():257 - 2021/08/26 01:24:57 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-05-31 00:00:00 -> adjusted_closing_price: 39.54999923706055 [get_adjusted_closing_price():167 - 2021/08/26 01:24:57 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-05-31 00:00:00 -> adjusted_closing_price: 39.54999923706055 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:57 PM]
+WARNING: stock_symbol is None! date: 2021-05-31 00:00:00 -> unchanged adjusted_price: 39.54999923706055 [de_adjust_price():185 - 2021/08/26 01:24:57 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-05-31 00:00:00 symbol: None -> closing_price: 39.54999923706055 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:57 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-05-31 00:00:00 start_date: 2021-05-31 00:00:00 end_date: 2021-06-01 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:57 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-05-31 00:00:00 stock_data...
+                   Open         High          Low        Close  Volume  Dividends  Stock Splits
+Date                                                                                           
+2021-05-31  1339.645863  1361.741646  1318.399894  1348.594116  856715          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:58 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-05-31 00:00:00 -> closing_price: 1348.5941162109375 [__get_adjusted_average_price():257 - 2021/08/26 01:24:58 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-05-31 00:00:00 -> adjusted_closing_price: 1348.5941162109375 [get_adjusted_closing_price():167 - 2021/08/26 01:24:58 PM]
+DEBUG: symbol: ATGL.NS date: 2021-05-31 00:00:00 -> adjusted_closing_price: 1348.5941162109375 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:58 PM]
+INFO: no price adjustment. stock_symbol: ATGL.NS date: 2021-05-31 00:00:00 -> unchanged adjusted_price: 1348.5941162109375 [de_adjust_price():203 - 2021/08/26 01:24:58 PM]
+INFO: symbol_list: ['ATGL.NS', 'ATGL.BO'] date: 2021-05-31 00:00:00 symbol: ATGL.NS -> closing_price: 1348.5941162109375 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:58 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:58 PM]
+INFO: stock_symbol: None date: 2021-05-31 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:58 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-05-31 00:00:00 start_date: 2021-05-31 00:00:00 end_date: 2021-06-01 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:58 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-05-31 00:00:00 stock_data...
+             Open   High    Low  Close  Volume  Dividends  Stock Splits
+Date                                                                   
+2021-05-31  580.0  595.0  571.0  575.0   11705          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:58 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-05-31 00:00:00 -> closing_price: 575.0 [__get_adjusted_average_price():257 - 2021/08/26 01:24:58 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-05-31 00:00:00 -> adjusted_closing_price: 575.0 [get_adjusted_closing_price():167 - 2021/08/26 01:24:58 PM]
+DEBUG: symbol: BAJAJST.BO date: 2021-05-31 00:00:00 -> adjusted_closing_price: 575.0 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:58 PM]
+WARNING: stock_symbol is None! date: 2021-05-31 00:00:00 -> unchanged adjusted_price: 575.0 [de_adjust_price():185 - 2021/08/26 01:24:58 PM]
+INFO: symbol_list: [None, 'BAJAJST.BO'] date: 2021-05-31 00:00:00 symbol: None -> closing_price: 575.0 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:58 PM]
+DEBUG: ongoing_date: 2021-05-31 00:00:00 value_sum: 35765.94108581543 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:58 PM]
+DEBUG: ongoing_date changing from: 2021-05-31 00:00:00 to: 2021-06-04 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:58 PM]
+DEBUG: company_name: Bajaj Steel Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:58 PM]
+DEBUG: masked_rows...
+         Date                    Name  Shares              Symbol  Closing Price   Value  Proportion
+29 2021-06-04  Bajaj Steel Industries     2.0  [None, BAJAJST.BO]          575.0  1150.0    0.032153 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:58 PM]
+DEBUG: transacted_shares: 3.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:58 PM]
+DEBUG: company_name: Bajaj Steel Industries updated shares count: 5.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:58 PM]
+DEBUG: date: 2021-06-04 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:58 PM]
+DEBUG: company_name: KMC Speciality Hospitals [__compute_daywise_portfolio():325 - 2021/08/26 01:24:58 PM]
+DEBUG: masked_rows...
+         Date                      Name  Shares              Symbol  Closing Price        Value  Proportion
+21 2021-06-04  KMC Speciality Hospitals   100.0  [None, KMCSHIL.BO]      39.549999  3954.999924     0.11058 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:58 PM]
+DEBUG: transacted_shares: 50.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:58 PM]
+DEBUG: company_name: KMC Speciality Hospitals updated shares count: 150.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:58 PM]
+DEBUG: date: 2021-06-04 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:58 PM]
+DEBUG: company_name: Black Rose Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:58 PM]
+DEBUG: masked_rows...
+         Date                   Name  Shares                Symbol  Closing Price    Value  Proportion
+20 2021-06-04  Black Rose Industries   100.0  [None, BLACKROSE.BO]         171.75  17175.0    0.480205 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:58 PM]
+DEBUG: transacted_shares: 20.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:58 PM]
+DEBUG: company_name: Black Rose Industries updated shares count: 120.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:58 PM]
+DEBUG: date: 2021-06-15 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:58 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:58 PM]
+INFO: stock_symbol: None date: 2021-06-04 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:58 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-06-04 00:00:00 start_date: 2021-06-04 00:00:00 end_date: 2021-06-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:58 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-06-04 00:00:00 stock_data...
+             Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                  
+2021-06-04  209.0  218.199997  208.850006  213.800003  188940          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:58 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-06-04 00:00:00 -> closing_price: 213.8000030517578 [__get_adjusted_average_price():257 - 2021/08/26 01:24:58 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-06-04 00:00:00 -> adjusted_closing_price: 213.8000030517578 [get_adjusted_closing_price():167 - 2021/08/26 01:24:58 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-06-04 00:00:00 -> adjusted_closing_price: 213.8000030517578 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:58 PM]
+WARNING: stock_symbol is None! date: 2021-06-04 00:00:00 -> unchanged adjusted_price: 213.8000030517578 [de_adjust_price():185 - 2021/08/26 01:24:58 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-06-04 00:00:00 symbol: None -> closing_price: 213.8000030517578 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:58 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:58 PM]
+INFO: stock_symbol: None date: 2021-06-04 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:58 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-06-04 00:00:00 start_date: 2021-06-04 00:00:00 end_date: 2021-06-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:58 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-06-04 00:00:00 stock_data...
+             Open   High        Low  Close  Volume  Dividends  Stock Splits
+Date                                                                       
+2021-06-04  40.25  40.25  39.150002  39.25   75907          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:58 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-06-04 00:00:00 -> closing_price: 39.25 [__get_adjusted_average_price():257 - 2021/08/26 01:24:58 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-06-04 00:00:00 -> adjusted_closing_price: 39.25 [get_adjusted_closing_price():167 - 2021/08/26 01:24:58 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-06-04 00:00:00 -> adjusted_closing_price: 39.25 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:58 PM]
+WARNING: stock_symbol is None! date: 2021-06-04 00:00:00 -> unchanged adjusted_price: 39.25 [de_adjust_price():185 - 2021/08/26 01:24:58 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-06-04 00:00:00 symbol: None -> closing_price: 39.25 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:58 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-06-04 00:00:00 start_date: 2021-06-04 00:00:00 end_date: 2021-06-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:58 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-06-04 00:00:00 stock_data...
+                   Open         High          Low        Close   Volume  Dividends  Stock Splits
+Date                                                                                            
+2021-06-04  1649.687083  1677.681772  1605.795384  1637.189453  1740082          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:59 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-06-04 00:00:00 -> closing_price: 1637.189453125 [__get_adjusted_average_price():257 - 2021/08/26 01:24:59 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-06-04 00:00:00 -> adjusted_closing_price: 1637.189453125 [get_adjusted_closing_price():167 - 2021/08/26 01:24:59 PM]
+DEBUG: symbol: ATGL.NS date: 2021-06-04 00:00:00 -> adjusted_closing_price: 1637.189453125 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:59 PM]
+INFO: no price adjustment. stock_symbol: ATGL.NS date: 2021-06-04 00:00:00 -> unchanged adjusted_price: 1637.189453125 [de_adjust_price():203 - 2021/08/26 01:24:59 PM]
+INFO: symbol_list: ['ATGL.NS', 'ATGL.BO'] date: 2021-06-04 00:00:00 symbol: ATGL.NS -> closing_price: 1637.189453125 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:59 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:59 PM]
+INFO: stock_symbol: None date: 2021-06-04 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:59 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-06-04 00:00:00 start_date: 2021-06-04 00:00:00 end_date: 2021-06-05 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:59 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-06-04 00:00:00 stock_data...
+                  Open        High    Low  Close  Volume  Dividends  Stock Splits
+Date                                                                             
+2021-06-04  612.200012  613.099976  587.0  599.0   10790          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:59 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-06-04 00:00:00 -> closing_price: 599.0 [__get_adjusted_average_price():257 - 2021/08/26 01:24:59 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-06-04 00:00:00 -> adjusted_closing_price: 599.0 [get_adjusted_closing_price():167 - 2021/08/26 01:24:59 PM]
+DEBUG: symbol: BAJAJST.BO date: 2021-06-04 00:00:00 -> adjusted_closing_price: 599.0 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:59 PM]
+WARNING: stock_symbol is None! date: 2021-06-04 00:00:00 -> unchanged adjusted_price: 599.0 [de_adjust_price():185 - 2021/08/26 01:24:59 PM]
+INFO: symbol_list: [None, 'BAJAJST.BO'] date: 2021-06-04 00:00:00 symbol: None -> closing_price: 599.0 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:59 PM]
+DEBUG: ongoing_date: 2021-06-04 00:00:00 value_sum: 50910.39489746094 [compute_and_append_daily_proportions():295 - 2021/08/26 01:24:59 PM]
+DEBUG: ongoing_date changing from: 2021-06-04 00:00:00 to: 2021-06-15 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:24:59 PM]
+DEBUG: company_name: Bajaj Steel Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:59 PM]
+DEBUG: masked_rows...
+         Date                    Name  Shares              Symbol  Closing Price   Value  Proportion
+29 2021-06-15  Bajaj Steel Industries     5.0  [None, BAJAJST.BO]          599.0  2995.0    0.058829 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:59 PM]
+DEBUG: transacted_shares: 1.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:59 PM]
+DEBUG: company_name: Bajaj Steel Industries updated shares count: 6.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:59 PM]
+DEBUG: date: 2021-06-15 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:59 PM]
+DEBUG: company_name: Bajaj Steel Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:24:59 PM]
+DEBUG: masked_rows...
+         Date                    Name  Shares              Symbol  Closing Price   Value  Proportion
+29 2021-06-15  Bajaj Steel Industries     6.0  [None, BAJAJST.BO]          599.0  2995.0    0.058829 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:59 PM]
+DEBUG: transacted_shares: 4.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:59 PM]
+DEBUG: company_name: Bajaj Steel Industries updated shares count: 10.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:59 PM]
+DEBUG: date: 2021-06-15 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:59 PM]
+DEBUG: company_name: KMC Speciality Hospitals [__compute_daywise_portfolio():325 - 2021/08/26 01:24:59 PM]
+DEBUG: masked_rows...
+         Date                      Name  Shares              Symbol  Closing Price   Value  Proportion
+21 2021-06-15  KMC Speciality Hospitals   150.0  [None, KMCSHIL.BO]          39.25  5887.5    0.115644 [__compute_daywise_portfolio():329 - 2021/08/26 01:24:59 PM]
+DEBUG: transacted_shares: 20.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:24:59 PM]
+DEBUG: company_name: KMC Speciality Hospitals updated shares count: 170.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:24:59 PM]
+DEBUG: date: 2021-06-24 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:24:59 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:59 PM]
+INFO: stock_symbol: None date: 2021-06-15 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:59 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-06-15 00:00:00 start_date: 2021-06-15 00:00:00 end_date: 2021-06-16 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:59 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-06-15 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2021-06-15  201.100006  209.350006  201.100006  205.199997   89123          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:59 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-06-15 00:00:00 -> closing_price: 205.1999969482422 [__get_adjusted_average_price():257 - 2021/08/26 01:24:59 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-06-15 00:00:00 -> adjusted_closing_price: 205.1999969482422 [get_adjusted_closing_price():167 - 2021/08/26 01:24:59 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-06-15 00:00:00 -> adjusted_closing_price: 205.1999969482422 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:59 PM]
+WARNING: stock_symbol is None! date: 2021-06-15 00:00:00 -> unchanged adjusted_price: 205.1999969482422 [de_adjust_price():185 - 2021/08/26 01:24:59 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-06-15 00:00:00 symbol: None -> closing_price: 205.1999969482422 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:59 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:24:59 PM]
+INFO: stock_symbol: None date: 2021-06-15 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:24:59 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-06-15 00:00:00 start_date: 2021-06-15 00:00:00 end_date: 2021-06-16 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:59 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-06-15 00:00:00 stock_data...
+                 Open  High    Low      Close  Volume  Dividends  Stock Splits
+Date                                                                          
+2021-06-15  38.799999  39.5  38.25  38.599998  104219          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:24:59 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-06-15 00:00:00 -> closing_price: 38.599998474121094 [__get_adjusted_average_price():257 - 2021/08/26 01:24:59 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-06-15 00:00:00 -> adjusted_closing_price: 38.599998474121094 [get_adjusted_closing_price():167 - 2021/08/26 01:24:59 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-06-15 00:00:00 -> adjusted_closing_price: 38.599998474121094 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:24:59 PM]
+WARNING: stock_symbol is None! date: 2021-06-15 00:00:00 -> unchanged adjusted_price: 38.599998474121094 [de_adjust_price():185 - 2021/08/26 01:24:59 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-06-15 00:00:00 symbol: None -> closing_price: 38.599998474121094 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:24:59 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-06-15 00:00:00 start_date: 2021-06-15 00:00:00 end_date: 2021-06-16 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:24:59 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-06-15 00:00:00 stock_data...
+                   Open         High          Low        Close   Volume  Dividends  Stock Splits
+Date                                                                                            
+2021-06-15  1467.421631  1479.719347  1467.421631  1467.421631  1007110          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:00 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-06-15 00:00:00 -> closing_price: 1467.421630859375 [__get_adjusted_average_price():257 - 2021/08/26 01:25:00 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-06-15 00:00:00 -> adjusted_closing_price: 1467.421630859375 [get_adjusted_closing_price():167 - 2021/08/26 01:25:00 PM]
+DEBUG: symbol: ATGL.NS date: 2021-06-15 00:00:00 -> adjusted_closing_price: 1467.421630859375 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:00 PM]
+INFO: no price adjustment. stock_symbol: ATGL.NS date: 2021-06-15 00:00:00 -> unchanged adjusted_price: 1467.421630859375 [de_adjust_price():203 - 2021/08/26 01:25:00 PM]
+INFO: symbol_list: ['ATGL.NS', 'ATGL.BO'] date: 2021-06-15 00:00:00 symbol: ATGL.NS -> closing_price: 1467.421630859375 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:00 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:00 PM]
+INFO: stock_symbol: None date: 2021-06-15 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:00 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-06-15 00:00:00 start_date: 2021-06-15 00:00:00 end_date: 2021-06-16 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:00 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-06-15 00:00:00 stock_data...
+                  Open   High    Low       Close  Volume  Dividends  Stock Splits
+Date                                                                             
+2021-06-15  669.900024  760.0  655.0  731.150024   55113          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:00 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-06-15 00:00:00 -> closing_price: 731.1500244140625 [__get_adjusted_average_price():257 - 2021/08/26 01:25:00 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-06-15 00:00:00 -> adjusted_closing_price: 731.1500244140625 [get_adjusted_closing_price():167 - 2021/08/26 01:25:00 PM]
+DEBUG: symbol: BAJAJST.BO date: 2021-06-15 00:00:00 -> adjusted_closing_price: 731.1500244140625 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:00 PM]
+WARNING: stock_symbol is None! date: 2021-06-15 00:00:00 -> unchanged adjusted_price: 731.1500244140625 [de_adjust_price():185 - 2021/08/26 01:25:00 PM]
+INFO: symbol_list: [None, 'BAJAJST.BO'] date: 2021-06-15 00:00:00 symbol: None -> closing_price: 731.1500244140625 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:00 PM]
+DEBUG: ongoing_date: 2021-06-15 00:00:00 value_sum: 53171.71592712402 [compute_and_append_daily_proportions():295 - 2021/08/26 01:25:00 PM]
+DEBUG: ongoing_date changing from: 2021-06-15 00:00:00 to: 2021-06-24 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:25:00 PM]
+DEBUG: company_name: KMC Speciality Hospitals [__compute_daywise_portfolio():325 - 2021/08/26 01:25:00 PM]
+DEBUG: masked_rows...
+         Date                      Name  Shares              Symbol  Closing Price        Value  Proportion
+21 2021-06-24  KMC Speciality Hospitals   170.0  [None, KMCSHIL.BO]      38.599998  6561.999741    0.123411 [__compute_daywise_portfolio():329 - 2021/08/26 01:25:00 PM]
+DEBUG: transacted_shares: 30.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:25:00 PM]
+DEBUG: company_name: KMC Speciality Hospitals updated shares count: 200.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:25:00 PM]
+DEBUG: date: 2021-07-05 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:25:00 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:00 PM]
+INFO: stock_symbol: None date: 2021-06-24 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:00 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-06-24 00:00:00 start_date: 2021-06-24 00:00:00 end_date: 2021-06-25 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:00 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-06-24 00:00:00 stock_data...
+             Open   High    Low       Close  Volume  Dividends  Stock Splits
+Date                                                                        
+2021-06-24  203.0  203.0  197.0  197.800003   35164          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:00 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-06-24 00:00:00 -> closing_price: 197.8000030517578 [__get_adjusted_average_price():257 - 2021/08/26 01:25:00 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-06-24 00:00:00 -> adjusted_closing_price: 197.8000030517578 [get_adjusted_closing_price():167 - 2021/08/26 01:25:00 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-06-24 00:00:00 -> adjusted_closing_price: 197.8000030517578 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:00 PM]
+WARNING: stock_symbol is None! date: 2021-06-24 00:00:00 -> unchanged adjusted_price: 197.8000030517578 [de_adjust_price():185 - 2021/08/26 01:25:00 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-06-24 00:00:00 symbol: None -> closing_price: 197.8000030517578 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:00 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:00 PM]
+INFO: stock_symbol: None date: 2021-06-24 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:00 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-06-24 00:00:00 start_date: 2021-06-24 00:00:00 end_date: 2021-06-25 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:00 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-06-24 00:00:00 stock_data...
+                 Open       High   Low      Close  Volume  Dividends  Stock Splits
+Date                                                                              
+2021-06-24  37.900002  37.900002  36.5  37.049999   45159          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:01 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-06-24 00:00:00 -> closing_price: 37.04999923706055 [__get_adjusted_average_price():257 - 2021/08/26 01:25:01 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-06-24 00:00:00 -> adjusted_closing_price: 37.04999923706055 [get_adjusted_closing_price():167 - 2021/08/26 01:25:01 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-06-24 00:00:00 -> adjusted_closing_price: 37.04999923706055 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:01 PM]
+WARNING: stock_symbol is None! date: 2021-06-24 00:00:00 -> unchanged adjusted_price: 37.04999923706055 [de_adjust_price():185 - 2021/08/26 01:25:01 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-06-24 00:00:00 symbol: None -> closing_price: 37.04999923706055 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:01 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-06-24 00:00:00 start_date: 2021-06-24 00:00:00 end_date: 2021-06-25 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:01 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-06-24 00:00:00 stock_data...
+              Open         High          Low        Close  Volume  Dividends  Stock Splits
+Date                                                                                      
+2021-06-24  1252.0  1259.900024  1251.949951  1251.949951  121029       0.25             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:01 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-06-24 00:00:00 -> closing_price: 1251.949951171875 [__get_adjusted_average_price():257 - 2021/08/26 01:25:01 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-06-24 00:00:00 -> adjusted_closing_price: 1251.949951171875 [get_adjusted_closing_price():167 - 2021/08/26 01:25:01 PM]
+DEBUG: symbol: ATGL.NS date: 2021-06-24 00:00:00 -> adjusted_closing_price: 1251.949951171875 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:01 PM]
+INFO: no price adjustment. stock_symbol: ATGL.NS date: 2021-06-24 00:00:00 -> unchanged adjusted_price: 1251.949951171875 [de_adjust_price():203 - 2021/08/26 01:25:01 PM]
+INFO: symbol_list: ['ATGL.NS', 'ATGL.BO'] date: 2021-06-24 00:00:00 symbol: ATGL.NS -> closing_price: 1251.949951171875 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:01 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:01 PM]
+INFO: stock_symbol: None date: 2021-06-24 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:01 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-06-24 00:00:00 start_date: 2021-06-24 00:00:00 end_date: 2021-06-25 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:01 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-06-24 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2021-06-24  805.299988  805.299988  771.400024  778.700012   13212          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:01 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-06-24 00:00:00 -> closing_price: 778.7000122070312 [__get_adjusted_average_price():257 - 2021/08/26 01:25:01 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-06-24 00:00:00 -> adjusted_closing_price: 778.7000122070312 [get_adjusted_closing_price():167 - 2021/08/26 01:25:01 PM]
+DEBUG: symbol: BAJAJST.BO date: 2021-06-24 00:00:00 -> adjusted_closing_price: 778.7000122070312 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:01 PM]
+WARNING: stock_symbol is None! date: 2021-06-24 00:00:00 -> unchanged adjusted_price: 778.7000122070312 [de_adjust_price():185 - 2021/08/26 01:25:01 PM]
+INFO: symbol_list: [None, 'BAJAJST.BO'] date: 2021-06-24 00:00:00 symbol: None -> closing_price: 778.7000122070312 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:01 PM]
+DEBUG: ongoing_date: 2021-06-24 00:00:00 value_sum: 51452.49984741211 [compute_and_append_daily_proportions():295 - 2021/08/26 01:25:01 PM]
+DEBUG: ongoing_date changing from: 2021-06-24 00:00:00 to: 2021-07-05 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:25:01 PM]
+DEBUG: company_name: KMC Speciality Hospitals [__compute_daywise_portfolio():325 - 2021/08/26 01:25:01 PM]
+DEBUG: masked_rows...
+         Date                      Name  Shares              Symbol  Closing Price        Value  Proportion
+21 2021-07-05  KMC Speciality Hospitals   200.0  [None, KMCSHIL.BO]      37.049999  7409.999847    0.144016 [__compute_daywise_portfolio():329 - 2021/08/26 01:25:01 PM]
+DEBUG: transacted_shares: 50.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:25:01 PM]
+DEBUG: company_name: KMC Speciality Hospitals updated shares count: 250.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:25:01 PM]
+DEBUG: date: 2021-07-05 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:25:01 PM]
+DEBUG: company_name: Bajaj Steel Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:25:01 PM]
+DEBUG: masked_rows...
+         Date                    Name  Shares              Symbol  Closing Price        Value  Proportion
+29 2021-07-05  Bajaj Steel Industries    10.0  [None, BAJAJST.BO]     778.700012  7787.000122    0.151343 [__compute_daywise_portfolio():329 - 2021/08/26 01:25:01 PM]
+DEBUG: transacted_shares: 5.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:25:01 PM]
+DEBUG: company_name: Bajaj Steel Industries updated shares count: 15.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:25:01 PM]
+DEBUG: date: 2021-07-08 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:25:01 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:01 PM]
+INFO: stock_symbol: None date: 2021-07-05 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:01 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-07-05 00:00:00 start_date: 2021-07-05 00:00:00 end_date: 2021-07-06 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:01 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-07-05 00:00:00 stock_data...
+                  Open        High    Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                  
+2021-07-05  196.949997  196.949997  193.0  194.399994   96763          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:01 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-07-05 00:00:00 -> closing_price: 194.39999389648438 [__get_adjusted_average_price():257 - 2021/08/26 01:25:01 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-07-05 00:00:00 -> adjusted_closing_price: 194.39999389648438 [get_adjusted_closing_price():167 - 2021/08/26 01:25:01 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-07-05 00:00:00 -> adjusted_closing_price: 194.39999389648438 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:01 PM]
+WARNING: stock_symbol is None! date: 2021-07-05 00:00:00 -> unchanged adjusted_price: 194.39999389648438 [de_adjust_price():185 - 2021/08/26 01:25:01 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-07-05 00:00:00 symbol: None -> closing_price: 194.39999389648438 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:01 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:01 PM]
+INFO: stock_symbol: None date: 2021-07-05 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:01 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-07-05 00:00:00 start_date: 2021-07-05 00:00:00 end_date: 2021-07-06 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:01 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-07-05 00:00:00 stock_data...
+                 Open       High        Low      Close  Volume  Dividends  Stock Splits
+Date                                                                                   
+2021-07-05  39.450001  42.650002  38.799999  42.650002  647521          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:02 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-07-05 00:00:00 -> closing_price: 42.650001525878906 [__get_adjusted_average_price():257 - 2021/08/26 01:25:02 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-07-05 00:00:00 -> adjusted_closing_price: 42.650001525878906 [get_adjusted_closing_price():167 - 2021/08/26 01:25:02 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-07-05 00:00:00 -> adjusted_closing_price: 42.650001525878906 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:02 PM]
+WARNING: stock_symbol is None! date: 2021-07-05 00:00:00 -> unchanged adjusted_price: 42.650001525878906 [de_adjust_price():185 - 2021/08/26 01:25:02 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-07-05 00:00:00 symbol: None -> closing_price: 42.650001525878906 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:02 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-07-05 00:00:00 start_date: 2021-07-05 00:00:00 end_date: 2021-07-06 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:02 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-07-05 00:00:00 stock_data...
+             Open   High    Low  Close  Volume  Dividends  Stock Splits
+Date                                                                   
+2021-07-05  874.5  874.5  874.5  874.5   64444          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:02 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-07-05 00:00:00 -> closing_price: 874.5 [__get_adjusted_average_price():257 - 2021/08/26 01:25:02 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-07-05 00:00:00 -> adjusted_closing_price: 874.5 [get_adjusted_closing_price():167 - 2021/08/26 01:25:02 PM]
+DEBUG: symbol: ATGL.NS date: 2021-07-05 00:00:00 -> adjusted_closing_price: 874.5 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:02 PM]
+INFO: no price adjustment. stock_symbol: ATGL.NS date: 2021-07-05 00:00:00 -> unchanged adjusted_price: 874.5 [de_adjust_price():203 - 2021/08/26 01:25:02 PM]
+INFO: symbol_list: ['ATGL.NS', 'ATGL.BO'] date: 2021-07-05 00:00:00 symbol: ATGL.NS -> closing_price: 874.5 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:02 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:02 PM]
+INFO: stock_symbol: None date: 2021-07-05 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:02 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-07-05 00:00:00 start_date: 2021-07-05 00:00:00 end_date: 2021-07-06 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:02 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-07-05 00:00:00 stock_data...
+             Open    High    Low        Close  Volume  Dividends  Stock Splits
+Date                                                                          
+2021-07-05  936.0  1112.0  936.0  1056.300049   75742          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:02 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-07-05 00:00:00 -> closing_price: 1056.300048828125 [__get_adjusted_average_price():257 - 2021/08/26 01:25:02 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-07-05 00:00:00 -> adjusted_closing_price: 1056.300048828125 [get_adjusted_closing_price():167 - 2021/08/26 01:25:02 PM]
+DEBUG: symbol: BAJAJST.BO date: 2021-07-05 00:00:00 -> adjusted_closing_price: 1056.300048828125 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:02 PM]
+WARNING: stock_symbol is None! date: 2021-07-05 00:00:00 -> unchanged adjusted_price: 1056.300048828125 [de_adjust_price():185 - 2021/08/26 01:25:02 PM]
+INFO: symbol_list: [None, 'BAJAJST.BO'] date: 2021-07-05 00:00:00 symbol: None -> closing_price: 1056.300048828125 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:02 PM]
+DEBUG: ongoing_date: 2021-07-05 00:00:00 value_sum: 58580.00038146973 [compute_and_append_daily_proportions():295 - 2021/08/26 01:25:02 PM]
+DEBUG: ongoing_date changing from: 2021-07-05 00:00:00 to: 2021-07-08 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:25:02 PM]
+DEBUG: company_name: Bajaj Steel Industries [__compute_daywise_portfolio():325 - 2021/08/26 01:25:02 PM]
+DEBUG: masked_rows...
+         Date                    Name  Shares              Symbol  Closing Price         Value  Proportion
+29 2021-07-08  Bajaj Steel Industries    15.0  [None, BAJAJST.BO]    1056.300049  15844.500732    0.270476 [__compute_daywise_portfolio():329 - 2021/08/26 01:25:02 PM]
+DEBUG: transacted_shares: 5.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:25:02 PM]
+DEBUG: company_name: Bajaj Steel Industries updated shares count: 20.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:25:02 PM]
+DEBUG: date: 2021-07-30 00:00:00 [__compute_daywise_portfolio():310 - 2021/08/26 01:25:02 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:02 PM]
+INFO: stock_symbol: None date: 2021-07-08 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:02 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-07-08 00:00:00 start_date: 2021-07-08 00:00:00 end_date: 2021-07-09 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:02 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-07-08 00:00:00 stock_data...
+             Open   High     Low   Close  Volume  Dividends  Stock Splits
+Date                                                                     
+2021-07-08  191.0  191.0  188.25  189.75  275022          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:03 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-07-08 00:00:00 -> closing_price: 189.75 [__get_adjusted_average_price():257 - 2021/08/26 01:25:03 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-07-08 00:00:00 -> adjusted_closing_price: 189.75 [get_adjusted_closing_price():167 - 2021/08/26 01:25:03 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-07-08 00:00:00 -> adjusted_closing_price: 189.75 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:03 PM]
+WARNING: stock_symbol is None! date: 2021-07-08 00:00:00 -> unchanged adjusted_price: 189.75 [de_adjust_price():185 - 2021/08/26 01:25:03 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-07-08 00:00:00 symbol: None -> closing_price: 189.75 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:03 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:03 PM]
+INFO: stock_symbol: None date: 2021-07-08 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:03 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-07-08 00:00:00 start_date: 2021-07-08 00:00:00 end_date: 2021-07-09 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:03 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-07-08 00:00:00 stock_data...
+                 Open       High   Low      Close  Volume  Dividends  Stock Splits
+Date                                                                              
+2021-07-08  41.650002  43.450001  40.0  40.400002  143431          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:03 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-07-08 00:00:00 -> closing_price: 40.400001525878906 [__get_adjusted_average_price():257 - 2021/08/26 01:25:03 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-07-08 00:00:00 -> adjusted_closing_price: 40.400001525878906 [get_adjusted_closing_price():167 - 2021/08/26 01:25:03 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-07-08 00:00:00 -> adjusted_closing_price: 40.400001525878906 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:03 PM]
+WARNING: stock_symbol is None! date: 2021-07-08 00:00:00 -> unchanged adjusted_price: 40.400001525878906 [de_adjust_price():185 - 2021/08/26 01:25:03 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-07-08 00:00:00 symbol: None -> closing_price: 40.400001525878906 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:03 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-07-08 00:00:00 start_date: 2021-07-08 00:00:00 end_date: 2021-07-09 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:03 PM]
+DEBUG: stock_symbol: ATGL.NS date: 2021-07-08 00:00:00 stock_data...
+             Open   High    Low       Close  Volume  Dividends  Stock Splits
+Date                                                                        
+2021-07-08  898.0  937.0  880.0  921.950012  345356          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:03 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-07-08 00:00:00 -> closing_price: 921.9500122070312 [__get_adjusted_average_price():257 - 2021/08/26 01:25:03 PM]
+INFO: stock_symbol: ATGL.NS date: 2021-07-08 00:00:00 -> adjusted_closing_price: 921.9500122070312 [get_adjusted_closing_price():167 - 2021/08/26 01:25:03 PM]
+DEBUG: symbol: ATGL.NS date: 2021-07-08 00:00:00 -> adjusted_closing_price: 921.9500122070312 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:03 PM]
+INFO: no price adjustment. stock_symbol: ATGL.NS date: 2021-07-08 00:00:00 -> unchanged adjusted_price: 921.9500122070312 [de_adjust_price():203 - 2021/08/26 01:25:03 PM]
+INFO: symbol_list: ['ATGL.NS', 'ATGL.BO'] date: 2021-07-08 00:00:00 symbol: ATGL.NS -> closing_price: 921.9500122070312 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:03 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:03 PM]
+INFO: stock_symbol: None date: 2021-07-08 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:03 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-07-08 00:00:00 start_date: 2021-07-08 00:00:00 end_date: 2021-07-09 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:03 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-07-08 00:00:00 stock_data...
+                   Open     High          Low        Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2021-07-08  1205.099976  1314.75  1205.099976  1301.449951   61369          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:03 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-07-08 00:00:00 -> closing_price: 1301.449951171875 [__get_adjusted_average_price():257 - 2021/08/26 01:25:03 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-07-08 00:00:00 -> adjusted_closing_price: 1301.449951171875 [get_adjusted_closing_price():167 - 2021/08/26 01:25:03 PM]
+DEBUG: symbol: BAJAJST.BO date: 2021-07-08 00:00:00 -> adjusted_closing_price: 1301.449951171875 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:03 PM]
+WARNING: stock_symbol is None! date: 2021-07-08 00:00:00 -> unchanged adjusted_price: 1301.449951171875 [de_adjust_price():185 - 2021/08/26 01:25:03 PM]
+INFO: symbol_list: [None, 'BAJAJST.BO'] date: 2021-07-08 00:00:00 symbol: None -> closing_price: 1301.449951171875 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:03 PM]
+DEBUG: ongoing_date: 2021-07-08 00:00:00 value_sum: 68118.49952697754 [compute_and_append_daily_proportions():295 - 2021/08/26 01:25:03 PM]
+DEBUG: ongoing_date changing from: 2021-07-08 00:00:00 to: 2021-07-30 00:00:00 [__compute_daywise_portfolio():321 - 2021/08/26 01:25:03 PM]
+DEBUG: company_name: Adani Total Gas [__compute_daywise_portfolio():325 - 2021/08/26 01:25:03 PM]
+DEBUG: masked_rows...
+         Date             Name  Shares              Symbol  Closing Price        Value  Proportion
+26 2021-07-30  Adani Total Gas    10.0  [ATGL.NS, ATGL.BO]     921.950012  9219.500122    0.135345 [__compute_daywise_portfolio():329 - 2021/08/26 01:25:03 PM]
+DEBUG: transacted_shares: -10.0 [__compute_daywise_portfolio():336 - 2021/08/26 01:25:03 PM]
+DEBUG: company_name: Adani Total Gas updated shares count: 0.0 [__compute_daywise_portfolio():338 - 2021/08/26 01:25:03 PM]
+DEBUG: date: 0 [__compute_daywise_portfolio():310 - 2021/08/26 01:25:03 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:03 PM]
+INFO: stock_symbol: None date: 2021-07-30 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:03 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-07-30 00:00:00 start_date: 2021-07-30 00:00:00 end_date: 2021-07-31 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:03 PM]
+DEBUG: stock_symbol: BLACKROSE.BO date: 2021-07-30 00:00:00 stock_data...
+                  Open        High         Low       Close  Volume  Dividends  Stock Splits
+Date                                                                                       
+2021-07-30  200.899994  200.949997  197.100006  198.800003   44446          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:04 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-07-30 00:00:00 -> closing_price: 198.8000030517578 [__get_adjusted_average_price():257 - 2021/08/26 01:25:04 PM]
+INFO: stock_symbol: BLACKROSE.BO date: 2021-07-30 00:00:00 -> adjusted_closing_price: 198.8000030517578 [get_adjusted_closing_price():167 - 2021/08/26 01:25:04 PM]
+DEBUG: symbol: BLACKROSE.BO date: 2021-07-30 00:00:00 -> adjusted_closing_price: 198.8000030517578 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:04 PM]
+WARNING: stock_symbol is None! date: 2021-07-30 00:00:00 -> unchanged adjusted_price: 198.8000030517578 [de_adjust_price():185 - 2021/08/26 01:25:04 PM]
+INFO: symbol_list: [None, 'BLACKROSE.BO'] date: 2021-07-30 00:00:00 symbol: None -> closing_price: 198.8000030517578 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:04 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:04 PM]
+INFO: stock_symbol: None date: 2021-07-30 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:04 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-07-30 00:00:00 start_date: 2021-07-30 00:00:00 end_date: 2021-07-31 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:04 PM]
+DEBUG: stock_symbol: KMCSHIL.BO date: 2021-07-30 00:00:00 stock_data...
+                 Open       High        Low  Close  Volume  Dividends  Stock Splits
+Date                                                                               
+2021-07-30  39.099998  39.900002  39.099998   39.5   34736          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:04 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-07-30 00:00:00 -> closing_price: 39.5 [__get_adjusted_average_price():257 - 2021/08/26 01:25:04 PM]
+INFO: stock_symbol: KMCSHIL.BO date: 2021-07-30 00:00:00 -> adjusted_closing_price: 39.5 [get_adjusted_closing_price():167 - 2021/08/26 01:25:04 PM]
+DEBUG: symbol: KMCSHIL.BO date: 2021-07-30 00:00:00 -> adjusted_closing_price: 39.5 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:04 PM]
+WARNING: stock_symbol is None! date: 2021-07-30 00:00:00 -> unchanged adjusted_price: 39.5 [de_adjust_price():185 - 2021/08/26 01:25:04 PM]
+INFO: symbol_list: [None, 'KMCSHIL.BO'] date: 2021-07-30 00:00:00 symbol: None -> closing_price: 39.5 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:04 PM]
+WARNING: stock_symbol is None! [__get_adjusted_average_price():241 - 2021/08/26 01:25:04 PM]
+INFO: stock_symbol: None date: 2021-07-30 00:00:00 -> adjusted_closing_price: None [get_adjusted_closing_price():167 - 2021/08/26 01:25:04 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-07-30 00:00:00 start_date: 2021-07-30 00:00:00 end_date: 2021-07-31 00:00:00 [__get_adjusted_average_price():246 - 2021/08/26 01:25:04 PM]
+DEBUG: stock_symbol: BAJAJST.BO date: 2021-07-30 00:00:00 stock_data...
+              Open    High     Low   Close  Volume  Dividends  Stock Splits
+Date                                                                       
+2021-07-30  1320.0  1320.0  1276.0  1296.5    9691          0             0 [__get_adjusted_average_price():250 - 2021/08/26 01:25:04 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-07-30 00:00:00 -> closing_price: 1296.5 [__get_adjusted_average_price():257 - 2021/08/26 01:25:04 PM]
+INFO: stock_symbol: BAJAJST.BO date: 2021-07-30 00:00:00 -> adjusted_closing_price: 1296.5 [get_adjusted_closing_price():167 - 2021/08/26 01:25:04 PM]
+DEBUG: symbol: BAJAJST.BO date: 2021-07-30 00:00:00 -> adjusted_closing_price: 1296.5 [get_closing_price_by_symbol_list():211 - 2021/08/26 01:25:04 PM]
+WARNING: stock_symbol is None! date: 2021-07-30 00:00:00 -> unchanged adjusted_price: 1296.5 [de_adjust_price():185 - 2021/08/26 01:25:04 PM]
+INFO: symbol_list: [None, 'BAJAJST.BO'] date: 2021-07-30 00:00:00 symbol: None -> closing_price: 1296.5 [get_closing_price_by_symbol_list():235 - 2021/08/26 01:25:04 PM]
+DEBUG: ongoing_date: 2021-07-30 00:00:00 value_sum: 59661.00036621094 [compute_and_append_daily_proportions():295 - 2021/08/26 01:25:04 PM]
+DEBUG: ongoing_date changing from: 2021-07-30 00:00:00 to: 0 [__compute_daywise_portfolio():321 - 2021/08/26 01:25:04 PM]
+DEBUG: company_name: nan [__compute_daywise_portfolio():325 - 2021/08/26 01:25:04 PM]
+DEBUG: masked_rows...
+Empty DataFrame
+Columns: [Date, Name, Shares, Symbol, Closing Price, Value, Proportion]
+Index: [] [__compute_daywise_portfolio():329 - 2021/08/26 01:25:04 PM]
+DEBUG: added to daily_portfolio company_name: nan for ongoing_date: 0 [__compute_daywise_portfolio():333 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [1.0] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.1976475986110701, 0.8023524013889299] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0080637756943422 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.166270783847981, 0.833729216152019] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0083791179252801 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.18444782514348437, 0.8155521748565157] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0081964356231645 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.22401132810805788, 0.7759886718919421] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0077988158079356 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.13707402757343762, 0.3552339861861126, 0.5076919862404498] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0138262193580478 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.113590084665398, 0.38209816917169037, 0.5043117461629116] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.014027923506454 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.03215349477987267, 0.11058006034893865, 0.37706099022395984, 0.48020545464722886] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0233529186802417 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.05882885029731659, 0.11564435930732936, 0.32158254840145656, 0.5039442419938974] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0230060305687911 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.12341147217431007, 0.13750732163997878, 0.2759778587681072, 0.46310334741760395] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0210606907405255 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.14401632319881943, 0.15134347495580378, 0.24332150136235683, 0.46131870048302] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0204856936224986 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.14928303077932814, 0.18201605175889576, 0.27047628250671496, 0.39822463495506116] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0194210207506345 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.13534502647726462, 0.14827103432408606, 0.334270428123306, 0.3821135110753433] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0198799481452492 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
+DEBUG: sorted_proportions: [0.1655185119154106, 0.39985920818923787, 0.4346222798953515] [compute_portfolio_complexity():52 - 2021/08/26 01:25:04 PM]
+INFO: portfolio_complexity: 1.0127986043118147 [compute_portfolio_complexity():59 - 2021/08/26 01:25:04 PM]
