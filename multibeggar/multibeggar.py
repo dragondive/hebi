@@ -287,15 +287,19 @@ class Multibeggar:
         
         def compute_and_append_daily_closing_prices_and_values():
             daily_portfolio['Closing Price'] = daily_portfolio.apply(lambda row: self.get_closing_price_by_symbol_list(row['Symbol'], row['Date']), axis=1, result_type='reduce')
-            daily_portfolio.dropna(subset=['Closing Price'], inplace=True)
             daily_portfolio['Value'] = daily_portfolio['Shares'] * daily_portfolio['Closing Price']
     
     
         def compute_and_append_daily_proportions():
             value_sum = daily_portfolio['Value'].sum()
             self.logger.debug('ongoing_date: ' + str(ongoing_date) + ' value_sum: ' + str(value_sum))
-            daily_portfolio['Proportion'] = daily_portfolio['Value'] / value_sum
-
+            
+            try:
+                daily_portfolio['Proportion'] = daily_portfolio['Value'] / value_sum
+            except ZeroDivisionError:
+                self.logger.warning('value_sum is zero, clearing daily_portfolio! ongoing_date: ' + str(ongoing_date))
+                daily_portfolio.dropna(subset=['Value'], inplace=True)  # clearing all rows causes strange runtime exception
+                                                                        # hence using this workaround which is equivalent
         
         ongoing_date = None
         daily_portfolio = self.transactions_list.iloc[0:0,:].copy() # create empty DataFrame with same columns as transactions_list
