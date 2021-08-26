@@ -9,7 +9,7 @@ import sys
 
 class Multibeggar:
     def __init__(self):
-        logging.basicConfig(format='%(levelname)s: %(message)s [%(funcName)s():%(lineno)s - %(asctime)s]', datefmt='%Y/%m/%d %I:%M:%S %p', handlers=[logging.FileHandler('multibeggar.log', mode='w')])
+        logging.basicConfig(format='%(levelname)s: %(message)s [%(funcName)s():%(lineno)s - %(asctime)s]', datefmt='%Y/%m/%d %I:%M:%S %p', handlers=[logging.FileHandler(os.path.join(os.getcwd(), 'output', 'multibeggar.log'), mode='w')])
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
         
