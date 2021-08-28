@@ -30,7 +30,7 @@ class Multibeggar:
 
     def load_transactions_from_excel_file(self, excel_file_path):
         self.input_file_path = excel_file_path
-        self.transactions_list = pandas.read_excel(excel_file_path)
+        self.transactions_list = pandas.read_excel(excel_file_path, parse_dates=['Date'])
 
     
     def plot_portfolio_complexity(self):
@@ -205,11 +205,15 @@ class Multibeggar:
 
 
     def get_closing_price_by_symbol_list(self, symbol_list, date, fallback_to_average_price=True, fallback_offset=7, fallback_to_renamed_symbol=True):
-        for symbol in symbol_list:            
-            adjusted_closing_price = self.get_adjusted_closing_price(symbol, date)
-            if adjusted_closing_price is not None:
-                self.logger.debug('symbol: ' + str(symbol) + ' date: ' + str(date) + ' -> adjusted_closing_price: ' + str(adjusted_closing_price))
-                break
+        adjusted_closing_price = self.__get_adjusted_closing_price_by_symbol_list_from_prefetched_stock_data(symbol_list, date)
+        self.logger.debug('symbol_list: ' + str(symbol_list) + ' date: ' + str(date) + ' -> adjusted_closing_price: ' + str(adjusted_closing_price))
+
+        if adjusted_closing_price is None:
+            for symbol in symbol_list:
+                adjusted_closing_price = self.get_adjusted_closing_price(symbol, date)
+                if adjusted_closing_price is not None:
+                    self.logger.debug('symbol: ' + str(symbol) + ' date: ' + str(date) + ' -> adjusted_closing_price: ' + str(adjusted_closing_price))
+                    break
                 
         if fallback_to_average_price and adjusted_closing_price is None:
             for symbol in symbol_list:
@@ -258,6 +262,22 @@ class Multibeggar:
         return closing_price
 
 
+    def __get_adjusted_closing_price_by_symbol_list_from_prefetched_stock_data(self, symbol_list, date):
+        for symbol in symbol_list:
+            try:
+                adjusted_closing_price = self.prefetched_stock_data.loc[date, (symbol, 'Close')]
+            except KeyError:
+                self.logger.warning('symbol: ' + str(symbol) + ' date: ' + str(date) + ' -> no closing_price found!')
+            else:
+                if not pandas.isnull(adjusted_closing_price):
+                    self.logger.debug('symbol: ' + str(symbol) + ' date: ' + str(date) + ' -> adjusted_closing_price: ' + str(adjusted_closing_price))
+                    return adjusted_closing_price
+
+
+        self.logger.warning('symbol_list: ' + str(symbol_list) + ' date: ' + str(date) + ' -> no closing_price found!')
+        return None
+
+
     def __prepare_for_portfolio_complexity_calculation(self):
 
         def fixup_company_names():
@@ -265,21 +285,39 @@ class Multibeggar:
                 self.transactions_list.replace({'Name': row['Actual Name']}, row['Fixed Name'], inplace=True)
 
 
-        def get_and_append_stock_symbols():
-            self.transactions_list['Symbol'] = self.transactions_list.apply(lambda x: self.get_stock_symbols(x['Name'], with_suffix=True), axis=1)
+        def get_and_collect_stock_symbols(company_name):
+            symbol_list = self.get_stock_symbols(company_name)
+            symbol_set.update(symbol_list)
+            return symbol_list
+
+
+        def append_stock_symbols():
+            self.transactions_list['Symbol'] = self.transactions_list.apply(lambda x: get_and_collect_stock_symbols(x['Name']), axis=1)
         
         
         def sort_by_date():
             self.transactions_list.sort_values(by='Date', inplace=True)
             
         
+        def prefetch_stock_data():
+            first_date = self.transactions_list['Date'].iloc[0]
+            last_date = self.transactions_list['Date'].iloc[-1]
+            symbols_str = ' '.join([str(symbol) for symbol in symbol_set])
+            self.prefetched_stock_data = yfinance.download(symbols_str, group_by='Ticker', start=first_date, end=last_date + pandas.Timedelta(days=1))
+
+            self.logger.debug('downloaded stock data from date: ' + str(first_date) + ' to date: ' + str(last_date) + ' for symbols...\n' + symbols_str) 
+
+
         def append_sentinel_row():
             self.transactions_list = self.transactions_list.append({'Date' : '0'}, ignore_index=True) 
 
 
+        symbol_set = set()
+
         fixup_company_names()
-        get_and_append_stock_symbols()
+        append_stock_symbols()
         sort_by_date()
+        prefetch_stock_data()
         append_sentinel_row()
 
 
