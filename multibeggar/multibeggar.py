@@ -5,6 +5,7 @@ import pandas
 import yfinance
 from fuzzywuzzy import fuzz
 from matplotlib import pyplot
+from .stock_exchange import StockExchange
 
 
 class Multibeggar:
@@ -19,13 +20,22 @@ class Multibeggar:
         self.renamed_symbols_map = pandas.read_csv(os.path.join(script_dir, 'data', 'renamed_symbols.csv'))
         self.price_adjustment_list = pandas.read_csv(os.path.join(script_dir, 'data', 'price_adjustments.csv'), parse_dates=['Date'])
 
-        self.nse_symbol_heading, self.nse_company_name_heading = 'SYMBOL', 'NAME OF COMPANY'
-        self.nse_symbol_name_map = pandas.read_csv(os.path.join(script_dir, 'data', 'equity_nse.csv'), usecols=[self.nse_symbol_heading, self.nse_company_name_heading])
-        self.nse_suffix = '.NS'
+        # TODO below dictionary of dictionary makes the code unreadable where it is used
+        # This is a temporary intermediate step to simplify the overall code and it will be refactored
+        self.stock_exchange_info = {
+            StockExchange.NSE: {
+                'symbol_header': 'SYMBOL',
+                'company_name_header': 'NAME OF COMPANY',
+                'suffix': '.NS', },
+            StockExchange.BSE: {
+                'symbol_header': 'Security Id',
+                'company_name_header': 'Security Name',
+                'suffix': '.BO', }, }
 
-        self.bse_symbol_heading, self.bse_company_name_heading = 'Security Id', 'Security Name'
-        self.bse_symbol_name_map = pandas.read_csv(os.path.join(script_dir, 'data', 'equity_bse.csv'), usecols=[self.bse_symbol_heading, self.bse_company_name_heading])
-        self.bse_suffix = '.BO'
+        self.stock_exchange_info[StockExchange.NSE]['symbol_to_name'] = pandas.read_csv(os.path.join(script_dir, 'data', 'equity_nse.csv'),
+                                                                                        usecols=[self.stock_exchange_info[StockExchange.NSE]['symbol_header'], self.stock_exchange_info[StockExchange.NSE]['company_name_header']])
+        self.stock_exchange_info[StockExchange.BSE]['symbol_to_name'] = pandas.read_csv(os.path.join(script_dir, 'data', 'equity_bse.csv'),
+                                                                                        usecols=[self.stock_exchange_info[StockExchange.BSE]['symbol_header'], self.stock_exchange_info[StockExchange.BSE]['company_name_header']])
 
     def load_transactions_from_excel_file(self, excel_file_path):
         self.input_file_path = excel_file_path
@@ -59,30 +69,30 @@ class Multibeggar:
     def get_nse_symbol(self, company_name, with_suffix=True):
 
         def get_nse_symbol_by_startswith_company_name_match():
-            matching_mask = self.nse_symbol_name_map[self.nse_company_name_heading].str.startswith(company_name)
-            matching_row = self.nse_symbol_name_map[matching_mask]
+            matching_mask = self.stock_exchange_info[StockExchange.NSE]['symbol_to_name'][self.stock_exchange_info[StockExchange.NSE]['company_name_header']].str.startswith(company_name)
+            matching_row = self.stock_exchange_info[StockExchange.NSE]['symbol_to_name'][matching_mask]
 
             if len(matching_row.index) == 1:
-                symbol = matching_row[self.nse_symbol_heading].values[0]  # todo self: is values[0] required here?
+                symbol = matching_row[self.stock_exchange_info[StockExchange.NSE]['symbol_header']].values[0]  # todo self: is values[0] required here?
                 self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
                 return symbol
 
             if len(matching_row.index) > 1:
                 self.logger.warning('company_name: %s -> multiple symbols matched!',  company_name)
-                self.logger.debug('company_name: %s -> matching symbols...\n%s', company_name, matching_row[self.nse_symbol_heading].array)
+                self.logger.debug('company_name: %s -> matching symbols...\n%s', company_name, matching_row[self.stock_exchange_info[StockExchange.NSE]['symbol_header']].array)
                 return None
 
             self.logger.info('company_name: %s -> no symbol matched.', company_name)
             return None
 
         def get_nse_symbol_by_fuzzy_company_name_match():
-            match_ratios = self.nse_symbol_name_map.apply(lambda x: fuzz.token_sort_ratio(x[self.nse_company_name_heading], company_name), axis=1)
+            match_ratios = self.stock_exchange_info[StockExchange.NSE]['symbol_to_name'].apply(lambda x: fuzz.token_sort_ratio(x[self.stock_exchange_info[StockExchange.NSE]['company_name_header']], company_name), axis=1)
             qualified_rows = match_ratios[lambda x: x >= 75]
-            self.logger.debug('company_name: %s -> qualified_rows...\n%s', company_name, pandas.concat([self.nse_symbol_name_map.loc[qualified_rows.index], match_ratios.loc[qualified_rows.index].rename('match_ratio')], axis=1).to_string())
+            self.logger.debug('company_name: %s -> qualified_rows...\n%s', company_name, pandas.concat([self.stock_exchange_info[StockExchange.NSE]['symbol_to_name'].loc[qualified_rows.index], match_ratios.loc[qualified_rows.index].rename('match_ratio')], axis=1).to_string())
 
             try:
-                best_matching_row = self.nse_symbol_name_map.loc[qualified_rows.idxmax()]
-                symbol = best_matching_row[self.nse_symbol_heading]
+                best_matching_row = self.stock_exchange_info[StockExchange.NSE]['symbol_to_name'].loc[qualified_rows.idxmax()]
+                symbol = best_matching_row[self.stock_exchange_info[StockExchange.NSE]['symbol_header']]
 
                 self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
                 return symbol
@@ -96,7 +106,7 @@ class Multibeggar:
             symbol = get_nse_symbol_by_fuzzy_company_name_match()
 
         if with_suffix and symbol is not None:
-            symbol += self.nse_suffix
+            symbol += self.stock_exchange_info[StockExchange.NSE]['suffix']
 
         self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
         return symbol
@@ -104,30 +114,30 @@ class Multibeggar:
     def get_bse_symbol(self, company_name, with_suffix=True):
 
         def get_bse_symbol_by_startswith_company_name_match():
-            matching_mask = self.bse_symbol_name_map[self.bse_company_name_heading].str.startswith(company_name)
-            matching_row = self.bse_symbol_name_map[matching_mask]
+            matching_mask = self.stock_exchange_info[StockExchange.BSE]['symbol_to_name'][self.stock_exchange_info[StockExchange.BSE]['company_name_header']].str.startswith(company_name)
+            matching_row = self.stock_exchange_info[StockExchange.BSE]['symbol_to_name'][matching_mask]
 
             if len(matching_row.index) == 1:
-                symbol = matching_row[self.bse_symbol_heading].values[0]  # todo self: is values[0] required here?
+                symbol = matching_row[self.stock_exchange_info[StockExchange.BSE]['symbol_header']].values[0]  # todo self: is values[0] required here?
                 self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
                 return symbol
 
             if len(matching_row.index) > 1:
                 self.logger.warning('company_name: %s -> multiple symbols matched!', company_name)
-                self.logger.debug('company_name: %s -> matching symbols...\n%s', company_name, matching_row[self.bse_symbol_heading].array)
+                self.logger.debug('company_name: %s -> matching symbols...\n%s', company_name, matching_row[self.stock_exchange_info[StockExchange.BSE]['symbol_header']].array)
                 return None
 
             self.logger.info('company_name: %s -> no symbol matched.', company_name)
             return None
 
         def get_bse_symbol_by_fuzzy_company_name_match():
-            match_ratios = self.bse_symbol_name_map.apply(lambda x: fuzz.token_sort_ratio(x[self.bse_company_name_heading], company_name), axis=1)
+            match_ratios = self.stock_exchange_info[StockExchange.BSE]['symbol_to_name'].apply(lambda x: fuzz.token_sort_ratio(x[self.stock_exchange_info[StockExchange.BSE]['company_name_header']], company_name), axis=1)
             qualified_rows = match_ratios[lambda x: x >= 75]
-            self.logger.debug('company_name: %s -> qualified_rows...\n%s', company_name, pandas.concat([self.bse_symbol_name_map.loc[qualified_rows.index], match_ratios.loc[qualified_rows.index].rename('match_ratio')], axis=1).to_string())
+            self.logger.debug('company_name: %s -> qualified_rows...\n%s', company_name, pandas.concat([self.stock_exchange_info[StockExchange.BSE]['symbol_to_name'].loc[qualified_rows.index], match_ratios.loc[qualified_rows.index].rename('match_ratio')], axis=1).to_string())
 
             try:
-                best_matching_row = self.bse_symbol_name_map.loc[qualified_rows.idxmax()]
-                symbol = best_matching_row[self.bse_symbol_heading]
+                best_matching_row = self.stock_exchange_info[StockExchange.BSE]['symbol_to_name'].loc[qualified_rows.idxmax()]
+                symbol = best_matching_row[self.stock_exchange_info[StockExchange.BSE]['symbol_header']]
 
                 self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
                 return symbol
@@ -141,7 +151,7 @@ class Multibeggar:
             symbol = get_bse_symbol_by_fuzzy_company_name_match()
 
         if with_suffix and symbol is not None:
-            symbol += self.bse_suffix
+            symbol += self.stock_exchange_info[StockExchange.BSE]['suffix']
 
         self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
         return symbol
