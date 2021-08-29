@@ -46,14 +46,14 @@ class Multibeggar:
 
     def compute_portfolio_complexity(self, proportions):
         sorted_proportions = sorted(proportions)
-        self.logger.debug('sorted_proportions: ' + str(sorted_proportions))
+        self.logger.debug('sorted_proportions: %s', sorted_proportions)
 
         exponent_tuning_factor = 0.01
 
         portfolio_complexity = 0
         [portfolio_complexity := portfolio_complexity + value * exp(exponent_tuning_factor * index) for index, value in enumerate(sorted_proportions)]
 
-        self.logger.info('portfolio_complexity: ' + str(portfolio_complexity))
+        self.logger.info('portfolio_complexity: %s', portfolio_complexity)
         return portfolio_complexity
 
     def get_nse_symbol(self, company_name, with_suffix=True):
@@ -64,30 +64,30 @@ class Multibeggar:
 
             if len(matching_row.index) == 1:
                 symbol = matching_row[self.nse_symbol_heading].values[0]  # todo self: is values[0] required here?
-                self.logger.info('company_name: ' + str(company_name) + ' -> symbol: ' + str(symbol))
+                self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
                 return symbol
-            
+
             if len(matching_row.index) > 1:
-                self.logger.warning('company_name: ' + str(company_name) + ' -> multiple symbols matched!')
-                self.logger.debug('company_name: ' + str(company_name) + ' -> matching symbols...\n' + str(matching_row[self.nse_symbol_heading].array))
+                self.logger.warning('company_name: %s -> multiple symbols matched!',  company_name)
+                self.logger.debug('company_name: %s -> matching symbols...\n%s', company_name, matching_row[self.nse_symbol_heading].array)
                 return None
 
-            self.logger.info('company_name: ' + str(company_name) + ' -> no symbol matched.')
+            self.logger.info('company_name: %s -> no symbol matched.', company_name)
             return None
 
         def get_nse_symbol_by_fuzzy_company_name_match():
             match_ratios = self.nse_symbol_name_map.apply(lambda x: fuzz.token_sort_ratio(x[self.nse_company_name_heading], company_name), axis=1)
             qualified_rows = match_ratios[lambda x: x >= 75]
-            self.logger.debug('company_name: ' + str(company_name) + ' -> qualified_rows...\n' + pandas.concat([self.nse_symbol_name_map.loc[qualified_rows.index], match_ratios.loc[qualified_rows.index].rename('match_ratio')], axis=1).to_string())
-            
+            self.logger.debug('company_name: %s -> qualified_rows...\n%s', company_name, pandas.concat([self.nse_symbol_name_map.loc[qualified_rows.index], match_ratios.loc[qualified_rows.index].rename('match_ratio')], axis=1).to_string())
+
             try:
                 best_matching_row = self.nse_symbol_name_map.loc[qualified_rows.idxmax()]
                 symbol = best_matching_row[self.nse_symbol_heading]
 
-                self.logger.info('company_name: ' + str(company_name) + ' -> symbol: ' + str(symbol))
+                self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
                 return symbol
             except ValueError:
-                self.logger.warning('company_name: ' + str(company_name) + ' -> no symbol matched!')
+                self.logger.warning('company_name: %s -> no symbol matched!', company_name)
                 return None
 
         symbol = get_nse_symbol_by_startswith_company_name_match()
@@ -98,7 +98,7 @@ class Multibeggar:
         if with_suffix and symbol is not None:
             symbol += self.nse_suffix
 
-        self.logger.info('company_name: ' + str(company_name) + ' -> symbol: ' + str(symbol))
+        self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
         return symbol
 
     def get_bse_symbol(self, company_name, with_suffix=True):
@@ -109,30 +109,30 @@ class Multibeggar:
 
             if len(matching_row.index) == 1:
                 symbol = matching_row[self.bse_symbol_heading].values[0]  # todo self: is values[0] required here?
-                self.logger.info('company_name: ' + str(company_name) + ' -> symbol: ' + str(symbol))
+                self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
                 return symbol
-            
+
             if len(matching_row.index) > 1:
-                self.logger.warning('company_name: ' + str(company_name) + ' -> multiple symbols matched!')
-                self.logger.debug('company_name: ' + str(company_name) + ' -> matching symbols...\n' + str(matching_row[self.bse_symbol_heading].array))
+                self.logger.warning('company_name: %s -> multiple symbols matched!', company_name)
+                self.logger.debug('company_name: %s -> matching symbols...\n%s', company_name, matching_row[self.bse_symbol_heading].array)
                 return None
 
-            self.logger.info('company_name: ' + str(company_name) + ' -> no symbol matched.')
+            self.logger.info('company_name: %s -> no symbol matched.', company_name)
             return None
 
         def get_bse_symbol_by_fuzzy_company_name_match():
             match_ratios = self.bse_symbol_name_map.apply(lambda x: fuzz.token_sort_ratio(x[self.bse_company_name_heading], company_name), axis=1)
             qualified_rows = match_ratios[lambda x: x >= 75]
-            self.logger.debug('company_name: ' + str(company_name) + ' -> qualified_rows...\n' + pandas.concat([self.bse_symbol_name_map.loc[qualified_rows.index], match_ratios.loc[qualified_rows.index].rename('match_ratio')], axis=1).to_string())
+            self.logger.debug('company_name: %s -> qualified_rows...\n%s', company_name, pandas.concat([self.bse_symbol_name_map.loc[qualified_rows.index], match_ratios.loc[qualified_rows.index].rename('match_ratio')], axis=1).to_string())
 
             try:
                 best_matching_row = self.bse_symbol_name_map.loc[qualified_rows.idxmax()]
                 symbol = best_matching_row[self.bse_symbol_heading]
 
-                self.logger.info('company_name: ' + str(company_name) + ' -> symbol: ' + str(symbol))
+                self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
                 return symbol
             except ValueError:
-                self.logger.warning('company_name: ' + str(company_name) + ' -> no symbol matched!')
+                self.logger.warning('company_name: %s -> no symbol matched!', company_name)
                 return None
 
         symbol = get_bse_symbol_by_startswith_company_name_match()
@@ -143,19 +143,19 @@ class Multibeggar:
         if with_suffix and symbol is not None:
             symbol += self.bse_suffix
 
-        self.logger.info('company_name: ' + str(company_name) + ' -> symbol: ' + str(symbol))
+        self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
         return symbol
 
     def get_stock_symbols(self, company_name, with_suffix=True):
         symbols = [self.get_nse_symbol(company_name, with_suffix), self.get_bse_symbol(company_name, with_suffix)]
 
-        self.logger.info('company_name: ' + str(company_name) + ' -> symbols: ' + str(symbols))
+        self.logger.info('company_name: %s -> symbols: %s', company_name, symbols)
         return symbols
 
     def get_adjusted_closing_price(self, stock_symbol, date):
         adjusted_closing_price = self.__get_adjusted_average_price(stock_symbol, date, offset_days=0)
 
-        self.logger.info('stock_symbol: ' + str(stock_symbol) + ' date: ' + str(date) + ' -> adjusted_closing_price: ' + str(adjusted_closing_price))
+        self.logger.info('stock_symbol: %s date: %s -> adjusted_closing_price: %s', stock_symbol, date, adjusted_closing_price)
         return adjusted_closing_price
 
     def get_renamed_symbol(self, stock_symbol):
@@ -163,68 +163,68 @@ class Multibeggar:
 
         try:
             old_symbol = matching_row['Old Symbol'].values[0]
-            self.logger.info('stock_symbol: ' + str(stock_symbol) + ' -> old_symbol: ' + str(old_symbol))
+            self.logger.info('stock_symbol: %s -> old_symbol: %s', stock_symbol, old_symbol)
             return old_symbol
         except IndexError:
-            self.logger.warning('stock_symbol: ' + str(stock_symbol) + ' -> no old_symbol found!')
+            self.logger.warning('stock_symbol: %s -> no old_symbol found!', stock_symbol)
             return None
 
     def de_adjust_price(self, adjusted_price, stock_symbol, date):
         if stock_symbol is None:
-            self.logger.warning('stock_symbol is None! date: ' + str(date) + ' -> unchanged adjusted_price: ' + str(adjusted_price))
+            self.logger.warning('stock_symbol is None! date: %s -> unchanged adjusted_price: %s', date, adjusted_price)
             return adjusted_price
 
         matching_row = self.price_adjustment_list[self.price_adjustment_list['Symbol'] == stock_symbol]
         try:
             adjustment_date = matching_row['Date'].values[0]
             if pandas.to_datetime(date) >= adjustment_date:
-                self.logger.info('date: ' + str(date) + ' on or after adjustment_date: ' + str(adjustment_date) + ' stock_symbol: ' + str(stock_symbol) + ' -> unchanged adjusted price: ' + str(adjusted_price))
+                self.logger.info('date: %s on or after adjustment_date: %s stock_symbol: %s -> unchanged adjusted price: %s', date, adjustment_date, stock_symbol, adjusted_price)
                 return adjusted_price
 
             numerator = matching_row['Numerator'].values[0]
             denominator = matching_row['Denominator'].values[0]
             de_adjusted_price = adjusted_price * numerator / denominator
 
-            self.logger.debug('numerator: ' + str(numerator) + ' denominator: ' + str(denominator))
-            self.logger.info('adjusted_price: ' + str(adjusted_price) + ' stock_symbol: ' + str(stock_symbol) + ' date: ' + str(date) + ' -> de_adjusted_price: ' + str(de_adjusted_price))
+            self.logger.debug('numerator: %s denominator: %s', numerator, denominator)
+            self.logger.info('adjusted_price: %s stock_symbol: %s date: %s -> de_adjusted_price: %s', adjusted_price, stock_symbol, date, de_adjusted_price)
             return de_adjusted_price
         except IndexError:
-            self.logger.info('no price adjustment. stock_symbol: ' + str(stock_symbol) + ' date: ' + str(date) + ' -> unchanged adjusted_price: ' + str(adjusted_price))
+            self.logger.info('no price adjustment. stock_symbol: %s date: %s -> unchanged adjusted_price: %s', stock_symbol, date, adjusted_price)
             return adjusted_price
 
     def get_closing_price_by_symbol_list(self, symbol_list, date, fallback_to_average_price=True, fallback_offset=7, fallback_to_renamed_symbol=True):
         adjusted_closing_price = self.__get_adjusted_closing_price_by_symbol_list_from_prefetched_stock_data(symbol_list, date)
-        self.logger.debug('symbol_list: ' + str(symbol_list) + ' date: ' + str(date) + ' -> adjusted_closing_price: ' + str(adjusted_closing_price))
+        self.logger.debug('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
 
         if adjusted_closing_price is None:
             for symbol in symbol_list:
                 adjusted_closing_price = self.get_adjusted_closing_price(symbol, date)
                 if adjusted_closing_price is not None:
-                    self.logger.debug('symbol: ' + str(symbol) + ' date: ' + str(date) + ' -> adjusted_closing_price: ' + str(adjusted_closing_price))
+                    self.logger.debug('symbol: %s date: %s -> adjusted_closing_price: %s', symbol, date, adjusted_closing_price)
                     break
 
         if fallback_to_average_price and adjusted_closing_price is None:
             for symbol in symbol_list:
                 adjusted_closing_price = self.__get_adjusted_average_price(symbol, date, offset_days=fallback_offset)
                 if adjusted_closing_price is not None:
-                    self.logger.warning('fallback to average price! symbol: ' + str(symbol) + ' date: ' + str(date) + ' -> adjusted_closing_price: ' + str(adjusted_closing_price))
+                    self.logger.warning('fallback to average price! symbol: %s date: %s -> adjusted_closing_price: %s', symbol, date, adjusted_closing_price)
                     break
 
         if fallback_to_renamed_symbol and adjusted_closing_price is None:
             renamed_symbol_list = [renamed_symbol for symbol in symbol_list if (renamed_symbol := self.get_renamed_symbol(symbol)) is not None]
-            self.logger.debug('symbol_list: ' + str(symbol_list) + ' -> renamed_symbol_list: ' + str(renamed_symbol_list))
+            self.logger.debug('symbol_list: %s -> renamed_symbol_list: %s', symbol_list, renamed_symbol_list)
             if renamed_symbol_list:
                 adjusted_closing_price = self.get_closing_price_by_symbol_list(renamed_symbol_list, date)
-                self.logger.debug('symbol: ' + str(symbol) + ' date: ' + str(date) + ' -> adjusted_closing_price: ' + str(adjusted_closing_price))
+                self.logger.debug('symbol: %s date: %s -> adjusted_closing_price: %s', symbol, date, adjusted_closing_price)
 
         if adjusted_closing_price is None:
-            self.logger.warning('symbol_list: ' + str(symbol_list) + ' date: ' + str(date) + ' -> no closing_price found!')
+            self.logger.warning('symbol_list: %s date: %s -> no closing_price found!', symbol_list, date)
             return None
 
         for symbol in symbol_list:
             de_adjusted_closing_price = self.de_adjust_price(adjusted_closing_price, symbol, date)
             if de_adjusted_closing_price is not None:
-                self.logger.info('symbol_list: ' + str(symbol_list) + ' date: ' + str(date) + ' symbol: ' + str(symbol) + ' -> closing_price: ' + str(de_adjusted_closing_price))
+                self.logger.info('symbol_list: %s date: %s symbol: %s -> closing_price: %s', symbol_list, date, symbol, de_adjusted_closing_price)
                 return de_adjusted_closing_price
 
     def __get_adjusted_average_price(self, stock_symbol, date, offset_days=7):
@@ -234,18 +234,18 @@ class Multibeggar:
 
         start_date = pandas.to_datetime(date) - pandas.Timedelta(days=offset_days)
         end_date = pandas.to_datetime(date) + pandas.Timedelta(days=1 + offset_days)
-        self.logger.debug('stock_symbol: ' + str(stock_symbol) + ' date: ' + str(date) + ' start_date: ' + str(start_date) + ' end_date: ' + str(end_date))
+        self.logger.debug('stock_symbol: %s date: %s start_date: %s end_date: %s', stock_symbol, date, start_date, end_date)
 
         ticker = yfinance.Ticker(stock_symbol)
         stock_data = ticker.history(start=start_date, end=end_date)
-        self.logger.debug('stock_symbol: ' + str(stock_symbol) + ' date: ' + str(date) + ' stock_data...\n' + stock_data.to_string())
+        self.logger.debug('stock_symbol: %s date: %s stock_data...\n%s', stock_symbol, date, stock_data.to_string())
 
         if stock_data.empty:
-            self.logger.warning('stock_symbol: ' + str(stock_symbol) + ' date: ' + str(date) + ' -> no stock data!')
+            self.logger.warning('stock_symbol: %s date: %s -> no stock data!', stock_symbol, date)
             return None
 
         closing_price = stock_data['Close'].mean()
-        self.logger.info('stock_symbol: ' + str(stock_symbol) + ' date: ' + str(date) + ' -> closing_price: ' + str(closing_price))
+        self.logger.info('stock_symbol: %s date: %s -> closing_price: %s', stock_symbol, date, closing_price)
         return closing_price
 
     def __get_adjusted_closing_price_by_symbol_list_from_prefetched_stock_data(self, symbol_list, date):
@@ -253,13 +253,13 @@ class Multibeggar:
             try:
                 adjusted_closing_price = self.prefetched_stock_data.loc[date, (symbol, 'Close')]
             except KeyError:
-                self.logger.warning('symbol: ' + str(symbol) + ' date: ' + str(date) + ' -> no closing_price found!')
+                self.logger.warning('symbol: %s date: %s -> no closing_price found!', symbol, date)
             else:
                 if not pandas.isnull(adjusted_closing_price):
-                    self.logger.debug('symbol: ' + str(symbol) + ' date: ' + str(date) + ' -> adjusted_closing_price: ' + str(adjusted_closing_price))
+                    self.logger.debug('symbol: %s date: %s -> adjusted_closing_price: %s', symbol, date, adjusted_closing_price)
                     return adjusted_closing_price
 
-        self.logger.warning('symbol_list: ' + str(symbol_list) + ' date: ' + str(date) + ' -> no closing_price found!')
+        self.logger.warning('symbol_list: %s date: %s -> no closing_price found!', symbol_list, date)
         return None
 
     def __prepare_for_portfolio_complexity_calculation(self):
@@ -285,7 +285,7 @@ class Multibeggar:
             symbols_str = ' '.join([str(symbol) for symbol in symbol_set])
             self.prefetched_stock_data = yfinance.download(symbols_str, group_by='Ticker', start=first_date, end=last_date + pandas.Timedelta(days=1))
 
-            self.logger.debug('downloaded stock data from date: ' + str(first_date) + ' to date: ' + str(last_date) + ' for symbols...\n' + symbols_str)
+            self.logger.debug('downloaded stock data from date: %s to date: %s for symbols...\n%s', first_date, last_date, symbols_str)
 
         def append_sentinel_row():
             self.transactions_list = self.transactions_list.append({'Date': '0'}, ignore_index=True)
@@ -306,12 +306,12 @@ class Multibeggar:
 
         def compute_and_append_daily_proportions():
             value_sum = daily_portfolio['Value'].sum()
-            self.logger.debug('ongoing_date: ' + str(ongoing_date) + ' value_sum: ' + str(value_sum))
+            self.logger.debug('ongoing_date: %s value_sum: %s', ongoing_date, value_sum)
 
             try:
                 daily_portfolio['Proportion'] = daily_portfolio['Value'] / value_sum
             except ZeroDivisionError:
-                self.logger.warning('value_sum is zero, clearing daily_portfolio! ongoing_date: ' + str(ongoing_date))
+                self.logger.warning('value_sum is zero, clearing daily_portfolio! ongoing_date: %s', ongoing_date)
                 # clearing all rows causes strange runtime exception, hence using below workaround which is equivalent
                 daily_portfolio.dropna(subset=['Value'], inplace=True)
 
@@ -322,7 +322,7 @@ class Multibeggar:
 
         for __unused, row in self.transactions_list.iterrows():
             date = row['Date']
-            self.logger.debug('date: ' + str(date))
+            self.logger.debug('date: %s', date)
 
             if date != ongoing_date:  # this is a new date, so update current daily_portfolio to daywise_full_portfolio
                 daily_portfolio.drop(daily_portfolio[daily_portfolio['Shares'] == 0].index, inplace=True)
@@ -333,21 +333,21 @@ class Multibeggar:
                 self.daywise_full_portfolio = self.daywise_full_portfolio.append(daily_portfolio)
 
                 daily_portfolio.replace({ongoing_date: date}, inplace=True)
-                self.logger.debug('ongoing_date changing from: ' + str(ongoing_date) + ' to: ' + str(date))
+                self.logger.debug('ongoing_date changing from: %s to: %s', ongoing_date, date)
                 ongoing_date = date
 
             company_name = row['Name']
-            self.logger.debug('company_name: ' + str(company_name))
+            self.logger.debug('company_name: %s', company_name)
 
             mask = (daily_portfolio['Name'] == company_name)
             masked_rows = daily_portfolio[mask]
-            self.logger.debug('masked_rows...\n' + masked_rows.to_string())
+            self.logger.debug('masked_rows...\n%s', masked_rows.to_string())
 
             if masked_rows.empty:  # this is a new stock name, so append to daily_portfolio
                 daily_portfolio = daily_portfolio.append(row)
-                self.logger.debug('added to daily_portfolio company_name: ' + str(company_name) + ' for ongoing_date: ' + str(ongoing_date))
+                self.logger.debug('added to daily_portfolio company_name: %s for ongoing_date: %s', company_name, ongoing_date)
             else:  # this is already known stock, so update shares count in daily_portfolio
                 transacted_shares = row['Shares']
-                self.logger.debug('transacted_shares: ' + str(transacted_shares))
+                self.logger.debug('transacted_shares: %s', transacted_shares)
                 daily_portfolio.loc[mask, 'Shares'] += transacted_shares
-                self.logger.debug('company_name: ' + str(company_name) + ' updated shares count: ' + str(daily_portfolio.loc[mask, 'Shares'].array[0]))
+                self.logger.debug('company_name: %s updated shares count: %s', company_name, daily_portfolio.loc[mask, 'Shares'].array[0])

@@ -6,23 +6,23 @@ Messages
     Tool frosted failed to run (exception was raised)
 
 multibeggar (multibeggar.py):
-    L193:4 Multibeggar.get_closing_price_by_symbol_list: pylint - inconsistent-return-statements
+    L195:4 Multibeggar.get_closing_price_by_symbol_list: pylint - inconsistent-return-statements
     Either all return statements in a function should return an expression, or none of them should.
 
 multibeggar (multibeggar.py):
-    L193:4 Multibeggar.get_closing_price_by_symbol_list: pylint - too-many-arguments
+    L195:4 Multibeggar.get_closing_price_by_symbol_list: pylint - too-many-arguments
     Too many arguments (6/5)
 
 multibeggar.py:
-    L193:80 None: pep8 - E501
+    L195:80 None: pep8 - E501
     line too long (150 > 79 characters)
 
 multibeggar.py:
-    L193:- Multibeggar.get_closing_price_by_symbol_list: mccabe - MC0001
+    L195:- Multibeggar.get_closing_price_by_symbol_list: mccabe - MC0001
     Multibeggar.get_closing_price_by_symbol_list is too complex (12)
 
 multibeggar.py:
-    L193:- None: pep257 - D102
+    L195:- None: pep257 - D102
     Missing docstring in public method
 
 multibeggar.py:
@@ -78,23 +78,23 @@ multibeggar.py:
     Missing docstring in public method
 
 multibeggar.py:
-    L103:- None: pep257 - D102
+    L104:- None: pep257 - D102
     Missing docstring in public method
 
 multibeggar.py:
-    L147:- None: pep257 - D102
+    L149:- None: pep257 - D102
     Missing docstring in public method
 
 multibeggar.py:
-    L153:- None: pep257 - D102
+    L155:- None: pep257 - D102
     Missing docstring in public method
 
 multibeggar.py:
-    L159:- None: pep257 - D102
+    L161:- None: pep257 - D102
     Missing docstring in public method
 
 multibeggar.py:
-    L170:- None: pep257 - D102
+    L172:- None: pep257 - D102
     Missing docstring in public method
 
 multibeggar.py:
@@ -177,581 +177,365 @@ multibeggar.py:
     L66:80 None: pep8 - E501
     line too long (114 > 79 characters)
 
-multibeggar (multibeggar.py):
-    L67:16 Multibeggar.get_nse_symbol.get_nse_symbol_by_startswith_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
 multibeggar.py:
     L67:80 None: pep8 - E501
-    line too long (101 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L70:16 Multibeggar.get_nse_symbol.get_nse_symbol_by_startswith_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L70:80 None: pep8 - E501
-    line too long (107 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L71:16 Multibeggar.get_nse_symbol.get_nse_symbol_by_startswith_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    line too long (88 > 79 characters)
 
 multibeggar.py:
     L71:80 None: pep8 - E501
-    line too long (152 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L74:16 Multibeggar.get_nse_symbol.get_nse_symbol_by_startswith_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    line too long (99 > 79 characters)
 
 multibeggar.py:
-    L74:80 None: pep8 - E501
-    line too long (97 > 79 characters)
+    L72:80 None: pep8 - E501
+    line too long (139 > 79 characters)
 
 multibeggar.py:
-    L78:80 None: pep8 - E501
+    L75:80 None: pep8 - E501
+    line too long (84 > 79 characters)
+
+multibeggar.py:
+    L79:80 None: pep8 - E501
     line too long (146 > 79 characters)
 
-multibeggar (multibeggar.py):
-    L80:12 Multibeggar.get_nse_symbol.get_nse_symbol_by_fuzzy_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+multibeggar.py:
+    L81:80 None: pep8 - E501
+    line too long (239 > 79 characters)
 
 multibeggar.py:
-    L80:80 None: pep8 - E501
-    line too long (247 > 79 characters)
-
-multibeggar.py:
-    L81:1 None: pep8 - W293
-    blank line contains whitespace
-
-multibeggar.py:
-    L83:80 None: pep8 - E501
+    L84:80 None: pep8 - E501
     line too long (89 > 79 characters)
 
-multibeggar (multibeggar.py):
-    L86:16 Multibeggar.get_nse_symbol.get_nse_symbol_by_fuzzy_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+multibeggar.py:
+    L87:80 None: pep8 - E501
+    line too long (88 > 79 characters)
 
 multibeggar.py:
-    L86:80 None: pep8 - E501
-    line too long (101 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L89:16 Multibeggar.get_nse_symbol.get_nse_symbol_by_fuzzy_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    L90:80 None: pep8 - E501
+    line too long (91 > 79 characters)
 
 multibeggar.py:
-    L89:80 None: pep8 - E501
-    line too long (100 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L100:8 Multibeggar.get_nse_symbol: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    L101:80 None: pep8 - E501
+    line too long (80 > 79 characters)
 
 multibeggar.py:
-    L100:80 None: pep8 - E501
-    line too long (93 > 79 characters)
-
-multibeggar.py:
-    L106:80 None: pep8 - E501
+    L107:80 None: pep8 - E501
     line too long (112 > 79 characters)
 
 multibeggar.py:
-    L110:80 None: pep8 - E501
+    L111:80 None: pep8 - E501
     line too long (114 > 79 characters)
 
-multibeggar (multibeggar.py):
-    L111:16 Multibeggar.get_bse_symbol.get_bse_symbol_by_startswith_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+multibeggar.py:
+    L112:80 None: pep8 - E501
+    line too long (88 > 79 characters)
 
 multibeggar.py:
-    L111:80 None: pep8 - E501
-    line too long (101 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L114:16 Multibeggar.get_bse_symbol.get_bse_symbol_by_startswith_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    L114:1 None: pep8 - W293
+    blank line contains whitespace
 
 multibeggar.py:
-    L114:80 None: pep8 - E501
-    line too long (107 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L115:16 Multibeggar.get_bse_symbol.get_bse_symbol_by_startswith_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    L116:80 None: pep8 - E501
+    line too long (98 > 79 characters)
 
 multibeggar.py:
-    L115:80 None: pep8 - E501
-    line too long (152 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L118:16 Multibeggar.get_bse_symbol.get_bse_symbol_by_startswith_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    L117:80 None: pep8 - E501
+    line too long (139 > 79 characters)
 
 multibeggar.py:
-    L118:80 None: pep8 - E501
-    line too long (97 > 79 characters)
-
-multibeggar.py:
-    L122:80 None: pep8 - E501
-    line too long (146 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L124:12 Multibeggar.get_bse_symbol.get_bse_symbol_by_fuzzy_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    L120:80 None: pep8 - E501
+    line too long (84 > 79 characters)
 
 multibeggar.py:
     L124:80 None: pep8 - E501
-    line too long (247 > 79 characters)
+    line too long (146 > 79 characters)
 
 multibeggar.py:
-    L127:80 None: pep8 - E501
+    L126:80 None: pep8 - E501
+    line too long (239 > 79 characters)
+
+multibeggar.py:
+    L129:80 None: pep8 - E501
     line too long (89 > 79 characters)
 
-multibeggar (multibeggar.py):
-    L130:16 Multibeggar.get_bse_symbol.get_bse_symbol_by_fuzzy_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+multibeggar.py:
+    L132:80 None: pep8 - E501
+    line too long (88 > 79 characters)
 
 multibeggar.py:
-    L130:80 None: pep8 - E501
-    line too long (101 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L133:16 Multibeggar.get_bse_symbol.get_bse_symbol_by_fuzzy_company_name_match: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    L135:80 None: pep8 - E501
+    line too long (91 > 79 characters)
 
 multibeggar.py:
-    L133:80 None: pep8 - E501
-    line too long (100 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L144:8 Multibeggar.get_bse_symbol: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L144:80 None: pep8 - E501
-    line too long (93 > 79 characters)
-
-multibeggar.py:
-    L148:80 None: pep8 - E501
-    line too long (114 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L150:8 Multibeggar.get_stock_symbols: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    L146:80 None: pep8 - E501
+    line too long (80 > 79 characters)
 
 multibeggar.py:
     L150:80 None: pep8 - E501
-    line too long (95 > 79 characters)
+    line too long (114 > 79 characters)
 
 multibeggar.py:
-    L154:80 None: pep8 - E501
-    line too long (101 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L156:8 Multibeggar.get_adjusted_closing_price: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L156:80 None: pep8 - E501
-    line too long (149 > 79 characters)
-
-multibeggar.py:
-    L160:80 None: pep8 - E501
-    line too long (107 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L164:12 Multibeggar.get_renamed_symbol: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L164:80 None: pep8 - E501
-    line too long (105 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L167:12 Multibeggar.get_renamed_symbol: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L167:80 None: pep8 - E501
-    line too long (98 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L172:12 Multibeggar.de_adjust_price: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L172:80 None: pep8 - E501
-    line too long (132 > 79 characters)
-
-multibeggar.py:
-    L175:80 None: pep8 - E501
-    line too long (103 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L179:16 Multibeggar.de_adjust_price: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L179:80 None: pep8 - E501
-    line too long (209 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L186:12 Multibeggar.de_adjust_price: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L186:80 None: pep8 - E501
-    line too long (99 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L187:12 Multibeggar.de_adjust_price: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L187:80 None: pep8 - E501
-    line too long (187 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L190:12 Multibeggar.de_adjust_price: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L190:80 None: pep8 - E501
-    line too long (168 > 79 characters)
-
-multibeggar.py:
-    L194:80 None: pep8 - E501
-    line too long (127 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L195:8 Multibeggar.get_closing_price_by_symbol_list: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L195:80 None: pep8 - E501
-    line too long (148 > 79 characters)
-
-multibeggar.py:
-    L199:80 None: pep8 - E501
-    line too long (86 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L201:20 Multibeggar.get_closing_price_by_symbol_list: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L201:80 None: pep8 - E501
-    line too long (150 > 79 characters)
-
-multibeggar.py:
-    L206:80 None: pep8 - E501
-    line too long (117 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L208:20 Multibeggar.get_closing_price_by_symbol_list: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L208:80 None: pep8 - E501
-    line too long (179 > 79 characters)
-
-multibeggar.py:
-    L212:80 None: pep8 - E501
-    line too long (143 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L213:12 Multibeggar.get_closing_price_by_symbol_list: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L213:80 None: pep8 - E501
-    line too long (122 > 79 characters)
-
-multibeggar.py:
-    L215:80 None: pep8 - E501
-    line too long (105 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L216:16 Multibeggar.get_closing_price_by_symbol_list: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L216:80 None: pep8 - E501
-    line too long (146 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L219:12 Multibeggar.get_closing_price_by_symbol_list: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L219:80 None: pep8 - E501
-    line too long (123 > 79 characters)
-
-multibeggar.py:
-    L223:80 None: pep8 - E501
-    line too long (98 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L225:16 Multibeggar.get_closing_price_by_symbol_list: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L225:80 None: pep8 - E501
-    line too long (177 > 79 characters)
-
-multibeggar.py:
-    L233:80 None: pep8 - E501
+    L152:80 None: pep8 - E501
     line too long (82 > 79 characters)
 
 multibeggar.py:
-    L234:80 None: pep8 - E501
-    line too long (84 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L235:8 Multibeggar.__get_adjusted_average_price: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L235:80 None: pep8 - E501
-    line too long (155 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L239:8 Multibeggar.__get_adjusted_average_price: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L239:80 None: pep8 - E501
-    line too long (133 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L242:12 Multibeggar.__get_adjusted_average_price: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L242:80 None: pep8 - E501
-    line too long (116 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L246:8 Multibeggar.__get_adjusted_average_price: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L246:80 None: pep8 - E501
-    line too long (131 > 79 characters)
-
-multibeggar.py:
-    L249:80 None: pep8 - E501
-    line too long (104 > 79 characters)
-
-multibeggar.py:
-    L252:80 None: pep8 - E501
-    line too long (96 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L254:16 Multibeggar.__get_adjusted_closing_price_by_symbol_list_from_prefetched_stock_data: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L254:80 None: pep8 - E501
-    line too long (117 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L257:20 Multibeggar.__get_adjusted_closing_price_by_symbol_list_from_prefetched_stock_data: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L257:80 None: pep8 - E501
-    line too long (150 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L260:8 Multibeggar.__get_adjusted_closing_price_by_symbol_list_from_prefetched_stock_data: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L260:80 None: pep8 - E501
-    line too long (119 > 79 characters)
-
-multibeggar.py:
-    L267:80 None: pep8 - E501
-    line too long (109 > 79 characters)
-
-multibeggar.py:
-    L275:80 None: pep8 - E501
-    line too long (135 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L284:12 Multibeggar.__prepare_for_portfolio_complexity_calculation.prefetch_stock_data: pylint - attribute-defined-outside-init
-    Attribute 'prefetched_stock_data' defined outside __init__
-
-multibeggar.py:
-    L284:80 None: pep8 - E501
-    line too long (150 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L286:12 Multibeggar.__prepare_for_portfolio_complexity_calculation.prefetch_stock_data: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L286:80 None: pep8 - E501
-    line too long (152 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L289:12 Multibeggar.__prepare_for_portfolio_complexity_calculation.append_sentinel_row: pylint - attribute-defined-outside-init
-    Attribute 'transactions_list' defined outside __init__
-
-multibeggar.py:
-    L289:80 None: pep8 - E501
-    line too long (100 > 79 characters)
-
-multibeggar.py:
-    L302:80 None: pep8 - E501
-    line too long (177 > 79 characters)
-
-multibeggar.py:
-    L303:80 None: pep8 - E501
-    line too long (99 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L307:12 Multibeggar.__compute_daywise_portfolio.compute_and_append_daily_proportions: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L307:80 None: pep8 - E501
+    L156:80 None: pep8 - E501
     line too long (101 > 79 characters)
 
 multibeggar.py:
-    L310:80 None: pep8 - E501
-    line too long (84 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L312:16 Multibeggar.__compute_daywise_portfolio.compute_and_append_daily_proportions: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    L158:80 None: pep8 - E501
+    line too long (127 > 79 characters)
 
 multibeggar.py:
-    L312:80 None: pep8 - E501
-    line too long (118 > 79 characters)
-
-multibeggar.py:
-    L313:80 None: pep8 - E501
-    line too long (118 > 79 characters)
-
-multibeggar.py:
-    L317:80 None: pep8 - E501
-    line too long (133 > 79 characters)
-
-multibeggar.py:
-    L325:80 None: pep8 - E501
-    line too long (119 > 79 characters)
-
-multibeggar.py:
-    L326:80 None: pep8 - E501
-    line too long (105 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L331:16 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
-    Attribute 'daywise_full_portfolio' defined outside __init__
-
-multibeggar.py:
-    L331:80 None: pep8 - E501
-    line too long (97 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L334:16 Multibeggar.__compute_daywise_portfolio: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar.py:
-    L334:80 None: pep8 - E501
+    L162:80 None: pep8 - E501
     line too long (107 > 79 characters)
 
 multibeggar.py:
-    L344:80 None: pep8 - E501
-    line too long (91 > 79 characters)
+    L166:80 None: pep8 - E501
+    line too long (92 > 79 characters)
+
+multibeggar.py:
+    L169:80 None: pep8 - E501
+    line too long (89 > 79 characters)
+
+multibeggar.py:
+    L174:80 None: pep8 - E501
+    line too long (119 > 79 characters)
+
+multibeggar.py:
+    L177:80 None: pep8 - E501
+    line too long (103 > 79 characters)
+
+multibeggar.py:
+    L181:80 None: pep8 - E501
+    line too long (178 > 79 characters)
+
+multibeggar.py:
+    L188:80 None: pep8 - E501
+    line too long (86 > 79 characters)
+
+multibeggar.py:
+    L189:80 None: pep8 - E501
+    line too long (156 > 79 characters)
+
+multibeggar.py:
+    L192:80 None: pep8 - E501
+    line too long (146 > 79 characters)
+
+multibeggar.py:
+    L196:80 None: pep8 - E501
+    line too long (127 > 79 characters)
+
+multibeggar.py:
+    L197:80 None: pep8 - E501
+    line too long (126 > 79 characters)
+
+multibeggar.py:
+    L201:80 None: pep8 - E501
+    line too long (86 > 79 characters)
+
+multibeggar.py:
+    L203:80 None: pep8 - E501
+    line too long (128 > 79 characters)
+
+multibeggar.py:
+    L208:80 None: pep8 - E501
+    line too long (117 > 79 characters)
+
+multibeggar.py:
+    L210:80 None: pep8 - E501
+    line too long (157 > 79 characters)
+
+multibeggar.py:
+    L214:80 None: pep8 - E501
+    line too long (143 > 79 characters)
+
+multibeggar.py:
+    L215:80 None: pep8 - E501
+    line too long (109 > 79 characters)
+
+multibeggar.py:
+    L217:80 None: pep8 - E501
+    line too long (105 > 79 characters)
+
+multibeggar.py:
+    L218:80 None: pep8 - E501
+    line too long (124 > 79 characters)
+
+multibeggar.py:
+    L221:80 None: pep8 - E501
+    line too long (105 > 79 characters)
+
+multibeggar.py:
+    L225:80 None: pep8 - E501
+    line too long (98 > 79 characters)
+
+multibeggar.py:
+    L227:80 None: pep8 - E501
+    line too long (146 > 79 characters)
+
+multibeggar.py:
+    L235:80 None: pep8 - E501
+    line too long (82 > 79 characters)
+
+multibeggar.py:
+    L236:80 None: pep8 - E501
+    line too long (84 > 79 characters)
+
+multibeggar.py:
+    L237:80 None: pep8 - E501
+    line too long (124 > 79 characters)
+
+multibeggar.py:
+    L241:80 None: pep8 - E501
+    line too long (116 > 79 characters)
+
+multibeggar.py:
+    L244:80 None: pep8 - E501
+    line too long (98 > 79 characters)
+
+multibeggar.py:
+    L248:80 None: pep8 - E501
+    line too long (109 > 79 characters)
+
+multibeggar.py:
+    L251:80 None: pep8 - E501
+    line too long (104 > 79 characters)
+
+multibeggar.py:
+    L254:80 None: pep8 - E501
+    line too long (96 > 79 characters)
+
+multibeggar.py:
+    L256:80 None: pep8 - E501
+    line too long (99 > 79 characters)
+
+multibeggar.py:
+    L259:80 None: pep8 - E501
+    line too long (128 > 79 characters)
+
+multibeggar.py:
+    L262:80 None: pep8 - E501
+    line too long (101 > 79 characters)
+
+multibeggar.py:
+    L269:80 None: pep8 - E501
+    line too long (109 > 79 characters)
+
+multibeggar.py:
+    L277:80 None: pep8 - E501
+    line too long (135 > 79 characters)
 
 multibeggar (multibeggar.py):
-    L346:16 Multibeggar.__compute_daywise_portfolio: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    L286:12 Multibeggar.__prepare_for_portfolio_complexity_calculation.prefetch_stock_data: pylint - attribute-defined-outside-init
+    Attribute 'prefetched_stock_data' defined outside __init__
+
+multibeggar.py:
+    L286:80 None: pep8 - E501
+    line too long (150 > 79 characters)
+
+multibeggar.py:
+    L288:80 None: pep8 - E501
+    line too long (135 > 79 characters)
+
+multibeggar (multibeggar.py):
+    L291:12 Multibeggar.__prepare_for_portfolio_complexity_calculation.append_sentinel_row: pylint - attribute-defined-outside-init
+    Attribute 'transactions_list' defined outside __init__
+
+multibeggar.py:
+    L291:80 None: pep8 - E501
+    line too long (100 > 79 characters)
+
+multibeggar.py:
+    L304:80 None: pep8 - E501
+    line too long (177 > 79 characters)
+
+multibeggar.py:
+    L305:80 None: pep8 - E501
+    line too long (99 > 79 characters)
+
+multibeggar.py:
+    L309:80 None: pep8 - E501
+    line too long (88 > 79 characters)
+
+multibeggar.py:
+    L312:80 None: pep8 - E501
+    line too long (84 > 79 characters)
+
+multibeggar.py:
+    L314:80 None: pep8 - E501
+    line too long (114 > 79 characters)
+
+multibeggar.py:
+    L315:80 None: pep8 - E501
+    line too long (118 > 79 characters)
+
+multibeggar.py:
+    L319:80 None: pep8 - E501
+    line too long (133 > 79 characters)
+
+multibeggar.py:
+    L327:80 None: pep8 - E501
+    line too long (119 > 79 characters)
+
+multibeggar.py:
+    L328:80 None: pep8 - E501
+    line too long (105 > 79 characters)
+
+multibeggar (multibeggar.py):
+    L333:16 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
+    Attribute 'daywise_full_portfolio' defined outside __init__
+
+multibeggar.py:
+    L333:80 None: pep8 - E501
+    line too long (97 > 79 characters)
+
+multibeggar.py:
+    L336:80 None: pep8 - E501
+    line too long (94 > 79 characters)
 
 multibeggar.py:
     L346:80 None: pep8 - E501
-    line too long (140 > 79 characters)
-
-multibeggar.py:
-    L347:80 None: pep8 - E501
     line too long (91 > 79 characters)
 
-multibeggar (multibeggar.py):
-    L349:16 Multibeggar.__compute_daywise_portfolio: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+multibeggar.py:
+    L348:80 None: pep8 - E501
+    line too long (127 > 79 characters)
 
 multibeggar.py:
     L349:80 None: pep8 - E501
-    line too long (81 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L351:16 Multibeggar.__compute_daywise_portfolio: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
+    line too long (91 > 79 characters)
 
 multibeggar.py:
-    L351:80 None: pep8 - E501
-    line too long (151 > 79 characters)
+    L353:80 None: pep8 - E501
+    line too long (138 > 79 characters)
 
 multibeggar (multibeggar.py):
     L31:8 Multibeggar.load_transactions_from_excel_file: pylint - attribute-defined-outside-init
     Attribute 'input_file_path' defined outside __init__
 
 multibeggar (multibeggar.py):
-    L49:8 Multibeggar.compute_portfolio_complexity: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar (multibeggar.py):
-    L56:8 Multibeggar.compute_portfolio_complexity: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar (multibeggar.py):
-    L65:12 Multibeggar.get_nse_symbol.get_nse_symbol_by_startswith_company_name_match: pylint - no-else-return
-    Unnecessary "elif" after "return"
-
-multibeggar (multibeggar.py):
-    L109:12 Multibeggar.get_bse_symbol.get_bse_symbol_by_startswith_company_name_match: pylint - no-else-return
-    Unnecessary "elif" after "return"
-
-multibeggar (multibeggar.py):
-    L266:16 Multibeggar.__prepare_for_portfolio_complexity_calculation.fixup_company_names: pylint - unused-private-member
+    L268:16 Multibeggar.__prepare_for_portfolio_complexity_calculation.fixup_company_names: pylint - unused-private-member
     Unused private member `Multibeggar.__unused`
 
 multibeggar.py:
-    L266:- None: vulture - unused-variable
+    L268:- None: vulture - unused-variable
     Unused variable '__unused'
 
 multibeggar (multibeggar.py):
-    L318:8 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
+    L320:8 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
     Attribute 'daywise_full_portfolio' defined outside __init__
 
 multibeggar (multibeggar.py):
-    L319:8 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
+    L321:8 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
     Attribute 'portfolio_complexity_data' defined outside __init__
 
 multibeggar (multibeggar.py):
-    L321:12 Multibeggar.__compute_daywise_portfolio: pylint - unused-private-member
+    L323:12 Multibeggar.__compute_daywise_portfolio: pylint - unused-private-member
     Unused private member `Multibeggar.__unused`
 
 multibeggar.py:
-    L321:- None: vulture - unused-variable
+    L323:- None: vulture - unused-variable
     Unused variable '__unused'
-
-multibeggar (multibeggar.py):
-    L323:12 Multibeggar.__compute_daywise_portfolio: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar (multibeggar.py):
-    L338:12 Multibeggar.__compute_daywise_portfolio: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
-
-multibeggar (multibeggar.py):
-    L342:12 Multibeggar.__compute_daywise_portfolio: pylint - logging-not-lazy
-    Use lazy % formatting in logging functions
 
 __init__.py:
     L1:- None: pep257 - D104
@@ -761,13 +545,13 @@ __init__.py:
 
 Check Information
 =================
-         Started: 2021-08-28 20:59:36.652582
-        Finished: 2021-08-28 20:59:42.595794
-      Time Taken: 5.94 seconds
+         Started: 2021-08-29 10:05:07.337592
+        Finished: 2021-08-29 10:05:13.104935
+      Time Taken: 5.77 seconds
        Formatter: text
         Profiles: default, full_pep8, strictness_veryhigh, no_doc_warnings, no_test_warnings, no_member_warnings
       Strictness: veryhigh
   Libraries Used: 
        Tools Run: bandit, dodgy, frosted, mccabe, mypy, pep257, pep8, profile-validator, pyflakes, pylint, pyroma, vulture
-  Messages Found: 189
+  Messages Found: 135
 
