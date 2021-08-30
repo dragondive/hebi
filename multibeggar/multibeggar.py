@@ -76,28 +76,24 @@ class Multibeggar:
             self.logger.warning('stock_symbol: %s -> no old_symbol found!', stock_symbol)
             return None
 
-    def de_adjust_price(self, adjusted_price, stock_symbol, date):
-        if stock_symbol is None:
-            self.logger.warning('stock_symbol is None! date: %s -> unchanged adjusted_price: %s', date, adjusted_price)
-            return adjusted_price
-
+    def get_de_adjustment_factor(self, stock_symbol, date):
+        # todo: this data is directly available from yfinance api, need to check its reliability
         matching_row = self.price_adjustment_list[self.price_adjustment_list['Symbol'] == stock_symbol]
         try:
-            adjustment_date = matching_row['Date'].values[0]
-            if pandas.to_datetime(date) >= adjustment_date:
-                self.logger.info('date: %s on or after adjustment_date: %s stock_symbol: %s -> unchanged adjusted price: %s', date, adjustment_date, stock_symbol, adjusted_price)
-                return adjusted_price
-
-            numerator = matching_row['Numerator'].values[0]
-            denominator = matching_row['Denominator'].values[0]
-            de_adjusted_price = adjusted_price * numerator / denominator
-
-            self.logger.debug('numerator: %s denominator: %s', numerator, denominator)
-            self.logger.info('adjusted_price: %s stock_symbol: %s date: %s -> de_adjusted_price: %s', adjusted_price, stock_symbol, date, de_adjusted_price)
-            return de_adjusted_price
+            adjustment_date = matching_row['Date'].array[0]
+            numerator = matching_row['Numerator'].array[0]
+            denominator = matching_row['Denominator'].array[0]
         except IndexError:
-            self.logger.info('no price adjustment. stock_symbol: %s date: %s -> unchanged adjusted_price: %s', stock_symbol, date, adjusted_price)
-            return adjusted_price
+            self.logger.info('no price adjustment. stock_symbol: %s date: %s', stock_symbol, date)
+            return None  # todo: raise exception here? but is this really an exception?
+        else:
+            if pandas.to_datetime(date) >= adjustment_date:
+                self.logger.info('no price adjustment. date: %s on or after adjustment_date: %s stock_symbol: %s', date, adjustment_date, stock_symbol)
+                return None
+
+            adjustment_factor = numerator / denominator
+            self.logger.info('stock_symbol: %s date: %s -> adjustment_factor: %s', stock_symbol, date, adjustment_factor)
+            return adjustment_factor
 
     def get_closing_price_by_symbol_list(self, symbol_list, date, fallback_to_average_price=True, fallback_offset=7, fallback_to_renamed_symbol=True):
         adjusted_closing_price = self.__get_adjusted_closing_price_by_symbol_list_from_prefetched_stock_data(symbol_list, date)
@@ -129,10 +125,14 @@ class Multibeggar:
             return None
 
         for symbol in symbol_list:
-            de_adjusted_closing_price = self.de_adjust_price(adjusted_closing_price, symbol, date)
-            if de_adjusted_closing_price is not None:
+            de_adjustment_factor = self.get_de_adjustment_factor(symbol, date)
+            if de_adjustment_factor is not None:
+                de_adjusted_closing_price = adjusted_closing_price * de_adjustment_factor
                 self.logger.info('symbol_list: %s date: %s symbol: %s -> closing_price: %s', symbol_list, date, symbol, de_adjusted_closing_price)
                 return de_adjusted_closing_price
+
+        self.logger.info('symbol_list: %s date: %s symbol: %s -> closing_price: %s', symbol_list, date, symbol, adjusted_closing_price)
+        return adjusted_closing_price
 
     def __get_adjusted_average_price(self, stock_symbol, date, offset_days=7):
         start_date = pandas.to_datetime(date) - pandas.Timedelta(days=offset_days)
@@ -173,8 +173,8 @@ class Multibeggar:
 
         def get_and_collect_stock_symbols(company_name):
             symbol_list = []
-            for exchange_name in self.stock_exchange_info_map.keys():
-                if symbol := self.stock_exchange_info_map[exchange_name].get_symbol(company_name):
+            for exchange_name, exchange_info in self.stock_exchange_info_map.items():
+                if symbol := exchange_info.get_symbol(company_name):
                     symbol_list.append(symbol)
                 self.logger.debug('company_name: %s exchange_name: %s -> symbol: %s', company_name, exchange_name, symbol)
 
