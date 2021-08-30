@@ -135,10 +135,6 @@ class Multibeggar:
                 return de_adjusted_closing_price
 
     def __get_adjusted_average_price(self, stock_symbol, date, offset_days=7):
-        if stock_symbol is None:
-            self.logger.warning('stock_symbol is None!')
-            return None
-
         start_date = pandas.to_datetime(date) - pandas.Timedelta(days=offset_days)
         end_date = pandas.to_datetime(date) + pandas.Timedelta(days=1 + offset_days)
         self.logger.debug('stock_symbol: %s date: %s start_date: %s end_date: %s', stock_symbol, date, start_date, end_date)
@@ -178,9 +174,9 @@ class Multibeggar:
         def get_and_collect_stock_symbols(company_name):
             symbol_list = []
             for exchange_name in self.stock_exchange_info_map.keys():
-                symbol = self.stock_exchange_info_map[exchange_name].get_symbol(company_name)
+                if symbol := self.stock_exchange_info_map[exchange_name].get_symbol(company_name):
+                    symbol_list.append(symbol)
                 self.logger.debug('company_name: %s exchange_name: %s -> symbol: %s', company_name, exchange_name, symbol)
-                symbol_list.append(self.stock_exchange_info_map[exchange_name].get_symbol(company_name))
 
             symbol_set.update(symbol_list)
             self.logger.info('company_name: %s -> symbol_list: %s', company_name, symbol_list)
