@@ -1,5 +1,5 @@
-from multibeggar.multibeggar import Multibeggar
 import os
+from multibeggar.multibeggar import Multibeggar
 
 mb = Multibeggar()
 mb.load_transactions_from_excel_file(os.path.join(os.getcwd(), 'input', 'test_transactions_list_x_large.xlsx'))
