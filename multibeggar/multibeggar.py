@@ -59,16 +59,6 @@ class Multibeggar:
         self.logger.info('portfolio_complexity: %s', portfolio_complexity)
         return portfolio_complexity
 
-    def get_adjusted_closing_price(self, symbol_list, date):
-        # if single symbol is passed, convert it to list to handle it uniformly
-        if not isinstance(symbol_list, list):
-            symbol_list = [symbol_list]
-
-        adjusted_closing_price = self.__get_adjusted_average_price(symbol_list, date, offset_days=0)
-
-        self.logger.info('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
-        return adjusted_closing_price
-
     def get_renamed_symbol(self, stock_symbol):
         matching_row = self.renamed_symbols_map[self.renamed_symbols_map['Present Symbol'] == stock_symbol]
 
@@ -100,39 +90,24 @@ class Multibeggar:
             return adjustment_factor
 
     def get_closing_price(self, symbol_list, date, use_fallback=True):
+        start_date = pandas.to_datetime(date)
+        end_date = pandas.to_datetime(date)
 
-        def get_adjusted_closing_price_from_prefetched_data():
-            for symbol in symbol_list:
-                try:
-                    adjusted_closing_price = self.prefetched_stock_data.loc[date, (symbol, 'Close')]
-                except KeyError:
-                    self.logger.warning('symbol: %s date: %s -> no closing_price_found!', symbol, date)
-                else:
-                    if not pandas.isnull(adjusted_closing_price):
-                        self.logger.debug('symbol: %s date: %s -> adjusted_closing_price: %s', symbol, date, adjusted_closing_price)
-                        return adjusted_closing_price
+        adjusted_closing_price = self.__get_adjusted_closing_prices_for_date_range(symbol_list, start_date, end_date)
 
-            self.logger.warning('symbol_list: %s date: %s -> no closing_price found!', symbol_list, date)
-            return None
+        if use_fallback and adjusted_closing_price is None:
+            adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(symbol_list, start_date - pandas.Timedelta(days=7), end_date + pandas.Timedelta(days=7))
+            if adjusted_closing_prices is not None:
+                adjusted_closing_price = adjusted_closing_prices.mean()
+                self.logger.warning('fallback to mean price! symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
 
-        adjusted_closing_price = get_adjusted_closing_price_from_prefetched_data() or self.get_adjusted_closing_price(symbol_list, date)
-        self.logger.info('TEMP! adjusted_closing_price: %s', str(adjusted_closing_price))
-        return adjusted_closing_price
-
-    def get_closing_price_by_symbol_list(self, symbol_list, date, fallback_to_average_price=True, fallback_offset=7, fallback_to_renamed_symbol=True):
-        adjusted_closing_price = self.get_closing_price(symbol_list, date)
-
-        if fallback_to_renamed_symbol and adjusted_closing_price is None:
+        if adjusted_closing_price is None:
             renamed_symbol_list = [renamed_symbol for symbol in symbol_list if (renamed_symbol := self.get_renamed_symbol(symbol)) is not None]
             self.logger.debug('symbol_list: %s -> renamed_symbol_list: %s', symbol_list, renamed_symbol_list)
-            if renamed_symbol_list:
-                adjusted_closing_price = self.get_closing_price_by_symbol_list(renamed_symbol_list, date)
-                self.logger.debug('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
 
-        if fallback_to_average_price and adjusted_closing_price is None:
-            adjusted_closing_price = self.__get_adjusted_average_price(symbol_list, date, offset_days=fallback_offset)
-            if adjusted_closing_price is not None:
-                self.logger.warning('fallback to average price! symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
+            if renamed_symbol_list:
+                adjusted_closing_price = self.get_closing_price(renamed_symbol_list, date)
+                self.logger.debug('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
 
         if adjusted_closing_price is None:
             self.logger.warning('symbol_list: %s date: %s -> no closing_price found!', symbol_list, date)
@@ -145,43 +120,54 @@ class Multibeggar:
                 self.logger.info('symbol_list: %s date: %s symbol: %s -> closing_price: %s', symbol_list, date, symbol, de_adjusted_closing_price)
                 return de_adjusted_closing_price
 
-        self.logger.info('symbol_list: %s date: %s symbol: %s -> closing_price: %s', symbol_list, date, symbol, adjusted_closing_price)
+        self.logger.info('symbol_list: %s date: %s -> closing_price: %s', symbol_list, date, adjusted_closing_price)
         return adjusted_closing_price
 
-    def __get_adjusted_average_price(self, symbol_list, date, offset_days=7):
-        start_date = pandas.to_datetime(date) - pandas.Timedelta(days=offset_days)
-        end_date = pandas.to_datetime(date) + pandas.Timedelta(days=1 + offset_days)
-        self.logger.debug('symbol_list: %s date: %s start_date: %s end_date: %s', symbol_list, date, start_date, end_date)
+    def __get_adjusted_closing_prices_for_date_range(self, symbol_list, start_date, end_date):
 
-        for symbol in symbol_list:
-            ticker = yfinance.Ticker(symbol)
-            stock_data = ticker.history(start=start_date, end=end_date)
-            self.logger.debug('symbol: %s date: %s stock_data...\n%s', symbol, date, stock_data.to_string())
+        def get_adapted_end_date():
+            adapted_end_date = end_date + pandas.Timedelta(days=1)
+            return adapted_end_date
+    
+        def from_prefetched_data():
+            for symbol in symbol_list:
+                try:
+                    closing_prices = self.prefetched_stock_data.loc[start_date:end_date, (symbol, 'Close')]
+                except KeyError:
+                    # todo if symbol doesn't exist in prefetch, then fetch it from server and update
+                    self.logger.debug('no prefetched data. symbol_list: %s start_date: %s end_date: %s symbol: %s', symbol_list, start_date, end_date, symbol)
+                    continue
+                else:
+                    if not closing_prices.empty and not closing_prices.isnull().array.all():
+                        self.logger.info('symbol_list: %s start_date: %s end_date: %s -> closing_prices...\n%s', symbol_list, start_date, end_date, closing_prices)
+                        return closing_prices
 
-            if stock_data.empty:
-                self.logger.debug('symbol: %s date: %s -> no stock data!', symbol, date)
-                continue
+            self.logger.warning('symbol_list: %s start_date: %s end_date: %s -> no closing_price_found!', symbol_list, start_date, end_date)
+            return None
 
-            closing_price = stock_data['Close'].mean()
-            self.logger.info('symbol: %s date: %s -> closing_price: %s', symbol, date, closing_price)
-            return closing_price
+        def from_server_data():
+            for symbol in symbol_list:
+                ticker = yfinance.Ticker(symbol)
+                stock_data = ticker.history(start=start_date, end=get_adapted_end_date())
+                self.logger.debug('symbol_list: %s start_date: %s end_date: %s stock_data...\n%s', symbol_list, start_date, end_date, stock_data.to_string())
 
-        self.logger.warning('symbol_list: %s date: %s -> no stock data!', symbol_list, date)
-        return None
+                if stock_data.empty:
+                    self.logger.debug('symbol_list: %s start_date: %s end_date: %s -> no stock data!', symbol_list, start_date, end_date)
+                    continue
 
-    def __get_adjusted_closing_price_by_symbol_list_from_prefetched_stock_data(self, symbol_list, date):
-        for symbol in symbol_list:
-            try:
-                adjusted_closing_price = self.prefetched_stock_data.loc[date, (symbol, 'Close')]
-            except KeyError:
-                self.logger.warning('symbol: %s date: %s -> no closing_price found!', symbol, date)
-            else:
-                if not pandas.isnull(adjusted_closing_price):
-                    self.logger.debug('symbol: %s date: %s -> adjusted_closing_price: %s', symbol, date, adjusted_closing_price)
-                    return adjusted_closing_price
+                closing_prices = stock_data['Close']
+                self.logger.info('symbol_list: %s start_date: %s end_date: %s -> closing_price: %s', symbol, start_date, end_date, closing_prices)
+                return closing_prices
 
-        self.logger.warning('symbol_list: %s date: %s -> no closing_price found!', symbol_list, date)
-        return None
+            self.logger.warning('symbol_list: %s start_date: %s end_date: %s -> no stock data!', symbol_list, start_date, end_date)
+            return None
+
+        adjusted_closing_prices = from_prefetched_data()
+        if adjusted_closing_prices is None:
+            adjusted_closing_prices = from_server_data()
+
+        self.logger.info('symbol_list: %s start_date: %s end_date: %s -> adjusted_closing_prices...\n%s', symbol_list, start_date, end_date, adjusted_closing_prices)
+        return adjusted_closing_prices
 
     def __prepare_for_portfolio_complexity_calculation(self):
 
@@ -228,7 +214,7 @@ class Multibeggar:
     def __compute_daywise_portfolio(self):
 
         def compute_and_append_daily_closing_prices_and_values():
-            daily_portfolio['Closing Price'] = daily_portfolio.apply(lambda row: self.get_closing_price_by_symbol_list(row['Symbol'], row['Date']), axis=1, result_type='reduce')
+            daily_portfolio['Closing Price'] = daily_portfolio.apply(lambda row: self.get_closing_price(row['Symbol'], row['Date']), axis=1, result_type='reduce')
             daily_portfolio['Value'] = daily_portfolio['Shares'] * daily_portfolio['Closing Price']
 
         def compute_and_append_daily_proportions():
