@@ -59,10 +59,14 @@ class Multibeggar:
         self.logger.info('portfolio_complexity: %s', portfolio_complexity)
         return portfolio_complexity
 
-    def get_adjusted_closing_price(self, stock_symbol, date):
-        adjusted_closing_price = self.__get_adjusted_average_price(stock_symbol, date, offset_days=0)
+    def get_adjusted_closing_price(self, symbol_list, date):
+        # if single symbol is passed, convert it to list to handle it uniformly
+        if not isinstance(symbol_list, list):
+            symbol_list = [symbol_list]
 
-        self.logger.info('stock_symbol: %s date: %s -> adjusted_closing_price: %s', stock_symbol, date, adjusted_closing_price)
+        adjusted_closing_price = self.__get_adjusted_average_price(symbol_list, date, offset_days=0)
+
+        self.logger.info('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
         return adjusted_closing_price
 
     def get_renamed_symbol(self, stock_symbol):
@@ -134,22 +138,26 @@ class Multibeggar:
         self.logger.info('symbol_list: %s date: %s symbol: %s -> closing_price: %s', symbol_list, date, symbol, adjusted_closing_price)
         return adjusted_closing_price
 
-    def __get_adjusted_average_price(self, stock_symbol, date, offset_days=7):
+    def __get_adjusted_average_price(self, symbol_list, date, offset_days=7):
         start_date = pandas.to_datetime(date) - pandas.Timedelta(days=offset_days)
         end_date = pandas.to_datetime(date) + pandas.Timedelta(days=1 + offset_days)
-        self.logger.debug('stock_symbol: %s date: %s start_date: %s end_date: %s', stock_symbol, date, start_date, end_date)
+        self.logger.debug('symbol_list: %s date: %s start_date: %s end_date: %s', symbol_list, date, start_date, end_date)
 
-        ticker = yfinance.Ticker(stock_symbol)
-        stock_data = ticker.history(start=start_date, end=end_date)
-        self.logger.debug('stock_symbol: %s date: %s stock_data...\n%s', stock_symbol, date, stock_data.to_string())
+        for symbol in symbol_list:
+            ticker = yfinance.Ticker(symbol)
+            stock_data = ticker.history(start=start_date, end=end_date)
+            self.logger.debug('symbol: %s date: %s stock_data...\n%s', symbol, date, stock_data.to_string())
 
-        if stock_data.empty:
-            self.logger.warning('stock_symbol: %s date: %s -> no stock data!', stock_symbol, date)
-            return None
+            if stock_data.empty:
+                self.logger.debug('symbol: %s date: %s -> no stock data!', symbol, date)
+                continue
 
-        closing_price = stock_data['Close'].mean()
-        self.logger.info('stock_symbol: %s date: %s -> closing_price: %s', stock_symbol, date, closing_price)
-        return closing_price
+            closing_price = stock_data['Close'].mean()
+            self.logger.info('symbol: %s date: %s -> closing_price: %s', symbol, date, closing_price)
+            return closing_price
+
+        self.logger.warning('symbol_list: %s date: %s -> no stock data!', symbol_list, date)
+        return None
 
     def __get_adjusted_closing_price_by_symbol_list_from_prefetched_stock_data(self, symbol_list, date):
         for symbol in symbol_list:
