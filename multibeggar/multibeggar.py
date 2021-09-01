@@ -41,7 +41,7 @@ class Multibeggar:
         input_file_name = os.path.splitext(os.path.basename(self.input_file_path))[0]
         self.daywise_full_portfolio.to_excel(os.path.join(os.getcwd(), 'output', input_file_name + '_daywise_full_portfolio.xlsx'))
 
-        self.portfolio_complexity_data = self.daywise_full_portfolio.groupby('Date').apply(lambda group: self.compute_portfolio_complexity(group['Proportion'])).reset_index(name='Complexity')
+        self.portfolio_complexity_data = self.daywise_full_portfolio.groupby('Date').apply(lambda group: self.compute_portfolio_complexity(group['Proportion'].dropna())).reset_index(name='Complexity')
         self.portfolio_complexity_data.to_excel(os.path.join(os.getcwd(), 'output', input_file_name + '_portfolio_complexity_data.xlsx'))
 
         self.portfolio_complexity_data.plot.line(x='Date', y='Complexity')
