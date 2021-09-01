@@ -99,30 +99,40 @@ class Multibeggar:
             self.logger.info('stock_symbol: %s date: %s -> adjustment_factor: %s', stock_symbol, date, adjustment_factor)
             return adjustment_factor
 
+    def get_closing_price(self, symbol_list, date, use_fallback=True):
+
+        def get_adjusted_closing_price_from_prefetched_data():
+            for symbol in symbol_list:
+                try:
+                    adjusted_closing_price = self.prefetched_stock_data.loc[date, (symbol, 'Close')]
+                except KeyError:
+                    self.logger.warning('symbol: %s date: %s -> no closing_price_found!', symbol, date)
+                else:
+                    if not pandas.isnull(adjusted_closing_price):
+                        self.logger.debug('symbol: %s date: %s -> adjusted_closing_price: %s', symbol, date, adjusted_closing_price)
+                        return adjusted_closing_price
+
+            self.logger.warning('symbol_list: %s date: %s -> no closing_price found!', symbol_list, date)
+            return None
+
+        adjusted_closing_price = get_adjusted_closing_price_from_prefetched_data() or self.get_adjusted_closing_price(symbol_list, date)
+        self.logger.info('TEMP! adjusted_closing_price: %s', str(adjusted_closing_price))
+        return adjusted_closing_price
+
     def get_closing_price_by_symbol_list(self, symbol_list, date, fallback_to_average_price=True, fallback_offset=7, fallback_to_renamed_symbol=True):
-        adjusted_closing_price = self.__get_adjusted_closing_price_by_symbol_list_from_prefetched_stock_data(symbol_list, date)
-        self.logger.debug('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
-
-        if adjusted_closing_price is None:
-            for symbol in symbol_list:
-                adjusted_closing_price = self.get_adjusted_closing_price(symbol, date)
-                if adjusted_closing_price is not None:
-                    self.logger.debug('symbol: %s date: %s -> adjusted_closing_price: %s', symbol, date, adjusted_closing_price)
-                    break
-
-        if fallback_to_average_price and adjusted_closing_price is None:
-            for symbol in symbol_list:
-                adjusted_closing_price = self.__get_adjusted_average_price(symbol, date, offset_days=fallback_offset)
-                if adjusted_closing_price is not None:
-                    self.logger.warning('fallback to average price! symbol: %s date: %s -> adjusted_closing_price: %s', symbol, date, adjusted_closing_price)
-                    break
+        adjusted_closing_price = self.get_closing_price(symbol_list, date)
 
         if fallback_to_renamed_symbol and adjusted_closing_price is None:
             renamed_symbol_list = [renamed_symbol for symbol in symbol_list if (renamed_symbol := self.get_renamed_symbol(symbol)) is not None]
             self.logger.debug('symbol_list: %s -> renamed_symbol_list: %s', symbol_list, renamed_symbol_list)
             if renamed_symbol_list:
                 adjusted_closing_price = self.get_closing_price_by_symbol_list(renamed_symbol_list, date)
-                self.logger.debug('symbol: %s date: %s -> adjusted_closing_price: %s', symbol, date, adjusted_closing_price)
+                self.logger.debug('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
+
+        if fallback_to_average_price and adjusted_closing_price is None:
+            adjusted_closing_price = self.__get_adjusted_average_price(symbol_list, date, offset_days=fallback_offset)
+            if adjusted_closing_price is not None:
+                self.logger.warning('fallback to average price! symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
 
         if adjusted_closing_price is None:
             self.logger.warning('symbol_list: %s date: %s -> no closing_price found!', symbol_list, date)
