@@ -33,9 +33,14 @@ class Multibeggar:
     def load_transactions_from_excel_file(self, excel_file_path):
         self.input_file_path = excel_file_path
         self.transactions_list = pandas.read_excel(excel_file_path, parse_dates=['Date'])
+        self.transactions_list['Name'] = self.transactions_list['Name'].str.upper()
 
     def plot_portfolio_complexity(self):
         self.__prepare_for_portfolio_complexity_calculation()
+        for exchange_name, exchange_info in self.stock_exchange_info_map.items():
+            print(exchange_name, " ", exchange_info.count, " ", exchange_info.starting_with_count, " ", exchange_info.best_matching_with_count)
+
+        exit(1)
         self.__compute_daywise_portfolio()
 
         input_file_name = os.path.splitext(os.path.basename(self.input_file_path))[0]
@@ -207,9 +212,9 @@ class Multibeggar:
 
         fixup_company_names()
         append_stock_symbols()
-        sort_by_date()
-        prefetch_stock_data()
-        append_sentinel_row()
+        # sort_by_date()
+        # prefetch_stock_data()
+        # append_sentinel_row()
 
     def __compute_daywise_portfolio(self):
 

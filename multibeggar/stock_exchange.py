@@ -20,17 +20,24 @@ class StockExchangeInfo:
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
 
-        self.symbol_to_name = pandas.read_csv(companies_data_file_path, usecols=[symbol_header, company_name_header])
+        self.symbol_to_name = pandas.read_csv(companies_data_file_path, usecols=[symbol_header, company_name_header], index_col=False)
+        self.symbol_to_name[company_name_header] = self.symbol_to_name[company_name_header].str.upper()
         self.symbol_header = symbol_header
         self.company_name_header = company_name_header
         self.exchange_suffix = exchange_suffix
 
+        self.count = 0
+        self.starting_with_count = 0
+        self.best_matching_with_count = 0
+
     def get_symbol(self, company_name, with_suffix=True):
         symbol_list = self.get_symbols_for_company_name_starting_with(company_name, with_suffix)
-
+        self.count += 1
         if len(symbol_list) == 1:
+            self.starting_with_count += 1
             symbol = symbol_list[0]
         else:
+            self.best_matching_with_count += 1
             symbol = self.get_symbol_for_company_name_best_matching_with(company_name, with_suffix)
 
         self.logger.info('company_name: %s -> symbol: %s', company_name, symbol)
