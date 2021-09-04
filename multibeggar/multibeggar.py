@@ -185,7 +185,7 @@ class Multibeggar:
                         symbol_list.append(symbol)
                     self.logger.debug('company_name: %s exchange_name: %s -> symbol: %s', company_name, exchange_name, symbol)
 
-                symbol_set.update(symbol_list)
+                all_symbols.extend(symbol_list)
                 company_name_to_symbol_list_map[company_name] = symbol_list
                 self.logger.debug('added to memo. company_name: %s symbol_list: %s', company_name, symbol_list)
             else:
@@ -203,17 +203,16 @@ class Multibeggar:
         def prefetch_stock_data():
             first_date = self.transactions_list['Date'].iloc[0]
             last_date = self.transactions_list['Date'].iloc[-1]
-            symbols_str = ' '.join([str(symbol) for symbol in symbol_set])
 
-            stock_data = yfinance.download(symbols_str, group_by='Ticker', start=first_date, end=last_date + pandas.Timedelta(days=1))
+            stock_data = yfinance.download(all_symbols, group_by='Ticker', start=first_date, end=last_date + pandas.Timedelta(days=1))
             self.symbol_to_stock_data = {index: group.xs(index, level=0, axis=1) for index, group in stock_data.groupby(level=0, axis=1)}
 
-            self.logger.debug('downloaded stock data from date: %s to date: %s for symbols...\n%s', first_date, last_date, symbols_str)
+            self.logger.debug('downloaded stock data from date: %s to date: %s for symbols...\n%s', first_date, last_date, all_symbols)
 
         def append_sentinel_row():
             self.transactions_list = self.transactions_list.append({'Date': '0'}, ignore_index=True)
 
-        symbol_set = set()
+        all_symbols = []
         company_name_to_symbol_list_map = {}
 
         fixup_company_names()
