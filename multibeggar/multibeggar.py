@@ -132,14 +132,14 @@ class Multibeggar:
         def from_prefetched_data():
             for symbol in symbol_list:
                 try:
-                    closing_prices = self.prefetched_stock_data.loc[start_date:end_date, (symbol, 'Close')]
+                    closing_prices = self.symbol_to_stock_data[symbol].loc[start_date:end_date, 'Close']
                 except KeyError:
                     # todo if symbol doesn't exist in prefetch, then fetch it from server and update
                     self.logger.debug('no prefetched data. symbol_list: %s start_date: %s end_date: %s symbol: %s', symbol_list, start_date, end_date, symbol)
                     continue
                 else:
                     if not closing_prices.empty and not closing_prices.isnull().array.all():
-                        self.logger.info('symbol_list: %s start_date: %s end_date: %s -> closing_prices...\n%s', symbol_list, start_date, end_date, closing_prices)
+                        self.logger.info('symbol_list: %s start_date: %s end_date: %s -> closing_prices...\n%s', symbol_list, start_date, end_date, closing_prices.to_string())
                         return closing_prices
 
             self.logger.warning('symbol_list: %s start_date: %s end_date: %s -> no closing_price_found!', symbol_list, start_date, end_date)
@@ -204,7 +204,9 @@ class Multibeggar:
             first_date = self.transactions_list['Date'].iloc[0]
             last_date = self.transactions_list['Date'].iloc[-1]
             symbols_str = ' '.join([str(symbol) for symbol in symbol_set])
-            self.prefetched_stock_data = yfinance.download(symbols_str, group_by='Ticker', start=first_date, end=last_date + pandas.Timedelta(days=1))
+
+            stock_data = yfinance.download(symbols_str, group_by='Ticker', start=first_date, end=last_date + pandas.Timedelta(days=1))
+            self.symbol_to_stock_data = {index: group.xs(index, level=0, axis=1) for index, group in stock_data.groupby(level=0, axis=1)}
 
             self.logger.debug('downloaded stock data from date: %s to date: %s for symbols...\n%s', first_date, last_date, symbols_str)
 
