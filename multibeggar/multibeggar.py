@@ -176,15 +176,23 @@ class Multibeggar:
                 self.transactions_list.replace({'Name': row['Actual Name']}, row['Fixed Name'], inplace=True)
 
         def get_and_collect_stock_symbols(company_name):
-            symbol_list = []
-            for exchange_name, exchange_info in self.stock_exchange_info_map.items():
-                if symbol := exchange_info.get_symbol(company_name):
-                    symbol_list.append(symbol)
-                self.logger.debug('company_name: %s exchange_name: %s -> symbol: %s', company_name, exchange_name, symbol)
+            try:
+                symbol_list = company_name_to_symbol_list_map[company_name]
+            except KeyError:
+                symbol_list = []
+                for exchange_name, exchange_info in self.stock_exchange_info_map.items():
+                    if symbol := exchange_info.get_symbol(company_name):
+                        symbol_list.append(symbol)
+                    self.logger.debug('company_name: %s exchange_name: %s -> symbol: %s', company_name, exchange_name, symbol)
 
-            symbol_set.update(symbol_list)
-            self.logger.info('company_name: %s -> symbol_list: %s', company_name, symbol_list)
-            return symbol_list
+                symbol_set.update(symbol_list)
+                company_name_to_symbol_list_map[company_name] = symbol_list
+                self.logger.debug('added to memo. company_name: %s symbol_list: %s', company_name, symbol_list)
+            else:
+                self.logger.debug('read from memo. company_name: %s symbol_list: %s', company_name, symbol_list)
+            finally:
+                self.logger.info('company_name: %s -> symbol_list: %s', company_name, symbol_list)
+                return symbol_list
 
         def append_stock_symbols():
             self.transactions_list['Symbol'] = self.transactions_list.apply(lambda x: get_and_collect_stock_symbols(x['Name']), axis=1)
@@ -204,6 +212,7 @@ class Multibeggar:
             self.transactions_list = self.transactions_list.append({'Date': '0'}, ignore_index=True)
 
         symbol_set = set()
+        company_name_to_symbol_list_map = {}
 
         fixup_company_names()
         append_stock_symbols()
