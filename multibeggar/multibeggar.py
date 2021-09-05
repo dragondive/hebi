@@ -30,6 +30,8 @@ class Multibeggar:
                                                  company_name_header='Security Name',
                                                  exchange_suffix='.BO'), }
 
+        self.symbol_to_stock_data = {}
+
     def load_transactions_from_excel_file(self, excel_file_path):
         self.input_file_path = excel_file_path
         self.transactions_list = pandas.read_excel(excel_file_path, parse_dates=['Date'])
@@ -104,6 +106,10 @@ class Multibeggar:
         if adjusted_closing_price is None:
             renamed_symbol_list = [renamed_symbol for symbol in symbol_list if (renamed_symbol := self.get_renamed_symbol(symbol)) is not None]
             self.logger.debug('symbol_list: %s -> renamed_symbol_list: %s', symbol_list, renamed_symbol_list)
+
+            symbol_to_fetch_list = [symbol for symbol in renamed_symbol_list if symbol not in self.symbol_to_stock_data]
+            if symbol_to_fetch_list:
+                self.__fetch_stock_data(symbol_to_fetch_list)
 
             if renamed_symbol_list:
                 adjusted_closing_price = self.get_closing_price(renamed_symbol_list, date)
@@ -205,7 +211,8 @@ class Multibeggar:
             last_date = self.transactions_list['Date'].iloc[-1]
 
             stock_data = yfinance.download(all_symbols, group_by='Ticker', start=first_date, end=last_date + pandas.Timedelta(days=1))
-            self.symbol_to_stock_data = {index: group.xs(index, level=0, axis=1) for index, group in stock_data.groupby(level=0, axis=1)}
+            symbol_to_stock_data = {index: group.xs(index, level=0, axis=1) for index, group in stock_data.groupby(level=0, axis=1)}
+            self.symbol_to_stock_data.update(symbol_to_stock_data)
 
             self.logger.debug('downloaded stock data from date: %s to date: %s for symbols...\n%s', first_date, last_date, all_symbols)
 
@@ -218,8 +225,23 @@ class Multibeggar:
         fixup_company_names()
         append_stock_symbols()
         sort_by_date()
-        prefetch_stock_data()
+        self.__fetch_stock_data(all_symbols)
         append_sentinel_row()
+
+    def __fetch_stock_data(self, symbol_list):
+
+        def get_adapted_end_date(end_date):
+            adapted_end_date = end_date + pandas.Timedelta(days=1)
+            return adapted_end_date
+
+        start_date = self.transactions_list['Date'].iloc[0]
+        end_date = get_adapted_end_date(pandas.to_datetime('today').normalize())
+
+        stock_data = yfinance.download(symbol_list, group_by='Ticker', start=start_date, end=end_date)
+        symbol_to_stock_data = {index: group.xs(index, level=0, axis=1) for index, group in stock_data.groupby(level=0, axis=1)}
+        self.symbol_to_stock_data.update(symbol_to_stock_data)
+
+        self.logger.debug('downloaded stock data from date: %s to date: %s for symbols...\n%s', start_date, end_date, symbol_list)
 
     def __compute_daywise_portfolio(self):
 
