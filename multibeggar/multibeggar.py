@@ -93,9 +93,14 @@ class Multibeggar:
         start_date = pandas.to_datetime(date)
         end_date = pandas.to_datetime(date)
 
-        adjusted_closing_price = self.__get_adjusted_closing_prices_for_date_range(symbol_list, start_date, end_date)
+        # todo: __get_adjusted_closing_prices_for_date_range() should raise an exception if closing_prices is not found
+        # this code checking for None is too clumsy and difficult to follow.
+        adjusted_closing_price = None
+        adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(symbol_list, start_date, end_date)
+        if adjusted_closing_prices is not None:
+            adjusted_closing_price = adjusted_closing_prices.array[0]
 
-        if use_fallback and adjusted_closing_price is None:
+        if adjusted_closing_price is None and use_fallback:
             adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(symbol_list, start_date - pandas.Timedelta(days=7), end_date + pandas.Timedelta(days=7))
             if adjusted_closing_prices is not None:
                 adjusted_closing_price = adjusted_closing_prices.mean()
