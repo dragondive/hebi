@@ -5,7 +5,7 @@ import pandas
 import yfinance
 from fuzzywuzzy import fuzz
 from matplotlib import pyplot
-from .stock_exchange import StockExchange, StockExchangeInfo
+from multibeggar.dalalstreet import StockExchange, StockExchangeInfo
 
 
 class Multibeggar:
