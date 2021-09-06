@@ -16,9 +16,9 @@ class Multibeggar:
 
         script_dir = os.path.dirname(__file__)
 
-        self.fixup_company_names_map = pandas.read_csv(os.path.join(script_dir, 'data', 'fixup_company_names.csv'))
-        self.renamed_symbols_map = pandas.read_csv(os.path.join(script_dir, 'data', 'renamed_symbols.csv'))
-        self.price_adjustment_list = pandas.read_csv(os.path.join(script_dir, 'data', 'price_adjustments.csv'), parse_dates=['Date'])
+        self.fixup_company_names_map = pandas.read_csv(os.path.join(script_dir, 'data', 'fixup_company_names.csv')).set_index('Actual Name').to_dict('index')
+        self.renamed_symbols_map = pandas.read_csv(os.path.join(script_dir, 'data', 'renamed_symbols.csv')).set_index('Present Symbol').to_dict('index')
+        self.price_adjustment_map = pandas.read_csv(os.path.join(script_dir, 'data', 'price_adjustments.csv'), parse_dates=['Date']).set_index('Symbol').to_dict('index')
 
         self.stock_exchange_info_map = {
             StockExchange.NSE: StockExchangeInfo(companies_data_file_path=os.path.join(script_dir, 'data', 'equity_nse.csv'),
@@ -62,24 +62,22 @@ class Multibeggar:
         return portfolio_complexity
 
     def get_renamed_symbol(self, stock_symbol):
-        matching_row = self.renamed_symbols_map[self.renamed_symbols_map['Present Symbol'] == stock_symbol]
-
         try:
-            old_symbol = matching_row['Old Symbol'].values[0]
+            old_symbol = self.renamed_symbols_map[stock_symbol]['Old Symbol']
             self.logger.info('stock_symbol: %s -> old_symbol: %s', stock_symbol, old_symbol)
             return old_symbol
-        except IndexError:
+        except KeyError:
             self.logger.warning('stock_symbol: %s -> no old_symbol found!', stock_symbol)
             return None
 
     def get_de_adjustment_factor(self, stock_symbol, date):
         # todo: this data is directly available from yfinance api, need to check its reliability
-        matching_row = self.price_adjustment_list[self.price_adjustment_list['Symbol'] == stock_symbol]
         try:
-            adjustment_date = matching_row['Date'].array[0]
-            numerator = matching_row['Numerator'].array[0]
-            denominator = matching_row['Denominator'].array[0]
-        except IndexError:
+            matching_data = self.price_adjustment_map[stock_symbol]
+            adjustment_date = matching_data['Date']
+            numerator = matching_data['Numerator']
+            denominator = matching_data['Denominator']
+        except KeyError:
             self.logger.info('no price adjustment. stock_symbol: %s date: %s', stock_symbol, date)
             return None  # todo: raise exception here? but is this really an exception?
         else:
@@ -147,8 +145,8 @@ class Multibeggar:
     def __prepare_for_portfolio_complexity_calculation(self):
 
         def fixup_company_names():
-            for __unused, row in self.fixup_company_names_map.iterrows():
-                self.transactions_list.replace({'Name': row['Actual Name']}, row['Fixed Name'], inplace=True)
+            for actual_name, fixup_data in self.fixup_company_names_map.items():
+                self.transactions_list.replace({'Name': actual_name}, fixup_data['Fixed Name'], inplace=True)
 
         def get_and_collect_stock_symbols(company_name):
             try:
