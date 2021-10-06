@@ -89,24 +89,29 @@ class Multibeggar:
             self.logger.info('stock_symbol: %s date: %s -> adjustment_factor: %s', stock_symbol, date, adjustment_factor)
             return adjustment_factor
 
-    def get_closing_price(self, symbol_list, date, use_fallback=True):
-        start_date = pandas.to_datetime(date)
-        end_date = pandas.to_datetime(date)
+    def get_closing_price(self, symbol_list, date_string, use_fallback=True):
 
-        # todo: __get_adjusted_closing_prices_for_date_range() should raise an exception if closing_prices is not found
-        # this code checking for None is too clumsy and difficult to follow.
-        adjusted_closing_price = None
-        adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(symbol_list, start_date, end_date)
-        if adjusted_closing_prices is not None:
-            adjusted_closing_price = adjusted_closing_prices.array[0]
+        def from_single_date():
+            try:
+                adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(symbol_list, start_date=date, end_date=date)
+            except NoClosingPriceError:
+                return None
+            else:
+                adjusted_closing_price = adjusted_closing_prices.array[0]
+                self.logger.debug('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
+                return adjusted_closing_price
 
-        if adjusted_closing_price is None and use_fallback:
-            adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(symbol_list, start_date - pandas.Timedelta(days=7), end_date + pandas.Timedelta(days=7))
-            if adjusted_closing_prices is not None:
+        def from_range_of_dates():
+            try:
+                adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(symbol_list, start_date=date - pandas.Timedelta(days=7), end_date=date + pandas.Timedelta(days=7))
+            except NoClosingPriceError:
+                return None
+            else:
                 adjusted_closing_price = adjusted_closing_prices.mean()
                 self.logger.warning('fallback to mean price! symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
+                return adjusted_closing_price
 
-        if adjusted_closing_price is None:
+        def for_renamed_symbol_list():
             renamed_symbol_list = [renamed_symbol for symbol in symbol_list if (renamed_symbol := self.get_renamed_symbol(symbol)) is not None]
             self.logger.debug('symbol_list: %s -> renamed_symbol_list: %s', symbol_list, renamed_symbol_list)
 
@@ -117,20 +122,32 @@ class Multibeggar:
             if renamed_symbol_list:
                 adjusted_closing_price = self.get_closing_price(renamed_symbol_list, date)
                 self.logger.debug('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
+                return adjusted_closing_price
+            else:
+                return None
+                # raise NoClosingPriceError(f'no closing price found for renamed_symbol_list: {renamed_symbol_list} date: {date}')
 
-        if adjusted_closing_price is None:
-            self.logger.warning('symbol_list: %s date: %s -> no closing_price found!', symbol_list, date)
+        def get_de_adjusted_price():
+            for symbol in symbol_list:
+                de_adjustment_factor = self.get_de_adjustment_factor(symbol, date)
+                if de_adjustment_factor is not None:
+                    de_adjusted_closing_price = adjusted_closing_price * de_adjustment_factor
+                    self.logger.debug('symbol_list: %s date: %s symbol: %s -> de_adjusted_closing_price: %s', symbol_list, date, symbol, de_adjusted_closing_price)
+                    return de_adjusted_closing_price
+
+            self.logger.debug('symbol_list: %s date: %s -> de_adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
+            return adjusted_closing_price
+
+        date = pandas.to_datetime(date_string)
+
+        try:
+            adjusted_closing_price = from_single_date() or from_range_of_dates() or for_renamed_symbol_list()
+        except NoClosingPriceError:
             return None
-
-        for symbol in symbol_list:
-            de_adjustment_factor = self.get_de_adjustment_factor(symbol, date)
-            if de_adjustment_factor is not None:
-                de_adjusted_closing_price = adjusted_closing_price * de_adjustment_factor
-                self.logger.info('symbol_list: %s date: %s symbol: %s -> closing_price: %s', symbol_list, date, symbol, de_adjusted_closing_price)
-                return de_adjusted_closing_price
-
-        self.logger.info('symbol_list: %s date: %s -> closing_price: %s', symbol_list, date, adjusted_closing_price)
-        return adjusted_closing_price
+        else:
+            closing_price = get_de_adjusted_price()
+            self.logger.info('symbol_list: %s date: %s -> closing_price: %s', symbol_list, date, closing_price)
+            return closing_price
 
     def __get_adjusted_closing_prices_for_date_range(self, symbol_list, start_date, end_date):
         for symbol in symbol_list:
@@ -145,7 +162,7 @@ class Multibeggar:
                     return adjusted_closing_prices
 
         self.logger.warning('symbol_list: %s start_date: %s end_date: %s -> no closing_price_found!', symbol_list, start_date, end_date)
-        return None
+        raise NoClosingPriceError(f'no closing price found for symbol_list: {symbol_list} start_date: {start_date} end_date: {end_date}')
 
     def __prepare_for_portfolio_complexity_calculation(self):
 
@@ -258,3 +275,7 @@ class Multibeggar:
                 self.logger.debug('transacted_shares: %s', transacted_shares)
                 daily_portfolio.loc[mask, 'Shares'] += transacted_shares
                 self.logger.debug('company_name: %s updated shares count: %s', company_name, daily_portfolio.loc[mask, 'Shares'].array[0])
+
+
+class NoClosingPriceError(Exception):
+    '''Raise when closing price is not found in the available stock data.'''
