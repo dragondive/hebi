@@ -3,7 +3,6 @@ import logging
 from math import exp
 import pandas
 import yfinance
-from fuzzywuzzy import fuzz
 from matplotlib import pyplot
 from multibeggar.dalalstreet import StockExchange, StockExchangeInfo
 
