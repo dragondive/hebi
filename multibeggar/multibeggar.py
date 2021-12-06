@@ -89,7 +89,7 @@ class Multibeggar:
             self.logger.info('stock_symbol: %s date: %s -> adjustment_factor: %s', stock_symbol, date, adjustment_factor)
             return adjustment_factor
 
-    def get_closing_price(self, symbol_list, date_string, use_fallback=True):
+    def get_closing_price(self, symbol_list, date_string):
 
         def from_single_date():
             try:
@@ -278,4 +278,4 @@ class Multibeggar:
 
 
 class NoClosingPriceError(Exception):
-    '''Raise when closing price is not found in the available stock data.'''
+    """Raise when closing price is not found in the available stock data."""

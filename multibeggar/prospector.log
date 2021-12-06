@@ -5,14 +5,6 @@ Messages
     L-:- None: frosted - failure
     Tool frosted failed to run (exception was raised, re-run prospector with -X to see the stacktrace)
 
-multibeggar (multibeggar.py):
-    L92:58 Multibeggar.get_closing_price: pylint - unused-argument
-    Unused argument 'use_fallback'
-
-multibeggar.py:
-    L92:- None: vulture - unused-variable
-    Unused variable 'use_fallback'
-
 multibeggar.py:
     L92:- Multibeggar.get_closing_price: mccabe - MC0001
     Multibeggar.get_closing_price is too complex (15)
@@ -86,328 +78,152 @@ multibeggar.py:
     1 blank line required before class docstring (found 0)
 
 multibeggar.py:
-    L281:- None: pep257 - D300
-    Use """triple double quotes""" (found '''-quotes)
+    L13:121 None: pep8 - E501
+    line too long (236 > 120 characters)
 
 multibeggar.py:
-    L281:77 None: pep8 - W292
-    no newline at end of file
+    L19:121 None: pep8 - E501
+    line too long (157 > 120 characters)
 
 multibeggar.py:
-    L13:80 None: pep8 - E501
-    line too long (236 > 79 characters)
+    L20:121 None: pep8 - E501
+    line too long (152 > 120 characters)
 
 multibeggar.py:
-    L19:80 None: pep8 - E501
-    line too long (157 > 79 characters)
+    L21:121 None: pep8 - E501
+    line too long (169 > 120 characters)
 
 multibeggar.py:
-    L20:80 None: pep8 - E501
-    line too long (152 > 79 characters)
+    L24:121 None: pep8 - E501
+    line too long (125 > 120 characters)
 
 multibeggar.py:
-    L21:80 None: pep8 - E501
-    line too long (169 > 79 characters)
+    L28:121 None: pep8 - E501
+    line too long (125 > 120 characters)
 
 multibeggar.py:
-    L24:80 None: pep8 - E501
-    line too long (125 > 79 characters)
-
-multibeggar.py:
-    L26:80 None: pep8 - E501
-    line too long (87 > 79 characters)
-
-multibeggar.py:
-    L28:80 None: pep8 - E501
-    line too long (125 > 79 characters)
-
-multibeggar.py:
-    L30:80 None: pep8 - E501
-    line too long (85 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L37:8 Multibeggar.load_transactions_from_excel_file: pylint - attribute-defined-outside-init
-    Attribute 'transactions_list' defined outside __init__
-
-multibeggar.py:
-    L37:80 None: pep8 - E501
-    line too long (89 > 79 characters)
-
-multibeggar.py:
-    L43:80 None: pep8 - E501
-    line too long (85 > 79 characters)
-
-multibeggar.py:
-    L44:80 None: pep8 - E501
-    line too long (131 > 79 characters)
+    L44:121 None: pep8 - E501
+    line too long (131 > 120 characters)
 
 multibeggar (multibeggar.py):
     L46:8 Multibeggar.plot_portfolio_complexity: pylint - attribute-defined-outside-init
     Attribute 'portfolio_complexity_data' defined outside __init__
 
 multibeggar.py:
-    L46:80 None: pep8 - E501
-    line too long (200 > 79 characters)
+    L46:121 None: pep8 - E501
+    line too long (200 > 120 characters)
 
 multibeggar.py:
-    L47:80 None: pep8 - E501
-    line too long (137 > 79 characters)
-
-multibeggar.py:
-    L50:80 None: pep8 - E501
-    line too long (117 > 79 characters)
+    L47:121 None: pep8 - E501
+    line too long (137 > 120 characters)
 
 multibeggar (multibeggar.py):
     L59:8 Multibeggar.compute_portfolio_complexity: pylint - expression-not-assigned
     Expression "[portfolio_complexity := portfolio_complexity + value * exp(exponent_tuning_factor * index) for (index, value) in enumerate(sorted_proportions)]" is assigned to nothing
 
 multibeggar.py:
-    L59:80 None: pep8 - E501
-    line too long (150 > 79 characters)
+    L59:121 None: pep8 - E501
+    line too long (150 > 120 characters)
 
 multibeggar.py:
-    L67:80 None: pep8 - E501
-    line too long (92 > 79 characters)
+    L85:121 None: pep8 - E501
+    line too long (151 > 120 characters)
 
 multibeggar.py:
-    L70:80 None: pep8 - E501
-    line too long (89 > 79 characters)
+    L89:121 None: pep8 - E501
+    line too long (121 > 120 characters)
 
 multibeggar.py:
-    L74:80 None: pep8 - E501
-    line too long (96 > 79 characters)
+    L96:121 None: pep8 - E501
+    line too long (136 > 120 characters)
 
 multibeggar.py:
-    L81:80 None: pep8 - E501
-    line too long (98 > 79 characters)
+    L101:121 None: pep8 - E501
+    line too long (134 > 120 characters)
 
 multibeggar.py:
-    L82:80 None: pep8 - E501
-    line too long (87 > 79 characters)
+    L106:121 None: pep8 - E501
+    line too long (190 > 120 characters)
 
 multibeggar.py:
-    L85:80 None: pep8 - E501
-    line too long (151 > 79 characters)
+    L111:121 None: pep8 - E501
+    line too long (160 > 120 characters)
 
 multibeggar.py:
-    L89:80 None: pep8 - E501
-    line too long (121 > 79 characters)
+    L115:121 None: pep8 - E501
+    line too long (143 > 120 characters)
 
 multibeggar.py:
-    L96:80 None: pep8 - E501
-    line too long (136 > 79 characters)
+    L124:121 None: pep8 - E501
+    line too long (134 > 120 characters)
 
 multibeggar.py:
-    L101:80 None: pep8 - E501
-    line too long (134 > 79 characters)
+    L128:121 None: pep8 - E501
+    line too long (130 > 120 characters)
 
 multibeggar.py:
-    L106:80 None: pep8 - E501
-    line too long (190 > 79 characters)
+    L135:121 None: pep8 - E501
+    line too long (163 > 120 characters)
 
 multibeggar.py:
-    L111:80 None: pep8 - E501
-    line too long (160 > 79 characters)
+    L138:121 None: pep8 - E501
+    line too long (133 > 120 characters)
 
 multibeggar.py:
-    L115:80 None: pep8 - E501
-    line too long (143 > 79 characters)
+    L157:121 None: pep8 - E501
+    line too long (154 > 120 characters)
 
 multibeggar.py:
-    L116:80 None: pep8 - E501
-    line too long (109 > 79 characters)
+    L161:121 None: pep8 - E501
+    line too long (180 > 120 characters)
 
 multibeggar.py:
-    L118:80 None: pep8 - E501
-    line too long (120 > 79 characters)
+    L164:121 None: pep8 - E501
+    line too long (136 > 120 characters)
 
 multibeggar.py:
-    L123:80 None: pep8 - E501
-    line too long (90 > 79 characters)
+    L165:121 None: pep8 - E501
+    line too long (137 > 120 characters)
 
 multibeggar.py:
-    L124:80 None: pep8 - E501
-    line too long (134 > 79 characters)
+    L181:121 None: pep8 - E501
+    line too long (126 > 120 characters)
 
 multibeggar.py:
-    L128:80 None: pep8 - E501
-    line too long (130 > 79 characters)
+    L193:121 None: pep8 - E501
+    line too long (135 > 120 characters)
 
 multibeggar.py:
-    L132:80 None: pep8 - E501
-    line too long (82 > 79 characters)
+    L220:121 None: pep8 - E501
+    line too long (128 > 120 characters)
 
 multibeggar.py:
-    L134:80 None: pep8 - E501
-    line too long (93 > 79 characters)
+    L223:121 None: pep8 - E501
+    line too long (130 > 120 characters)
 
 multibeggar.py:
-    L135:80 None: pep8 - E501
-    line too long (163 > 79 characters)
+    L228:121 None: pep8 - E501
+    line too long (162 > 120 characters)
 
 multibeggar.py:
-    L138:80 None: pep8 - E501
-    line too long (133 > 79 characters)
+    L243:121 None: pep8 - E501
+    line too long (133 > 120 characters)
 
 multibeggar.py:
-    L144:80 None: pep8 - E501
-    line too long (109 > 79 characters)
+    L272:121 None: pep8 - E501
+    line too long (127 > 120 characters)
 
 multibeggar.py:
-    L149:80 None: pep8 - E501
-    line too long (111 > 79 characters)
-
-multibeggar.py:
-    L152:80 None: pep8 - E501
-    line too long (94 > 79 characters)
-
-multibeggar.py:
-    L155:80 None: pep8 - E501
-    line too long (109 > 79 characters)
-
-multibeggar.py:
-    L157:80 None: pep8 - E501
-    line too long (154 > 79 characters)
-
-multibeggar.py:
-    L160:80 None: pep8 - E501
-    line too long (106 > 79 characters)
-
-multibeggar.py:
-    L161:80 None: pep8 - E501
-    line too long (180 > 79 characters)
-
-multibeggar.py:
-    L164:80 None: pep8 - E501
-    line too long (136 > 79 characters)
-
-multibeggar.py:
-    L165:80 None: pep8 - E501
-    line too long (137 > 79 characters)
-
-multibeggar.py:
-    L170:80 None: pep8 - E501
-    line too long (80 > 79 characters)
-
-multibeggar.py:
-    L171:80 None: pep8 - E501
-    line too long (109 > 79 characters)
-
-multibeggar.py:
-    L178:80 None: pep8 - E501
-    line too long (89 > 79 characters)
-
-multibeggar.py:
-    L181:80 None: pep8 - E501
-    line too long (126 > 79 characters)
-
-multibeggar.py:
-    L185:80 None: pep8 - E501
-    line too long (111 > 79 characters)
-
-multibeggar.py:
-    L187:80 None: pep8 - E501
-    line too long (112 > 79 characters)
-
-multibeggar.py:
-    L189:80 None: pep8 - E501
-    line too long (98 > 79 characters)
-
-multibeggar.py:
-    L193:80 None: pep8 - E501
-    line too long (135 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L199:12 Multibeggar.__prepare_for_portfolio_complexity_calculation.append_sentinel_row: pylint - attribute-defined-outside-init
-    Attribute 'transactions_list' defined outside __init__
-
-multibeggar.py:
-    L199:80 None: pep8 - E501
-    line too long (100 > 79 characters)
-
-multibeggar.py:
-    L217:80 None: pep8 - E501
-    line too long (80 > 79 characters)
-
-multibeggar.py:
-    L219:80 None: pep8 - E501
-    line too long (102 > 79 characters)
-
-multibeggar.py:
-    L220:80 None: pep8 - E501
-    line too long (128 > 79 characters)
-
-multibeggar.py:
-    L223:80 None: pep8 - E501
-    line too long (130 > 79 characters)
-
-multibeggar.py:
-    L228:80 None: pep8 - E501
-    line too long (162 > 79 characters)
-
-multibeggar.py:
-    L229:80 None: pep8 - E501
-    line too long (99 > 79 characters)
-
-multibeggar.py:
-    L233:80 None: pep8 - E501
-    line too long (88 > 79 characters)
-
-multibeggar.py:
-    L236:80 None: pep8 - E501
-    line too long (84 > 79 characters)
-
-multibeggar.py:
-    L238:80 None: pep8 - E501
-    line too long (114 > 79 characters)
-
-multibeggar.py:
-    L239:80 None: pep8 - E501
-    line too long (118 > 79 characters)
-
-multibeggar.py:
-    L243:80 None: pep8 - E501
-    line too long (133 > 79 characters)
-
-multibeggar.py:
-    L251:80 None: pep8 - E501
-    line too long (119 > 79 characters)
-
-multibeggar.py:
-    L252:80 None: pep8 - E501
-    line too long (105 > 79 characters)
-
-multibeggar (multibeggar.py):
-    L257:16 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
-    Attribute 'daywise_full_portfolio' defined outside __init__
-
-multibeggar.py:
-    L257:80 None: pep8 - E501
-    line too long (97 > 79 characters)
-
-multibeggar.py:
-    L260:80 None: pep8 - E501
-    line too long (94 > 79 characters)
-
-multibeggar.py:
-    L270:80 None: pep8 - E501
-    line too long (91 > 79 characters)
-
-multibeggar.py:
-    L272:80 None: pep8 - E501
-    line too long (127 > 79 characters)
-
-multibeggar.py:
-    L273:80 None: pep8 - E501
-    line too long (91 > 79 characters)
-
-multibeggar.py:
-    L277:80 None: pep8 - E501
-    line too long (138 > 79 characters)
+    L277:121 None: pep8 - E501
+    line too long (138 > 120 characters)
 
 multibeggar (multibeggar.py):
     L36:8 Multibeggar.load_transactions_from_excel_file: pylint - attribute-defined-outside-init
     Attribute 'input_file_path' defined outside __init__
+
+multibeggar (multibeggar.py):
+    L37:8 Multibeggar.load_transactions_from_excel_file: pylint - attribute-defined-outside-init
+    Attribute 'transactions_list' defined outside __init__
 
 multibeggar (multibeggar.py):
     L122:12 Multibeggar.get_closing_price.for_renamed_symbol_list: pylint - no-else-return
@@ -416,6 +232,10 @@ multibeggar (multibeggar.py):
 multibeggar (multibeggar.py):
     L190:16 Multibeggar.__prepare_for_portfolio_complexity_calculation.get_and_collect_stock_symbols: pylint - lost-exception
     return statement in finally block may swallow exception
+
+multibeggar (multibeggar.py):
+    L199:12 Multibeggar.__prepare_for_portfolio_complexity_calculation.append_sentinel_row: pylint - attribute-defined-outside-init
+    Attribute 'transactions_list' defined outside __init__
 
 multibeggar (multibeggar.py):
     L244:8 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
@@ -432,6 +252,10 @@ multibeggar (multibeggar.py):
 multibeggar.py:
     L247:- None: vulture - unused-variable
     Unused variable '__unused'
+
+multibeggar (multibeggar.py):
+    L257:16 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
+    Attribute 'daywise_full_portfolio' defined outside __init__
 
 dalalstreet.py:
     L4:1 None: mypy - error
@@ -466,96 +290,24 @@ dalalstreet.py:
     Missing docstring in __init__
 
 dalalstreet.py:
-    L17:80 None: pep8 - E501
-    line too long (102 > 79 characters)
-
-dalalstreet.py:
     L28:- None: pep257 - D102
     Missing docstring in public method
-
-dalalstreet.py:
-    L39:80 None: pep8 - E501
-    line too long (89 > 79 characters)
 
 dalalstreet.py:
     L39:- None: pep257 - D102
     Missing docstring in public method
 
 dalalstreet.py:
-    L50:80 None: pep8 - E501
-    line too long (93 > 79 characters)
-
-dalalstreet.py:
     L50:- None: pep257 - D102
     Missing docstring in public method
 
 dalalstreet.py:
-    L18:80 None: pep8 - E501
-    line too long (118 > 79 characters)
+    L19:121 None: pep8 - E501
+    line too long (236 > 120 characters)
 
 dalalstreet.py:
-    L19:80 None: pep8 - E501
-    line too long (236 > 79 characters)
-
-dalalstreet.py:
-    L23:80 None: pep8 - E501
-    line too long (117 > 79 characters)
-
-dalalstreet.py:
-    L29:80 None: pep8 - E501
-    line too long (96 > 79 characters)
-
-dalalstreet.py:
-    L34:80 None: pep8 - E501
-    line too long (99 > 79 characters)
-
-dalalstreet.py:
-    L36:80 None: pep8 - E501
-    line too long (80 > 79 characters)
-
-dalalstreet.py:
-    L40:80 None: pep8 - E501
-    line too long (98 > 79 characters)
-
-dalalstreet.py:
-    L45:80 None: pep8 - E501
-    line too long (110 > 79 characters)
-
-dalalstreet.py:
-    L47:80 None: pep8 - E501
-    line too long (93 > 79 characters)
-
-dalalstreet.py:
-    L51:80 None: pep8 - E501
-    line too long (136 > 79 characters)
-
-dalalstreet.py:
-    L53:80 None: pep8 - E501
-    line too long (84 > 79 characters)
-
-dalalstreet.py:
-    L54:80 None: pep8 - E501
-    line too long (87 > 79 characters)
-
-dalalstreet.py:
-    L55:80 None: pep8 - E501
-    line too long (102 > 79 characters)
-
-dalalstreet.py:
-    L59:80 None: pep8 - E501
-    line too long (80 > 79 characters)
-
-dalalstreet.py:
-    L61:80 None: pep8 - E501
-    line too long (87 > 79 characters)
-
-dalalstreet.py:
-    L62:80 None: pep8 - E501
-    line too long (94 > 79 characters)
-
-dalalstreet.py:
-    L69:80 None: pep8 - E501
-    line too long (84 > 79 characters)
+    L51:121 None: pep8 - E501
+    line too long (136 > 120 characters)
 
 __init__.py:
     L1:- None: pep257 - D104
@@ -565,13 +317,13 @@ __init__.py:
 
 Check Information
 =================
-         Started: 2021-12-06 10:41:26.137277
-        Finished: 2021-12-06 10:41:33.031644
-      Time Taken: 6.89 seconds
+         Started: 2021-12-06 10:54:39.570348
+        Finished: 2021-12-06 10:54:46.483804
+      Time Taken: 6.91 seconds
        Formatter: text
         Profiles: prospector_profile.yaml, full_pep8, no_doc_warnings, no_test_warnings, strictness_veryhigh, no_member_warnings
       Strictness: from profile
   Libraries Used: 
        Tools Run: bandit, dodgy, frosted, mccabe, mypy, pep257, pep8, profile-validator, pyflakes, pylint, pyroma, vulture
-  Messages Found: 140
+  Messages Found: 78
 
