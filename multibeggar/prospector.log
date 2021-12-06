@@ -14,7 +14,7 @@ multibeggar.py:
     Missing docstring in public method
 
 multibeggar.py:
-    L167:- Multibeggar.__prepare_for_portfolio_complexity_calculation: mccabe - MC0001
+    L166:- Multibeggar.__prepare_for_portfolio_complexity_calculation: mccabe - MC0001
     Multibeggar.__prepare_for_portfolio_complexity_calculation is too complex (11)
 
 multibeggar.py:
@@ -74,8 +74,8 @@ multibeggar.py:
     Missing docstring in public method
 
 multibeggar.py:
-    L281:- None: pep257 - D203
-    1 blank line required before class docstring (found 0)
+    L281:- None: pep257 - D211
+    No blank lines allowed before class docstring (found 1)
 
 multibeggar.py:
     L13:121 None: pep8 - E501
@@ -158,63 +158,59 @@ multibeggar.py:
     line too long (134 > 120 characters)
 
 multibeggar.py:
-    L128:121 None: pep8 - E501
-    line too long (130 > 120 characters)
-
-multibeggar.py:
-    L135:121 None: pep8 - E501
+    L134:121 None: pep8 - E501
     line too long (163 > 120 characters)
 
 multibeggar.py:
-    L138:121 None: pep8 - E501
+    L137:121 None: pep8 - E501
     line too long (133 > 120 characters)
 
 multibeggar.py:
-    L157:121 None: pep8 - E501
+    L156:121 None: pep8 - E501
     line too long (154 > 120 characters)
 
 multibeggar.py:
-    L161:121 None: pep8 - E501
+    L160:121 None: pep8 - E501
     line too long (180 > 120 characters)
 
 multibeggar.py:
-    L164:121 None: pep8 - E501
+    L163:121 None: pep8 - E501
     line too long (136 > 120 characters)
 
 multibeggar.py:
-    L165:121 None: pep8 - E501
+    L164:121 None: pep8 - E501
     line too long (137 > 120 characters)
 
 multibeggar.py:
-    L181:121 None: pep8 - E501
+    L180:121 None: pep8 - E501
     line too long (126 > 120 characters)
 
 multibeggar.py:
-    L193:121 None: pep8 - E501
+    L192:121 None: pep8 - E501
     line too long (135 > 120 characters)
 
 multibeggar.py:
-    L220:121 None: pep8 - E501
+    L219:121 None: pep8 - E501
     line too long (128 > 120 characters)
 
 multibeggar.py:
-    L223:121 None: pep8 - E501
+    L222:121 None: pep8 - E501
     line too long (130 > 120 characters)
 
 multibeggar.py:
-    L228:121 None: pep8 - E501
+    L227:121 None: pep8 - E501
     line too long (162 > 120 characters)
 
 multibeggar.py:
-    L243:121 None: pep8 - E501
+    L242:121 None: pep8 - E501
     line too long (133 > 120 characters)
 
 multibeggar.py:
-    L272:121 None: pep8 - E501
+    L271:121 None: pep8 - E501
     line too long (127 > 120 characters)
 
 multibeggar.py:
-    L277:121 None: pep8 - E501
+    L276:121 None: pep8 - E501
     line too long (138 > 120 characters)
 
 multibeggar (multibeggar.py):
@@ -226,35 +222,27 @@ multibeggar (multibeggar.py):
     Attribute 'transactions_list' defined outside __init__
 
 multibeggar (multibeggar.py):
-    L122:12 Multibeggar.get_closing_price.for_renamed_symbol_list: pylint - no-else-return
-    Unnecessary "else" after "return"
-
-multibeggar (multibeggar.py):
-    L190:16 Multibeggar.__prepare_for_portfolio_complexity_calculation.get_and_collect_stock_symbols: pylint - lost-exception
-    return statement in finally block may swallow exception
-
-multibeggar (multibeggar.py):
-    L199:12 Multibeggar.__prepare_for_portfolio_complexity_calculation.append_sentinel_row: pylint - attribute-defined-outside-init
+    L198:12 Multibeggar.__prepare_for_portfolio_complexity_calculation.append_sentinel_row: pylint - attribute-defined-outside-init
     Attribute 'transactions_list' defined outside __init__
 
 multibeggar (multibeggar.py):
-    L244:8 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
+    L243:8 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
     Attribute 'daywise_full_portfolio' defined outside __init__
 
 multibeggar (multibeggar.py):
-    L245:8 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
+    L244:8 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
     Attribute 'portfolio_complexity_data' defined outside __init__
 
 multibeggar (multibeggar.py):
-    L247:12 Multibeggar.__compute_daywise_portfolio: pylint - unused-private-member
+    L246:12 Multibeggar.__compute_daywise_portfolio: pylint - unused-private-member
     Unused private member `Multibeggar.__unused`
 
 multibeggar.py:
-    L247:- None: vulture - unused-variable
+    L246:- None: vulture - unused-variable
     Unused variable '__unused'
 
 multibeggar (multibeggar.py):
-    L257:16 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
+    L256:16 Multibeggar.__compute_daywise_portfolio: pylint - attribute-defined-outside-init
     Attribute 'daywise_full_portfolio' defined outside __init__
 
 dalalstreet.py:
@@ -317,13 +305,13 @@ __init__.py:
 
 Check Information
 =================
-         Started: 2021-12-06 10:54:39.570348
-        Finished: 2021-12-06 10:54:46.483804
-      Time Taken: 6.91 seconds
+         Started: 2021-12-06 11:45:56.073727
+        Finished: 2021-12-06 11:46:04.246971
+      Time Taken: 8.17 seconds
        Formatter: text
         Profiles: prospector_profile.yaml, full_pep8, no_doc_warnings, no_test_warnings, strictness_veryhigh, no_member_warnings
       Strictness: from profile
   Libraries Used: 
        Tools Run: bandit, dodgy, frosted, mccabe, mypy, pep257, pep8, profile-validator, pyflakes, pylint, pyroma, vulture
-  Messages Found: 78
+  Messages Found: 75
 
