@@ -1,0 +1,39 @@
+output-format: text
+output-target: prospector.log
+
+strictness: veryhigh
+test-warnings: false
+doc-warnings: false
+
+bandit:
+  run: true
+
+dodgy:
+  run: true
+
+frosted:
+  run: true
+
+mccabe:
+  run: true
+
+mypy:
+  run: true
+
+pep257:
+  run: true
+
+pep8:
+  full: true
+
+pyflakes:
+  run: true
+
+pylint:
+  run: true
+
+pyroma:
+  run: true
+
+vulture:
+  run: true
