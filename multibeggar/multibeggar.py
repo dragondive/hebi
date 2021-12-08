@@ -3,7 +3,6 @@ import logging
 from math import exp
 import pandas
 import yfinance
-from fuzzywuzzy import fuzz
 from matplotlib import pyplot
 from multibeggar.dalalstreet import StockExchange, StockExchangeInfo
 
@@ -89,7 +88,7 @@ class Multibeggar:
             self.logger.info('stock_symbol: %s date: %s -> adjustment_factor: %s', stock_symbol, date, adjustment_factor)
             return adjustment_factor
 
-    def get_closing_price(self, symbol_list, date_string, use_fallback=True):
+    def get_closing_price(self, symbol_list, date_string):
 
         def from_single_date():
             try:
@@ -111,7 +110,7 @@ class Multibeggar:
                 self.logger.warning('fallback to mean price! symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
                 return adjusted_closing_price
 
-        def for_renamed_symbol_list():
+        def from_renamed_symbol_list():
             renamed_symbol_list = [renamed_symbol for symbol in symbol_list if (renamed_symbol := self.get_renamed_symbol(symbol)) is not None]
             self.logger.debug('symbol_list: %s -> renamed_symbol_list: %s', symbol_list, renamed_symbol_list)
 
@@ -123,9 +122,8 @@ class Multibeggar:
                 adjusted_closing_price = self.get_closing_price(renamed_symbol_list, date)
                 self.logger.debug('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
                 return adjusted_closing_price
-            else:
-                return None
-                # raise NoClosingPriceError(f'no closing price found for renamed_symbol_list: {renamed_symbol_list} date: {date}')
+
+            return None
 
         def get_de_adjusted_price():
             for symbol in symbol_list:
@@ -141,7 +139,7 @@ class Multibeggar:
         date = pandas.to_datetime(date_string)
 
         try:
-            adjusted_closing_price = from_single_date() or from_range_of_dates() or for_renamed_symbol_list()
+            adjusted_closing_price = from_single_date() or from_range_of_dates() or from_renamed_symbol_list()
         except NoClosingPriceError:
             return None
         else:
@@ -185,9 +183,9 @@ class Multibeggar:
                 self.logger.debug('added to memo. company_name: %s symbol_list: %s', company_name, symbol_list)
             else:
                 self.logger.debug('read from memo. company_name: %s symbol_list: %s', company_name, symbol_list)
-            finally:
-                self.logger.info('company_name: %s -> symbol_list: %s', company_name, symbol_list)
-                return symbol_list
+
+            self.logger.info('company_name: %s -> symbol_list: %s', company_name, symbol_list)
+            return symbol_list
 
         def append_stock_symbols():
             self.transactions_list['Symbol'] = self.transactions_list.apply(lambda x: get_and_collect_stock_symbols(x['Name']), axis=1)
@@ -278,4 +276,5 @@ class Multibeggar:
 
 
 class NoClosingPriceError(Exception):
-    '''Raise when closing price is not found in the available stock data.'''
+
+    """Raise when closing price is not found in the available stock data."""
