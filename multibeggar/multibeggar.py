@@ -4,7 +4,7 @@ from math import exp
 import pandas
 import yfinance
 from matplotlib import pyplot
-from multibeggar.dalalstreet import StockExchange, StockExchangeInfo
+from multibeggar.dalalstreet import StockExchange, CompaniesInfo
 
 
 class Multibeggar:
@@ -19,17 +19,8 @@ class Multibeggar:
         self.renamed_symbols_map = pandas.read_csv(os.path.join(script_dir, 'data', 'renamed_symbols.csv')).set_index('Present Symbol').to_dict('index')
         self.price_adjustment_map = pandas.read_csv(os.path.join(script_dir, 'data', 'price_adjustments.csv'), parse_dates=['Date']).set_index('Symbol').to_dict('index')
 
-        self.stock_exchange_info_map = {
-            StockExchange.NSE: StockExchangeInfo(companies_data_file_path=os.path.join(script_dir, 'data', 'equity_nse.csv'),
-                                                 symbol_header='SYMBOL',
-                                                 company_name_header='NAME OF COMPANY',
-                                                 exchange_suffix='.NS'),
-            StockExchange.BSE: StockExchangeInfo(companies_data_file_path=os.path.join(script_dir, 'data', 'equity_bse.csv'),
-                                                 symbol_header='Security Id',
-                                                 company_name_header='Security Name',
-                                                 exchange_suffix='.BO'), }
-
         self.symbol_to_stock_data = {}
+        self.companies_info = CompaniesInfo()
 
     def load_transactions_from_excel_file(self, excel_file_path):
         self.input_file_path = excel_file_path
@@ -89,10 +80,11 @@ class Multibeggar:
             return adjustment_factor
 
     def get_closing_price(self, symbol_list, date_string):
+        suffixized_symbol_list = self.__suffixize_symbol_list(symbol_list)
 
         def from_single_date():
             try:
-                adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(symbol_list, start_date=date, end_date=date)
+                adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(suffixized_symbol_list, start_date=date, end_date=date)
             except NoClosingPriceError:
                 return None
             else:
@@ -102,7 +94,7 @@ class Multibeggar:
 
         def from_range_of_dates():
             try:
-                adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(symbol_list, start_date=date - pandas.Timedelta(days=7), end_date=date + pandas.Timedelta(days=7))
+                adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(suffixized_symbol_list, start_date=date - pandas.Timedelta(days=7), end_date=date + pandas.Timedelta(days=7))
             except NoClosingPriceError:
                 return None
             else:
@@ -111,11 +103,12 @@ class Multibeggar:
                 return adjusted_closing_price
 
         def from_renamed_symbol_list():
-            renamed_symbol_list = [renamed_symbol for symbol in symbol_list if (renamed_symbol := self.get_renamed_symbol(symbol)) is not None]
+            renamed_symbol_list = [(renamed_symbol, exchange) for symbol, exchange in symbol_list if (renamed_symbol := self.get_renamed_symbol(symbol))]
             self.logger.debug('symbol_list: %s -> renamed_symbol_list: %s', symbol_list, renamed_symbol_list)
 
-            symbol_to_fetch_list = [symbol for symbol in renamed_symbol_list if symbol not in self.symbol_to_stock_data]
+            symbol_to_fetch_list = [symbol for symbol in renamed_symbol_list if self.__suffixize_symbol(symbol[0], symbol[1]) not in self.symbol_to_stock_data]
             if symbol_to_fetch_list:
+                print(symbol_to_fetch_list)
                 self.__fetch_stock_data(symbol_to_fetch_list)
 
             if renamed_symbol_list:
@@ -126,7 +119,7 @@ class Multibeggar:
             return None
 
         def get_de_adjusted_price():
-            for symbol in symbol_list:
+            for symbol in suffixized_symbol_list:
                 de_adjustment_factor = self.get_de_adjustment_factor(symbol, date)
                 if de_adjustment_factor is not None:
                     de_adjusted_closing_price = adjusted_closing_price * de_adjustment_factor
@@ -172,15 +165,11 @@ class Multibeggar:
             try:
                 symbol_list = company_name_to_symbol_list_map[company_name]
             except KeyError:
-                symbol_list = []
-                for exchange_name, exchange_info in self.stock_exchange_info_map.items():
-                    if symbol := exchange_info.get_symbol(company_name):
-                        symbol_list.append(symbol)
-                    self.logger.debug('company_name: %s exchange_name: %s -> symbol: %s', company_name, exchange_name, symbol)
-
-                all_symbols.extend(symbol_list)
+                symbol_list = self.companies_info.get_symbols(company_name)
                 company_name_to_symbol_list_map[company_name] = symbol_list
                 self.logger.debug('added to memo. company_name: %s symbol_list: %s', company_name, symbol_list)
+
+                all_symbols.extend(symbol_list)
             else:
                 self.logger.debug('read from memo. company_name: %s symbol_list: %s', company_name, symbol_list)
 
@@ -214,11 +203,27 @@ class Multibeggar:
         start_date = self.transactions_list['Date'].iloc[0]
         end_date = get_adapted_end_date(pandas.to_datetime('today').normalize())
 
-        stock_data = yfinance.download(symbol_list, group_by='Ticker', start=start_date, end=end_date)
+        suffixized_symbol_list = self.__suffixize_symbol_list(symbol_list)
+        stock_data = yfinance.download(suffixized_symbol_list, group_by='Ticker', start=start_date, end=end_date)
+
         symbol_to_stock_data = {index: group.xs(index, level=0, axis=1) for index, group in stock_data.groupby(level=0, axis=1)}
         self.symbol_to_stock_data.update(symbol_to_stock_data)
 
-        self.logger.debug('downloaded stock data from date: %s to date: %s for symbols...\n%s', start_date, end_date, symbol_list)
+        self.logger.debug('downloaded stock data from date: %s to date: %s for symbols...\n%s', start_date, end_date, suffixized_symbol_list)
+
+    def __suffixize_symbol(self, symbol, exchange):
+        #todo: this should be refactored out of multibeggar.py to prepare decoupling from yfinance library
+        #note: do not premature optimize here, this method will be moved to a new class anyway, so it is fine for now
+        #      to recreate this dictionary for every function call.
+        exchange_to_suffix = {
+            StockExchange.NSE: ".NS",
+            StockExchange.BSE: ".BO",
+        }
+
+        return symbol + exchange_to_suffix[exchange]
+
+    def __suffixize_symbol_list(self, symbol_list):
+        return [self.__suffixize_symbol(symbol, exchange) for symbol, exchange in symbol_list]
 
     def __compute_daywise_portfolio(self):
 
