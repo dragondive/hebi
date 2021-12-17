@@ -2,9 +2,8 @@ import os
 import logging
 from math import exp
 import pandas
-import yfinance
 from matplotlib import pyplot
-from multibeggar.dalalstreet import StockExchange, CompaniesInfo
+from multibeggar.dalalstreet import CompaniesInfo, StockPricesDataProvider
 
 
 class Multibeggar:
@@ -16,11 +15,9 @@ class Multibeggar:
         script_dir = os.path.dirname(__file__)
 
         self.fixup_company_names_map = pandas.read_csv(os.path.join(script_dir, 'data', 'fixup_company_names.csv')).set_index('Actual Name').to_dict('index')
-        self.renamed_symbols_map = pandas.read_csv(os.path.join(script_dir, 'data', 'renamed_symbols.csv')).set_index('Present Symbol').to_dict('index')
-        self.price_adjustment_map = pandas.read_csv(os.path.join(script_dir, 'data', 'price_adjustments.csv'), parse_dates=['Date']).set_index('Symbol').to_dict('index')
 
-        self.symbol_to_stock_data = {}
         self.companies_info = CompaniesInfo()
+        self.stock_prices_data_provider = StockPricesDataProvider()
 
     def load_transactions_from_excel_file(self, excel_file_path):
         self.input_file_path = excel_file_path
@@ -51,110 +48,6 @@ class Multibeggar:
         self.logger.info('portfolio_complexity: %s', portfolio_complexity)
         return portfolio_complexity
 
-    def get_renamed_symbol(self, stock_symbol):
-        try:
-            old_symbol = self.renamed_symbols_map[stock_symbol]['Old Symbol']
-            self.logger.info('stock_symbol: %s -> old_symbol: %s', stock_symbol, old_symbol)
-            return old_symbol
-        except KeyError:
-            self.logger.warning('stock_symbol: %s -> no old_symbol found!', stock_symbol)
-            return None
-
-    def get_de_adjustment_factor(self, stock_symbol, date):
-        # todo: this data is directly available from yfinance api, need to check its reliability
-        try:
-            matching_data = self.price_adjustment_map[stock_symbol]
-            adjustment_date = matching_data['Date']
-            numerator = matching_data['Numerator']
-            denominator = matching_data['Denominator']
-        except KeyError:
-            self.logger.info('no price adjustment. stock_symbol: %s date: %s', stock_symbol, date)
-            return None  # todo: raise exception here? but is this really an exception?
-        else:
-            if pandas.to_datetime(date) >= adjustment_date:
-                self.logger.info('no price adjustment. date: %s on or after adjustment_date: %s stock_symbol: %s', date, adjustment_date, stock_symbol)
-                return None
-
-            adjustment_factor = numerator / denominator
-            self.logger.info('stock_symbol: %s date: %s -> adjustment_factor: %s', stock_symbol, date, adjustment_factor)
-            return adjustment_factor
-
-    def get_closing_price(self, symbol_list, date_string):
-        suffixized_symbol_list = self.__suffixize_symbol_list(symbol_list)
-
-        def from_single_date():
-            try:
-                adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(suffixized_symbol_list, start_date=date, end_date=date)
-            except NoClosingPriceError:
-                return None
-            else:
-                adjusted_closing_price = adjusted_closing_prices.array[0]
-                self.logger.debug('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
-                return adjusted_closing_price
-
-        def from_range_of_dates():
-            try:
-                adjusted_closing_prices = self.__get_adjusted_closing_prices_for_date_range(suffixized_symbol_list, start_date=date - pandas.Timedelta(days=7), end_date=date + pandas.Timedelta(days=7))
-            except NoClosingPriceError:
-                return None
-            else:
-                adjusted_closing_price = adjusted_closing_prices.mean()
-                self.logger.warning('fallback to mean price! symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
-                return adjusted_closing_price
-
-        def from_renamed_symbol_list():
-            renamed_symbol_list = [(renamed_symbol, exchange) for symbol, exchange in symbol_list if (renamed_symbol := self.get_renamed_symbol(symbol))]
-            self.logger.debug('symbol_list: %s -> renamed_symbol_list: %s', symbol_list, renamed_symbol_list)
-
-            symbol_to_fetch_list = [symbol for symbol in renamed_symbol_list if self.__suffixize_symbol(symbol[0], symbol[1]) not in self.symbol_to_stock_data]
-            if symbol_to_fetch_list:
-                print(symbol_to_fetch_list)
-                self.__fetch_stock_data(symbol_to_fetch_list)
-
-            if renamed_symbol_list:
-                adjusted_closing_price = self.get_closing_price(renamed_symbol_list, date)
-                self.logger.debug('symbol_list: %s date: %s -> adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
-                return adjusted_closing_price
-
-            return None
-
-        def get_de_adjusted_price():
-            for symbol in suffixized_symbol_list:
-                de_adjustment_factor = self.get_de_adjustment_factor(symbol, date)
-                if de_adjustment_factor is not None:
-                    de_adjusted_closing_price = adjusted_closing_price * de_adjustment_factor
-                    self.logger.debug('symbol_list: %s date: %s symbol: %s -> de_adjusted_closing_price: %s', symbol_list, date, symbol, de_adjusted_closing_price)
-                    return de_adjusted_closing_price
-
-            self.logger.debug('symbol_list: %s date: %s -> de_adjusted_closing_price: %s', symbol_list, date, adjusted_closing_price)
-            return adjusted_closing_price
-
-        date = pandas.to_datetime(date_string)
-
-        try:
-            adjusted_closing_price = from_single_date() or from_range_of_dates() or from_renamed_symbol_list()
-        except NoClosingPriceError:
-            return None
-        else:
-            closing_price = get_de_adjusted_price()
-            self.logger.info('symbol_list: %s date: %s -> closing_price: %s', symbol_list, date, closing_price)
-            return closing_price
-
-    def __get_adjusted_closing_prices_for_date_range(self, symbol_list, start_date, end_date):
-        for symbol in symbol_list:
-            try:
-                adjusted_closing_prices = self.symbol_to_stock_data[symbol].loc[start_date:end_date, 'Close']
-            except KeyError:
-                self.logger.debug('no prefetched data. symbol_list: %s start_date: %s end_date: %s symbol: %s', symbol_list, start_date, end_date, symbol)
-                continue
-            else:
-                if not adjusted_closing_prices.empty and not adjusted_closing_prices.isnull().array.all():
-                    self.logger.info('symbol_list: %s start_date: %s end_date: %s -> closing_prices...\n%s', symbol_list, start_date, end_date, adjusted_closing_prices.to_string())
-                    return adjusted_closing_prices
-
-        self.logger.warning('symbol_list: %s start_date: %s end_date: %s -> no closing_price_found!', symbol_list, start_date, end_date)
-        raise NoClosingPriceError(f'no closing price found for symbol_list: {symbol_list} start_date: {start_date} end_date: {end_date}')
-
     def __prepare_for_portfolio_complexity_calculation(self):
 
         def fixup_company_names():
@@ -182,6 +75,10 @@ class Multibeggar:
         def sort_by_date():
             self.transactions_list.sort_values(by='Date', inplace=True)
 
+        def fetch_stock_prices():
+            start_date = self.transactions_list['Date'].iloc[0]
+            self.stock_prices_data_provider.fetch_stock_prices(all_symbols, start_date)
+
         def append_sentinel_row():
             self.transactions_list = self.transactions_list.append({'Date': '0'}, ignore_index=True)
 
@@ -191,44 +88,13 @@ class Multibeggar:
         fixup_company_names()
         append_stock_symbols()
         sort_by_date()
-        self.__fetch_stock_data(all_symbols)
+        fetch_stock_prices()
         append_sentinel_row()
-
-    def __fetch_stock_data(self, symbol_list):
-
-        def get_adapted_end_date(end_date):
-            adapted_end_date = end_date + pandas.Timedelta(days=1)
-            return adapted_end_date
-
-        start_date = self.transactions_list['Date'].iloc[0]
-        end_date = get_adapted_end_date(pandas.to_datetime('today').normalize())
-
-        suffixized_symbol_list = self.__suffixize_symbol_list(symbol_list)
-        stock_data = yfinance.download(suffixized_symbol_list, group_by='Ticker', start=start_date, end=end_date)
-
-        symbol_to_stock_data = {index: group.xs(index, level=0, axis=1) for index, group in stock_data.groupby(level=0, axis=1)}
-        self.symbol_to_stock_data.update(symbol_to_stock_data)
-
-        self.logger.debug('downloaded stock data from date: %s to date: %s for symbols...\n%s', start_date, end_date, suffixized_symbol_list)
-
-    def __suffixize_symbol(self, symbol, exchange):
-        #todo: this should be refactored out of multibeggar.py to prepare decoupling from yfinance library
-        #note: do not premature optimize here, this method will be moved to a new class anyway, so it is fine for now
-        #      to recreate this dictionary for every function call.
-        exchange_to_suffix = {
-            StockExchange.NSE: ".NS",
-            StockExchange.BSE: ".BO",
-        }
-
-        return symbol + exchange_to_suffix[exchange]
-
-    def __suffixize_symbol_list(self, symbol_list):
-        return [self.__suffixize_symbol(symbol, exchange) for symbol, exchange in symbol_list]
 
     def __compute_daywise_portfolio(self):
 
         def compute_and_append_daily_closing_prices_and_values():
-            daily_portfolio['Closing Price'] = daily_portfolio.apply(lambda row: self.get_closing_price(row['Symbol'], row['Date']), axis=1, result_type='reduce')
+            daily_portfolio['Closing Price'] = daily_portfolio.apply(lambda row: self.stock_prices_data_provider.get_closing_price(row['Symbol'], row['Date']), axis=1, result_type='reduce')
             daily_portfolio['Value'] = daily_portfolio['Shares'] * daily_portfolio['Closing Price']
 
         def compute_and_append_daily_proportions():
@@ -278,8 +144,3 @@ class Multibeggar:
                 self.logger.debug('transacted_shares: %s', transacted_shares)
                 daily_portfolio.loc[mask, 'Shares'] += transacted_shares
                 self.logger.debug('company_name: %s updated shares count: %s', company_name, daily_portfolio.loc[mask, 'Shares'].array[0])
-
-
-class NoClosingPriceError(Exception):
-
-    """Raise when closing price is not found in the available stock data."""
