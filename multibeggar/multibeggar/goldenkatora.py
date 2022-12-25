@@ -7,26 +7,40 @@ from flashtext import KeywordProcessor
 
 class GoldenKatora:
     """GoldenKatora provides various helpers to cleanup data for use with multibeggar."""
+    def __init__(self) -> None:
+        data_dir = os.path.join(os.path.dirname(__file__), "data")
+        self.filepath_bsedata = os.path.join(data_dir, "bse_securities.csv")
+        self.filepath_nsedata = os.path.join(data_dir, "nse_securities.csv")
 
-    def cleanup_stocks_data(self, filename_bsedata: str, filename_nsedata: str):
-        """Cleans up companies names in stock data csv file obtained from BSE and NSE.
-        
-        BSE and NSE provide information about various stocks that can be exported to CSV.
+        cache_dir = os.path.join(data_dir, "__cache")
+        os.makedirs(cache_dir, exist_ok=True)
+        self.cache_filepath_bsedata = os.path.join(cache_dir, "bse_securities.csv")
+        self.cache_filepath_nsedata = os.path.join(cache_dir, "nse_securities.csv")
+
+    def get_cleaned_stocks_data_bse(self) -> str:
+        """Returns path to the cleaned BSE stocks data CSV file.
+
+        Args:
+            None
+
+        Returns:
+            Path to the CSV file where cleaned BSE stocks data is stored.
+        """
+        if not os.path.exists(self.cache_filepath_bsedata):
+            self.clean_stocks_data_bse()
+
+        return self.cache_filepath_bsedata
+
+    def clean_stocks_data_bse(self):
+        """Cleans up companies names in stock data CSV file obtained from BSE.
+
         This method cleans up and standardizes the company names for easier processing
         later by multibeggar.
-        
-        Args:
-            filename_bsedata: full file path of the BSE data CSV file.
-            filename_nsedata: full file path of the NSE data CSV file.
-        
-        Returns:
-            CSV files stored in __cache subdirectory, which contains the cleaned up data
-            for further processing by multibeggar. These files are meant for internal use
-            of multibeggar. Client code should not rely upon it as this implementation
-            may change without notice.
+
+        The client code must access the cleaned stocks data through `get_cleaned_stocks_data_bse()` only.
         """
 
-        def cleanup_stock_data_bse(company_name: str) -> str:
+        def cleanup_company_name_bse(company_name: str) -> str:
             """Helper inner method to cleanup the company name in BSE data
             """
             # convert to uppercase for better name matching in multibeggar
@@ -44,7 +58,39 @@ class GoldenKatora:
             company_name = " ".join(keyword_processor.replace_keywords(company_name).split())
             return company_name
 
-        def cleanup_stock_data_nse(company_name: str, stock_symbol: str) -> str:
+        bse_data = pandas.read_csv(self.filepath_bsedata, index_col=False)
+
+        # We only support Equity presently, so filter out the rest
+        bse_data.drop(bse_data[bse_data["Instrument"] != "Equity"].index, inplace=True)
+
+        bse_data["Security Name"] = bse_data["Security Name"].apply(lambda x: cleanup_company_name_bse(x))
+
+        bse_data.to_csv(self.cache_filepath_bsedata, columns=["Security Name", "Security Id"], header=["Company Name", "Stock Symbol"])
+
+    def get_cleaned_stocks_data_nse(self) -> str:
+        """Returns path to the cleaned NSE stocks data CSV file.
+
+        Args:
+            None
+
+        Returns:
+            Path to the CSV file where cleaned NSE stocks data is stored.
+        """
+        if not os.path.exists(self.cache_filepath_nsedata):
+            self.clean_stocks_data_nse()
+
+        return self.cache_filepath_nsedata
+
+    def clean_stocks_data_nse(self):
+        """Cleans up companies names in stock data CSV file obtained from NSE.
+
+        This method cleans up and standardizes the company names for easier processing
+        later by multibeggar.
+
+        The client code must access the cleaned stocks data through `get_cleaned_stocks_data_nse()` only.
+        """
+
+        def cleanup_company_name_nse(company_name: str, stock_symbol: str) -> str:
             """Helper inner method to cleanup the company name in NSE data
             """
             # convert to uppercase for better name matching in multibeggar
@@ -68,23 +114,8 @@ class GoldenKatora:
 
             return company_name
 
-        cache_filename_bsedata = os.path.join(os.path.dirname(filename_bsedata), "__cache", os.path.basename(filename_bsedata))
-        if not os.path.exists(cache_filename_bsedata): # TODO also check if data is newer than cache, so it has to be regenerated
-            bse_data = pandas.read_csv(filename_bsedata, index_col=False)
+        nse_data = pandas.read_csv(self.filepath_nsedata, index_col=False)
 
-            # We only support Equity presently, so filter out the rest
-            bse_data.drop(bse_data[bse_data["Instrument"] != "Equity"].index, inplace=True)
+        nse_data["NAME OF COMPANY"] = nse_data.apply(lambda x: cleanup_company_name_nse(x["NAME OF COMPANY"], x["SYMBOL"]), axis=1)
 
-            bse_data["Security Name"] = bse_data["Security Name"].apply(lambda x: cleanup_stock_data_bse(x))
-
-            os.makedirs(os.path.dirname(cache_filename_bsedata), exist_ok=True)
-            bse_data.to_csv(cache_filename_bsedata, columns=["Security Name", "Security Id"], header=["Company Name", "Stock Symbol"])
-
-        cache_filename_nsedata = os.path.join(os.path.dirname(filename_nsedata), "__cache", os.path.basename(filename_nsedata))
-        if not os.path.exists(cache_filename_nsedata): # TODO also check if data is newer than cache, so it has to be regenerated
-            nse_data = pandas.read_csv(filename_nsedata, index_col=False)
-
-            nse_data["NAME OF COMPANY"] = nse_data.apply(lambda x: cleanup_stock_data_nse(x["NAME OF COMPANY"], x["SYMBOL"]), axis=1)
-
-            os.makedirs(os.path.dirname(cache_filename_nsedata), exist_ok=True)
-            nse_data.to_csv(cache_filename_nsedata, columns=["NAME OF COMPANY", "SYMBOL"], header=["Company Name", "Stock Symbol"])
+        nse_data.to_csv(self.cache_filepath_nsedata, columns=["NAME OF COMPANY", "SYMBOL"], header=["Company Name", "Stock Symbol"])

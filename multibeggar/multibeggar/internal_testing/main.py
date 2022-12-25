@@ -1,12 +1,10 @@
 import os
-from multibeggar import goldenkatora
+import multibeggar.goldenkatora as goldenkatora
+import multibeggar.dalalstreet as dalalstreet
 
+# TODO: replace these with proper unittests later, but ok for now. :)
 golden_katora = goldenkatora.GoldenKatora()
-
-testing_dir = os.getcwd()
-data_dir = testing_dir.replace("internal_testing", "data")
-
-bse_data_file = os.path.join(data_dir, "bse_securities.csv")
-nse_data_file = os.path.join(data_dir, "nse_securities.csv")
-
-golden_katora.cleanup_stocks_data(bse_data_file, nse_data_file)
+bse_file = golden_katora.get_cleaned_stocks_data_bse()
+nse_file = golden_katora.get_cleaned_stocks_data_nse()
+print(bse_file)
+print(nse_file)
