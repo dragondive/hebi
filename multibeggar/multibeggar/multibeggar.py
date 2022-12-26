@@ -2,6 +2,7 @@ import logging
 import pandas
 import os
 from multibeggar import dalalstreet
+from multibeggar import multichooser
 
 class Multibeggar:
     def __init__(self) -> None:
@@ -33,11 +34,13 @@ class Multibeggar:
 
         transactions_list = pandas.read_excel(transactions_filepath, parse_dates=["Date"])
 
-        transactions_list["Stock Symbol"] = transactions_list.apply(lambda row: self.companies_info.get_stock_symbols(row["Company Name"].upper()), axis=1)
+        transactions_list["Stock Symbol"] = transactions_list.apply(lambda row: get_stock_symbols_memoized(row["Company Name"]), axis=1)
 
         transactions_list.sort_values(by="Date", inplace=True)
         # append a sentinel row at the end of the transactions list to simplify loop exit condition later
         transactions_list = pandas.concat([transactions_list, pandas.DataFrame([{"Date": "0"}])], ignore_index=True)
+
+        stock_prices_provider = multichooser.YfinanceStockPricesProvider(all_stock_symbols, "2017-01-01", "2022-12-26")
 
 if __name__ == "__main__":
     multibeggar = Multibeggar()

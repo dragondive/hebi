@@ -3,3 +3,4 @@ flashtext
 openpyxl
 fuzzywuzzy
 python-Levenshtein
+yfinance
