@@ -22,7 +22,8 @@ class Multibeggar:
                 stock_symbols = company_name_to_stock_symbols_memo[company_name]
             except KeyError:
                 # if not found in memo, query companies_info and update memo
-                stock_symbols = self.companies_info.get_stock_symbols(company_name)
+                # Capitalize company names for easier matching
+                stock_symbols = self.companies_info.get_stock_symbols(company_name.upper())
                 company_name_to_stock_symbols_memo[company_name] = stock_symbols
 
                 # also make note of all the known stock symbols to optimize stock data querying later
@@ -31,9 +32,8 @@ class Multibeggar:
             return stock_symbols
 
         transactions_list = pandas.read_excel(transactions_filepath, parse_dates=["Date"])
-        # Capitalize company names for easier matching
-        transactions_list["Company Name Standardized"] = transactions_list["Company Name"].str.upper()
-        transactions_list["Stock Symbol"] = transactions_list.apply(lambda row: get_stock_symbols_memoized(row["Company Name Standardized"]), axis=1)
+
+        transactions_list["Stock Symbol"] = transactions_list.apply(lambda row: self.companies_info.get_stock_symbols(row["Company Name"].upper()), axis=1)
 
         transactions_list.sort_values(by="Date", inplace=True)
         # append a sentinel row at the end of the transactions list to simplify loop exit condition later
