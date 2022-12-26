@@ -1,2 +1,5 @@
 pandas
 flashtext
+openpyxl
+fuzzywuzzy
+python-Levenshtein

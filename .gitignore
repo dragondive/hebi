@@ -1,0 +1,5 @@
+*.pyc
+*.log
+.vscode
+multibeggar/.vscode
+multibeggar/multibeggar/data/__cache/*
