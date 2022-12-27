@@ -64,11 +64,15 @@ class CompaniesInfo:
         def search_best_match():
             """Helper inner function to perform fuzzy search for the company name in stock exchange data."""
             company_name_to_symbol_map = self.stock_exchange_to_info_map[exchange_name]
-            match_ratios = company_name_to_symbol_map.apply(lambda row: fuzz.token_sort_ratio(row["Company Name"], company_name), axis=1)
+
+            # optimization to fuzzy match with only a reduced subset of the companies 
+            # whose names start with the first word of the company name in transactions list
+            company_name_to_symbol_map_reduced = company_name_to_symbol_map[company_name_to_symbol_map["Company Name"].str.startswith(company_name.split()[0])]
+            match_ratios = company_name_to_symbol_map_reduced.apply(lambda row: fuzz.token_sort_ratio(row["Company Name"], company_name), axis=1)
             qualified_rows = match_ratios[lambda match_ratio: match_ratio >= 75]
 
             try:
-                best_matching_row = company_name_to_symbol_map.loc[qualified_rows.idxmax()]
+                best_matching_row = company_name_to_symbol_map_reduced.loc[qualified_rows.idxmax()]
             except ValueError:
                 return None # TODO raise exception instead
             else:
