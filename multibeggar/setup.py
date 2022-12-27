@@ -16,7 +16,7 @@ install_requires=install_requires,
 author_email="dragondive@outlook.in",
 packages=setuptools.find_packages(),
 package_data={
-    "multibeggar": ["data/*.csv"]
+    "multibeggar": ["data/*.csv", "data/memes/*.jpg"]
 },
 zip_safe=False)
 

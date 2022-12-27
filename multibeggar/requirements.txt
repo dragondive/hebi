@@ -4,3 +4,4 @@ openpyxl
 fuzzywuzzy
 python-Levenshtein
 yfinance
+Pillow

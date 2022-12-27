@@ -4,6 +4,7 @@
 import pandas
 import os
 from flashtext import KeywordProcessor
+from PIL import Image
 
 class GoldenKatora:
     """GoldenKatora provides various helpers to cleanup data for use with multibeggar."""
@@ -222,3 +223,7 @@ class GoldenKatora:
             return company_name
 
         transactions_data["Company Name"] = transactions_data["Company Name"].apply(lambda company_name: cleanup_company_name_transactions(company_name))
+
+    def what_is(self):
+        meme = Image.open(os.path.join(os.path.dirname(__file__), "data", "memes", "goldenkatora.jpg"))
+        meme.show()
