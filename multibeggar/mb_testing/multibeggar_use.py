@@ -3,4 +3,7 @@ from multibeggar import multibeggar
 
 def multibeggar_use():
     mb = multibeggar.Multibeggar()
-    mb.compute_portfolio_complexity(os.path.join(os.getcwd(), "inputs", "transactions_3xl.xlsx"))
+    mb.compute_portfolio_complexity(os.path.join(os.getcwd(), "inputs", "transactions_unique_company_names.xlsx"))
+
+if __name__ == "__main__":
+    multibeggar_use()

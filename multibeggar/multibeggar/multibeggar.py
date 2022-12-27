@@ -3,6 +3,7 @@ import pandas
 import os
 from multibeggar import dalalstreet
 from multibeggar import multichooser
+from multibeggar import goldenkatora
 
 class Multibeggar:
     def __init__(self) -> None:
@@ -24,7 +25,7 @@ class Multibeggar:
             except KeyError:
                 # if not found in memo, query companies_info and update memo
                 # Capitalize company names for easier matching
-                stock_symbols = self.companies_info.get_stock_symbols(company_name.upper())
+                stock_symbols = self.companies_info.get_stock_symbols(company_name)
                 company_name_to_stock_symbols_memo[company_name] = stock_symbols
 
                 # also make note of all the known stock symbols to optimize stock data querying later
@@ -33,14 +34,15 @@ class Multibeggar:
             return stock_symbols
 
         transactions_list = pandas.read_excel(transactions_filepath, parse_dates=["Date"])
+        goldenkatora.GoldenKatora().clean_transactions_data(transactions_list)
 
         transactions_list["Stock Symbol"] = transactions_list.apply(lambda row: get_stock_symbols_memoized(row["Company Name"]), axis=1)
 
         transactions_list.sort_values(by="Date", inplace=True)
         # append a sentinel row at the end of the transactions list to simplify loop exit condition later
         transactions_list = pandas.concat([transactions_list, pandas.DataFrame([{"Date": "0"}])], ignore_index=True)
-
-        stock_prices_provider = multichooser.YfinanceStockPricesProvider(all_stock_symbols, "2017-01-01", "2022-12-26")
+        # transactions_list.to_excel("out.xlsx")
+        # stock_prices_provider = multichooser.YfinanceStockPricesProvider(all_stock_symbols, "2017-01-01", "2022-12-26")
 
 if __name__ == "__main__":
     multibeggar = Multibeggar()
