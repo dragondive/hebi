@@ -17,8 +17,9 @@ class Multibeggar:
 
     def compute_portfolio_complexity(self, transactions_filepath: str, make_plot: bool = True):
         transactions_list = pandas.DataFrame()
+        all_stock_symbols = []
+
         def read_and_prepare_transactions_list():
-            all_stock_symbols = []
             company_name_to_stock_symbols_memo = {}
             def get_stock_symbols_memoized(company_name):
                 try:
@@ -35,7 +36,7 @@ class Multibeggar:
 
                 return stock_symbols
 
-            nonlocal transactions_list
+            nonlocal transactions_list, all_stock_symbols
             transactions_list = pandas.read_excel(transactions_filepath, parse_dates=["Date"])
             goldenkatora.GoldenKatora().clean_transactions_data(transactions_list)
 
@@ -52,7 +53,7 @@ class Multibeggar:
         read_and_prepare_transactions_list()
 
         start_date = transactions_list["Date"].iloc[0]
-        # stock_prices_provider = multichooser.YfinanceStockPricesProvider(all_stock_symbols, start_date)
+        stock_prices_provider = multichooser.YfinanceStockPricesProvider(all_stock_symbols, start_date)
 
         def compute_daywise_portfolio():
             ongoing_date = None
@@ -66,6 +67,7 @@ class Multibeggar:
                     daily_portfolio.drop(daily_portfolio[daily_portfolio["Shares"] == 0].index, inplace=True) # Remove fully sold holdings from the daily_portfolio
 
                     # TODO compute the closing prices for all the holdings in the daily portfolio, then the proportions of holdings value.
+                    daily_portfolio["Closing Price"] = daily_portfolio.apply(lambda row: stock_prices_provider.get_closing_price(row["Stock Symbol"], row["Date"]), axis=1, result_type="reduce")
                     daywise_full_portfolio = pandas.concat([daywise_full_portfolio, daily_portfolio], ignore_index=True)
 
                     # Reuse the daily_portfolio for this new date. The transactions on this new date will update the total shares
@@ -85,7 +87,7 @@ class Multibeggar:
                     transacted_shares = row["Shares"]
                     daily_portfolio.loc[matching_mask, "Shares"] += transacted_shares
 
-            # daywise_full_portfolio.to_excel("daywise_full.xlsx")
+            daywise_full_portfolio.to_excel("daywise_full.xlsx")
 
         compute_daywise_portfolio()
 
