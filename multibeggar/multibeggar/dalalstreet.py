@@ -28,6 +28,10 @@ class CompaniesInfo:
             StockExchange.NSE: pandas.read_csv(golden_katora.get_cleaned_stocks_data_nse())
         }
 
+        data_dir = os.path.join(os.path.dirname(__file__), "data")
+        filepath_symbol_change = os.path.join(data_dir, "symbol_change.csv")
+        self.symbol_change_map = pandas.read_csv(filepath_symbol_change)
+
     def get_stock_symbols(self, company_name) -> list[tuple[str, StockExchange]]:
         """Get known stock symbols of the company on the supported stock exchanges.
 
@@ -41,6 +45,15 @@ class CompaniesInfo:
         symbol_list = [(symbol, stock_exchange) 
                         for stock_exchange in self.stock_exchange_to_info_map.keys()
                         if (symbol := self.get_stock_symbol(company_name, stock_exchange)) is not None]
+
+        # Search in the symbol change data for the New Symbol. If it is found, then append the old symbols as well to the list of symbols 
+        # for this company name. Some stock data providers may refer to the old symbol to provide the data.
+        #
+        # NOTE: I'm not sure if the below list comprehension is the best or the worst of the walrus operator! Is this even pythonic? ;-)
+        renamed_symbol_list = [(search_renamed_symbol["Old Symbol"].array[0], stock_exchange) 
+                                for (symbol, stock_exchange) in symbol_list 
+                                if not (search_renamed_symbol := self.symbol_change_map[self.symbol_change_map["New Symbol"] == symbol]).empty]
+        symbol_list.extend(renamed_symbol_list)
         return symbol_list
 
     def get_stock_symbol(self, company_name: str, exchange_name: StockExchange) -> str:
