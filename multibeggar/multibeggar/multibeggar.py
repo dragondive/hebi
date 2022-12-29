@@ -56,6 +56,24 @@ class Multibeggar:
         stock_prices_provider = multichooser.YfinanceStockPricesProvider(all_stock_symbols, start_date)
 
         def compute_daywise_portfolio():
+            def get_closing_price(row):
+                try:
+                    return stock_prices_provider.get_closing_price(row["Stock Symbol"], row["Date"])
+                except multichooser.NoClosingPriceError:
+                    # If closing price is not available, we do not update it, that is, we use the previous known closing price.
+                    return row["Closing Price"]
+
+            def compute_proportions():
+                value_sum = daily_portfolio["Value"].sum()
+                try:
+                    daily_portfolio["Proportion"] = daily_portfolio["Value"] / value_sum
+                except ZeroDivisionError:
+                    # this daily_portfolio has no valid value for any holding, so clear it completely.
+                    # NOTE: removing all rows using, for example, "daily_portfolio = daily_portfolio[0:0]" leads to a strange
+                    # runtime exception at the start of this method that daily_portfolio is not associated with a value.
+                    # Hence, use the below alternative instead.
+                    daily_portfolio.dropna(subset=["Value"], inplace=True)
+
             ongoing_date = None
             daily_portfolio = transactions_list.iloc[0:0, :].copy() # create empty DataFrame with same columns at transactions_list
             daywise_full_portfolio = pandas.DataFrame() # all the daywise portfolios will be appended to this DataFrame in order
@@ -63,17 +81,22 @@ class Multibeggar:
             for __unused, row in transactions_list.iterrows(): # itertuples() doesn't work here due to spaces in column names
                 date = row["Date"]
 
-                if date != ongoing_date: # this is a new date, so finalize the current daily_portfolio, then append to daywise_full_portfolio
+                if date != ongoing_date: # the date has changed in the transactions list, so daily_portfolio of the current date is complete.
                     daily_portfolio.drop(daily_portfolio[daily_portfolio["Shares"] == 0].index, inplace=True) # Remove fully sold holdings from the daily_portfolio
 
-                    # TODO compute the closing prices for all the holdings in the daily portfolio, then the proportions of holdings value.
-                    daily_portfolio["Closing Price"] = daily_portfolio.apply(lambda row: stock_prices_provider.get_closing_price(row["Stock Symbol"], row["Date"]), axis=1, result_type="reduce")
+                    # Fetch the closing price and compute the values for all the holdings in the daily_portfolio
+                    daily_portfolio["Closing Price"] = daily_portfolio.apply(lambda row: get_closing_price(row), axis=1, result_type="reduce")
+                    daily_portfolio["Value"] = daily_portfolio["Shares"] * daily_portfolio["Closing Price"]
+
+                    compute_proportions() # proportions of the holdings in daily_portfolio will be used later to compute the complexity
+
+                    # All computations for the daily_portfolio are completed, so append it now to the daywise_full_portfolio.
                     daywise_full_portfolio = pandas.concat([daywise_full_portfolio, daily_portfolio], ignore_index=True)
 
                     # Reuse the daily_portfolio for this new date. The transactions on this new date will update the total shares
                     # as on the earlier date. Hence, it easier to find the total shares/units for each company in the daily_portfolio
                     # of the earlier date, as against looking it up again in the daily_full_portfolio.
-                    daily_portfolio.replace({ongoing_date: date}, inplace=True)
+                    daily_portfolio.replace({ongoing_date: date}, inplace=True) # TODO: can we remove this by refactoring the row appending below?
 
                     ongoing_date = date # The earlier date is not required any more, so make this new date as the ongoing date now.
 
