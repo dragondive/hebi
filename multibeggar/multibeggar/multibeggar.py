@@ -1,6 +1,7 @@
 import logging
 import pandas
 import os
+from math import exp
 from multibeggar import dalalstreet
 from multibeggar import multichooser
 from multibeggar import goldenkatora
@@ -48,7 +49,6 @@ class Multibeggar:
 
             # append a sentinel row at the end of the transactions list to simplify loop exit condition later
             transactions_list = pandas.concat([transactions_list, pandas.DataFrame([{"Date": "0"}])], ignore_index=True)
-            # transactions_list.to_excel("out.xlsx")
 
         read_and_prepare_transactions_list()
 
@@ -56,6 +56,11 @@ class Multibeggar:
         stock_prices_provider = multichooser.YfinanceStockPricesProvider(all_stock_symbols, start_date)
 
         def compute_daywise_portfolio():
+            daily_portfolio = transactions_list.iloc[0:0, :].copy() # create empty DataFrame with same columns at transactions_list
+            daywise_full_portfolio = pandas.DataFrame() # all the daywise portfolios will be appended to this DataFrame in order
+            date_to_complexity_map = dict()
+            exponent_tuning_factor = 0.01
+
             def get_closing_price(row):
                 try:
                     return stock_prices_provider.get_closing_price(row["Stock Symbol"], row["Date"])
@@ -67,6 +72,8 @@ class Multibeggar:
                 value_sum = daily_portfolio["Value"].sum()
                 try:
                     daily_portfolio["Proportion"] = daily_portfolio["Value"] / value_sum
+                    sorted_proportions = sorted(daily_portfolio["Proportion"].dropna())
+                    date_to_complexity_map[ongoing_date] = sum([value * exp(exponent_tuning_factor * index) for index, value in enumerate(sorted_proportions)])
                 except ZeroDivisionError:
                     # this daily_portfolio has no valid value for any holding, so clear it completely.
                     # NOTE: removing all rows using, for example, "daily_portfolio = daily_portfolio[0:0]" leads to a strange
@@ -75,8 +82,6 @@ class Multibeggar:
                     daily_portfolio.dropna(subset=["Value"], inplace=True)
 
             ongoing_date = None
-            daily_portfolio = transactions_list.iloc[0:0, :].copy() # create empty DataFrame with same columns at transactions_list
-            daywise_full_portfolio = pandas.DataFrame() # all the daywise portfolios will be appended to this DataFrame in order
 
             for __unused, row in transactions_list.iterrows(): # itertuples() doesn't work here due to spaces in column names
                 date = row["Date"]
@@ -96,7 +101,7 @@ class Multibeggar:
                     # Reuse the daily_portfolio for this new date. The transactions on this new date will update the total shares
                     # as on the earlier date. Hence, it easier to find the total shares/units for each company in the daily_portfolio
                     # of the earlier date, as against looking it up again in the daily_full_portfolio.
-                    daily_portfolio.replace({ongoing_date: date}, inplace=True) # TODO: can we remove this by refactoring the row appending below?
+                    daily_portfolio.replace({ongoing_date: date}, inplace=True)
 
                     ongoing_date = date # The earlier date is not required any more, so make this new date as the ongoing date now.
 
@@ -110,6 +115,7 @@ class Multibeggar:
                     transacted_shares = row["Shares"]
                     daily_portfolio.loc[matching_mask, "Shares"] += transacted_shares
 
+            # print(date_to_complexity_map)
             daywise_full_portfolio.to_excel("daywise_full.xlsx")
 
         compute_daywise_portfolio()
