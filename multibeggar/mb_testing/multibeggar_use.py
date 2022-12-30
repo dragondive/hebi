@@ -4,7 +4,7 @@ from multibeggar import goldenkatora
 
 def multibeggar_use():
     mb = multibeggar.Multibeggar()
-    mb.compute_portfolio_complexity(os.path.join(os.path.dirname(__file__), "inputs", "transactions_xs.xlsx"))
+    mb.compute_portfolio_complexity(os.path.join(os.path.dirname(__file__), "inputs", "transactions_3xl.xlsx"))
 
 if __name__ == "__main__":
     multibeggar_use()

@@ -1,5 +1,6 @@
 import os
 import logging
+import re
 from enum import Enum
 import pandas
 from fuzzywuzzy import fuzz
@@ -31,6 +32,11 @@ class CompaniesInfo:
         data_dir = os.path.join(os.path.dirname(__file__), "data")
         filepath_symbol_change = os.path.join(data_dir, "symbol_change.csv")
         self.symbol_change_map = pandas.read_csv(filepath_symbol_change)
+        
+        filepath_bonus_issues = os.path.join(data_dir, "bonus_issues.csv")
+        filepath_stock_splits = os.path.join(data_dir, "stock_splits.csv")
+        self.price_adjustment_map = pandas.DataFrame()
+        self.__compute_price_adjustment_map(filepath_bonus_issues, filepath_stock_splits)
 
     def get_stock_symbols(self, company_name) -> list[tuple[str, StockExchange]]:
         """Get known stock symbols of the company on the supported stock exchanges.
@@ -98,3 +104,60 @@ class CompaniesInfo:
             return symbol_list[0]
         else:
             return search_best_match()
+
+    def get_price_adjustment_data(self, stock_symbol: str, date: pandas.Timestamp) -> pandas.DataFrame:
+        return self.price_adjustment_map[(self.price_adjustment_map["Security Name"] == stock_symbol) & (self.price_adjustment_map["Ex Date"] > date)]
+
+    def __compute_price_adjustment_map(self, filepath_bonus_issues: str, filepath_stock_splits: str) -> None:
+        """Computes the price adjustment multipliers due to bonus issues and stock splits.
+
+        The bonus issues and stock splits data is available from the BSE stock exchange in a csv file.
+        This method uses regex parsing to extract the required information from these data files.
+        Then it computes the multiplier factor to "reverse" the stock price adjustment, which would help
+        in computing the actual values of that stock holding on dates before the bonus issue or stock split happened.
+
+        When stock data providers are queried for the stock price, they usually provide the "adjusted" stock price to
+        account for the bonus issues or stock splits that happened on future dates. Hence, to determine the actual
+        price of the stock on the given date, we need to "reverse" this adjustment.
+
+        This can be better explained with an example as below:
+
+        Suppose an investor purchased 10 shares of ABCD company on 2017-01-01 at price of ₹ 1500 each.
+        Hence, total investment was ₹ 15000 (₹1500 x 10).
+
+        On 2018-01-01, ABCD company issued bonus shares in the ratio 1:2. This means, for every 1 share that the investor
+        owns, he/she will receive 2 additional shares for free. The share price is adjusted accordingly. (For simplicity
+        of explanation, throughout this example, ignore the fluctuations in the share price, and assume them to remain constant
+        at the purchase price.) Hence, after the bonus issue, there are now 3x number of shares of company ABCD. 
+        The share price gets adjusted to ₹ 500 (₹ 1500 / 3).
+
+        If we now query a stock data provider for the price of the ABCD company stock as on 2017-06-01, it will return the price
+        as ₹ 500, adjusting for the bonus issue event that happened later. However, on the actual day 2017-06-01, the stock
+        price was indeed ₹ 1500. Hence, the multiplier to reverse the price adjustment in case of bonus issue 1:2 would be
+        (1 + 2)/1, that is, 3. Or more generally, for a bonus issue of M:N, the multiplier is (M + N)/N.
+
+        Later, on 2019-01-01, ABCD company decided to split the stock, so that the face value changed from ₹ 10 to ₹ 2, that is,
+        each stock is now split into 5 stocks. Thus, every investor now owns 5x number of stocks. The stock price now changes 
+        from ₹ 500 to ₹ 100. Once again, we need the multiplier to "reverse" the adjusted price, which would be 5 (₹ 10/₹ 2).
+        Or more generally, for a stock split that changes the face value from ₹ N to ₹ M, the multiplier is N/M.
+        """
+        def extract_bonus_data(bonus_info_row: pandas.Series) -> float:
+            match = re.search("Bonus issue (?P<first>\d+):(?P<second>\d+)", bonus_info_row["Purpose"])
+            return (int(match["first"]) + int(match["second"]))/int(match["second"])
+
+        bonus_issues_data = pandas.read_csv(filepath_bonus_issues, usecols=["Security Name", "Ex Date", "Purpose"], parse_dates=["Ex Date"])
+        bonus_issues_data = bonus_issues_data[bonus_issues_data["Purpose"].str.contains("Bonus issue")]
+        bonus_issues_data["Multiplier"] = bonus_issues_data.apply(lambda x: extract_bonus_data(x), axis=1)
+        bonus_issues_data["Action Type"] = "Bonus"
+
+        def extract_splits_data(split_info_row: pandas.Series) -> float:
+            match = re.search("Stock  Split From Rs.(?P<first>\d+)/- to Rs.(?P<second>\d+)/-", split_info_row["Purpose"])
+            return int(match["first"])/int(match["second"])
+
+        stock_splits_data = pandas.read_csv(filepath_stock_splits, usecols=["Security Name", "Ex Date", "Purpose"], parse_dates=["Ex Date"])
+        stock_splits_data = stock_splits_data[stock_splits_data["Purpose"].str.contains("Stock  Split")]
+        stock_splits_data["Multiplier"] = stock_splits_data.apply(lambda x: extract_splits_data(x), axis=1)
+        stock_splits_data["Action Type"] = "Split"
+
+        self.price_adjustment_map = pandas.concat([bonus_issues_data[["Security Name", "Ex Date", "Multiplier", "Action Type"]], stock_splits_data[["Security Name", "Ex Date", "Multiplier", "Action Type"]]])
+        self.price_adjustment_map.sort_values(by=["Security Name", "Ex Date"], inplace=True)

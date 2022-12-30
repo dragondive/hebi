@@ -33,6 +33,7 @@ class Multibeggar:
         self.__stock_prices_provider = multichooser.YfinanceStockPricesProvider(self.__all_stock_symbols, start_date)
 
         self.__compute_daywise_portfolio()
+        self.__daywise_full_portfolio.to_excel("daywise_full.xlsx")
 
     def __read_and_prepare_transactions_list(self, transactions_filepath: str) -> None:
         self.__transactions_list = pandas.read_excel(transactions_filepath, parse_dates=["Date"])
