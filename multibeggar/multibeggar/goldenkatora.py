@@ -1,13 +1,15 @@
 """Helper module for preprocessing and cleanup of data.
 """
 
-import pandas
 import os
+import pandas
 from flashtext import KeywordProcessor
 from PIL import Image
 
+
 class GoldenKatora:
     """GoldenKatora provides various helpers to cleanup data for use with multibeggar."""
+
     def __init__(self) -> None:
         data_dir = os.path.join(os.path.dirname(__file__), "data")
         self.filepath_bsedata = os.path.join(data_dir, "bse_securities.csv")
@@ -38,12 +40,12 @@ class GoldenKatora:
         This method cleans up and standardizes the company names for easier processing
         later by multibeggar.
 
-        The client code must access the cleaned stocks data through `get_cleaned_stocks_data_bse()` only.
+        The client code must access the cleaned stocks data through
+        `get_cleaned_stocks_data_bse()` only.
         """
 
         def cleanup_company_name_bse(company_name: str) -> str:
-            """Helper inner method to cleanup the company name in BSE data
-            """
+            """Helper inner method to cleanup the company name in BSE data"""
             # convert to uppercase for better name matching in multibeggar
             company_name = company_name.upper()
 
@@ -60,25 +62,24 @@ class GoldenKatora:
             # NOTE: This replacement only happens when & is separated by space on both sides,
             # hence, names like S&P will not be affected.
             keyword_processor = KeywordProcessor()
-            remove_keywords_dict = { 
+            remove_keywords_dict = {
                 " ": ["LTD", "LTD.", "LTD-$", "LTD.-$", "LIMITED", "LIMITED-$", "THE"],
-                "AND": ["&"]
+                "AND": ["&"],
             }
             keyword_processor.add_keywords_from_dict(remove_keywords_dict)
             company_name = keyword_processor.replace_keywords(company_name)
 
             # Call the flashtext replace_keyword again to replace "CO." and "CORP.".
-            # The replacement doesn't properly happen when combined into the above call because some company names
-            # have "CO.LTD.", "CORP.LTD.", etc. (without spaces after CO. or CORP.), so these are not considered
-            # as keywords for replacement. Strangely this doesn't affect the "LTD." though.
-            remove_keywords_dict = { 
-                "COMPANY": ["CO."],
-                "CORPORATION": ["CORP."]
-            }
+            # The replacement doesn't properly happen when combined into the above call because some
+            # company names have "CO.LTD.", "CORP.LTD.", etc. (without spaces after CO. or CORP.),
+            # so these are not considered as keywords for replacement. Strangely this doesn't
+            # affect the "LTD." though.
+            remove_keywords_dict = {"COMPANY": ["CO."], "CORPORATION": ["CORP."]}
             keyword_processor.add_keywords_from_dict(remove_keywords_dict)
             company_name = keyword_processor.replace_keywords(company_name)
 
-            # NOTE: The below pythonic one-liner " ".join(x.split()) replaces multiple spaces in x with a single space.
+            # NOTE: The below pythonic one-liner " ".join(x.split()) replaces multiple spaces in x
+            # with a single space.
             company_name = " ".join(company_name.split())
 
             # strip any leading and trailing spaces that the previous steps may have introduced
@@ -91,9 +92,13 @@ class GoldenKatora:
         # We only support Equity presently, so filter out the rest
         bse_data.drop(bse_data[bse_data["Instrument"] != "Equity"].index, inplace=True)
 
-        bse_data["Security Name"] = bse_data["Security Name"].apply(lambda x: cleanup_company_name_bse(x))
+        bse_data["Security Name"] = bse_data["Security Name"].apply(cleanup_company_name_bse)
 
-        bse_data.to_csv(self.cache_filepath_bsedata, columns=["Security Name", "Security Id"], header=["Company Name", "Stock Symbol"])
+        bse_data.to_csv(
+            self.cache_filepath_bsedata,
+            columns=["Security Name", "Security Id"],
+            header=["Company Name", "Stock Symbol"],
+        )
 
     def get_cleaned_stocks_data_nse(self) -> str:
         """Returns path to the cleaned NSE stocks data CSV file.
@@ -115,12 +120,11 @@ class GoldenKatora:
         This method cleans up and standardizes the company names for easier processing
         later by multibeggar.
 
-        The client code must access the cleaned stocks data through `get_cleaned_stocks_data_nse()` only.
+        Client code must access the cleaned stocks data through `get_cleaned_stocks_data_nse()`.
         """
 
         def cleanup_company_name_nse(company_name: str, stock_symbol: str) -> str:
-            """Helper inner method to cleanup the company name in NSE data
-            """
+            """Helper inner method to cleanup the company name in NSE data"""
             # convert to uppercase for better name matching in multibeggar
             company_name = company_name.upper()
 
@@ -136,28 +140,24 @@ class GoldenKatora:
             # NOTE: This replacement only happens when & is separated by space on both sides,
             # hence, names like S&P will not be affected.
             keyword_processor = KeywordProcessor()
-            remove_keywords_dict = { 
-                " ": ["LIMITED", "LTD", "LTD.", "THE"],
-                "AND": ["&"] 
-            }
+            remove_keywords_dict = {" ": ["LIMITED", "LTD", "LTD.", "THE"], "AND": ["&"]}
             keyword_processor.add_keywords_from_dict(remove_keywords_dict)
 
-            # Call the flashtext replace_keyword again to replace "CO."
-            # The replacement doesn't properly happen when combined into the above call because some company names
-            # have "CO.LTD.", etc. (without spaces after CO.), so these are not considered
-            # as keywords for replacement. Strangely this doesn't affect the "LTD." though.
-            remove_keywords_dict = { 
-                "COMPANY": ["CO."]
-            }
+            # Call the flashtext replace_keyword again to replace "CO.". The replacement doesn't
+            # properly happen when combined into the above call because some company names have
+            # "CO.LTD.", etc. (without spaces after CO.), so these are not considered as keywords
+            # for replacement. Strangely this doesn't affect the "LTD." though.
+            remove_keywords_dict = {"COMPANY": ["CO."]}
             keyword_processor.add_keywords_from_dict(remove_keywords_dict)
             company_name = keyword_processor.replace_keywords(company_name)
 
-            # NSE list the same company name for DVR stocks and normal stocks, so we modify the company name
-            # for the DVR stocks to enable better name matching in multibeggar.
+            # NSE list the same company name for DVR stocks and normal stocks, so we modify the
+            # company name for the DVR stocks to enable better name matching in multibeggar.
             if "DVR" in stock_symbol:
                 company_name += " DVR"
 
-            # NOTE: The below pythonic one-liner " ".join(x.split()) replaces multiple spaces in x with a single space.
+            # NOTE: Below pythonic one-liner " ".join(x.split()) replaces multiple spaces in x
+            # with a single space.
             company_name = " ".join(keyword_processor.replace_keywords(company_name).split())
 
             # strip any leading and trailing spaces that the previous steps may have introduced
@@ -167,26 +167,31 @@ class GoldenKatora:
 
         nse_data = pandas.read_csv(self.filepath_nsedata, index_col=False)
 
-        nse_data["NAME OF COMPANY"] = nse_data.apply(lambda x: cleanup_company_name_nse(x["NAME OF COMPANY"], x["SYMBOL"]), axis=1)
+        nse_data["NAME OF COMPANY"] = nse_data.apply(
+            lambda x: cleanup_company_name_nse(x["NAME OF COMPANY"], x["SYMBOL"]), axis=1
+        )
 
-        nse_data.to_csv(self.cache_filepath_nsedata, columns=["NAME OF COMPANY", "SYMBOL"], header=["Company Name", "Stock Symbol"])
+        nse_data.to_csv(
+            self.cache_filepath_nsedata,
+            columns=["NAME OF COMPANY", "SYMBOL"],
+            header=["Company Name", "Stock Symbol"],
+        )
 
     def clean_transactions_data(self, transactions_data: pandas.DataFrame) -> None:
         """Cleans up companies names in the transactions data.
-        
+
         Note:
             Presently only supports transactions data exported from Value Research.
-        
+
         Args:
             transactions_data: DataFrame that contains the transactions data.
-        
+
         Returns:
             None. (transactions_data is updated inline.)
         """
 
         def cleanup_company_name_transactions(company_name: str) -> str:
-            """Helper inner method to cleanup the company name in transactions data.
-            """
+            """Helper inner method to cleanup the company name in transactions data."""
             # convert to uppercase for better name matching in multibeggar
             company_name = company_name.upper()
 
@@ -199,22 +204,24 @@ class GoldenKatora:
             # Hence, map the unwanted keywords to a single space, which we will trim in next step.
             #
             # replace "ICICI PRU" with "ICICI PRUDENTIAL" and "ETF-G", "ETF-IDCW" with "ETF".
-            # replace "MOTILAL OSWAL NASDAQ 100 ETF FUND" with "MOTILAL OSWAL MOST SHARES NASDAQ-100 ETF" :headbang:
+            # replace "MOTILAL OSWAL NASDAQ 100 ETF FUND" with
+            # "MOTILAL OSWAL MOST SHARES NASDAQ-100 ETF" :headbang:
             #
             # replace & with AND for better name matching in multibeggar.
             # NOTE: This replacement only happens when & is separated by space on both sides,
             # hence, names like S&P will not be affected.
             keyword_processor = KeywordProcessor()
-            remove_keywords_dict = { 
+            remove_keywords_dict = {
                 " ": ["LTD.", "LIMITED", "THE"],
                 "ICICI PRUDENTIAL": ["ICICI PRU"],
                 "ETF": ["ETF-G", "ETF-IDCW"],
                 "MOTILAL OSWAL MOST SHARES NASDAQ-100 ETF": ["MOTILAL OSWAL NASDAQ 100 ETF FUND"],
-                "AND": ["&"]
+                "AND": ["&"],
             }
             keyword_processor.add_keywords_from_dict(remove_keywords_dict)
 
-            # NOTE: The below pythonic one-liner " ".join(x.split()) replaces multiple spaces in x with a single space.
+            # NOTE: The below pythonic one-liner " ".join(x.split()) replaces multiple spaces
+            # in x with a single space.
             company_name = " ".join(keyword_processor.replace_keywords(company_name).split())
 
             # strip any leading and trailing spaces that the previous steps may have introduced
@@ -222,8 +229,12 @@ class GoldenKatora:
 
             return company_name
 
-        transactions_data["Company Name"] = transactions_data["Company Name"].apply(lambda company_name: cleanup_company_name_transactions(company_name))
+        transactions_data["Company Name"] = transactions_data["Company Name"].apply(
+            cleanup_company_name_transactions
+        )
 
     def what_is(self):
-        meme = Image.open(os.path.join(os.path.dirname(__file__), "data", "memes", "goldenkatora.jpg"))
+        meme = Image.open(
+            os.path.join(os.path.dirname(__file__), "data", "memes", "goldenkatora.jpg")
+        )
         meme.show()
