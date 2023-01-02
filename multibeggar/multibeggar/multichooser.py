@@ -6,12 +6,14 @@ import pandas
 import numpy
 import yfinance
 from multibeggar.dalalstreet import StockExchange, CompaniesInfo
+from multibeggar.bahikhata import log
 
 
 class StockPricesProvider(ABC):
     """Abstract base class for the StockPricesProvider"""
 
     def __init__(self, symbol_list, start_date, end_date) -> None:
+        log.debug("Hello from multichooser")
         super().__init__()
         self.companies_info = CompaniesInfo()
         self.fetch_stock_prices(symbol_list, start_date, end_date)
