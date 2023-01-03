@@ -4,41 +4,29 @@ import os
 import pandas
 from flashtext import KeywordProcessor
 from PIL import Image
-from multibeggar import bahikhata
 
 
 class GoldenKatora:
     """GoldenKatora provides various helpers to cleanup data for use with multibeggar."""
 
     def __init__(self) -> None:
-        self.__bahikhata = bahikhata.BahiKhata()
+        pass
 
-    def get_cleaned_stocks_data_bse(self) -> str:
-        """Returns path to the cleaned BSE stocks data CSV file.
-
-        Args:
-            None
-
-        Returns:
-            Path to the CSV file where cleaned BSE stocks data is stored.
-        """
-        if not os.path.exists(self.__bahikhata.filepath_cache_bsedata):
-            self.clean_stocks_data_bse()
-
-        return self.__bahikhata.filepath_cache_bsedata
-
-    def clean_stocks_data_bse(self):
+    def get_cleaned_stocks_data_bse(self, bse_data: pandas.DataFrame) -> pandas.DataFrame:
         """Cleans up companies names in stock data CSV file obtained from BSE.
 
         This method cleans up and standardizes the company names for easier processing
         later by multibeggar.
 
-        The client code must access the cleaned stocks data through
-        `get_cleaned_stocks_data_bse()` only.
+        Args:
+            bse_data: Stocks data obtained from BSE.
+
+        Returns:
+            DataFrame with the cleaned up data.
         """
 
         def cleanup_company_name_bse(company_name: str) -> str:
-            """Helper inner method to cleanup the company name in BSE data"""
+            """Helper inner method to cleanup the company name in BSE data."""
             # convert to uppercase for better name matching in multibeggar
             company_name = company_name.upper()
 
@@ -80,42 +68,26 @@ class GoldenKatora:
 
             return company_name
 
-        bse_data = pandas.read_csv(self.__bahikhata.filepath_bsedata, index_col=False)
-
         # We only support Equity presently, so filter out the rest
         bse_data.drop(bse_data[bse_data["Instrument"] != "Equity"].index, inplace=True)
 
         bse_data["Security Name"] = bse_data["Security Name"].apply(cleanup_company_name_bse)
-
-        bse_data.to_csv(
-            self.__bahikhata.filepath_cache_bsedata,
-            columns=["Security Name", "Security Id"],
-            header=["Company Name", "Stock Symbol"],
+        return bse_data[["Security Name", "Security Id"]].rename(
+            columns={"Security Name": "Company Name", "Security Id": "Stock Symbol"}
         )
 
-    def get_cleaned_stocks_data_nse(self) -> str:
-        """Returns path to the cleaned NSE stocks data CSV file.
-
-        Args:
-            None
-
-        Returns:
-            Path to the CSV file where cleaned NSE stocks data is stored.
-        """
-        if not os.path.exists(self.__bahikhata.filepath_cache_nsedata):
-            self.clean_stocks_data_nse()
-
-        return self.__bahikhata.filepath_cache_nsedata
-
-    def clean_stocks_data_nse(self):
+    def get_cleaned_stocks_data_nse(self, nse_data: pandas.DataFrame) -> pandas.DataFrame:
         """Cleans up companies names in stock data CSV file obtained from NSE.
 
         This method cleans up and standardizes the company names for easier processing
         later by multibeggar.
 
-        Client code must access the cleaned stocks data through `get_cleaned_stocks_data_nse()`.
-        """
+        Args:
+            bse_data: Stocks data obtained from NSE.
 
+        Returns:
+            DataFrame with the cleaned up data.
+        """
         def cleanup_company_name_nse(company_name: str, stock_symbol: str) -> str:
             """Helper inner method to cleanup the company name in NSE data"""
             # convert to uppercase for better name matching in multibeggar
@@ -158,16 +130,12 @@ class GoldenKatora:
 
             return company_name
 
-        nse_data = pandas.read_csv(self.__bahikhata.filepath_nsedata, index_col=False)
-
         nse_data["NAME OF COMPANY"] = nse_data.apply(
             lambda x: cleanup_company_name_nse(x["NAME OF COMPANY"], x["SYMBOL"]), axis=1
         )
 
-        nse_data.to_csv(
-            self.__bahikhata.filepath_cache_nsedata,
-            columns=["NAME OF COMPANY", "SYMBOL"],
-            header=["Company Name", "Stock Symbol"],
+        return nse_data[["NAME OF COMPANY", "SYMBOL"]].rename(
+            columns={"NAME OF COMPANY": "Company Name", "SYMBOL": "Stock Symbol"}
         )
 
     def clean_transactions_data(self, transactions_data: pandas.DataFrame) -> None:
@@ -227,5 +195,5 @@ class GoldenKatora:
         )
 
     def what_is(self):
-        meme = Image.open(self.__bahikhata.filepath_golden_katora_meme)
+        meme = Image.open(os.path.join(os.path.dirname(__file__), "data", "memes", "goldenkatora.jpg"))
         meme.show()

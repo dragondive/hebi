@@ -2,7 +2,6 @@ import re
 from enum import Enum
 import pandas
 from fuzzywuzzy import fuzz
-from multibeggar import goldenkatora
 from multibeggar import bahikhata
 
 
@@ -18,11 +17,11 @@ class StockExchange(Enum):
 
 class CompaniesInfo:
     def __init__(self) -> None:
-        golden_katora = goldenkatora.GoldenKatora()
+        # golden_katora = goldenkatora.GoldenKatora()
         bahi_khata = bahikhata.BahiKhata()
         self.stock_exchange_to_info_map = {
-            StockExchange.BSE: pandas.read_csv(golden_katora.get_cleaned_stocks_data_bse()),
-            StockExchange.NSE: pandas.read_csv(golden_katora.get_cleaned_stocks_data_nse()),
+            StockExchange.BSE: pandas.read_csv(bahi_khata.filepath_cache_bsedata),
+            StockExchange.NSE: pandas.read_csv(bahi_khata.filepath_cache_nsedata),
         }
 
         self.symbol_change_map = pandas.read_csv(bahi_khata.filepath_symbol_change)

@@ -1,5 +1,7 @@
-import logging
 import os
+import logging
+import pandas
+from multibeggar import goldenkatora
 
 
 class BahiKhata:
@@ -28,8 +30,21 @@ class BahiKhata:
         self.filepath_cache_bsedata = os.path.join(self.cache_dir, "bse_securities.csv")
         self.filepath_cache_nsedata = os.path.join(self.cache_dir, "nse_securities.csv")
 
-        self.filepath_golden_katora_meme = os.path.join(self.data_dir, "memes", "goldenkatora.jpg")
+        self.init_cache_stock_data()
+
         self.filepath_full_portfolio = os.path.join(self.output_dir, "full_portfolio.xlsx")
 
+    def init_cache_stock_data(self):
+        golden_katora = goldenkatora.GoldenKatora()
+
+        if not os.path.exists(self.filepath_cache_bsedata):
+            bse_data = pandas.read_csv(self.filepath_bsedata, index_col=False)
+            cleaned_bse_data = golden_katora.get_cleaned_stocks_data_bse(bse_data)
+            cleaned_bse_data.to_csv(self.filepath_cache_bsedata)
+
+        if not os.path.exists(self.filepath_cache_nsedata):
+            nse_data = pandas.read_csv(self.filepath_nsedata, index_col=False)
+            cleaned_nse_data = golden_katora.get_cleaned_stocks_data_nse(nse_data)
+            cleaned_nse_data.to_csv(self.filepath_cache_nsedata)
 
 log = BahiKhata().logger
