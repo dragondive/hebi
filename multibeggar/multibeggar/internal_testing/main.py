@@ -1,6 +1,4 @@
-import os
-import multibeggar.goldenkatora as goldenkatora
-import multibeggar.dalalstreet as dalalstreet
+from multibeggar import goldenkatora
 
 # TODO: replace these with proper unittests later, but ok for now. :)
 golden_katora = goldenkatora.GoldenKatora()

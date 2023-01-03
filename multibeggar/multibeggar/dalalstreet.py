@@ -1,9 +1,9 @@
-import os
 import re
 from enum import Enum
 import pandas
 from fuzzywuzzy import fuzz
 from multibeggar import goldenkatora
+from multibeggar import bahikhata
 
 
 class StockExchange(Enum):
@@ -19,19 +19,16 @@ class StockExchange(Enum):
 class CompaniesInfo:
     def __init__(self) -> None:
         golden_katora = goldenkatora.GoldenKatora()
+        bahi_khata = bahikhata.BahiKhata()
         self.stock_exchange_to_info_map = {
             StockExchange.BSE: pandas.read_csv(golden_katora.get_cleaned_stocks_data_bse()),
             StockExchange.NSE: pandas.read_csv(golden_katora.get_cleaned_stocks_data_nse()),
         }
 
-        data_dir = os.path.join(os.path.dirname(__file__), "data")
-        filepath_symbol_change = os.path.join(data_dir, "symbol_change.csv")
-        self.symbol_change_map = pandas.read_csv(filepath_symbol_change)
-
-        filepath_bonus_issues = os.path.join(data_dir, "bonus_issues.csv")
-        filepath_stock_splits = os.path.join(data_dir, "stock_splits.csv")
-        self.price_adjustment_map = pandas.DataFrame()
-        self.__compute_price_adjustment_map(filepath_bonus_issues, filepath_stock_splits)
+        self.symbol_change_map = pandas.read_csv(bahi_khata.filepath_symbol_change)
+        self.__compute_price_adjustment_map(
+            bahi_khata.filepath_bonus_issues, bahi_khata.filepath_stock_splits
+        )
 
     def get_stock_symbols(self, company_name) -> list[tuple[str, StockExchange]]:
         """Get known stock symbols of the company on the supported stock exchanges.

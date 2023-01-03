@@ -1,6 +1,5 @@
 """Helper module for preprocessing and cleanup of data.
 """
-
 import os
 import pandas
 from flashtext import KeywordProcessor
@@ -228,5 +227,5 @@ class GoldenKatora:
         )
 
     def what_is(self):
-        meme = Image.open(os.path.join(self.__bahikhata.data_dir, "memes", "goldenkatora.jpg"))
+        meme = Image.open(self.__bahikhata.filepath_golden_katora_meme)
         meme.show()
