@@ -5,8 +5,9 @@ from abc import ABC, abstractmethod
 import pandas
 import numpy
 import yfinance
-from multibeggar.dalalstreet import StockExchange, CompaniesInfo
+from multibeggar.dalalstreet import StockExchange
 from multibeggar.bahikhata import log
+from multibeggar.bahikhata import BahiKhata
 
 
 class StockPricesProvider(ABC):
@@ -15,7 +16,8 @@ class StockPricesProvider(ABC):
     def __init__(self, symbol_list, start_date, end_date) -> None:
         log.debug("Hello from multichooser")
         super().__init__()
-        self.companies_info = CompaniesInfo()
+        bahi_khata = BahiKhata()
+        self.companies_info = bahi_khata.companies_info
         self.fetch_stock_prices(symbol_list, start_date, end_date)
 
     @abstractmethod

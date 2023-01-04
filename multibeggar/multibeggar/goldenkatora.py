@@ -88,6 +88,7 @@ class GoldenKatora:
         Returns:
             DataFrame with the cleaned up data.
         """
+
         def cleanup_company_name_nse(company_name: str, stock_symbol: str) -> str:
             """Helper inner method to cleanup the company name in NSE data"""
             # convert to uppercase for better name matching in multibeggar
@@ -195,5 +196,7 @@ class GoldenKatora:
         )
 
     def what_is(self):
-        meme = Image.open(os.path.join(os.path.dirname(__file__), "data", "memes", "goldenkatora.jpg"))
+        meme = Image.open(
+            os.path.join(os.path.dirname(__file__), "data", "memes", "goldenkatora.jpg")
+        )
         meme.show()

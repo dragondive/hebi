@@ -2,7 +2,6 @@ import re
 from enum import Enum
 import pandas
 from fuzzywuzzy import fuzz
-from multibeggar import bahikhata
 
 
 class StockExchange(Enum):
@@ -16,18 +15,21 @@ class StockExchange(Enum):
 
 
 class CompaniesInfo:
-    def __init__(self) -> None:
-        # golden_katora = goldenkatora.GoldenKatora()
-        bahi_khata = bahikhata.BahiKhata()
+    def __init__(
+        self,
+        bse_companies_data: pandas.DataFrame,
+        nse_companies_data: pandas.DataFrame,
+        bonus_issues_data: pandas.DataFrame,
+        stock_splits_data: pandas.DataFrame,
+        symbol_change_data: pandas.DataFrame,
+    ) -> None:
         self.stock_exchange_to_info_map = {
-            StockExchange.BSE: pandas.read_csv(bahi_khata.filepath_cache_bsedata),
-            StockExchange.NSE: pandas.read_csv(bahi_khata.filepath_cache_nsedata),
+            StockExchange.BSE: bse_companies_data,
+            StockExchange.NSE: nse_companies_data,
         }
 
-        self.symbol_change_map = pandas.read_csv(bahi_khata.filepath_symbol_change)
-        self.__compute_price_adjustment_map(
-            bahi_khata.filepath_bonus_issues, bahi_khata.filepath_stock_splits
-        )
+        self.__compute_price_adjustment_map(bonus_issues_data, stock_splits_data)
+        self.symbol_change_map = symbol_change_data
 
     def get_stock_symbols(self, company_name) -> list[tuple[str, StockExchange]]:
         """Get known stock symbols of the company on the supported stock exchanges.
@@ -117,12 +119,12 @@ class CompaniesInfo:
         self, stock_symbol: str, date: pandas.Timestamp
     ) -> pandas.DataFrame:
         return self.price_adjustment_map[
-            (self.price_adjustment_map["Security Name"] == stock_symbol)
+            (self.price_adjustment_map["Company Name"] == stock_symbol)
             & (self.price_adjustment_map["Ex Date"] > date)
         ]
 
     def __compute_price_adjustment_map(
-        self, filepath_bonus_issues: str, filepath_stock_splits: str
+        self, bonus_issues_data: pandas.DataFrame, stock_splits_data: pandas.DataFrame
     ) -> None:
         """Computes the price adjustment multipliers due to bonus issues and stock splits.
 
@@ -167,16 +169,13 @@ class CompaniesInfo:
             match = re.search(r"Bonus issue (?P<first>\d+):(?P<second>\d+)", bonus_purpose_info)
             return (int(match["first"]) + int(match["second"])) / int(match["second"])
 
-        bonus_issues_data = pandas.read_csv(
-            filepath_bonus_issues,
-            usecols=["Security Name", "Ex Date", "Purpose"],
-            parse_dates=["Ex Date"],
-        )
         bonus_issues_data = bonus_issues_data[
             bonus_issues_data["Purpose"].str.contains("Bonus issue")
         ]
-        bonus_issues_data["Multiplier"] = bonus_issues_data["Purpose"].apply(extract_bonus_data)
-        bonus_issues_data["Action Type"] = "Bonus"
+        bonus_issues_data.insert(
+            0, "Multiplier", bonus_issues_data["Purpose"].apply(extract_bonus_data)
+        )
+        bonus_issues_data.insert(0, "Action Type", "Bonus")
 
         def extract_splits_data(split_purpose_info: pandas.Series) -> float:
             match = re.search(
@@ -185,21 +184,18 @@ class CompaniesInfo:
             )
             return int(match["first"]) / int(match["second"])
 
-        stock_splits_data = pandas.read_csv(
-            filepath_stock_splits,
-            usecols=["Security Name", "Ex Date", "Purpose"],
-            parse_dates=["Ex Date"],
-        )
         stock_splits_data = stock_splits_data[
             stock_splits_data["Purpose"].str.contains("Stock  Split")
         ]
-        stock_splits_data["Multiplier"] = stock_splits_data["Purpose"].apply(extract_splits_data)
-        stock_splits_data["Action Type"] = "Split"
+        stock_splits_data.insert(
+            0, "Multiplier", stock_splits_data["Purpose"].apply(extract_splits_data)
+        )
+        stock_splits_data.insert(0, "Action Type", "Split")
 
         self.price_adjustment_map = pandas.concat(
             [
-                bonus_issues_data[["Security Name", "Ex Date", "Multiplier", "Action Type"]],
-                stock_splits_data[["Security Name", "Ex Date", "Multiplier", "Action Type"]],
+                bonus_issues_data[["Company Name", "Ex Date", "Multiplier", "Action Type"]],
+                stock_splits_data[["Company Name", "Ex Date", "Multiplier", "Action Type"]],
             ]
         )
-        self.price_adjustment_map.sort_values(by=["Security Name", "Ex Date"], inplace=True)
+        self.price_adjustment_map.sort_values(by=["Company Name", "Ex Date"], inplace=True)

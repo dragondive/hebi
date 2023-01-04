@@ -5,6 +5,7 @@ from multibeggar import dalalstreet
 from multibeggar import multichooser
 from multibeggar import goldenkatora
 from multibeggar.bahikhata import log
+from multibeggar.bahikhata import BahiKhata
 
 
 class Multibeggar:
@@ -12,7 +13,8 @@ class Multibeggar:
         log.debug("Hello from multibeggar")
         self.exponent_tuning_factor = 0.01  # tuning factor to compute portfolio complexity
 
-        self.__companies_info = dalalstreet.CompaniesInfo()
+        bahi_khata = BahiKhata()
+        self.__companies_info = bahi_khata.companies_info
         self.__transactions_list = pandas.DataFrame()
         self.__stock_prices_provider = None
 
