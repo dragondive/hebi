@@ -7,6 +7,7 @@ import numpy
 import yfinance
 from multibeggar.dalalstreet import StockExchange
 import logging
+
 log = logging.getLogger(__name__)
 
 
@@ -62,6 +63,7 @@ class YfinanceStockPricesProvider(StockPricesProvider):
         self.exchange_to_suffix_map = {StockExchange.BSE: ".BO", StockExchange.NSE: ".NS"}
 
         self.stock_data = pandas.DataFrame()
+        self.stock_symbol_to_price_adjustment_data_map = {}
 
         super().__init__(companies_info, symbol_list, start_date, end_date)
 
@@ -109,9 +111,10 @@ class YfinanceStockPricesProvider(StockPricesProvider):
                     # the second [0] references the tuple.
                     # TODO use namedtuple instead?
                     stock_symbol = symbol_list[0][0]
-                    price_adjustment_data = self._companies_info.get_price_adjustment_data(
+                    price_adjustment_data = self.__get_price_adjustment_data_memoized(
                         stock_symbol, date
                     )
+
                     if not price_adjustment_data.empty:
                         # The de_adjustment multiplier should be the product of all the multipliers
                         # in case of multiple bonuses or stock splits that happened after the date
@@ -145,6 +148,14 @@ class YfinanceStockPricesProvider(StockPricesProvider):
     def __suffixize_symbol_list(self, symbol_list: list[tuple[str, StockExchange]]) -> list[str]:
         """Applies the stock exchange suffix to every symbol in the list."""
         return [symbol + self.exchange_to_suffix_map[exchange] for symbol, exchange in symbol_list]
+
+    def __get_price_adjustment_data_memoized(self, stock_symbol, date):
+        if stock_symbol not in self.stock_symbol_to_price_adjustment_data_map:
+            self.stock_symbol_to_price_adjustment_data_map[
+                stock_symbol
+            ] = self._companies_info.get_price_adjustment_data(stock_symbol, date)
+
+        return self.stock_symbol_to_price_adjustment_data_map[stock_symbol]
 
 
 class NoClosingPriceError(Exception):
