@@ -29,7 +29,7 @@ class CompaniesInfo:
         }
 
         self.__compute_price_adjustment_map(bonus_issues_data, stock_splits_data)
-        self.symbol_change_map = symbol_change_data
+        self.__symbol_change_map = symbol_change_data
 
     def get_stock_symbols(self, company_name) -> list[tuple[str, StockExchange]]:
         """Get known stock symbols of the company on the supported stock exchanges.
@@ -57,8 +57,8 @@ class CompaniesInfo:
             (search_renamed_symbol["Old Symbol"].array[0], stock_exchange)
             for (symbol, stock_exchange) in symbol_list
             if not (
-                search_renamed_symbol := self.symbol_change_map[
-                    self.symbol_change_map["New Symbol"] == symbol
+                search_renamed_symbol := self.__symbol_change_map[
+                    self.__symbol_change_map["New Symbol"] == symbol
                 ]
             ).empty
         ]

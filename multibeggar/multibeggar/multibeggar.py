@@ -4,17 +4,17 @@ import numpy
 from multibeggar import dalalstreet
 from multibeggar import multichooser
 from multibeggar import goldenkatora
-from multibeggar.bahikhata import log
-from multibeggar.bahikhata import BahiKhata
+
+import logging
+log = logging.getLogger(__name__)
 
 
 class Multibeggar:
-    def __init__(self) -> None:
+    def __init__(self, companies_info) -> None:
         log.debug("Hello from multibeggar")
         self.exponent_tuning_factor = 0.01  # tuning factor to compute portfolio complexity
 
-        bahi_khata = BahiKhata()
-        self.__companies_info = bahi_khata.companies_info
+        self.__companies_info = companies_info
         self.__transactions_list = pandas.DataFrame()
         self.__stock_prices_provider = None
 
@@ -35,7 +35,7 @@ class Multibeggar:
 
         start_date = self.__transactions_list["Date"].iloc[0]
         self.__stock_prices_provider = multichooser.YfinanceStockPricesProvider(
-            self.__all_stock_symbols, start_date
+            self.__companies_info, self.__all_stock_symbols, start_date
         )
 
         self.__compute_daywise_portfolio()

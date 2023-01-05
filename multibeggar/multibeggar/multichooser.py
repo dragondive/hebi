@@ -6,18 +6,17 @@ import pandas
 import numpy
 import yfinance
 from multibeggar.dalalstreet import StockExchange
-from multibeggar.bahikhata import log
-from multibeggar.bahikhata import BahiKhata
+import logging
+log = logging.getLogger(__name__)
 
 
 class StockPricesProvider(ABC):
     """Abstract base class for the StockPricesProvider"""
 
-    def __init__(self, symbol_list, start_date, end_date) -> None:
+    def __init__(self, companies_info, symbol_list, start_date, end_date) -> None:
         log.debug("Hello from multichooser")
         super().__init__()
-        bahi_khata = BahiKhata()
-        self.companies_info = bahi_khata.companies_info
+        self._companies_info = companies_info
         self.fetch_stock_prices(symbol_list, start_date, end_date)
 
     @abstractmethod
@@ -57,14 +56,14 @@ class StockPricesProvider(ABC):
 class YfinanceStockPricesProvider(StockPricesProvider):
     """Stock prices provider that wraps the yfinance API."""
 
-    def __init__(self, symbol_list, start_date, end_date=None) -> None:
+    def __init__(self, companies_info, symbol_list, start_date, end_date=None) -> None:
 
         # yfinance API requires suffixing the symbol with the stock exchange identifier.
         self.exchange_to_suffix_map = {StockExchange.BSE: ".BO", StockExchange.NSE: ".NS"}
 
         self.stock_data = pandas.DataFrame()
 
-        super().__init__(symbol_list, start_date, end_date)
+        super().__init__(companies_info, symbol_list, start_date, end_date)
 
     def fetch_stock_prices(
         self, symbol_list: list[tuple[str, StockExchange]], start_date: str, end_date: str = None
@@ -110,7 +109,7 @@ class YfinanceStockPricesProvider(StockPricesProvider):
                     # the second [0] references the tuple.
                     # TODO use namedtuple instead?
                     stock_symbol = symbol_list[0][0]
-                    price_adjustment_data = self.companies_info.get_price_adjustment_data(
+                    price_adjustment_data = self._companies_info.get_price_adjustment_data(
                         stock_symbol, date
                     )
                     if not price_adjustment_data.empty:
